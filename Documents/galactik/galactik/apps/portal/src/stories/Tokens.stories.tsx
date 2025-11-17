@@ -235,6 +235,18 @@ export const AllTokens: Story = {
 
       <Section title="Palette">
         {colorFamilies.map(renderColorFamily)}
+        <h3 style={{ margin: '20px 0 8px', fontSize: 16 }}>Couleurs extraites de Figma</h3>
+        <Grid cols={6}>
+          {[
+            '--colors-figma-color',
+            '--colors-figma-spacing-scale',
+            '--colors-figma-font-tokens',
+            '--colors-figma-frame-header',
+            '--colors-figma-sectionheader'
+          ].map((t) => (
+            <Swatch key={t} token={t} label={t.replace('--colors-figma-', '').replace(/-/g, ' ')} />
+          ))}
+        </Grid>
         <h3 style={{ margin: '20px 0 8px', fontSize: 16 }}>Absolute / Neutres</h3>
         <Grid cols={6}>
           {['--abs-pure-white', '--abs-white', '--abs-black', '--abs-transparent'].map((t) => (
