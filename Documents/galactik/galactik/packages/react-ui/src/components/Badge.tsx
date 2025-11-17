@@ -22,8 +22,8 @@ type BadgeColor =
   | 'red';
 
 export interface BadgeProps {
-  /** Text displayed inside the badge */
-  label: string;
+  /** Text displayed inside the badge (optional if using icon/avatar mode) */
+  label?: string;
   /** Size token (xs/sm/lg). Legacy aliases (small/medium/large) are accepted and mapped. */
   size?: BadgeSize;
   /** Color theme based on semantic tokens */
@@ -36,6 +36,8 @@ export interface BadgeProps {
   showFlag?: boolean;
   /** Optional custom icon node (React component, FontAwesome icon, or JSX element) */
   icon?: React.ReactNode;
+  /** Badge content mode: 'text' (default), 'icon' (icon only), 'avatar' (avatar only), 'number' (just number) */
+  mode?: 'text' | 'icon' | 'avatar' | 'number';
   className?: string;
   onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void;
 }
@@ -132,6 +134,7 @@ const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
       showIcon = false,
       showFlag = false,
       icon,
+      mode = 'text',
       className,
       onClick
     },
@@ -144,6 +147,39 @@ const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
     const sizing = sizeTokens[resolvedSize];
 
     const classes = ['qa-badge', `qa-badge--${resolvedSize}`, className || ''].join(' ').trim();
+
+    // Determine content based on mode
+    const renderContent = () => {
+      switch (mode) {
+        case 'icon':
+        case 'avatar':
+          // Icon/avatar only mode
+          return (
+            <>
+              {showFlag && <span className="qa-badge__flag" aria-hidden="true" />}
+              {icon && <span className="qa-badge__icon" aria-hidden="true">{icon}</span>}
+            </>
+          );
+        case 'number':
+          // Just the number (label is the number)
+          return (
+            <>
+              {showFlag && <span className="qa-badge__flag" aria-hidden="true" />}
+              <span className="qa-badge__label">{label}</span>
+            </>
+          );
+        case 'text':
+        default:
+          // Default mode: flag + icon + text
+          return (
+            <>
+              {showFlag && <span className="qa-badge__flag" aria-hidden="true" />}
+              {showIcon && icon && <span className="qa-badge__icon" aria-hidden="true">{icon}</span>}
+              {label && <span className="qa-badge__label">{label}</span>}
+            </>
+          );
+      }
+    };
 
     return (
       <span
@@ -160,9 +196,7 @@ const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
         aria-label={label}
         onClick={onClick}
       >
-        {showFlag && <span className="qa-badge__flag" aria-hidden="true" />}
-        {showIcon && icon && <span className="qa-badge__icon" aria-hidden="true">{icon}</span>}
-        <span className="qa-badge__label">{label}</span>
+        {renderContent()}
       </span>
     );
   }
