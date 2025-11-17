@@ -1,0 +1,10 @@
+node_modules/
+/dist/
+packages/*/node_modules/
+packages/*/storybook-static/
+.DS_Store
+
+# Environment & secrets (NEVER commit real tokens)
+.env
+.env.local
+.env.*.local

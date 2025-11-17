@@ -1,0 +1,16 @@
+// style-dictionary.config.json
+{
+  "source": ["tokens/convert-figma-to-tokens.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "src/tokens/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Storybook React (6006)",
+            "url": "http://localhost:6006",
+            "webRoot": "${workspaceFolder}/apps/storybook-react",
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "preLaunchTask": "Start Storybook React (6006)",
+            "postDebugTask": "Terminate All"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Storybook Vue (6007)",
+            "url": "http://localhost:6007",
+            "webRoot": "${workspaceFolder}/apps/storybook-vue",
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "preLaunchTask": "Start Storybook Vue (6007)",
+            "postDebugTask": "Terminate All"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Storybook Angular (6008)",
+            "url": "http://localhost:6008",
+            "webRoot": "${workspaceFolder}/apps/storybook-angular",
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "preLaunchTask": "Start Storybook Angular (6008)",
+            "postDebugTask": "Terminate All"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Storybook Web Components (6009)",
+            "url": "http://localhost:6009",
+            "webRoot": "${workspaceFolder}/apps/storybook-wc",
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "preLaunchTask": "Start Storybook Web Components (6009)",
+            "postDebugTask": "Terminate All"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Portal (6010)",
+            "url": "http://localhost:6010",
+            "webRoot": "${workspaceFolder}/apps/portal",
+            "runtimeArgs": ["--remote-debugging-port=9222"],
+            "preLaunchTask": "Start Portal (6010)",
+            "postDebugTask": "Terminate All"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galactik MCP Connector</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding: 12px; }
+    label { display:block; margin-top:8px; font-weight:600 }
+    input[type=text] { width:100%; padding:8px; box-sizing:border-box }
+    button { margin-top:8px }
+    pre { background:#f6f8fa; padding:8px; overflow:auto; max-height:200px }
+  </style>
+</head>
+<body>
+  <h3>Galactik MCP Connector</h3>
+
+  <label>MCP base URL</label>
+  <input id="url" type="text" value="http://127.0.0.1:3845/mcp" />
+
+  <label>File key (Figma)</label>
+  <input id="fileKey" type="text" placeholder="zB9JxH85..." />
+
+  <div style="display:flex; gap:8px; margin-top:8px">
+    <button id="connect">Connect WebSocket</button>
+    <button id="fetch" disabled>Fetch file via WS</button>
+    <button id="httpFetch">Fetch via HTTP</button>
+    <button id="close">Close</button>
+  </div>
+
+  <p style="margin-top:8px">Status: <span id="status">idle</span></p>
+  <pre id="output">No output yet.</pre>
+
+  <script>
+    let ws = null;
+    const status = document.getElementById('status');
+    const output = document.getElementById('output');
+    const connectBtn = document.getElementById('connect');
+    const fetchBtn = document.getElementById('fetch');
+    const httpBtn = document.getElementById('httpFetch');
+    const closeBtn = document.getElementById('close');
+
+    function log(msg) {
+      output.textContent = (new Date()).toLocaleTimeString() + ' — ' + JSON.stringify(msg, null, 2) + '\n\n' + output.textContent;
+    }
+
+    function setStatus(s) { status.textContent = s; }
+
+    connectBtn.onclick = () => {
+      const base = document.getElementById('url').value.trim();
+      if (!base) return alert('Enter MCP base URL');
+
+      // Try convert http(s) to ws(s) if needed
+      let wsUrl = base;
+      if (wsUrl.startsWith('http://')) wsUrl = wsUrl.replace('http://', 'ws://');
+      if (wsUrl.startsWith('https://')) wsUrl = wsUrl.replace('https://', 'wss://');
+
+      // Some MCP servers use a path like /mcp/ws — try both
+      if (!wsUrl.endsWith('/ws')) wsUrl = wsUrl + '/ws';
+
+      setStatus('connecting');
+      try {
+        ws = new WebSocket(wsUrl);
+      } catch (e) {
+        setStatus('error');
+        log({error: 'WebSocket constructor failed', message: e.message});
+        return;
+      }
+
+      ws.onopen = () => { setStatus('connected'); fetchBtn.disabled = false; log({event:'ws.open', url: wsUrl}); };
+      ws.onmessage = (ev) => { try { log({event:'ws.message', data: JSON.parse(ev.data)}); } catch { log({event:'ws.message', data: ev.data}); } };
+      ws.onclose = () => { setStatus('closed'); fetchBtn.disabled = true; log({event:'ws.close'}); };
+      ws.onerror = (e) => { setStatus('error'); log({event:'ws.error', detail: String(e)}); };
+    };
+
+    fetchBtn.onclick = () => {
+      if (!ws || ws.readyState !== WebSocket.OPEN) return alert('WebSocket not open');
+      const fileKey = document.getElementById('fileKey').value.trim();
+      if (!fileKey) return alert('Enter file key');
+
+      // Send a simple JSON message — your MCP server may expect a different format.
+      // If your MCP server is @modelcontextprotocol/server-figma it should accept a request
+      // to fetch a Figma file. If not, adjust the `type`/`action` fields according to your server.
+      const msg = {
+        type: 'figma.fetchFile',
+        fileKey: fileKey
+      };
+
+      ws.send(JSON.stringify(msg));
+      log({event:'ws.send', msg});
+    };
+
+    httpBtn.onclick = async () => {
+      const base = document.getElementById('url').value.trim();
+      const fileKey = document.getElementById('fileKey').value.trim();
+      if (!base || !fileKey) return alert('Enter URL and file key');
+
+      // Try a POST to the MCP base — many MCP servers expose a POST /mcp endpoint
+      const url = base.endsWith('/mcp') ? base : (base + '/mcp');
+      setStatus('http-fetching');
+      try {
+        const resp = await fetch(url, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({type: 'figma.fetchFile', fileKey})
+        });
+        const json = await resp.json();
+        log({event:'http.response', url, status: resp.status, body: json});
+        setStatus('http-done');
+      } catch (e) {
+        log({error: e.message});
+        setStatus('error');
+      }
+    };
+
+    closeBtn.onclick = () => {
+      parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+    };
+
+    // Listen for messages from plugin controller if necessary
+    onmessage = (ev) => {
+      // not used in this minimal sample
+    };
+  </script>
+</body>
+</html>

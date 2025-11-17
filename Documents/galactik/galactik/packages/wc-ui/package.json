@@ -1,0 +1,29 @@
+{
+  "name": "wc-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stencil-based web components for Galactik",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "scripts": {
+    "build:stencil": "stencil build --quiet",
+    "watch:stencil": "stencil build --dev --watch --serve false"
+  },
+  "devDependencies": {
+    "@stencil/core": "3.4.2",
+    "@storybook/addon-essentials": "8.2.7",
+    "@storybook/addon-toolbars": "8.2.7",
+    "@storybook/builder-vite": "8.2.7",
+    "@storybook/web-components-vite": "8.2.7",
+    "storybook": "8.2.7",
+    "typescript": "5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/pro-regular-svg-icons": "^7.1.0"
+  }
+}

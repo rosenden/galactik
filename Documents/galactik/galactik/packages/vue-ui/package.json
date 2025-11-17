@@ -1,0 +1,22 @@
+{
+  "name": "vue-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/pro-regular-svg-icons": "^7.1.0",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
+    "vue": "^3.4.38"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "8.2.7",
+    "@storybook/addon-toolbars": "8.2.7",
+    "@storybook/vue3-vite": "8.2.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "8.2.7",
+    "typescript": "5.2.2",
+    "vite": "^5.0.0"
+  }
+}

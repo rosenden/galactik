@@ -1,0 +1,330 @@
+{
+  "styles": [
+    {
+      "id": "596:2383",
+      "name": "tag",
+      "description": ""
+    },
+    {
+      "id": "48:352",
+      "name": "Elevation/Shadow/Overlay",
+      "description": "Use for the box shadow of elements that sit on top of the UI, such as modals, dropdown menus, flags, and inline dialogs. Combine with elevation.surface.overlay\n\nAlso use for the box shadow of raised cards in a dragged state."
+    },
+    {
+      "id": "34:139",
+      "name": "full/xl",
+      "description": "1920x1080"
+    },
+    {
+      "id": "34:140",
+      "name": "full/lg",
+      "description": "1440x1024"
+    },
+    {
+      "id": "34:141",
+      "name": "full/sm",
+      "description": "744x1133"
+    },
+    {
+      "id": "34:157",
+      "name": "full/md",
+      "description": "1024x768"
+    },
+    {
+      "id": "34:158",
+      "name": "full/xs",
+      "description": "320x568"
+    },
+    {
+      "id": "60:965",
+      "name": "argonos/sm",
+      "description": "744x1133"
+    },
+    {
+      "id": "60:969",
+      "name": "argonos/md",
+      "description": "1024x768"
+    },
+    {
+      "id": "60:991",
+      "name": "argonos/xs",
+      "description": "320x568px"
+    },
+    {
+      "id": "60:1555",
+      "name": "argonos/lg",
+      "description": "1440x1024"
+    },
+    {
+      "id": "60:1560",
+      "name": "argonos/xl",
+      "description": "1920x1024"
+    },
+    {
+      "id": "92:1040",
+      "name": "shadow/2xs",
+      "description": ""
+    },
+    {
+      "id": "92:1041",
+      "name": "shadow/xs",
+      "description": ""
+    },
+    {
+      "id": "92:1042",
+      "name": "shadow/sm",
+      "description": ""
+    },
+    {
+      "id": "92:1043",
+      "name": "shadow/md",
+      "description": ""
+    },
+    {
+      "id": "92:1044",
+      "name": "shadow/lg",
+      "description": ""
+    },
+    {
+      "id": "92:1045",
+      "name": "shadow/xl",
+      "description": ""
+    },
+    {
+      "id": "92:1046",
+      "name": "shadow/2xl",
+      "description": ""
+    },
+    {
+      "id": "92:1048",
+      "name": "shadow/inner",
+      "description": ""
+    },
+    {
+      "id": "92:1049",
+      "name": "blur/blur-xs",
+      "description": ""
+    },
+    {
+      "id": "92:1050",
+      "name": "blur/blur-sm",
+      "description": ""
+    },
+    {
+      "id": "92:1051",
+      "name": "blur/blur-md",
+      "description": ""
+    },
+    {
+      "id": "92:1052",
+      "name": "blur/blur-lg",
+      "description": ""
+    },
+    {
+      "id": "92:1053",
+      "name": "blur/blur-xl",
+      "description": ""
+    },
+    {
+      "id": "92:1054",
+      "name": "blur/blur-2xl",
+      "description": ""
+    },
+    {
+      "id": "92:1055",
+      "name": "blur/blur-3xl",
+      "description": ""
+    },
+    {
+      "id": "102:1593",
+      "name": "text/text-base/medium",
+      "description": ""
+    },
+    {
+      "id": "110:1758",
+      "name": "text/text-base/regular",
+      "description": ""
+    },
+    {
+      "id": "110:2131",
+      "name": "text/text-sm/medium",
+      "description": ""
+    },
+    {
+      "id": "151:4",
+      "name": "headline/headline-3xl/bold",
+      "description": ""
+    },
+    {
+      "id": "177:38",
+      "name": "text/text-xs/regular",
+      "description": ""
+    },
+    {
+      "id": "177:61",
+      "name": "text/text-xs/medium",
+      "description": ""
+    },
+    {
+      "id": "267:1128",
+      "name": "text/text-sm/regular",
+      "description": ""
+    },
+    {
+      "id": "280:490",
+      "name": "text/text-base/Italic",
+      "description": ""
+    },
+    {
+      "id": "280:491",
+      "name": "text/text-sm/italic",
+      "description": ""
+    },
+    {
+      "id": "280:492",
+      "name": "text/text-xs/italic",
+      "description": ""
+    },
+    {
+      "id": "280:495",
+      "name": "text/text-base/bold",
+      "description": ""
+    },
+    {
+      "id": "280:496",
+      "name": "text/text-sm/bold",
+      "description": ""
+    },
+    {
+      "id": "280:497",
+      "name": "text/text-xs/bold",
+      "description": ""
+    },
+    {
+      "id": "283:4",
+      "name": "headline/headline-lg/bold",
+      "description": ""
+    },
+    {
+      "id": "283:5",
+      "name": "headline/headline-lg/medium",
+      "description": ""
+    },
+    {
+      "id": "283:6",
+      "name": "headline/headline-lg/regular",
+      "description": ""
+    },
+    {
+      "id": "283:7",
+      "name": "headline/headline-lg/italic",
+      "description": ""
+    },
+    {
+      "id": "286:1100",
+      "name": "headline/headline-3xl/medium",
+      "description": ""
+    },
+    {
+      "id": "286:1101",
+      "name": "headline/headline-3xl/regular",
+      "description": ""
+    },
+    {
+      "id": "286:1103",
+      "name": "headline/headline-2xl/bold",
+      "description": ""
+    },
+    {
+      "id": "286:1105",
+      "name": "headline/headline-2xl/regular",
+      "description": ""
+    },
+    {
+      "id": "286:1106",
+      "name": "headline/headline-2xl/medium",
+      "description": ""
+    },
+    {
+      "id": "286:1107",
+      "name": "headline/headline-3xl/italic",
+      "description": ""
+    },
+    {
+      "id": "286:1108",
+      "name": "headline/headline-2xl/italic",
+      "description": ""
+    },
+    {
+      "id": "286:1109",
+      "name": "headline/headline-xl/bold",
+      "description": ""
+    },
+    {
+      "id": "286:1110",
+      "name": "headline/headline-xl/medium",
+      "description": ""
+    },
+    {
+      "id": "286:1111",
+      "name": "headline/headline-xl/regular",
+      "description": ""
+    },
+    {
+      "id": "286:1112",
+      "name": "headline/headline-xl/italic",
+      "description": ""
+    },
+    {
+      "id": "286:1119",
+      "name": "text/text-2xs/bold",
+      "description": ""
+    },
+    {
+      "id": "286:1120",
+      "name": "text/text-2xs/medium",
+      "description": ""
+    },
+    {
+      "id": "286:1122",
+      "name": "text/text-2xs/regular",
+      "description": ""
+    },
+    {
+      "id": "286:1123",
+      "name": "text/text-2xs/italic",
+      "description": ""
+    },
+    {
+      "id": "520:140",
+      "name": "text/text-md/bold",
+      "description": ""
+    },
+    {
+      "id": "520:141",
+      "name": "text/text-md/medium",
+      "description": ""
+    },
+    {
+      "id": "520:142",
+      "name": "text/text-md/regular",
+      "description": ""
+    },
+    {
+      "id": "520:144",
+      "name": "text/text-md/italic",
+      "description": ""
+    },
+    {
+      "id": "187:759",
+      "name": "text/text-sm/medium",
+      "description": ""
+    },
+    {
+      "id": "17:15",
+      "name": "Body/Body small medium",
+      "description": ""
+    }
+  ],
+  "variables": []
+}

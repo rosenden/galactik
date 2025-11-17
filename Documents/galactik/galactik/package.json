@@ -1,0 +1,80 @@
+{
+  "name": "galactik",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN",
+    "typecheck": "pnpm exec tsc -p tsconfig.base.json --noEmit",
+    "audit": "pnpm audit --prod=false",
+    "lint:deps": "pnpm dedupe --check && pnpm audit --prod=false",
+    "storybook:all": "pnpm run -r --parallel storybook",
+    "storybook:angular": "pnpm --filter storybook-angular storybook",
+    "storybook:react": "pnpm --filter storybook-react storybook",
+    "storybook:vue": "pnpm --filter storybook-vue storybook",
+    "storybook:wc": "pnpm --filter storybook-wc storybook",
+    "build:storybook:angular": "pnpm --filter storybook-angular build-storybook",
+    "build:storybook:react": "pnpm --filter storybook-react build-storybook",
+    "build:storybook:vue": "pnpm --filter storybook-vue build-storybook",
+    "build:storybook:wc": "pnpm --filter storybook-wc build-storybook",
+    "build:storybooks": "node scripts/build-storybooks.mjs",
+    "serve:storybooks": "node scripts/serve-storybooks.mjs",
+    "preview:storybooks": "pnpm run build:storybooks && pnpm run serve:storybooks",
+    "mcp:run": "node scripts/run-mcp.mjs",
+    "mcp:fallback": "node scripts/mcp-fallback/server.mjs"
+  },
+  "devDependencies": {
+    "@angular/cli": "17.3.8",
+    "@angular/animations": "17.3.12",
+    "@angular/common": "17.3.12",
+    "@angular/compiler": "17.3.12",
+    "@angular/compiler-cli": "17.3.12",
+    "@angular/core": "17.3.12",
+    "@angular/forms": "17.3.12",
+    "@angular/platform-browser": "17.3.12",
+    "@angular/platform-browser-dynamic": "17.3.12",
+    "@angular/router": "17.3.12",
+    "@storybook/addon-essentials": "8.2.7",
+    "@storybook/addon-toolbars": "8.2.7",
+    "@storybook/angular": "8.2.7",
+    "@storybook/builder-vite": "8.2.7",
+    "@storybook/react-vite": "8.2.7",
+    "@storybook/vue3": "8.2.7",
+    "@storybook/web-components-vite": "8.2.7",
+    "chromatic": "^11.6.4",
+    "storybook": "8.2.7",
+    "typescript": "5.2.2",
+    "vite": "^5.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "storybook": "8.2.7",
+      "@storybook/*": "8.2.7",
+      "@angular/core": "17.3.12",
+      "@angular/common": "17.3.12",
+      "@angular/forms": "17.3.12",
+      "@angular/compiler": "17.3.12",
+      "@angular/compiler-cli": "17.3.12",
+      "@angular/platform-browser": "17.3.12",
+      "@angular/platform-browser-dynamic": "17.3.12",
+      "@angular/router": "17.3.12",
+      "@angular-devkit/architect": "0.1703.8",
+      "@angular-devkit/build-angular": "17.3.8",
+      "@angular-devkit/build-webpack": "0.1703.8",
+      "@angular-devkit/core": "17.3.8",
+      "@types/node": "20.11.19",
+      "react": "18.2.0",
+      "react-dom": "18.2.0"
+    },
+    "neverBuiltDependencies": [
+      "@storybook/react-vite",
+      "@storybook/vue3",
+      "@storybook/web-components",
+      "@storybook/web-components-vite"
+    ]
+  },
+  "packageManager": "pnpm@10.20.0"
+}

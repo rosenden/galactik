@@ -1,0 +1,47 @@
+[
+  {
+    "id": "react",
+    "label": "React UI",
+    "port": 6006,
+    "path": "/react-ui",
+    "envVar": "REACT_STORYBOOK_URL",
+    "packageDir": "../../packages/react-ui",
+    "workspace": "storybook-react"
+  },
+  {
+    "id": "vue",
+    "label": "Vue UI",
+    "port": 6007,
+    "path": "/vue-ui",
+    "envVar": "VUE_STORYBOOK_URL",
+    "packageDir": "../../packages/vue-ui",
+    "workspace": "storybook-vue"
+  },
+  {
+    "id": "angular",
+    "label": "Angular UI",
+    "port": 6008,
+    "path": "/angular-ui",
+    "envVar": "ANGULAR_STORYBOOK_URL",
+    "packageDir": "../../packages/angular-ui",
+    "workspace": "storybook-angular"
+  },
+  {
+    "id": "wc",
+    "label": "Web Components UI",
+    "port": 6009,
+    "path": "/wc-ui",
+    "envVar": "WC_STORYBOOK_URL",
+    "packageDir": "../../packages/wc-ui",
+    "workspace": "storybook-wc"
+  },
+  {
+    "id": "portal",
+    "label": "Portal",
+    "port": 6010,
+    "path": "/portal",
+    "envVar": "PORTAL_STORYBOOK_URL",
+    "packageDir": ".",
+    "workspace": "portal"
+  }
+]

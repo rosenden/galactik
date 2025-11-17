@@ -1,0 +1,3 @@
+[submodule "galactiktest/figma-tokens"]
+	path = galactiktest/figma-tokens
+	url = https://github.com/rosenden/galactiktest.git
