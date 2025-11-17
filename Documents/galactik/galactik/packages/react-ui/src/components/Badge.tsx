@@ -1,113 +1,169 @@
 import React from 'react';
+import './badge.css';
+
+type BadgeSize = 'xs' | 'sm' | 'lg' | 'small' | 'medium' | 'large';
+type BadgeVariant = 'primary' | 'secondary';
+type BadgeColor =
+  | 'sage'
+  | 'almond'
+  | 'pink'
+  | 'grey'
+  | 'info'
+  | 'error'
+  | 'success'
+  | 'warning'
+  | 'indigo'
+  | 'yellow'
+  | 'cherry'
+  | 'cyan'
+  | 'orange'
+  | 'green'
+  | 'blue'
+  | 'red';
 
 export interface BadgeProps {
-  /**
-   * Label text displayed in the badge
-   */
+  /** Text displayed inside the badge */
   label: string;
-  
-  /**
-   * Size variant of the badge
-   */
-  size?: 'small' | 'medium' | 'large';
-  
-  /**
-   * Color variant of the badge
-   */
-  color?: 'pink' | 'orange' | 'green' | 'blue' | 'red' | 'yellow' | 'cyan' | 'indigo' | 'cherry' | 'sage' | 'grey' | 'almond';
-  
-  /**
-   * Style variant (outline or solid)
-   */
-  style?: 'primary' | 'secondary';
-  
-  /**
-   * Show icon in the badge
-   */
+  /** Size token (xs/sm/lg). Legacy aliases (small/medium/large) are accepted and mapped. */
+  size?: BadgeSize;
+  /** Color theme based on semantic tokens */
+  color?: BadgeColor;
+  /** Variant: filled (primary) or bordered (secondary) */
+  style?: BadgeVariant;
+  /** Show a leading icon */
   showIcon?: boolean;
-  
-  /**
-   * Show flag/dot indicator
-   */
+  /** Show a small dot indicator */
   showFlag?: boolean;
-  
-  /**
-   * Additional CSS class
-   */
-  className?: string;
-  
-  /**
-   * Optional left icon content
-   */
+  /** Optional custom icon node */
   icon?: React.ReactNode;
-  
-  /**
-   * Badge click handler
-   */
-  onClick?: (e: React.MouseEvent<HTMLDivElement>) => void;
+  className?: string;
+  onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void;
 }
 
-const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-  ({
-    label,
-    size = 'medium',
-    color = 'pink',
-    style = 'primary',
-    showIcon = false,
-    showFlag = false,
-    className = '',
-    icon,
-    onClick
-  }, ref) => {
-    // Size classes
-    const sizeClasses = {
-      small: 'px-2 py-1 text-xs',
-      medium: 'px-3 py-1.5 text-sm',
-      large: 'px-4 py-2 text-base'
-    };
+const sizeTokens: Record<'xs' | 'sm' | 'lg', { padding: string; fontSize: string }> = {
+  xs: { padding: '0 var(--space-2xs)', fontSize: 'var(--font-size-xs)' },
+  sm: { padding: '0 var(--space-sm)', fontSize: 'var(--font-size-sm)' },
+  lg: { padding: '0 var(--space-md)', fontSize: 'var(--font-size-base)' }
+};
 
-    // Color base classes
-    const colorMap = {
-      pink: 'bg-pink-100 text-pink-900 border-pink-200',
-      orange: 'bg-orange-100 text-orange-900 border-orange-200',
-      green: 'bg-green-100 text-green-900 border-green-200',
-      blue: 'bg-blue-100 text-blue-900 border-blue-200',
-      red: 'bg-red-100 text-red-900 border-red-200',
-      yellow: 'bg-yellow-100 text-yellow-900 border-yellow-200',
-      cyan: 'bg-cyan-100 text-cyan-900 border-cyan-200',
-      indigo: 'bg-indigo-100 text-indigo-900 border-indigo-200',
-      cherry: 'bg-cherry-100 text-cherry-900 border-cherry-200',
-      sage: 'bg-sage-100 text-sage-900 border-sage-200',
-      grey: 'bg-grey-100 text-grey-900 border-grey-200',
-      almond: 'bg-almond-100 text-almond-900 border-almond-200'
-    };
+const colorTokens: Record<
+  Exclude<BadgeColor, 'orange' | 'green' | 'blue' | 'red'>,
+  { primary: Record<'background' | 'color' | 'border', string>; secondary: Record<'background' | 'color' | 'border', string> }
+> = {
+  sage: {
+    primary: { background: 'var(--color-bg-primary-base)', color: 'var(--color-font-neutral-white)', border: 'var(--color-stroke-primary-base)' },
+    secondary: { background: 'var(--color-bg-primary-lightest)', color: 'var(--color-font-primary-base)', border: 'var(--color-stroke-primary-light)' }
+  },
+  almond: {
+    primary: { background: 'var(--color-bg-secondary-base)', color: 'var(--color-font-neutral-white)', border: 'var(--color-stroke-secondary-base)' },
+    secondary: { background: 'var(--color-bg-secondary-lightest)', color: 'var(--color-font-secondary-base)', border: 'var(--color-stroke-secondary-base)' }
+  },
+  pink: {
+    primary: { background: 'var(--color-bg-accent-base)', color: 'var(--color-font-accent-muted)', border: 'var(--color-stroke-accent-base)' },
+    secondary: { background: 'var(--color-bg-accent-hover)', color: 'var(--color-font-accent-base)', border: 'var(--color-stroke-accent-base)' }
+  },
+  grey: {
+    primary: { background: 'var(--color-bg-neutral-base)', color: 'var(--color-font-neutral-base)', border: 'var(--color-stroke-neutral-dark)' },
+    secondary: { background: 'var(--color-bg-neutral-white)', color: 'var(--color-font-neutral-muted)', border: 'var(--color-stroke-neutral-disabled)' }
+  },
+  info: {
+    primary: { background: 'var(--color-bg-info-base-alt)', color: 'var(--color-font-info-base)', border: 'var(--color-stroke-info-base)' },
+    secondary: { background: 'var(--color-bg-info-base)', color: 'var(--color-font-info-base)', border: 'var(--color-stroke-info-base)' }
+  },
+  error: {
+    primary: { background: 'var(--color-bg-error-base-alt)', color: 'var(--color-font-error-base)', border: 'var(--color-stroke-error-base)' },
+    secondary: { background: 'var(--color-bg-error-base)', color: 'var(--color-font-error-base)', border: 'var(--color-stroke-error-base)' }
+  },
+  success: {
+    primary: { background: 'var(--color-bg-success-base-alt)', color: 'var(--color-font-success-base)', border: 'var(--color-stroke-success-base)' },
+    secondary: { background: 'var(--color-bg-success-base)', color: 'var(--color-font-success-base)', border: 'var(--color-stroke-success-base)' }
+  },
+  warning: {
+    primary: { background: 'var(--color-bg-warning-base-alt)', color: 'var(--color-font-warning-base)', border: 'var(--color-stroke-warning-base)' },
+    secondary: { background: 'var(--color-bg-warning-base)', color: 'var(--color-font-warning-base)', border: 'var(--color-stroke-warning-base)' }
+  },
+  indigo: {
+    primary: { background: 'var(--color-bg-indigo-base)', color: 'var(--color-font-neutral-white)', border: 'var(--color-stroke-indigo-base)' },
+    secondary: { background: 'var(--color-bg-indigo-base-alt)', color: 'var(--color-font-indigo-base)', border: 'var(--color-stroke-indigo-base)' }
+  },
+  yellow: {
+    primary: { background: 'var(--color-bg-yellow-base)', color: 'var(--color-font-yellow-base)', border: 'var(--color-stroke-yellow-base)' },
+    secondary: { background: 'var(--color-bg-yellow-base-alt)', color: 'var(--color-font-yellow-base)', border: 'var(--color-stroke-yellow-base)' }
+  },
+  cherry: {
+    primary: { background: 'var(--color-bg-cherry-base-alt)', color: 'var(--color-font-cherry-base)', border: 'var(--color-stroke-cherry-base)' },
+    secondary: { background: 'var(--color-bg-cherry-base)', color: 'var(--color-font-cherry-base)', border: 'var(--color-stroke-cherry-base)' }
+  },
+  cyan: {
+    primary: { background: 'var(--color-bg-cyan-base)', color: 'var(--color-font-cyan-base)', border: 'var(--color-stroke-cyan-base)' },
+    secondary: { background: 'var(--color-bg-cyan-base-alt)', color: 'var(--color-font-cyan-base)', border: 'var(--color-stroke-cyan-base)' }
+  }
+};
 
-    const styleClasses = style === 'secondary' 
-      ? 'border'
-      : '';
+const colorAliases: Partial<Record<BadgeColor, keyof typeof colorTokens>> = {
+  orange: 'warning',
+  green: 'success',
+  blue: 'info',
+  red: 'error'
+};
 
-    const baseClasses = 'inline-flex items-center gap-2 rounded-full font-medium transition-colors';
+const normalizeSize = (size: BadgeSize = 'sm'): 'xs' | 'sm' | 'lg' => {
+  switch (size) {
+    case 'xs':
+    case 'small':
+      return 'xs';
+    case 'sm':
+    case 'medium':
+      return 'sm';
+    case 'lg':
+    case 'large':
+    default:
+      return 'lg';
+  }
+};
 
-    const combinedClasses = `${baseClasses} ${sizeClasses[size]} ${colorMap[color]} ${styleClasses} ${className}`.trim();
+const Badge = React.forwardRef<HTMLSpanElement, BadgeProps>(
+  (
+    {
+      label,
+      size = 'sm',
+      color = 'sage',
+      style = 'primary',
+      showIcon = false,
+      showFlag = false,
+      icon,
+      className,
+      onClick
+    },
+    ref
+  ) => {
+    const resolvedSize = normalizeSize(size);
+    const paletteKey = colorAliases[color] ?? color;
+    const palette = colorTokens[paletteKey as keyof typeof colorTokens] ?? colorTokens.sage;
+    const variantTokens = style === 'secondary' ? palette.secondary : palette.primary;
+    const sizing = sizeTokens[resolvedSize];
+
+    const classes = ['qa-badge', `qa-badge--${resolvedSize}`, className || ''].join(' ').trim();
 
     return (
-      <div
+      <span
         ref={ref}
-        className={combinedClasses}
-        onClick={onClick}
+        className={classes}
+        style={{
+          background: variantTokens.background,
+          color: variantTokens.color,
+          borderColor: variantTokens.border,
+          padding: sizing.padding,
+          fontSize: sizing.fontSize
+        }}
         role="status"
         aria-label={label}
+        onClick={onClick}
       >
-        {showFlag && (
-          <span className="inline-block w-2 h-2 rounded-full bg-current opacity-75" />
-        )}
-        {showIcon && icon && (
-          <span className="inline-flex items-center justify-center">
-            {icon}
-          </span>
-        )}
-        <span>{label}</span>
-      </div>
+        {showFlag && <span className="qa-badge__flag" aria-hidden="true" />}
+        {showIcon && icon && <span className="qa-badge__icon" aria-hidden="true">{icon}</span>}
+        <span className="qa-badge__label">{label}</span>
+      </span>
     );
   }
 );
