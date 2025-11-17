@@ -1,6 +1,9 @@
 import type { Preview } from '@storybook/types';
 import { withDesignTokens } from './tokens-decorator';
 
+// Import design tokens CSS
+import '../../../styles/tokens-generated.css';
+
 export const previewBase: Preview = {
   decorators: [withDesignTokens],
   parameters: {

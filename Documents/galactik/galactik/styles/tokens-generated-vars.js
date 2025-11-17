@@ -1,6 +1,6 @@
 /**
  * Auto-generated design tokens for JavaScript/TypeScript
- * Generated on 2025-11-17T10:30:41.074Z
+ * Generated on 2025-11-17T10:50:24.815Z
  * DO NOT EDIT MANUALLY - Run: node scripts/generate-tokens.mjs
  */
 
@@ -593,6 +593,33 @@ export const designTokens = {
           "value": "rgba(255,255,255,0)",
           "type": "color"
         }
+      }
+    },
+    "figma": {
+      "color": {
+        "value": "#f2f2f3",
+        "type": "color",
+        "description": "Extracted from Figma Design System on 2025-11-17"
+      },
+      "spacing-scale": {
+        "value": "#fdfefe",
+        "type": "color",
+        "description": "Extracted from Figma Design System on 2025-11-17"
+      },
+      "font-tokens": {
+        "value": "#fdfefe",
+        "type": "color",
+        "description": "Extracted from Figma Design System on 2025-11-17"
+      },
+      "frame-header": {
+        "value": "#fdfefe",
+        "type": "color",
+        "description": "Extracted from Figma Design System on 2025-11-17"
+      },
+      "sectionheader": {
+        "value": "#f9fafb",
+        "type": "color",
+        "description": "Extracted from Figma Design System on 2025-11-17"
       }
     }
   },

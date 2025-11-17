@@ -1,5 +1,5 @@
 /* Auto-generated from tokens.json */
-/* Generated on 2025-11-17T10:30:41.072Z */
+/* Generated on 2025-11-17T10:50:24.813Z */
 /* DO NOT EDIT MANUALLY - Run: node scripts/generate-tokens.mjs */
 
 :root,
@@ -141,6 +141,11 @@
   --colors-palette-absolute-pure-white: #ffffff;
   --colors-palette-absolute-black: #182021;
   --colors-palette-absolute-transparent: rgba(255,255,255,0);
+  --colors-figma-color: #f2f2f3;
+  --colors-figma-spacing-scale: #fdfefe;
+  --colors-figma-font-tokens: #fdfefe;
+  --colors-figma-frame-header: #fdfefe;
+  --colors-figma-sectionheader: #f9fafb;
   --typography-font-family-base: Hanken Grotesk, Arial, Helvetica, sans-serif;
   --typography-font-weight-regular: 400;
   --typography-font-weight-semibold: 600;
