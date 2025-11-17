@@ -1,6 +1,20 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import { library, IconDefinition, IconLookup } from '@fortawesome/fontawesome-svg-core';
+import { far } from '@fortawesome/pro-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Badge, { BadgeProps } from 'react-ui/components/Badge';
+
+// Register Font Awesome icons
+const iconEntries = Object.values(far).reduce<IconDefinition[]>((acc, icon) => {
+  if (typeof icon === 'object' && icon && 'iconName' in icon) {
+    if (!acc.some((existing) => existing.iconName === icon.iconName)) {
+      acc.push(icon as IconDefinition);
+    }
+  }
+  return acc;
+}, []);
+library.add(...iconEntries);
 
 const colorOptions: NonNullable<BadgeProps['color']>[] = [
   'sage',
@@ -131,43 +145,76 @@ export const WithFlag: Story = {
 };
 
 export const WithIcon: Story = {
-  name: 'Avec icônes',
-  render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-      <div>
-        <h3 style={{ marginBottom: 12, fontSize: 14 }}>Sizes LG - Primary</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, minmax(0, 1fr))', gap: 12 }}>
-          {colorOptions.map((color) => (
-            <Badge 
-              key={`lg-icon-${color}`} 
-              label="😊" 
-              color={color} 
-              style="primary" 
-              size="lg"
-              showIcon={true}
-              icon="😊"
-            />
-          ))}
+  name: 'Avec icônes Font Awesome',
+  render: () => {
+    const sampleIcons = [
+      'user',
+      'heart',
+      'star',
+      'bell',
+      'cog',
+      'check',
+      'times',
+      'plus',
+      'minus',
+      'search',
+      'download',
+      'upload'
+    ];
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+        <div>
+          <h3 style={{ marginBottom: 12, fontSize: 14 }}>Sizes LG - Primary with Icons</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', gap: 12 }}>
+            {colorOptions.slice(0, 6).map((color, idx) => (
+              <Badge 
+                key={`lg-icon-${color}`} 
+                label={sampleIcons[idx % sampleIcons.length]} 
+                color={color} 
+                style="primary" 
+                size="lg"
+                showIcon={true}
+                icon={<FontAwesomeIcon icon={['far', sampleIcons[idx % sampleIcons.length]] as unknown as IconLookup} />}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 style={{ marginBottom: 12, fontSize: 14 }}>Sizes SM - Primary with Icons</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, minmax(0, 1fr))', gap: 12 }}>
+            {colorOptions.slice(6, 12).map((color, idx) => (
+              <Badge 
+                key={`sm-icon-${color}`} 
+                label={sampleIcons[(idx + 6) % sampleIcons.length]} 
+                color={color} 
+                style="primary" 
+                size="sm"
+                showIcon={true}
+                icon={<FontAwesomeIcon icon={['far', sampleIcons[(idx + 6) % sampleIcons.length]] as unknown as IconLookup} />}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 style={{ marginBottom: 12, fontSize: 14 }}>All Icons Preview (LG)</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(100px, 1fr))', gap: 12 }}>
+            {sampleIcons.map((iconName, idx) => (
+              <Badge 
+                key={`preview-${iconName}`} 
+                label={iconName} 
+                color={colorOptions[idx % colorOptions.length]} 
+                style="primary" 
+                size="lg"
+                showIcon={true}
+                icon={<FontAwesomeIcon icon={['far', iconName] as unknown as IconLookup} />}
+              />
+            ))}
+          </div>
         </div>
       </div>
-      <div>
-        <h3 style={{ marginBottom: 12, fontSize: 14 }}>Sizes SM - Primary</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, minmax(0, 1fr))', gap: 12 }}>
-          {colorOptions.map((color) => (
-            <Badge 
-              key={`sm-icon-${color}`} 
-              label="😊" 
-              color={color} 
-              style="primary" 
-              size="sm"
-              showIcon={true}
-              icon="😊"
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  )
+    );
+  }
 };
 
 export const Playground: Story = {};

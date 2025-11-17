@@ -34,7 +34,7 @@ export interface BadgeProps {
   showIcon?: boolean;
   /** Show a small dot indicator */
   showFlag?: boolean;
-  /** Optional custom icon node */
+  /** Optional custom icon node (React component, FontAwesome icon, or JSX element) */
   icon?: React.ReactNode;
   className?: string;
   onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void;
