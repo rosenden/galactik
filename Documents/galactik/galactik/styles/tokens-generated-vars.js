@@ -1,6 +1,6 @@
 /**
  * Auto-generated design tokens for JavaScript/TypeScript
- * Generated on 2025-11-17T10:22:01.422Z
+ * Generated on 2025-11-17T10:30:41.074Z
  * DO NOT EDIT MANUALLY - Run: node scripts/generate-tokens.mjs
  */
 
