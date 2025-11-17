@@ -23,7 +23,7 @@ async function handleFetchFile(fileKey) {
   const headers = {
     'Accept': 'application/json'
   };
-  if (TOKEN) headers['Authorization'] = `Bearer ${TOKEN}`;
+  if (TOKEN) headers['X-Figma-Token'] = TOKEN;
 
   try {
     const resp = await fetch(url, { headers });

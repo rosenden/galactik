@@ -27,7 +27,7 @@ if (!TOKEN || !FILE_KEY) {
 
 async function api(path) {
   const res = await fetch(`https://api.figma.com/v1/${path}`, {
-    headers: { Authorization: `Bearer ${TOKEN}` },
+    headers: { 'X-Figma-Token': TOKEN },
   });
   const json = await res.json();
   if (!res.ok) {
