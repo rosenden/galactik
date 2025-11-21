@@ -8,7 +8,7 @@ import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 export namespace Components {
     interface GalAvatar {
         /**
-          * Texte alternatif personnalisé
+          * Custom alt text
          */
         "alt"?: string;
         /**
@@ -20,19 +20,19 @@ export namespace Components {
          */
         "icon"?: string;
         /**
-          * Nom complet utilisé pour générer les initiales
+          * Full name used to generate initials
          */
         "name": string;
         /**
-          * Taille du composant
+          * Component size
          */
         "size": Size;
         /**
-          * URL de l'image
+          * Image URL
          */
         "src"?: string;
         /**
-          * Statut affiché dans la pastille
+          * Status displayed in the badge
          */
         "status": Status;
         /**
@@ -142,19 +142,19 @@ export namespace Components {
     }
     interface GalLabel {
         /**
-          * Palette alignée sur la version React
+          * Palette aligned with the React implementation
          */
         "color": LabelColor;
         /**
-          * Classe Font Awesome optionnelle pour l’icône
+          * Optional Font Awesome class for the icon
          */
         "icon"?: string;
         /**
-          * Taille du label
+          * Label size
          */
         "size": LabelSize;
         /**
-          * Texte affiché dans le label (fallback si aucun slot)
+          * Text rendered inside the label (fallback when no slot)
          */
         "text": string;
     }
@@ -212,7 +212,7 @@ declare global {
 declare namespace LocalJSX {
     interface GalAvatar {
         /**
-          * Texte alternatif personnalisé
+          * Custom alt text
          */
         "alt"?: string;
         /**
@@ -224,19 +224,19 @@ declare namespace LocalJSX {
          */
         "icon"?: string;
         /**
-          * Nom complet utilisé pour générer les initiales
+          * Full name used to generate initials
          */
         "name"?: string;
         /**
-          * Taille du composant
+          * Component size
          */
         "size"?: Size;
         /**
-          * URL de l'image
+          * Image URL
          */
         "src"?: string;
         /**
-          * Statut affiché dans la pastille
+          * Status displayed in the badge
          */
         "status"?: Status;
         /**
@@ -350,19 +350,19 @@ declare namespace LocalJSX {
     }
     interface GalLabel {
         /**
-          * Palette alignée sur la version React
+          * Palette aligned with the React implementation
          */
         "color"?: LabelColor;
         /**
-          * Classe Font Awesome optionnelle pour l’icône
+          * Optional Font Awesome class for the icon
          */
         "icon"?: string;
         /**
-          * Taille du label
+          * Label size
          */
         "size"?: LabelSize;
         /**
-          * Texte affiché dans le label (fallback si aucun slot)
+          * Text rendered inside the label (fallback when no slot)
          */
         "text"?: string;
     }

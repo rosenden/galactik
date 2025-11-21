@@ -8,7 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface GalAvatar {
         /**
-          * Custom alternative text
+          * Custom alt text
          */
         "alt"?: string;
         /**
@@ -24,15 +24,15 @@ export namespace Components {
          */
         "name": string;
         /**
-          * Taille du composant
+          * Component size
          */
         "size": Size;
         /**
-          * URL de l'image
+          * Image URL
          */
         "src"?: string;
         /**
-          * Status displayed inside the badge
+          * Status displayed in the badge
          */
         "status": Status;
         /**
@@ -150,7 +150,7 @@ export namespace Components {
          */
         "icon"?: string;
         /**
-          * Taille du label
+          * Label size
          */
         "size": LabelSize;
         /**
@@ -212,7 +212,7 @@ declare global {
 declare namespace LocalJSX {
     interface GalAvatar {
         /**
-          * Custom alternative text
+          * Custom alt text
          */
         "alt"?: string;
         /**
@@ -228,15 +228,15 @@ declare namespace LocalJSX {
          */
         "name"?: string;
         /**
-          * Taille du composant
+          * Component size
          */
         "size"?: Size;
         /**
-          * URL de l'image
+          * Image URL
          */
         "src"?: string;
         /**
-          * Status displayed inside the badge
+          * Status displayed in the badge
          */
         "status"?: Status;
         /**
@@ -358,7 +358,7 @@ declare namespace LocalJSX {
          */
         "icon"?: string;
         /**
-          * Taille du label
+          * Label size
          */
         "size"?: LabelSize;
         /**

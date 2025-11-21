@@ -2,13 +2,13 @@ type LabelSize = 'small' | 'medium';
 type LabelColor = 'sage' | 'black' | 'success' | 'error' | 'warning' | 'info';
 export declare class GalLabel {
   el: HTMLElement;
-  /** Texte affiché dans le label (fallback si aucun slot) */
+  /** Text rendered inside the label (fallback when no slot) */
   text: string;
-  /** Taille du label */
+  /** Label size */
   size: LabelSize;
-  /** Palette alignée sur la version React */
+  /** Palette aligned with the React implementation */
   color: LabelColor;
-  /** Classe Font Awesome optionnelle pour l’icône */
+  /** Optional Font Awesome class for the icon */
   icon?: string;
   hasIconSlot: boolean;
   hasTextSlot: boolean;

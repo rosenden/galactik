@@ -3,21 +3,21 @@ type AvatarVariant = 'primary' | 'secondary';
 type AvatarColor = 'sage' | 'almond' | 'pink' | 'grey' | 'info' | 'error' | 'success' | 'warning' | 'indigo' | 'yellow' | 'cherry' | 'cyan' | 'orange' | 'green' | 'blue' | 'red';
 type Status = 'online' | 'away' | 'busy' | 'offline' | 'none';
 export declare class GalAvatar {
-  /** Nom complet utilisé pour générer les initiales */
+  /** Full name used to generate initials */
   name: string;
-  /** URL de l'image */
+  /** Image URL */
   src?: string;
   /** Font Awesome icon class (ex: "fas fa-user") */
   icon?: string;
-  /** Texte alternatif personnalisé */
+  /** Custom alt text */
   alt?: string;
-  /** Taille du composant */
+  /** Component size */
   size: Size;
   /** Variant: primary or secondary */
   variant: AvatarVariant;
   /** Avatar color (semantic tokens) */
   avatarColor: AvatarColor;
-  /** Statut affiché dans la pastille */
+  /** Status displayed in the badge */
   status: Status;
   private getInitials;
   private getAlt;

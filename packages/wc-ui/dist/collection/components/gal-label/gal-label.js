@@ -80,7 +80,7 @@ export class GalLabel {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Texte affich\u00E9 dans le label (fallback si aucun slot)"
+          "text": "Text rendered inside the label (fallback when no slot)"
         },
         "attribute": "text",
         "reflect": false,
@@ -102,7 +102,7 @@ export class GalLabel {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Taille du label"
+          "text": "Label size"
         },
         "attribute": "size",
         "reflect": false,
@@ -124,7 +124,7 @@ export class GalLabel {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Palette align\u00E9e sur la version React"
+          "text": "Palette aligned with the React implementation"
         },
         "attribute": "color",
         "reflect": false,
@@ -142,7 +142,7 @@ export class GalLabel {
         "optional": true,
         "docs": {
           "tags": [],
-          "text": "Classe Font Awesome optionnelle pour l\u2019ic\u00F4ne"
+          "text": "Optional Font Awesome class for the icon"
         },
         "attribute": "icon",
         "reflect": false

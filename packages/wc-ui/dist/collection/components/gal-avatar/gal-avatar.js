@@ -83,9 +83,9 @@ export class GalAvatar {
     if (this.alt)
       return this.alt;
     if (this.name)
-      return `Avatar de ${this.name}`;
+      return `Avatar for ${this.name}`;
     if (this.icon)
-      return 'Avatar avec icône';
+      return 'Avatar with icon';
     return 'Avatar';
   }
   render() {
@@ -132,7 +132,7 @@ export class GalAvatar {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Nom complet utilis\u00E9 pour g\u00E9n\u00E9rer les initiales"
+          "text": "Full name used to generate initials"
         },
         "attribute": "name",
         "reflect": false,
@@ -150,7 +150,7 @@ export class GalAvatar {
         "optional": true,
         "docs": {
           "tags": [],
-          "text": "URL de l'image"
+          "text": "Image URL"
         },
         "attribute": "src",
         "reflect": false
@@ -184,7 +184,7 @@ export class GalAvatar {
         "optional": true,
         "docs": {
           "tags": [],
-          "text": "Texte alternatif personnalis\u00E9"
+          "text": "Custom alt text"
         },
         "attribute": "alt",
         "reflect": false
@@ -205,7 +205,7 @@ export class GalAvatar {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Taille du composant"
+          "text": "Component size"
         },
         "attribute": "size",
         "reflect": false,
@@ -271,7 +271,7 @@ export class GalAvatar {
         "optional": false,
         "docs": {
           "tags": [],
-          "text": "Statut affich\u00E9 dans la pastille"
+          "text": "Status displayed in the badge"
         },
         "attribute": "status",
         "reflect": false,

@@ -89,9 +89,9 @@ const GalAvatar$1 = /*@__PURE__*/ proxyCustomElement(class GalAvatar extends HTM
     if (this.alt)
       return this.alt;
     if (this.name)
-      return `Avatar de ${this.name}`;
+      return `Avatar for ${this.name}`;
     if (this.icon)
-      return 'Avatar avec icône';
+      return 'Avatar with icon';
     return 'Avatar';
   }
   render() {
