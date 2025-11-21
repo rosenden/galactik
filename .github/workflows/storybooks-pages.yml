@@ -18,7 +18,7 @@ jobs:
       - run: pnpm run build:storybooks
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/storybooks
+          path: dist/storybooks/portal
   deploy:
     needs: build
     runs-on: ubuntu-latest
