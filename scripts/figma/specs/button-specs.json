@@ -1,0 +1,315 @@
+{
+  "componentName": "Button",
+  "figmaFile": "zB9JxH85SZ9yDCUYw8CUwU",
+  "source": "Figma OneChaps Design System",
+  "extractedAt": "2025-11-18T00:00:00.000Z",
+  "description": "Button component with 4 color variants and 3 style variants (filled, outlined, text-only). Each variant supports multiple sizes and icon configurations.",
+  "colorVariants": {
+    "primary": {
+      "name": "Primary (Sage/Dark)",
+      "description": "Main action button using sage dark color - highest emphasis",
+      "colors": {
+        "base": "var(--sage-800)",
+        "hover": "var(--sage-950)",
+        "pressed": "var(--sage-600)",
+        "text": "var(--abs-pure-white)",
+        "border": "var(--sage-800)"
+      }
+    },
+    "secondary": {
+      "name": "Secondary (Almond/Green)",
+      "description": "Secondary actions using almond green color - medium emphasis",
+      "colors": {
+        "base": "var(--almond-600)",
+        "hover": "var(--almond-700)",
+        "pressed": "var(--almond-500)",
+        "text": "var(--abs-pure-white)",
+        "border": "var(--almond-600)"
+      }
+    },
+    "light-accent": {
+      "name": "Light Accent (Sage/Light)",
+      "description": "Subtle emphasis using light sage/green color",
+      "colors": {
+        "base": "var(--sage-100)",
+        "hover": "var(--sage-200)",
+        "pressed": "var(--sage-300)",
+        "text": "var(--sage-800)",
+        "border": "var(--sage-200)"
+      }
+    },
+    "accent": {
+      "name": "Accent (Pink/Purple)",
+      "description": "Special emphasis or promotional actions using pink/purple color",
+      "colors": {
+        "base": "var(--pink-700)",
+        "hover": "var(--pink-800)",
+        "pressed": "var(--pink-600)",
+        "text": "var(--abs-pure-white)",
+        "border": "var(--pink-700)"
+      }
+    }
+  },
+  "styleVariants": {
+    "filled": {
+      "name": "Filled (Primary Style)",
+      "description": "Solid background button - most prominent",
+      "specs": {
+        "background": "colorVariant.base",
+        "color": "colorVariant.text",
+        "border": "none",
+        "borderRadius": "var(--radius-rounded)",
+        "fontWeight": "var(--font-weight-semibold)",
+        "transition": "all 0.2s ease",
+        "states": {
+          "hover": {
+            "background": "colorVariant.hover"
+          },
+          "pressed": {
+            "background": "colorVariant.pressed"
+          },
+          "focus": {
+            "outline": "2px solid colorVariant.base",
+            "outlineOffset": "2px"
+          },
+          "disabled": {
+            "background": "var(--color-bg-neutral-disabled)",
+            "color": "var(--color-font-neutral-muted)",
+            "cursor": "not-allowed",
+            "opacity": "0.5"
+          }
+        }
+      }
+    },
+    "outlined": {
+      "name": "Outlined (Secondary Style)",
+      "description": "Outlined button with transparent background - medium prominence",
+      "specs": {
+        "background": "transparent",
+        "color": "colorVariant.text (for dark variants) or colorVariant.base (for light variants)",
+        "border": "var(--stroke-xs) solid colorVariant.border",
+        "borderRadius": "var(--radius-rounded)",
+        "fontWeight": "var(--font-weight-semibold)",
+        "transition": "all 0.2s ease",
+        "states": {
+          "hover": {
+            "background": "rgba(colorVariant.base, 0.08)",
+            "borderColor": "colorVariant.hover"
+          },
+          "pressed": {
+            "background": "rgba(colorVariant.base, 0.16)",
+            "borderColor": "colorVariant.pressed"
+          },
+          "focus": {
+            "outline": "2px solid colorVariant.base",
+            "outlineOffset": "2px"
+          },
+          "disabled": {
+            "background": "transparent",
+            "color": "var(--color-font-neutral-muted)",
+            "borderColor": "var(--color-bg-neutral-disabled)",
+            "cursor": "not-allowed",
+            "opacity": "0.5"
+          }
+        }
+      }
+    },
+    "text": {
+      "name": "Text (Tertiary Style)",
+      "description": "Text-only button without background or border - lowest prominence",
+      "specs": {
+        "background": "transparent",
+        "color": "colorVariant.base",
+        "border": "none",
+        "borderRadius": "var(--radius-rounded)",
+        "fontWeight": "var(--font-weight-semibold)",
+        "transition": "all 0.2s ease",
+        "states": {
+          "hover": {
+            "background": "rgba(colorVariant.base, 0.08)"
+          },
+          "pressed": {
+            "background": "rgba(colorVariant.base, 0.16)"
+          },
+          "focus": {
+            "outline": "2px solid colorVariant.base",
+            "outlineOffset": "2px"
+          },
+          "disabled": {
+            "background": "transparent",
+            "color": "var(--color-font-neutral-muted)",
+            "cursor": "not-allowed",
+            "opacity": "0.5"
+          }
+        }
+      }
+    }
+  },
+  "sizes": {
+    "large": {
+      "height": "44px",
+      "minHeight": "var(--row-h-lg)",
+      "paddingHorizontal": "var(--space-4xl)",
+      "paddingVertical": "var(--space-xl)",
+      "fontSize": "var(--font-size-lg)",
+      "lineHeight": "var(--line-height-4)",
+      "gap": "var(--space-sm)",
+      "iconSize": "var(--icon-l)",
+      "borderRadius": "var(--radius-rounded)"
+    },
+    "medium": {
+      "height": "36px",
+      "minHeight": "var(--row-h-md)",
+      "paddingHorizontal": "var(--space-3xl)",
+      "paddingVertical": "var(--space-lg)",
+      "fontSize": "var(--font-size-base)",
+      "lineHeight": "var(--line-height-3)",
+      "gap": "var(--space-xs)",
+      "iconSize": "var(--icon-md)",
+      "borderRadius": "var(--radius-rounded)"
+    },
+    "small": {
+      "height": "24px",
+      "minHeight": "var(--row-h-sm)",
+      "paddingHorizontal": "var(--space-lg)",
+      "paddingVertical": "var(--space-xs)",
+      "fontSize": "var(--font-size-sm)",
+      "lineHeight": "var(--line-height-2)",
+      "gap": "var(--space-3xs)",
+      "iconSize": "var(--icon-xs)",
+      "borderRadius": "var(--radius-rounded)"
+    },
+    "icon-only": {
+      "description": "Square button with only an icon, no text",
+      "large": {
+        "width": "44px",
+        "height": "44px",
+        "padding": "var(--space-lg)",
+        "iconSize": "var(--icon-l)"
+      },
+      "medium": {
+        "width": "36px",
+        "height": "36px",
+        "padding": "var(--space-sm)",
+        "iconSize": "var(--icon-md)"
+      },
+      "small": {
+        "width": "24px",
+        "height": "24px",
+        "padding": "var(--space-3xs)",
+        "iconSize": "var(--icon-xs)"
+      }
+    }
+  },
+  "iconPositions": {
+    "left": {
+      "description": "Icon positioned before text",
+      "order": "icon, text"
+    },
+    "right": {
+      "description": "Icon positioned after text",
+      "order": "text, icon"
+    },
+    "both": {
+      "description": "Icons on both sides of text",
+      "order": "icon-left, text, icon-right"
+    },
+    "only": {
+      "description": "Icon-only button without text",
+      "order": "icon"
+    }
+  },
+  "commonStyles": {
+    "fontFamily": "var(--font-family-base)",
+    "fontWeight": "var(--font-weight-semibold)",
+    "cursor": "pointer",
+    "display": "inline-flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "userSelect": "none",
+    "textDecoration": "none",
+    "outline": "none",
+    "transition": "all 0.2s ease",
+    "whiteSpace": "nowrap"
+  },
+  "implementation": {
+    "props": {
+      "variant": {
+        "type": "string",
+        "values": ["filled", "outlined", "text"],
+        "default": "filled",
+        "description": "Style variant of the button"
+      },
+      "colorVariant": {
+        "type": "string",
+        "values": ["primary", "secondary", "light-accent", "accent"],
+        "default": "primary",
+        "description": "Color theme of the button"
+      },
+      "size": {
+        "type": "string",
+        "values": ["small", "medium", "large"],
+        "default": "medium",
+        "description": "Size of the button"
+      },
+      "iconLeft": {
+        "type": "ReactNode",
+        "optional": true,
+        "description": "Icon to display on the left side"
+      },
+      "iconRight": {
+        "type": "ReactNode",
+        "optional": true,
+        "description": "Icon to display on the right side"
+      },
+      "iconOnly": {
+        "type": "boolean",
+        "default": false,
+        "description": "If true, only shows icon without text"
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false,
+        "description": "If true, button is disabled"
+      },
+      "loading": {
+        "type": "boolean",
+        "default": false,
+        "optional": true,
+        "description": "If true, shows loading spinner"
+      },
+      "fullWidth": {
+        "type": "boolean",
+        "default": false,
+        "optional": true,
+        "description": "If true, button takes full width of container"
+      },
+      "onClick": {
+        "type": "function",
+        "description": "Click handler"
+      },
+      "type": {
+        "type": "string",
+        "values": ["button", "submit", "reset"],
+        "default": "button",
+        "description": "HTML button type"
+      }
+    }
+  },
+  "usage": {
+    "primary-filled": "Use for the main call-to-action on a page. There should typically be only one primary filled button visible at a time.",
+    "secondary-filled": "Use for important secondary actions that need high visibility.",
+    "light-accent-filled": "Use for subtle but important actions that shouldn't compete with primary actions.",
+    "accent-filled": "Use to draw attention to special features, promotional actions, or unique calls-to-action.",
+    "outlined": "Use for secondary actions that are still important but not the primary focus. Can be used multiple times on a page.",
+    "text": "Use for less important actions or when you need a button with minimal visual weight. Good for inline actions, navigation, or tertiary actions.",
+    "icon-only": "Use when space is limited or for common actions that are universally understood (e.g., close, menu, settings)."
+  },
+  "examples": {
+    "basic": "<Button variant='filled' colorVariant='primary' size='medium'>Click me</Button>",
+    "withIcon": "<Button variant='filled' colorVariant='secondary' iconLeft={<Icon />}>Save</Button>",
+    "iconOnly": "<Button variant='outlined' colorVariant='accent' iconOnly size='small'><Icon /></Button>",
+    "disabled": "<Button variant='filled' colorVariant='primary' disabled>Disabled</Button>",
+    "fullWidth": "<Button variant='filled' colorVariant='primary' fullWidth>Full Width</Button>"
+  }
+}

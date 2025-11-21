@@ -1,0 +1,45 @@
+{
+  "component": "oc-bullet",
+  "description": "Bullet point component from Figma OneChaps Design System",
+  "extractedAt": "2025-11-17T23:39:25.604Z",
+  "sizes": {
+    "xsmall": {
+      "width": "6px",
+      "height": "6px"
+    },
+    "small": {
+      "width": "10px",
+      "height": "10px"
+    },
+    "medium": {
+      "width": "18px",
+      "height": "18px"
+    }
+  },
+  "structure": {
+    "medium": { "outerRadius": "9px", "innerRadius": "5px" },
+    "small": { "outerRadius": "5px", "innerRadius": "3px" },
+    "xsmall": { "singleRadius": "3px" }
+  },
+  "variants": {
+    "primary": {
+      "description": "Filled bullet with solid color (inner circle)"
+    },
+    "secondary": {
+      "description": "Light bullet with light color (outer circle)"
+    }
+  },
+  "colors": {
+    "sage": { "light": "#D1E1DD", "dark": "#445556" },
+    "pink": { "light": "#EFC9F3", "dark": "#4A325B" },
+    "almond": { "light": "#BBDFCA", "dark": "#1E4737" },
+    "grey": { "light": "#EFF2F6", "dark": "#36383E" },
+    "success": { "light": "#C4D6C0", "dark": "#1F341B" },
+    "warning": { "light": "#FFDDC6", "dark": "#85461E" },
+    "info": { "light": "#C5DBEA", "dark": "#253846" },
+    "error": { "light": "#FFBEBF", "dark": "#701C1D" }
+  },
+  "figmaNodeId": "3484:997",
+  "figmaFileKey": "zB9JxH85SZ9yDCUYw8CUwU",
+  "source": "Figma REST API"
+}

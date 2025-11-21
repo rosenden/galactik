@@ -1,0 +1,23 @@
+{
+  "name": "storybook-vue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "storybook": "storybook dev -p 6007",
+    "build-storybook": "storybook build -o ../../dist/storybooks/vue"
+  },
+  "dependencies": {
+    "@galactik/storybook-config": "workspace:*",
+    "vue": "^3.4.38",
+    "vue-ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "8.2.7",
+    "@storybook/addon-toolbars": "8.2.7",
+    "@storybook/vue3-vite": "8.2.7",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "8.2.7",
+    "typescript": "5.2.2",
+    "vite": "^5.0.0"
+  }
+}

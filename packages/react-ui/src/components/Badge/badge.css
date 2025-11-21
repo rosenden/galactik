@@ -1,0 +1,43 @@
+.qa-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3xs, 4px);
+  border-radius: 9999px;
+  border: 0;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  box-sizing: border-box;
+  aspect-ratio: 1 / 1;
+}
+
+.qa-badge__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.qa-badge__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Sizes: fixed pixel dimensions for circular badges */
+.qa-badge--xs { 
+  width: 18px; 
+  height: 18px; 
+  font-size: 10px;
+}
+.qa-badge--sm { 
+  width: 24px; 
+  height: 24px; 
+  font-size: 12px;
+}
+.qa-badge--lg { 
+  width: 36px; 
+  height: 36px; 
+  font-size: 14px;
+}

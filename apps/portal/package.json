@@ -1,0 +1,27 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "storybook": "storybook dev -p 6010",
+    "build-storybook": "storybook build -o ../../dist/storybooks/portal"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "8.2.7",
+    "@storybook/addon-toolbars": "8.2.7",
+    "@storybook/builder-vite": "8.2.7",
+    "@storybook/react-vite": "8.2.7",
+    "storybook": "8.2.7",
+    "typescript": "5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/pro-regular-svg-icons": "^7.1.0",
+    "@fortawesome/react-fontawesome": "^3.1.0",
+    "@galactik/storybook-config": "workspace:*",
+    "@storybook/react": "8.2.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

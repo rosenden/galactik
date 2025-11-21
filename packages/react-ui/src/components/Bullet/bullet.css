@@ -1,0 +1,35 @@
+/**
+ * Bullet Component Styles
+ * Synchronized with Figma Design System
+ * Sizes: xsmall (6px), small (10px), medium (18px)
+ */
+
+.oc-bullet {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.oc-bullet--xsmall {
+  width: 6px;
+  height: 6px;
+}
+
+.oc-bullet--small {
+  width: 10px;
+  height: 10px;
+}
+
+.oc-bullet--medium {
+  width: 18px;
+  height: 18px;
+}
+
+/* Interactive state */
+.oc-bullet[onclick]:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.oc-bullet[onclick]:active {
+  transform: scale(0.95);
+}

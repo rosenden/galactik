@@ -1,0 +1,495 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+/**
+ * Button Component - Synchronized with Figma Design System
+ * 
+ * @example
+ * ```html
+ * <!-- Primary filled button -->
+ * <oc-button variant="filled" colorVariant="primary" size="medium">
+ *   Click me
+ * </oc-button>
+ * 
+ * <!-- Secondary outlined button with icon -->
+ * <oc-button variant="outlined" colorVariant="secondary">
+ *   <i class="fa fa-save" slot="icon-left"></i>
+ *   Save
+ * </oc-button>
+ * 
+ * <!-- Text button -->
+ * <oc-button variant="text" colorVariant="primary" size="small">
+ *   Cancel
+ * </oc-button>
+ * 
+ * <!-- Disabled button -->
+ * <oc-button variant="filled" colorVariant="primary" [disabled]="true">
+ *   Disabled
+ * </oc-button>
+ * ```
+ */
+
+export type ButtonVariant = 'filled' | 'outlined' | 'text';
+export type ButtonColorVariant = 'primary' | 'secondary' | 'light-accent' | 'accent';
+export type ButtonSize = 'small' | 'medium' | 'large';
+
+@Component({
+  selector: 'oc-button',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <button
+      [type]="type"
+      [disabled]="disabled || loading"
+      [class]="getClasses()"
+      [ngStyle]="customStyles"
+      (click)="handleClick($event)">
+      <span *ngIf="loading" class="oc-button__spinner" aria-hidden="true">
+        <i class="fa-solid fa-spinner oc-button__spinner-icon"></i>
+      </span>
+      <ng-content></ng-content>
+    </button>
+  `,
+  styles: [`
+    /* Button Component Styles - Synchronized with Figma Design System */
+    .oc-button {
+      font-family: var(--font-family-base);
+      font-weight: var(--font-weight-semibold);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      user-select: none;
+      text-decoration: none;
+      outline: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      border: none;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Sizes */
+    .oc-button--large {
+      min-height: var(--row-h-lg);
+      padding: var(--space-xl) var(--space-4xl);
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-4);
+      border-radius: var(--radius-rounded);
+    }
+
+    .oc-button--medium {
+      min-height: var(--row-h-md);
+      padding: var(--space-lg) var(--space-3xl);
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-3);
+      border-radius: var(--radius-rounded);
+    }
+
+    .oc-button--small {
+      min-height: var(--row-h-sm);
+      padding: var(--space-xs) var(--space-lg);
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-2);
+      border-radius: var(--radius-rounded);
+    }
+
+    /* Icon-only sizes */
+    .oc-button--icon-only.oc-button--large {
+      width: var(--row-h-lg);
+      height: var(--row-h-lg);
+      padding: var(--space-lg);
+    }
+
+    .oc-button--icon-only.oc-button--medium {
+      width: var(--row-h-md);
+      height: var(--row-h-md);
+      padding: var(--space-sm);
+    }
+
+    .oc-button--icon-only.oc-button--small {
+      width: var(--row-h-sm);
+      height: var(--row-h-sm);
+      padding: var(--space-3xs);
+    }
+
+    /* Full width */
+    .oc-button--full-width {
+      width: 100%;
+    }
+
+    /* ============================================ */
+    /* PRIMARY COLOR VARIANT (Sage Dark) */
+    /* ============================================ */
+
+    /* Filled Primary */
+    .oc-button--filled.oc-button--primary {
+      background: var(--color-bg-primary-base);
+      color: var(--color-font-primary-dark);
+    }
+
+    .oc-button--filled.oc-button--primary:hover:not(:disabled) {
+      background: var(--color-bg-primary-hovered);
+    }
+
+    .oc-button--filled.oc-button--primary:active:not(:disabled) {
+      background: var(--color-bg-primary-pressed);
+    }
+
+    .oc-button--filled.oc-button--primary:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* Outlined Primary */
+    .oc-button--outlined.oc-button--primary {
+      background: transparent;
+      color: var(--color-font-primary-base);
+      border: var(--stroke-xs) solid var(--color-border-base);
+    }
+
+    .oc-button--outlined.oc-button--primary:hover:not(:disabled) {
+      background: var(--color-bg-primary-lightest);
+      border-color: var(--color-bg-primary-base);
+    }
+
+    .oc-button--outlined.oc-button--primary:active:not(:disabled) {
+      background: var(--color-bg-primary-light);
+      border-color: var(--color-bg-primary-hovered);
+    }
+
+    .oc-button--outlined.oc-button--primary:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* Text Primary */
+    .oc-button--text.oc-button--primary {
+      background: transparent;
+      color: var(--color-font-primary-base);
+    }
+
+    .oc-button--text.oc-button--primary:hover:not(:disabled) {
+      background: var(--color-bg-primary-lightest);
+    }
+
+    .oc-button--text.oc-button--primary:active:not(:disabled) {
+      background: var(--color-bg-primary-light);
+    }
+
+    .oc-button--text.oc-button--primary:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* ============================================ */
+    /* SECONDARY COLOR VARIANT (Almond Green) */
+    /* ============================================ */
+
+    /* Filled Secondary */
+    .oc-button--filled.oc-button--secondary {
+      background: var(--color-bg-secondary-base);
+      color: var(--color-font-primary-dark);
+    }
+
+    .oc-button--filled.oc-button--secondary:hover:not(:disabled) {
+      background: var(--color-bg-secondary-base-alt);
+    }
+
+    .oc-button--filled.oc-button--secondary:active:not(:disabled) {
+      background: var(--color-bg-secondary-active);
+    }
+
+    .oc-button--filled.oc-button--secondary:focus-visible {
+      outline: 2px solid var(--color-bg-secondary-base);
+      outline-offset: 2px;
+    }
+
+    /* Outlined Secondary */
+    .oc-button--outlined.oc-button--secondary {
+      background: transparent;
+      color: var(--color-font-secondary-base);
+      border: var(--stroke-xs) solid var(--color-bg-secondary-base);
+    }
+
+    .oc-button--outlined.oc-button--secondary:hover:not(:disabled) {
+      background: var(--color-bg-secondary-lightest);
+      border-color: var(--color-bg-secondary-base-alt);
+    }
+
+    .oc-button--outlined.oc-button--secondary:active:not(:disabled) {
+      background: var(--color-bg-secondary-lighter);
+      border-color: var(--color-bg-secondary-active);
+    }
+
+    .oc-button--outlined.oc-button--secondary:focus-visible {
+      outline: 2px solid var(--color-bg-secondary-base);
+      outline-offset: 2px;
+    }
+
+    /* Text Secondary */
+    .oc-button--text.oc-button--secondary {
+      background: transparent;
+      color: var(--color-font-secondary-base);
+    }
+
+    .oc-button--text.oc-button--secondary:hover:not(:disabled) {
+      background: var(--color-bg-secondary-lightest);
+    }
+
+    .oc-button--text.oc-button--secondary:active:not(:disabled) {
+      background: var(--color-bg-secondary-lighter);
+    }
+
+    .oc-button--text.oc-button--secondary:focus-visible {
+      outline: 2px solid var(--color-bg-secondary-base);
+      outline-offset: 2px;
+    }
+
+    /* ============================================ */
+    /* LIGHT ACCENT COLOR VARIANT (Sage Light) */
+    /* ============================================ */
+
+    /* Filled Light Accent */
+    .oc-button--filled.oc-button--light-accent {
+      background: var(--color-bg-primary-light);
+      color: var(--color-font-primary-base);
+    }
+
+    .oc-button--filled.oc-button--light-accent:hover:not(:disabled) {
+      background: var(--color-bg-primary-lighter);
+    }
+
+    .oc-button--filled.oc-button--light-accent:active:not(:disabled) {
+      background: var(--color-bg-primary-lightest);
+    }
+
+    .oc-button--filled.oc-button--light-accent:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* Outlined Light Accent */
+    .oc-button--outlined.oc-button--light-accent {
+      background: transparent;
+      color: var(--color-font-primary-base);
+      border: var(--stroke-xs) solid var(--color-bg-primary-lighter);
+    }
+
+    .oc-button--outlined.oc-button--light-accent:hover:not(:disabled) {
+      background: var(--color-bg-primary-lightest);
+      border-color: var(--color-bg-primary-light);
+    }
+
+    .oc-button--outlined.oc-button--light-accent:active:not(:disabled) {
+      background: var(--color-bg-primary-lighter);
+      border-color: var(--color-bg-primary-base);
+    }
+
+    .oc-button--outlined.oc-button--light-accent:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* Text Light Accent */
+    .oc-button--text.oc-button--light-accent {
+      background: transparent;
+      color: var(--color-font-primary-base);
+    }
+
+    .oc-button--text.oc-button--light-accent:hover:not(:disabled) {
+      background: var(--color-bg-primary-lightest);
+    }
+
+    .oc-button--text.oc-button--light-accent:active:not(:disabled) {
+      background: var(--color-bg-primary-lighter);
+    }
+
+    .oc-button--text.oc-button--light-accent:focus-visible {
+      outline: 2px solid var(--color-bg-primary-base);
+      outline-offset: 2px;
+    }
+
+    /* ============================================ */
+    /* ACCENT COLOR VARIANT (Pink/Purple) */
+    /* ============================================ */
+
+    /* Filled Accent */
+    .oc-button--filled.oc-button--accent {
+      background: var(--color-bg-accent-base-alt);
+      color: var(--color-font-primary-dark);
+    }
+
+    .oc-button--filled.oc-button--accent:hover:not(:disabled) {
+      background: var(--color-bg-accent-pressed);
+    }
+
+    .oc-button--filled.oc-button--accent:active:not(:disabled) {
+      background: var(--color-bg-accent-base);
+    }
+
+    .oc-button--filled.oc-button--accent:focus-visible {
+      outline: 2px solid var(--color-bg-accent-base-alt);
+      outline-offset: 2px;
+    }
+
+    /* Outlined Accent */
+    .oc-button--outlined.oc-button--accent {
+      background: transparent;
+      color: var(--color-font-accent-base);
+      border: var(--stroke-xs) solid var(--color-bg-accent-base-alt);
+    }
+
+    .oc-button--outlined.oc-button--accent:hover:not(:disabled) {
+      background: var(--color-bg-accent-hover);
+      border-color: var(--color-bg-accent-pressed);
+    }
+
+    .oc-button--outlined.oc-button--accent:active:not(:disabled) {
+      background: var(--color-bg-accent-base);
+      border-color: var(--color-bg-accent-base-alt);
+    }
+
+    .oc-button--outlined.oc-button--accent:focus-visible {
+      outline: 2px solid var(--color-bg-accent-base-alt);
+      outline-offset: 2px;
+    }
+
+    /* Text Accent */
+    .oc-button--text.oc-button--accent {
+      background: transparent;
+      color: var(--color-font-accent-base);
+    }
+
+    .oc-button--text.oc-button--accent:hover:not(:disabled) {
+      background: var(--color-bg-accent-hover);
+    }
+
+    .oc-button--text.oc-button--accent:active:not(:disabled) {
+      background: var(--color-bg-accent-base);
+    }
+
+    .oc-button--text.oc-button--accent:focus-visible {
+      outline: 2px solid var(--color-bg-accent-base-alt);
+      outline-offset: 2px;
+    }
+
+    /* ============================================ */
+    /* DISABLED STATE (all variants) */
+    /* ============================================ */
+
+    .oc-button:disabled,
+    .oc-button--loading {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .oc-button--filled:disabled {
+      background: var(--color-bg-neutral-disabled);
+      color: var(--color-font-neutral-muted);
+    }
+
+    .oc-button--outlined:disabled {
+      background: transparent;
+      color: var(--color-font-neutral-muted);
+      border-color: var(--color-bg-neutral-disabled);
+    }
+
+    .oc-button--text:disabled {
+      background: transparent;
+      color: var(--color-font-neutral-muted);
+    }
+
+    /* ============================================ */
+    /* LOADING STATE */
+    /* ============================================ */
+
+    .oc-button__spinner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .oc-button__spinner-icon {
+      display: inline-block;
+      animation: button-spin 1s linear infinite;
+    }
+
+    @keyframes button-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* ============================================ */
+    /* ICON STYLES */
+    /* ============================================ */
+
+    .oc-button__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .oc-button--large .oc-button__icon {
+      width: var(--icon-l);
+      height: var(--icon-l);
+    }
+
+    .oc-button--medium .oc-button__icon {
+      width: var(--icon-md);
+      height: var(--icon-md);
+    }
+
+    .oc-button--small .oc-button__icon {
+      width: var(--icon-xs);
+      height: var(--icon-xs);
+    }
+
+    /* ============================================ */
+    /* LABEL STYLES */
+    /* ============================================ */
+
+    .oc-button__label {
+      display: inline-block;
+    }
+  `]
+})
+export class ButtonComponent {
+  @Input() variant: ButtonVariant = 'filled';
+  @Input() colorVariant: ButtonColorVariant = 'primary';
+  @Input() size: ButtonSize = 'medium';
+  @Input() iconOnly = false;
+  @Input() disabled = false;
+  @Input() loading = false;
+  @Input() fullWidth = false;
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
+  @Input() className?: string;
+  @Input() customStyles?: Record<string, string>;
+
+  handleClick(event: MouseEvent): void {
+    if (!this.disabled && !this.loading) {
+      // Event will propagate naturally to parent
+    }
+  }
+
+  getClasses(): string {
+    const baseClass = 'oc-button';
+    const classes = [
+      baseClass,
+      `${baseClass}--${this.variant}`,
+      `${baseClass}--${this.colorVariant}`,
+      `${baseClass}--${this.size}`,
+      this.iconOnly ? `${baseClass}--icon-only` : '',
+      this.fullWidth ? `${baseClass}--full-width` : '',
+      this.loading ? `${baseClass}--loading` : '',
+      this.className || ''
+    ];
+
+    return classes.filter(Boolean).join(' ');
+  }
+}

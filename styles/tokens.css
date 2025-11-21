@@ -1,0 +1,324 @@
+/* 1) Import de la police définie dans les tokens */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap');
+
+/* 2) Reset léger & base typographique commune */
+:root,
+:root[data-theme='light'] {
+  --font-family-base: "Hanken Grotesk", Arial, Helvetica, sans-serif; /* d’après tes tokens */ 
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes (px) — xs→2xl (tes tokens: 11,12,14,16,20,24) */
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+
+  /* Line-height (px) — 1→6 (tes tokens) */
+  --line-height-1: 14px;
+  --line-height-2: 16px;
+  --line-height-3: 18px;
+  --line-height-4: 22px;
+  --line-height-5: 26px;
+  --line-height-6: 31px;
+
+  /* Spacing scale (px) — none, 4xs→7xl (tes tokens) */
+  --space-none: 0px;
+  --space-4xs: 2px;
+  --space-3xs: 4px;
+  --space-2xs: 6px;
+  --space-xs: 8px;
+  --space-sm: 10px;
+  --space-md: 12px;
+  --space-lg: 14px;
+  --space-xl: 16px;
+  --space-2xl: 20px;
+  --space-3xl: 24px;
+  --space-4xl: 28px;
+  --space-5xl: 32px;
+  --space-6xl: 36px;
+  --space-7xl: 40px;
+
+  /* Radius (px) — none→4xl + rounded */
+  --radius-none: 0px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 28px;
+  --radius-4xl: 32px;
+  --radius-rounded: 9999px;
+
+  /* Stroke width (px) */
+  --stroke-none: 0;
+  --stroke-2xs: 0.5px;
+  --stroke-xs: 1px;
+  --stroke-sm: 2px;
+  --stroke-md: 4px;
+
+  /* Blur (px) */
+  --blur-xs: 4px;
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+  --blur-xl: 24px;
+  --blur-2xl: 40px;
+  --blur-3xl: 64px;
+
+  /* Icon sizes (px) */
+  --icon-2xs: 12px;
+  --icon-xs: 14px;
+  --icon-md: 16px;
+  --icon-l: 20px;
+  --icon-xl: 24px;
+  --icon-xxl: 48px;
+
+  /* Row heights (px) */
+  --row-h-xs: 18px;
+  --row-h-sm: 24px;
+  --row-h-md: 36px;
+  --row-h-lg: 44px;
+}
+
+body,
+.sb-show-main,
+.sbdocs,
+.sbdocs-wrapper,
+.sbdocs-preview {
+  background-color: var(--color-background-surface);
+  color: var(--color-font-primary-base);
+  font-family: var(--font-family-base);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 3) Palette Onechaps-base (valeurs figées depuis tes tokens) */
+/* PINK */
+:root {
+  --pink-50:#fcf7fd; --pink-100:#faecfb; --pink-200:#efc9f3; --pink-300:#dbbade; --pink-400:#c9aacb;
+  --pink-500:#b896bb; --pink-600:#a582ab; --pink-700:#926e9b; --pink-800:#7f5a8b; --pink-900:#6c467b; --pink-950:#4a325b;
+
+  /* GREY */
+  --grey-50:#fdfefe; --grey-100:#f9fafb; --grey-200:#eff2f6; --grey-300:#b9c4d5; --grey-400:#97a6be;
+  --grey-500:#7685a2; --grey-600:#626c84; --grey-700:#4d5260; --grey-800:#36383e; --grey-900:#272b30; --grey-950:#171c1f;
+
+  /* YELLOW */
+  --yellow-50:#fef8ed; --yellow-100:#fdf2dc; --yellow-200:#fbe5b9; --yellow-300:#f8d795; --yellow-400:#f6ca72;
+  --yellow-500:#c89b40; --yellow-600:#9d7930; --yellow-700:#715621; --yellow-800:#5b4519; --yellow-900:#463411; --yellow-950:#30230a;
+
+  /* ORANGE */
+  --orange-50:#fff6f1; --orange-100:#ffeee2; --orange-200:#ffddc6; --orange-300:#ffcba9; --orange-400:#ffba8d;
+  --orange-500:#df884f; --orange-600:#be703c; --orange-700:#98552a; --orange-800:#85461e; --orange-900:#753a13; --orange-950:#592a0b;
+
+  /* GREEN */
+  --green-50:#f6faf5; --green-100:#e5eee3; --green-200:#c4d6c0; --green-300:#91b38b; --green-400:#709b67;
+  --green-500:#4e8344; --green-600:#3e6936; --green-700:#2f4f29; --green-800:#1f341b; --green-900:#172714; --green-950:#101a0e;
+
+  /* ABSOLUTE */
+  --abs-white:#f2f2f3; --abs-pure-white:#ffffff; --abs-black:#182021; --abs-transparent:rgba(255,255,255,0);
+
+  /* RED */
+  --red-50:#ffefef; --red-100:#ffdedf; --red-200:#ffbebf; --red-300:#ff9d9f; --red-400:#ff7d7f;
+  --red-500:#d64a4c; --red-600:#ad3739; --red-700:#852527; --red-800:#701c1d; --red-900:#5c1214; --red-950:#47090a;
+
+  /* CHERRY */
+  --cherry-50:#f8f0f1; --cherry-100:#f1e0e4; --cherry-200:#e2c1c8; --cherry-300:#d4a3ad; --cherry-400:#c58491;
+  --cherry-500:#bb6779; --cherry-600:#6e3d47; --cherry-700:#49282f; --cherry-800:#371e23; --cherry-900:#251418; --cherry-950:#120a0c;
+
+  /* INDIGO */
+  --indigo-50:#f2f4fc; --indigo-100:#e5e9f9; --indigo-200:#cbd4f2; --indigo-300:#b2beec; --indigo-400:#98a9e5;
+  --indigo-500:#6779bb; --indigo-600:#505f97; --indigo-700:#394673; --indigo-800:#2e3961; --indigo-900:#222c4f; --indigo-950:#171f3d;
+
+  /* BLUE */
+  --blue-50:#f1f6fa; --blue-100:#e2edf4; --blue-200:#c5dbea; --blue-300:#a9cadf; --blue-400:#8cb8d5;
+  --blue-500:#5a87a4; --blue-600:#45677e; --blue-700:#2f4859; --blue-800:#253846; --blue-900:#1a2833; --blue-950:#101920;
+
+  /* CYAN */
+  --cyan-50:#e6eff0; --cyan-100:#d4e3e4; --cyan-200:#b1cccd; --cyan-300:#8db4b5; --cyan-400:#6a9d9e;
+  --cyan-500:#468586; --cyan-600:#2a5050; --cyan-700:#1c3536; --cyan-800:#152828; --cyan-900:#0e1b1b; --cyan-950:#070d0d;
+
+  /* SAGE */
+  --sage-50:#f5f8f7; --sage-100:#e8f0ee; --sage-200:#d1e1dd; --sage-300:#a9c1b8; --sage-400:#7a9b95;
+  --sage-500:#607c7f; --sage-600:#5d7374; --sage-700:#4f6162; --sage-800:#445556; --sage-900:#374648; --sage-950:#2d393a; --sage-975:#222d30;
+
+  /* ALMOND */
+  --almond-50:#f1f8f4; --almond-100:#dcefe3; --almond-200:#bbdfca; --almond-300:#8ec7a9; --almond-400:#5fa884;
+  --almond-500:#3d8c69; --almond-600:#2c6f52; --almond-700:#235944; --almond-800:#1e4737; --almond-900:#193b2e; --almond-950:#0d211a;
+}
+
+/* 4) Thème LIGHT — variables sémantiques (mappées sur la palette) */
+/* Tes tokens “theme.Light” définissent primaires/secondaires, états, etc. :contentReference[oaicite:2]{index=2} */
+:root[data-theme="light"], :root {
+  /* Texte / Font */
+  --color-font-primary-dark: var(--abs-pure-white);
+  --color-font-primary-base: var(--sage-800);
+  --color-font-primary-hovered: var(--sage-900);
+  --color-font-primary-pressed: var(--sage-950);
+  --color-font-primary-light: var(--sage-200);
+
+  --color-font-secondary-base: var(--almond-800);
+  --color-font-secondary-hovered: var(--almond-900);
+  --color-font-secondary-pressed: var(--almond-950);
+  --color-font-secondary-base-alt: var(--almond-600);
+
+  --color-font-accent-base: var(--pink-950);
+  --color-font-accent-pressed: var(--pink-50);
+  --color-font-accent-light: var(--pink-200);
+  --color-font-accent-muted: var(--pink-800);
+
+  --color-font-neutral-muted: var(--grey-600);
+  --color-font-neutral-white: var(--abs-pure-white);
+  --color-font-neutral-black: var(--abs-black);
+  --color-font-neutral-base: var(--grey-800);
+  --color-font-neutral-light: var(--grey-200);
+
+  --color-font-warning-base: var(--orange-800);
+  --color-font-warning-light: var(--orange-200);
+  --color-font-warning-muted: var(--orange-600);
+
+  --color-font-info-base: var(--blue-800);
+  --color-font-info-light: var(--blue-200);
+  --color-font-info-muted: var(--blue-600);
+
+  --color-font-error-base: var(--red-800);
+  --color-font-error-light: var(--red-200);
+  --color-font-error-muted: var(--red-600);
+
+  --color-font-success-base: var(--green-800);
+  --color-font-success-light: var(--green-200);
+  --color-font-success-muted: var(--green-600);
+
+  --color-font-cherry-base: var(--cherry-800);
+  --color-font-cherry-muted: var(--cherry-600);
+
+  --color-font-indigo-base: var(--indigo-800);
+  --color-font-indigo-muted: var(--indigo-600);
+
+  --color-font-yellow-base: var(--yellow-800);
+  --color-font-yellow-muted: var(--yellow-700);
+
+  --color-font-cyan-base: var(--cyan-800);
+  --color-font-cyan-muted: var(--cyan-600);
+
+  --color-background-surface: var(--abs-pure-white);
+  --color-background-alt: var(--sage-50);
+  --color-border-base: var(--grey-300);
+
+  /* Background */
+  --color-bg-primary-base: var(--sage-800);
+  --color-bg-primary-hovered: var(--sage-950);
+  --color-bg-primary-pressed: var(--sage-300);
+  --color-bg-primary-light: var(--sage-200);
+  --color-bg-primary-lighter: var(--sage-100);
+  --color-bg-primary-lightest: var(--sage-50);
+
+  --color-bg-secondary-base: var(--almond-500);
+  --color-bg-secondary-base-alt: var(--almond-800);
+  --color-bg-secondary-active: var(--almond-300);
+  --color-bg-secondary-light: var(--almond-200);
+  --color-bg-secondary-lightest: var(--almond-50);
+  --color-bg-secondary-lighter: var(--almond-100);
+
+  --color-bg-accent-base: var(--pink-200);
+  --color-bg-accent-base-alt: var(--pink-800);
+  --color-bg-accent-hover: var(--pink-100);
+  --color-bg-accent-pressed: var(--pink-900);
+
+  --color-bg-neutral-base: var(--grey-100);
+  --color-bg-neutral-disabled: var(--grey-200);
+  --color-bg-neutral-white: var(--abs-pure-white);
+  --color-bg-neutral-base-alt: var(--grey-800);
+
+  --color-bg-warning-base: var(--orange-200);
+  --color-bg-warning-base-alt: var(--orange-600);
+
+  --color-bg-success-base: var(--green-200);
+  --color-bg-success-base-alt: var(--green-600);
+
+  --color-bg-info-base: var(--blue-200);
+  --color-bg-info-base-alt: var(--blue-600);
+
+  --color-bg-error-base: var(--red-200);
+  --color-bg-error-base-alt: var(--red-600);
+
+  --color-bg-cherry-base: var(--cherry-200);
+  --color-bg-cherry-base-alt: var(--cherry-600);
+
+  --color-bg-indigo-base: var(--indigo-600);
+  --color-bg-indigo-base-alt: var(--indigo-200);
+
+  --color-bg-yellow-base: var(--yellow-600);
+  --color-bg-yellow-base-alt: var(--yellow-200);
+
+  --color-bg-cyan-base: var(--cyan-600);
+  --color-bg-cyan-base-alt: var(--cyan-200);
+
+  /* Stroke / Focus */
+  --color-stroke-focus: var(--pink-700);
+
+  --color-stroke-primary-base: var(--sage-800);
+  --color-stroke-primary-hovered: var(--sage-900);
+  --color-stroke-primary-pressed: var(--sage-950);
+  --color-stroke-primary-light: var(--sage-300);
+  --color-stroke-primary-lighter: var(--sage-200);
+
+  --color-stroke-secondary-base: var(--almond-600);
+  --color-stroke-secondary-dark: var(--almond-800);
+
+  --color-stroke-accent-base: var(--pink-900);
+  --color-stroke-yellow-base: var(--yellow-700);
+  --color-stroke-cherry-base: var(--cherry-600);
+  --color-stroke-indigo-base: var(--indigo-600);
+  --color-stroke-cyan-base: var(--cyan-600);
+  --color-stroke-warning-base: var(--orange-700);
+  --color-stroke-info-base: var(--blue-700);
+
+  --color-stroke-neutral-disabled: var(--grey-300);
+  --color-stroke-neutral-white: var(--abs-white);
+  --color-stroke-neutral-dark: var(--grey-800);
+  --color-stroke-neutral-black: var(--abs-black);
+  --color-stroke-success-base: var(--green-600);
+  --color-stroke-error-base: var(--red-600);
+}
+
+/* 5) Aides utilitaires (facultatives) pour styliser vite dans les stories */
+:root {
+  --container-max: 1200px;
+}
+
+html, body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-5);
+  color: var(--color-font-primary-base);
+  background: var(--color-background-surface);
+}
+
+/* Utilities typographiques */
+.u-h1 { font-size: var(--font-size-2xl); line-height: var(--line-height-6); font-weight: var(--font-weight-bold); }
+.u-h2 { font-size: var(--font-size-xl);  line-height: var(--line-height-5); font-weight: var(--font-weight-semibold); }
+.u-h3 { font-size: var(--font-size-lg);  line-height: var(--line-height-4); font-weight: var(--font-weight-semibold); }
+
+/* Utilities couleurs (exemples) */
+.text-primary   { color: var(--color-font-primary-base); }
+.text-secondary { color: var(--color-font-secondary-base); }
+.text-accent    { color: var(--color-font-accent-base); }
+.text-muted     { color: var(--color-font-neutral-muted); }
+
+.bg-primary     { background-color: var(--color-bg-primary-base); color: var(--color-font-neutral-white); }
+.bg-surface     { background-color: var(--color-bg-neutral-white); color: var(--color-font-primary-base); }
+.bg-accent      { background-color: var(--color-bg-accent-base); }
+.border-primary { border: var(--stroke-xs) solid var(--color-stroke-primary-base); border-radius: var(--radius-md); }
+
+/* Focus visible */
+:where(button, a, input, textarea, select):focus-visible {
+  outline: var(--stroke-sm) solid var(--color-stroke-focus);
+  outline-offset: 2px;
+}
+
+/* 6) Support du thème (si un jour tu ajoutes un mode dark)
+   Il suffira de créer :root[data-theme="dark"] avec d'autres mappages. */

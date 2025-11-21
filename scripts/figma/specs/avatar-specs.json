@@ -1,0 +1,100 @@
+{
+	"sizes": {
+		"small": {
+			"width": 24,
+			"height": 24,
+			"borderRadius": "50%",
+			"fontSize": 10,
+			"fontWeight": 600,
+			"lineHeight": 1
+		},
+		"medium": {
+			"width": 32,
+			"height": 32,
+			"borderRadius": "50%",
+			"fontSize": 13,
+			"fontWeight": 600,
+			"lineHeight": 1
+		},
+		"large": {
+			"width": 48,
+			"height": 48,
+			"borderRadius": "50%",
+			"fontSize": 18,
+			"fontWeight": 600,
+			"lineHeight": 1
+		}
+	},
+	"variants": {
+		"initials": {
+			"primary": [
+				{ "name": "sage", "type": "initials", "background": "#d1e1dd", "color": "#445556" },
+				{ "name": "pink", "type": "initials", "background": "#efc9f3", "color": "#7f5a8b" },
+				{ "name": "almond", "type": "initials", "background": "#bbdfca", "color": "#2c6f52" },
+				{ "name": "grey", "type": "initials", "background": "#eff2f6", "color": "#36383e" },
+				{ "name": "success", "type": "initials", "background": "#c4d6c0", "color": "#3e6936" },
+				{ "name": "cherry", "type": "initials", "background": "#e2c1c8", "color": "#6e3d47" },
+				{ "name": "warning", "type": "initials", "background": "#ffddc6", "color": "#be703c" },
+				{ "name": "indigo", "type": "initials", "background": "#cbd4f2", "color": "#505f97" },
+				{ "name": "info", "type": "initials", "background": "#c5dbea", "color": "#45677e" },
+				{ "name": "yellow", "type": "initials", "background": "#fbe5b9", "color": "#715621" },
+				{ "name": "error", "type": "initials", "background": "#ffbebf", "color": "#ad3739" },
+				{ "name": "cyan", "type": "initials", "background": "#b1cccd", "color": "#2a5050" },
+				{ "name": "green", "type": "initials", "background": "#b1e9c9", "color": "#188356" },
+				{ "name": "orange", "type": "initials", "background": "#ffddc6", "color": "#be703c" },
+				{ "name": "blue", "type": "initials", "background": "#c5dbea", "color": "#45677e" },
+				{ "name": "red", "type": "initials", "background": "#ffbebf", "color": "#ad3739" }
+			],
+			"secondary": [
+				{ "name": "sage", "type": "initials", "background": "#445556", "color": "#d1e1dd" },
+				{ "name": "pink", "type": "initials", "background": "#7f5a8b", "color": "#efc9f3" },
+				{ "name": "almond", "type": "initials", "background": "#2c6f52", "color": "#bbdfca" },
+				{ "name": "grey", "type": "initials", "background": "#36383e", "color": "#eff2f6" },
+				{ "name": "success", "type": "initials", "background": "#3e6936", "color": "#c4d6c0" },
+				{ "name": "cherry", "type": "initials", "background": "#6e3d47", "color": "#e2c1c8" },
+				{ "name": "warning", "type": "initials", "background": "#be703c", "color": "#ffddc6" },
+				{ "name": "indigo", "type": "initials", "background": "#505f97", "color": "#cbd4f2" },
+				{ "name": "info", "type": "initials", "background": "#45677e", "color": "#c5dbea" },
+				{ "name": "yellow", "type": "initials", "background": "#715621", "color": "#fbe5b9" },
+				{ "name": "error", "type": "initials", "background": "#ad3739", "color": "#ffbebf" },
+				{ "name": "cyan", "type": "initials", "background": "#2a5050", "color": "#b1cccd" },
+				{ "name": "green", "type": "initials", "background": "#188356", "color": "#b1e9c9" },
+				{ "name": "orange", "type": "initials", "background": "#be703c", "color": "#ffddc6" },
+				{ "name": "blue", "type": "initials", "background": "#45677e", "color": "#c5dbea" },
+				{ "name": "red", "type": "initials", "background": "#ad3739", "color": "#ffbebf" }
+			]
+		},
+		"image": {
+			"default": [
+				{ "name": "Image default", "type": "image" }
+			]
+		}
+	},
+	"colors": {
+		"sage": { "background": "#d1e1dd", "color": "#445556" },
+		"pink": { "background": "#efc9f3", "color": "#7f5a8b" },
+		"almond": { "background": "#bbdfca", "color": "#2c6f52" },
+		"grey": { "background": "#eff2f6", "color": "#36383e" },
+		"success": { "background": "#c4d6c0", "color": "#3e6936" },
+		"cherry": { "background": "#e2c1c8", "color": "#6e3d47" },
+		"warning": { "background": "#ffddc6", "color": "#be703c" },
+		"indigo": { "background": "#cbd4f2", "color": "#505f97" },
+		"info": { "background": "#c5dbea", "color": "#45677e" },
+		"yellow": { "background": "#fbe5b9", "color": "#715621" },
+		"error": { "background": "#ffbebf", "color": "#ad3739" },
+		"cyan": { "background": "#b1cccd", "color": "#2a5050" },
+		"green": { "background": "#b1e9c9", "color": "#188356" },
+		"orange": { "background": "#ffddc6", "color": "#be703c" },
+		"blue": { "background": "#c5dbea", "color": "#45677e" },
+		"red": { "background": "#ffbebf", "color": "#ad3739" }
+	},
+	"typography": {
+		"fontFamily": "Hanken Grotesk",
+		"fontWeight": 600
+	},
+	"extracted": {
+		"source": "Figma Design System via MCP",
+		"date": "2025-11-17",
+		"fileKey": "zB9JxH85SZ9yDCUYw8CUwU"
+	}
+}

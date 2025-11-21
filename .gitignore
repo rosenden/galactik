@@ -1,0 +1,22 @@
+node_modules/
+/dist/
+packages/*/node_modules/
+packages/*/storybook-static/
+.DS_Store
+
+# Logs
+*.log
+build-storybook.log
+pnpm-install.log
+wc-build.log
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# Environment & secrets (NEVER commit real tokens)
+.env
+.env.local
+.env.*.local
+.nvm/

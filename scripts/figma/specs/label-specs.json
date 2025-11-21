@@ -1,0 +1,67 @@
+{
+  "colors": {
+    "sage": {
+      "default": {
+        "background": "#445556",
+        "backgroundOpacity": 1,
+        "text": "#445556"
+      }
+    },
+    "black": {
+      "default": {
+        "background": "#182021",
+        "backgroundOpacity": 1,
+        "text": "#182021"
+      }
+    },
+    "warning": {
+      "default": {
+        "background": "#98552a",
+        "backgroundOpacity": 1,
+        "text": "#98552a"
+      }
+    },
+    "error": {
+      "default": {
+        "background": "#ad3739",
+        "backgroundOpacity": 1,
+        "text": "#ad3739"
+      }
+    },
+    "success": {
+      "default": {
+        "background": "#3e6936",
+        "backgroundOpacity": 1,
+        "text": "#3e6936"
+      }
+    },
+    "info": {
+      "default": {
+        "background": "#45677e",
+        "backgroundOpacity": 1,
+        "text": "#45677e"
+      }
+    }
+  },
+  "typography": {
+    "medium": {
+      "fontSize": "14px",
+      "lineHeight": "20px",
+      "fontWeight": 600
+    },
+    "small": {
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontWeight": 600
+    }
+  },
+  "spacing": {
+    "medium": {
+      "gap": "4px"
+    },
+    "small": {
+      "gap": "4px"
+    }
+  },
+  "borderRadius": {}
+}
