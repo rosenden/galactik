@@ -3,7 +3,7 @@
     "id": "react",
     "label": "React UI",
     "port": 6006,
-    "path": "/react-ui",
+    "path": "/react",
     "envVar": "REACT_STORYBOOK_URL",
     "packageDir": "../../packages/react-ui",
     "workspace": "storybook-react"
@@ -12,7 +12,7 @@
     "id": "vue",
     "label": "Vue UI",
     "port": 6007,
-    "path": "/vue-ui",
+    "path": "/vue",
     "envVar": "VUE_STORYBOOK_URL",
     "packageDir": "../../packages/vue-ui",
     "workspace": "storybook-vue"
@@ -21,7 +21,7 @@
     "id": "angular",
     "label": "Angular UI",
     "port": 6008,
-    "path": "/angular-ui",
+    "path": "/angular",
     "envVar": "ANGULAR_STORYBOOK_URL",
     "packageDir": "../../packages/angular-ui",
     "workspace": "storybook-angular"
@@ -30,7 +30,7 @@
     "id": "wc",
     "label": "Web Components UI",
     "port": 6009,
-    "path": "/wc-ui",
+    "path": "/web-component",
     "envVar": "WC_STORYBOOK_URL",
     "packageDir": "../../packages/wc-ui",
     "workspace": "storybook-wc"
