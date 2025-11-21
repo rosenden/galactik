@@ -211,7 +211,9 @@ export const GettingStarted: Story = {
                   <code style={{ fontSize: 13 }}>{fw.command}</code>
                 </div>
                 <a
-                  href={fw.path + (fw.id === 'portal' ? '/?path=/story/introduction--getting-started' : '/?path=/story/home--default')}
+                  href={'https://rosenden.github.io/galactik' + fw.path + (fw.id === 'portal' ? '/?path=/story/introduction--getting-started' : '/?path=/story/home--default')}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: 'inline-flex',
                     marginTop: 12,
