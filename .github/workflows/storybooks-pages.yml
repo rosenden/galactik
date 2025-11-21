@@ -26,5 +26,10 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Clean Pages cache
+        run: |
+          echo "Cleaning GitHub Pages cache..."
+          rm -rf ${{ github.workspace }}/dist/storybooks/angular
+          rm -rf ${{ github.workspace }}/dist/storybooks/angular-ui
       - id: deployment
         uses: actions/deploy-pages@v4
