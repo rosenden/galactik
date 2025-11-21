@@ -211,7 +211,7 @@ export const GettingStarted: Story = {
                   <code style={{ fontSize: 13 }}>{fw.command}</code>
                 </div>
                 <a
-                  href="/?path=/story/introduction--getting-started"
+                  href={fw.path + (fw.id === 'portal' ? '/?path=/story/introduction--getting-started' : '/?path=/story/home--default')}
                   style={{
                     display: 'inline-flex',
                     marginTop: 12,
