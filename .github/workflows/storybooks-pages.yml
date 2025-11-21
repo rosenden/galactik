@@ -16,8 +16,7 @@ jobs:
           version: 10
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build:storybooks
-      - run: mkdir -p dist/storybooks/portal-temp && cp -r dist/storybooks/portal/* dist/storybooks/portal-temp/
-      - run: mkdir -p dist/storybooks/portal && mv dist/storybooks/portal-temp dist/storybooks/portal
+      - run: mkdir -p dist/storybooks/portal && cp -r dist/storybooks/portal/* dist/storybooks/portal/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/storybooks
