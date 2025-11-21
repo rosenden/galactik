@@ -1,5 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+import logoReact from '../../.storybook/assets/logo-react.svg';
+import logoVue from '../../.storybook/assets/logo-vue.svg';
+import logoAngular from '../../.storybook/assets/logo-angular.svg';
+import logoWc from '../../.storybook/assets/logo-wc.svg';
 import { STORYBOOK_REFS } from '../../storybook-refs';
 
 type QuickStep = {
@@ -116,7 +120,19 @@ const Card: React.FC<{ title: string; description: string; children?: React.Reac
       boxShadow: '0 8px 30px rgba(33,37,41,0.08)'
     }}
   >
-    <h4 style={{ margin: '0 0 var(--space-sm)', fontSize: 'var(--font-size-lg)', color: 'var(--color-font-primary-base)' }}>
+    <h4 style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 var(--space-sm)', fontSize: 'var(--font-size-lg)', color: 'var(--color-font-primary-base)' }}>
+      {title === 'React UI' && (
+        <img src={logoReact} alt="React Logo" style={{ height: 24 }} />
+      )}
+      {title === 'Vue UI' && (
+        <img src={logoVue} alt="Vue Logo" style={{ height: 24 }} />
+      )}
+      {title === 'Angular UI' && (
+        <img src={logoAngular} alt="Angular Logo" style={{ height: 24 }} />
+      )}
+      {title === 'Web Components UI' && (
+        <img src={logoWc} alt="Web Components Logo" style={{ height: 24 }} />
+      )}
       {title}
     </h4>
     <p style={{ margin: 0, color: 'var(--color-font-secondary-base)', fontSize: 'var(--font-size-base)', lineHeight: 1.5 }}>
@@ -195,9 +211,7 @@ export const GettingStarted: Story = {
                   <code style={{ fontSize: 13 }}>{fw.command}</code>
                 </div>
                 <a
-                  href={fw.url}
-                  target="_blank"
-                  rel="noreferrer"
+                  href="/?path=/story/introduction--getting-started"
                   style={{
                     display: 'inline-flex',
                     marginTop: 12,
