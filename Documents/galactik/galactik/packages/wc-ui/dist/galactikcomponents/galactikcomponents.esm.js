@@ -1,2 +1,0 @@
-import{p as a,b as t}from"./p-2a3ff44b.js";export{s as setNonce}from"./p-2a3ff44b.js";const r=()=>{const s=import.meta.url;const t={};if(s!==""){t.resourcesUrl=new URL(".",s).href}return a(t)};r().then((a=>t([["p-5b7f19d4",[[1,"gal-avatar",{name:[1],src:[1],alt:[1],size:[1],variant:[1],status:[1]}]]]],a)));
-//# sourceMappingURL=galactikcomponents.esm.js.map

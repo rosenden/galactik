@@ -1,7 +1,0 @@
-{
-  "name": "Galactik MCP Figma Connector",
-  "id": "galactik-mcp-connector",
-  "api": "1.0.0",
-  "main": "code.js",
-  "ui": "ui.html"
-}
