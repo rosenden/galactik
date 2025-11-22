@@ -116,12 +116,12 @@ export const Catalogue: Story = {
         Label: "https://rosenden.github.io/galactik/angular/?path=/story/label--default"
       },
       "Web Components": {
-        Avatar: "https://rosenden.github.io/galactik/wc/?path=/story/gal-avatar--default",
-        Badge: "https://rosenden.github.io/galactik/wc/?path=/story/gal-badge--default",
-        Bullet: "https://rosenden.github.io/galactik/wc/?path=/story/gal-bullet--default",
-        Button: "https://rosenden.github.io/galactik/wc/?path=/story/gal-button--default",
-        Checkbox: "https://rosenden.github.io/galactik/wc/?path=/story/gal-checkbox--default",
-        Label: "https://rosenden.github.io/galactik/wc/?path=/story/gal-label--default"
+        Avatar: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-avatar--default",
+        Badge: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-badge--default",
+        Bullet: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-bullet--default",
+        Button: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-button--default",
+        Checkbox: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-checkbox--default",
+        Label: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-label--default"
       }
     };
 
