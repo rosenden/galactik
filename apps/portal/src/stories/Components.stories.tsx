@@ -90,40 +90,35 @@ export const Catalogue: Story = {
     type Framework = typeof frameworks[number];
     type Component = typeof components[number];
 
-    const links: Record<Framework, Record<Component, string>> = {
-      React: {
-        Avatar: "https://rosenden.github.io/galactik/react/?path=/story/avatar--default",
-        Badge: "https://rosenden.github.io/galactik/react/?path=/story/badge--default",
-        Bullet: "https://rosenden.github.io/galactik/react/?path=/story/bullet--default",
-        Button: "https://rosenden.github.io/galactik/react/?path=/story/button--default",
-        Checkbox: "https://rosenden.github.io/galactik/react/?path=/story/checkbox--default",
-        Label: "https://rosenden.github.io/galactik/react/?path=/story/label--default"
-      },
-      Vue: {
-        Avatar: "https://rosenden.github.io/galactik/vue/?path=/story/avatar--default",
-        Badge: "https://rosenden.github.io/galactik/vue/?path=/story/badge--default",
-        Bullet: "https://rosenden.github.io/galactik/vue/?path=/story/bullet--default",
-        Button: "https://rosenden.github.io/galactik/vue/?path=/story/button--default",
-        Checkbox: "https://rosenden.github.io/galactik/vue/?path=/story/checkbox--default",
-        Label: "https://rosenden.github.io/galactik/vue/?path=/story/label--default"
-      },
-      Angular: {
-        Avatar: "https://rosenden.github.io/galactik/angular/?path=/story/avatar--default",
-        Badge: "https://rosenden.github.io/galactik/angular/?path=/story/badge--default",
-        Bullet: "https://rosenden.github.io/galactik/angular/?path=/story/bullet--default",
-        Button: "https://rosenden.github.io/galactik/angular/?path=/story/button--default",
-        Checkbox: "https://rosenden.github.io/galactik/angular/?path=/story/checkbox--default",
-        Label: "https://rosenden.github.io/galactik/angular/?path=/story/label--default"
-      },
-      "Web Components": {
-        Avatar: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-avatar--default",
-        Badge: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-badge--default",
-        Bullet: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-bullet--default",
-        Button: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-button--default",
-        Checkbox: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-checkbox--default",
-        Label: "https://rosenden.github.io/galactik/web-component/?path=/story/gal-label--default"
-      }
+    const baseUrls: Record<Framework, string> = {
+      React: "https://rosenden.github.io/galactik/react",
+      Vue: "https://rosenden.github.io/galactik/vue",
+      Angular: "https://rosenden.github.io/galactik/angular",
+      "Web Components": "https://rosenden.github.io/galactik/web-component"
     };
+
+    const docIds: Record<Component, string> = {
+      Avatar: "electrons-avatar--docs",
+      Badge: "electrons-badge--docs",
+      Bullet: "electrons-bullet--docs",
+      Button: "electrons-button--docs",
+      Checkbox: "electrons-checkbox--docs",
+      Label: "electrons-label--docs"
+    };
+
+    const links: Record<Framework, Record<Component, string>> = frameworks.reduce(
+      (acc, framework) => ({
+        ...acc,
+        [framework]: components.reduce(
+          (componentLinks, component) => ({
+            ...componentLinks,
+            [component]: `${baseUrls[framework]}/?path=/docs/${docIds[component]}`
+          }),
+          {} as Record<Component, string>
+        )
+      }),
+      {} as Record<Framework, Record<Component, string>>
+    );
 
 
     // Import React previews (ES imports)
