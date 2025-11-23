@@ -1,28 +1,192 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galactik Apps Index</title>
+  <title>Galactik Design System · Apps</title>
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/tokens-generated.css">
   <style>
-    body { font-family: system-ui, sans-serif; background: #f8fafb; margin: 0; padding: 0; }
-    .container { max-width: 600px; margin: 60px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 16px #0001; padding: 40px 32px; }
-    h1 { text-align: center; color: #374648; margin-bottom: 32px; }
-    ul { list-style: none; padding: 0; }
-    li { margin: 18px 0; }
-    a { display: block; padding: 18px 24px; border-radius: 8px; background: #f3f6f9; color: #1a2233; text-decoration: none; font-size: 1.15rem; font-weight: 500; transition: background 0.2s; }
-    a:hover { background: #e0e7ef; }
+    body {
+      font-family: var(--font-family-base, 'Hanken Grotesk', Arial, Helvetica, sans-serif);
+      background: var(--light-color-background-surface, #fff);
+      margin: 0;
+      padding: 0;
+      color: var(--light-color-font-neutral-base, #36383e);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      margin: 48px auto 0 auto;
+      background: var(--light-color-background-alt, #f8fafb);
+      border-radius: var(--radius-2xl, 24px);
+      box-shadow: 0 4px 32px #0002;
+      padding: 48px 32px 32px 32px;
+      border: 1px solid var(--light-color-border-base, #b9c4d5);
+    }
+    h1 {
+      text-align: center;
+      color: var(--light-color-font-primary-base, #374648);
+      font-size: var(--font-size-2xl, 24px);
+      font-weight: var(--font-weight-bold, 700);
+      margin-bottom: var(--space-xl, 16px);
+      letter-spacing: 0.5px;
+    }
+    .desc {
+      text-align: center;
+      color: var(--light-color-font-neutral-muted, #626c84);
+      font-size: var(--font-size-lg, 16px);
+      margin-bottom: var(--space-3xl, 24px);
+    }
+    ul.apps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xl, 20px);
+    }
+    .app-card {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xl, 16px);
+      background: var(--light-color-background-surface, #fff);
+      border-radius: var(--radius-xl, 20px);
+      box-shadow: 0 2px 12px #0001;
+      padding: 20px 28px;
+      border: 1px solid var(--light-color-border-base, #b9c4d5);
+      transition: box-shadow 0.2s, border 0.2s;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+    .app-card:hover {
+      box-shadow: 0 6px 32px #0002;
+      border: 1.5px solid var(--light-color-font-accent-base, #a582ab);
+      background: var(--light-color-bg-accent-light, #efc9f3);
+    }
+    .app-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-lg, 16px);
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 1px 6px #0001;
+      flex-shrink: 0;
+      border: 1px solid var(--light-color-border-base, #b9c4d5);
+    }
+    .app-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .app-title {
+      font-size: var(--font-size-xl, 20px);
+      font-weight: var(--font-weight-semibold, 600);
+      margin: 0 0 2px 0;
+      color: var(--light-color-font-primary-base, #374648);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .app-desc {
+      color: var(--light-color-font-neutral-muted, #626c84);
+      font-size: var(--font-size-base, 14px);
+      margin-bottom: 2px;
+      margin-top: 0;
+      line-height: 1.5;
+    }
+    .app-meta {
+      font-size: var(--font-size-xs, 11px);
+      color: var(--light-color-font-neutral-light, #b9c4d5);
+      margin-top: 2px;
+    }
+    .app-link {
+      margin-left: auto;
+      color: var(--light-color-font-accent-base, #a582ab);
+      font-size: var(--font-size-lg, 16px);
+      text-decoration: underline;
+      font-weight: var(--font-weight-semibold, 600);
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .app-link svg {
+      width: 1.1em;
+      height: 1.1em;
+      vertical-align: middle;
+      margin-left: 2px;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 24px 4vw; }
+      .app-card { flex-direction: column; align-items: flex-start; padding: 18px 12px; }
+      .app-logo { margin-bottom: 8px; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Galactik Apps</h1>
-    <ul>
-      <li><a href="./portal/">Portal</a></li>
-      <li><a href="./react/">React Storybook</a></li>
-      <li><a href="./vue/">Vue Storybook</a></li>
-      <li><a href="./angular/">Angular Storybook</a></li>
-      <li><a href="./web-component/">Web Components Storybook</a></li>
+    <h1>Galactik Design System</h1>
+    <div class="desc">Toutes vos applications et Storybooks, unifiés par vos tokens et styles sémantiques.</div>
+    <ul class="apps">
+      <li>
+        <a class="app-card" href="./portal/" target="_blank" rel="noopener">
+          <span class="app-logo"><img src="./portal/logo.svg" alt="Portal" style="width:36px;height:36px;object-fit:contain;"></span>
+          <span class="app-info">
+            <span class="app-title">Portal <img src="./portal/logo.svg" alt="Portal" style="height:18px;vertical-align:middle;"></span>
+            <span class="app-desc">Vue d’ensemble, navigation et documentation centralisée de Galactik.</span>
+            <span class="app-meta">Type : Hub / React · Accès à tous les composants</span>
+          </span>
+          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="./react/" target="_blank" rel="noopener">
+          <span class="app-logo"><img src="../apps/portal/.storybook/assets/logo-react.svg" alt="React" style="width:36px;height:36px;"></span>
+          <span class="app-info">
+            <span class="app-title">React Storybook <img src="../apps/portal/.storybook/assets/logo-react.svg" alt="React" style="height:18px;vertical-align:middle;"></span>
+            <span class="app-desc">Composants React, documentation, tests visuels et guides d’intégration.</span>
+            <span class="app-meta">React 18 · Storybook 8 · TypeScript</span>
+          </span>
+          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="./vue/" target="_blank" rel="noopener">
+          <span class="app-logo"><img src="../apps/portal/.storybook/assets/logo-vue.svg" alt="Vue" style="width:36px;height:36px;"></span>
+          <span class="app-info">
+            <span class="app-title">Vue Storybook <img src="../apps/portal/.storybook/assets/logo-vue.svg" alt="Vue" style="height:18px;vertical-align:middle;"></span>
+            <span class="app-desc">Composants Vue 3, documentation, tests visuels et intégration rapide.</span>
+            <span class="app-meta">Vue 3 · Storybook 8 · TypeScript</span>
+          </span>
+          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="./angular/" target="_blank" rel="noopener">
+          <span class="app-logo"><img src="../apps/portal/.storybook/assets/logo-angular.svg" alt="Angular" style="width:36px;height:36px;"></span>
+          <span class="app-info">
+            <span class="app-title">Angular Storybook <img src="../apps/portal/.storybook/assets/logo-angular.svg" alt="Angular" style="height:18px;vertical-align:middle;"></span>
+            <span class="app-desc">Composants Angular, documentation, tests visuels et intégration rapide.</span>
+            <span class="app-meta">Angular 17 · Storybook 8 · TypeScript</span>
+          </span>
+          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="./web-component/" target="_blank" rel="noopener">
+          <span class="app-logo"><img src="../apps/portal/.storybook/assets/logo-wc.svg" alt="Web Components" style="width:36px;height:36px;"></span>
+          <span class="app-info">
+            <span class="app-title">Web Components Storybook <img src="../apps/portal/.storybook/assets/logo-wc.svg" alt="Web Components" style="height:18px;vertical-align:middle;"></span>
+            <span class="app-desc">Composants Stencil/Web Components, documentation, intégration multi-framework.</span>
+            <span class="app-meta">Stencil 3 · Storybook 8 · TypeScript</span>
+          </span>
+          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </li>
     </ul>
   </div>
 </body>

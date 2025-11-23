@@ -4,6 +4,7 @@ import logoReact from '../../.storybook/assets/logo-react.svg';
 import logoVue from '../../.storybook/assets/logo-vue.svg';
 import logoAngular from '../../.storybook/assets/logo-angular.svg';
 import logoWc from '../../.storybook/assets/logo-wc.svg';
+import logoChaps from '../../.storybook/assets/logo-chapsvision.svg';
 import { STORYBOOK_REFS } from '../../storybook-refs';
 
 type QuickStep = {
@@ -115,11 +116,21 @@ const Card: React.FC<{ title: string; description: string; children?: React.Reac
     style={{
       background: 'var(--color-background-alt)',
       border: `1px solid var(--color-border-base)`,
-      borderRadius: 'var(--radius-lg)',
+      borderRadius: 'var(--radius-xl)',
       padding: 'var(--space-4xl)',
-      boxShadow: '0 8px 30px rgba(33,37,41,0.08)'
+      boxShadow: '0 16px 40px rgba(15, 23, 42, 0.18)',
+      position: 'relative',
+      overflow: 'hidden'
     }}
   >
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'radial-gradient(circle at 20% 20%, rgba(138,180,255,0.12), transparent 35%), radial-gradient(circle at 80% 0%, rgba(255,211,129,0.12), transparent 32%)',
+        pointerEvents: 'none'
+      }}
+    />
     <h4 style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 var(--space-sm)', fontSize: 'var(--font-size-lg)', color: 'var(--color-font-primary-base)' }}>
       {title === 'React UI' && (
         <img src={logoReact} alt="React Logo" style={{ height: 24 }} />
@@ -191,7 +202,7 @@ export const GettingStarted: Story = {
             color: 'var(--color-font-primary-base)'
           }}
         >
-          <h2 style={{ marginBottom: 'var(--space-2xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+            <h2 style={{ marginBottom: 'var(--space-2xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
             Storybook frameworks
           </h2>
           <div
@@ -204,7 +215,10 @@ export const GettingStarted: Story = {
             {frameworkCards.map((fw) => (
               <Card key={fw.id} title={fw.label} description={fw.stack}>
                 <p style={{ margin: '8px 0 0', fontSize: 13, color: 'var(--color-font-secondary-base)' }}>
-                  Local Storybook: <code>{fw.url}</code>
+                  Local Storybook:{' '}
+                  <a href={fw.url} target="_blank" rel="noreferrer" style={{ color: 'var(--color-font-info-base)' }}>
+                    {fw.url}
+                  </a>
                 </p>
                 <div style={{ marginTop: 12 }}>
                   <small style={{ display: 'block', color: 'var(--color-font-secondary-base)' }}>Commande PNPM</small>
@@ -226,6 +240,49 @@ export const GettingStarted: Story = {
                   }}
                 >
                   Open {fw.label}
+                </a>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        <section style={{ marginBottom: 48 }}>
+          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+            Applications & status
+          </h2>
+          <div style={{ display: 'grid', gap: 18, gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))' }}>
+            {STORYBOOK_REFS.map((app) => (
+              <Card
+                key={app.id}
+                title={`${app.label}${app.id === 'portal' ? ' (Portal)' : ''}`}
+                description={`Workspace: ${app.workspace} • Port: ${app.port}`}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, color: 'var(--color-font-secondary-base)', fontSize: 13 }}>
+                  {app.id === 'react' && <img src={logoReact} alt="React" style={{ height: 20 }} />}
+                  {app.id === 'vue' && <img src={logoVue} alt="Vue" style={{ height: 20 }} />}
+                  {app.id === 'angular' && <img src={logoAngular} alt="Angular" style={{ height: 20 }} />}
+                  {app.id === 'wc' && <img src={logoWc} alt="Web Components" style={{ height: 20 }} />}
+                  {app.id === 'portal' && <img src={logoChaps} alt="Portal" style={{ height: 20 }} />}
+                  <span>Base path: {app.path}</span>
+                </div>
+                <a
+                  href={`https://rosenden.github.io/galactik${app.path}/?path=/story/${app.id === 'portal' ? 'introduction--getting-started' : 'home--default'}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: 6,
+                    marginTop: 12,
+                    padding: '8px 14px',
+                    borderRadius: 'var(--radius-lg)',
+                    background: 'var(--color-bg-secondary-base)',
+                    color: 'var(--color-font-neutral-white)',
+                    fontSize: 13,
+                    textDecoration: 'none'
+                  }}
+                >
+                  Ouvrir dans un nouvel onglet ↗
                 </a>
               </Card>
             ))}

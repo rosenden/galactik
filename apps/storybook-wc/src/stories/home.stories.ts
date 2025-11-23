@@ -70,7 +70,7 @@ export const Default: Story = {
           <!-- Avatar Card -->
           <a
             href="?path=/docs/electrons-avatar--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-avatar--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-avatar--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);
@@ -122,7 +122,7 @@ export const Default: Story = {
           <!-- Badge Card -->
           <a
             href="?path=/docs/electrons-badge--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-badge--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-badge--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);
@@ -174,7 +174,7 @@ export const Default: Story = {
           <!-- Bullet Card -->
           <a
             href="?path=/docs/electrons-bullet--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-bullet--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-bullet--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);
@@ -226,7 +226,7 @@ export const Default: Story = {
           <!-- Button Card -->
           <a
             href="?path=/docs/electrons-button--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-button--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-button--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);
@@ -281,7 +281,7 @@ export const Default: Story = {
           <!-- Label Card -->
           <a
             href="?path=/docs/electrons-label--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-label--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-label--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);
@@ -333,7 +333,7 @@ export const Default: Story = {
           <!-- Checkbox Card -->
           <a
             href="?path=/docs/electrons-checkbox--docs"
-            onclick="event.preventDefault(); var url = window.location.origin + '/?path=/docs/electrons-checkbox--docs'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+            onclick="event.preventDefault(); var url = new URL('?path=/docs/electrons-checkbox--docs', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
             style="
               text-decoration: none;
               background-color: var(--color-background-alt);

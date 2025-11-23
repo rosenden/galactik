@@ -78,6 +78,7 @@
   },
   "packageManager": "pnpm@10.20.0",
   "dependencies": {
-    "node-fetch": "^3.3.2"
+    "dotenv": "^17.2.3",
+    "node-fetch": "^2.7.0"
   }
 }

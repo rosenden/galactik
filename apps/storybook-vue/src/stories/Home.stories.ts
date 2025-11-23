@@ -74,9 +74,12 @@ export const Default: Story = {
   render: () => ({
     components: { Avatar, Badge, Bullet, Button, Checkbox, Label },
     setup() {
+      const buildUrl = (path: string) =>
+        typeof window === 'undefined' ? path : new URL(path, window.location.href).toString();
+
       const handleNavigation = (path: string) => (e: MouseEvent) => {
         e.preventDefault();
-        const url = window.location.origin + '/' + path;
+        const url = buildUrl(path);
         if (window.top) {
           window.top.location.href = url;
         } else {
@@ -87,7 +90,8 @@ export const Default: Story = {
       return {
         components,
         handleNavigation,
-        SuccessIcon
+        SuccessIcon,
+        buildUrl
       };
     },
     template: `
@@ -114,7 +118,7 @@ export const Default: Story = {
             <a
               v-for="component in components"
               :key="component.name"
-              :href="component.path"
+              :href="buildUrl(component.path)"
               @click="handleNavigation(component.path)"
               style="text-decoration: none; background-color: var(--color-background-alt); border-radius: var(--radius-lg); box-shadow: 0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08); transition: all 0.2s ease; cursor: pointer; border: var(--stroke-xs) solid var(--color-border-base); overflow: hidden; display: flex; flex-direction: column;"
               @mouseenter="(e) => { e.currentTarget.style.boxShadow = '0 var(--space-xs) var(--space-2xl) rgba(0, 0, 0, 0.12)'; e.currentTarget.style.transform = 'translateY(calc(-1 * var(--space-3xs)))'; }"

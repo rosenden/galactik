@@ -1,0 +1,197 @@
+{
+  "colors": {},
+  "textStyles": {},
+  "styles": {
+    "91:792": {
+      "key": "bb8efee15c9797949e92d505dd427e97416fd82c",
+      "name": "h.3xl",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "93:4": {
+      "key": "4d89a6290a80f940bd7b4a3738d558b55cabcd31",
+      "name": "h.2xl",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "93:5": {
+      "key": "66772e81e1b1d7941a3f5b04e631c55ade45ded2",
+      "name": "h.lg.bold",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "93:6": {
+      "key": "7fdfac4d58faa2e7395ac93f00551bed8df57321",
+      "name": "h.lg.medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "93:7": {
+      "key": "ae919af7d22395325801e1a08802697ade995322",
+      "name": "h.lg.regular",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "95:4": {
+      "key": "fa2d8efe0e5752daf77c96ae3faae58f38fcc26d",
+      "name": "p.base.bold",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "95:6": {
+      "key": "cefb0292bbefa13e492419abe2596d987d1c4ddf",
+      "name": "p.base.medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "95:10": {
+      "key": "2187d1825ddc83480224118d633390af8eb46117",
+      "name": "p.base.regular",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:4": {
+      "key": "791f3734d91972482c87c16f2e9b2376df0011fd",
+      "name": "p.sm.bold",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:5": {
+      "key": "5165b4f05a30d836492e6a1e217ca256dd708609",
+      "name": "p.sm.medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:6": {
+      "key": "edb5bf50287a5d3d2ce8728636221eaaf823e233",
+      "name": "p.sm.regular",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:7": {
+      "key": "ea3984b01d6c2d7d6b5c32fc4a23df3c2c5b23af",
+      "name": "p.xs.regular",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:8": {
+      "key": "499ce0b5f3356256a753e1c2a8978687b761b889",
+      "name": "p.xs.medium",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "96:9": {
+      "key": "ff75cbc23bae0bd6ef67b4cab92bd82a0c1f616a",
+      "name": "p.xs.bold",
+      "styleType": "TEXT",
+      "remote": false,
+      "description": ""
+    },
+    "154:3": {
+      "key": "4ad87a4bfc02002e98a444d91df80d27ad4522c3",
+      "name": "shadow-1",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "154:5": {
+      "key": "29f12bff501296e3f380fcb3f773fe5e43372439",
+      "name": "shadow-2",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "154:6": {
+      "key": "84baee571dab9a39fe57a1eb4875d44c426fe9fb",
+      "name": "shadow-3",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "154:7": {
+      "key": "0d2362a71eea771ffa61e2c1f1bda7a201a8612b",
+      "name": "shadow-4",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "154:8": {
+      "key": "5e97e454985f2b616204fcd72232a0508923c2e9",
+      "name": "shadow-inner",
+      "styleType": "EFFECT",
+      "remote": false,
+      "description": ""
+    },
+    "2416:332": {
+      "key": "2d09918c22f0a15a736b21057b3e3bb9dd8904d2",
+      "name": "grid-xs",
+      "styleType": "GRID",
+      "remote": false,
+      "description": "Small mobile"
+    },
+    "2416:333": {
+      "key": "25e24e4057985867b8d85aa59c68af9e8ce0dff3",
+      "name": "grid-sm",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "2416:334": {
+      "key": "8109254878c0ab4dc531778de3f89b89b8a68303",
+      "name": "grid-md",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "2416:335": {
+      "key": "f54e869c6c284fdfbe9e46ae87ba077c7a0f911d",
+      "name": "grid-lg",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "2416:337": {
+      "key": "8c2bad2e9b81d78f1237aca4883ac1578b17049c",
+      "name": "grid-xl",
+      "styleType": "GRID",
+      "remote": false,
+      "description": ""
+    },
+    "2022:2": {
+      "key": "d699c3cc784380baa8d4ff9bb7a22f4565b498db",
+      "name": "Body 3",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "91:82": {
+      "key": "48f872fd86d701232cbcb605a08b0dbf5d6c62a8",
+      "name": "Body/Body small medium",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    },
+    "91:101": {
+      "key": "4aa626b34db4b2a4d2df09bbc72e0f8034912d87",
+      "name": "text/text-base/regular",
+      "styleType": "TEXT",
+      "remote": true,
+      "description": ""
+    }
+  },
+  "lastModified": "2025-11-20T08:25:38Z",
+  "name": "🚧 Solary Version Onechaps"
+}

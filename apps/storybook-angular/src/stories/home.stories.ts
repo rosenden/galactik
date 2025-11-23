@@ -63,7 +63,7 @@ const generateCardTemplate = (component: Component): string => {
   return `
     <a 
       href="${component.path}"
-      onclick="event.preventDefault(); var url = window.location.origin + '/${component.path}'; if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
+      onclick="event.preventDefault(); var url = new URL('${component.path}', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }"
       style="
         text-decoration: none;
         background-color: var(--color-background-alt);

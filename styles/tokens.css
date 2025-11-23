@@ -1,6 +1,17 @@
 /* 1) Import de la police définie dans les tokens */
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap');
 
+/* --- STYLES FIGMA EXTRAS (Solary) ---
+  h.3xl, h.2xl, h.lg.bold, h.lg.medium, h.lg.regular
+  p.base.bold, p.base.medium, p.base.regular
+  p.sm.bold, p.sm.medium, p.sm.regular
+  p.xs.regular, p.xs.medium, p.xs.bold
+  shadow-1, shadow-2, shadow-3, shadow-4, shadow-inner
+  grid-xs, grid-sm, grid-md, grid-lg, grid-xl
+  Body 3, Body/Body small medium, text/text-base/regular
+  (voir tokens-solary.json pour détails)
+*/
+
 /* 2) Reset léger & base typographique commune */
 :root,
 :root[data-theme='light'] {

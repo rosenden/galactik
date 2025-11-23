@@ -81,9 +81,12 @@ const components: Component[] = [
 ];
 
 const HomePage = () => {
+  const buildTargetUrl = (path: string) =>
+    typeof window === 'undefined' ? path : new URL(path, window.location.href).toString();
+
   const handleNavigation = (path: string) => (e: React.MouseEvent) => {
     e.preventDefault();
-    const url = window.location.origin + '/' + path;
+    const url = buildTargetUrl(path);
     if (window.top) {
       window.top.location.href = url;
     } else {
@@ -157,7 +160,7 @@ const HomePage = () => {
           {components.map((component) => (
             <a
               key={component.name}
-              href={component.path}
+              href={buildTargetUrl(component.path)}
               onClick={handleNavigation(component.path)}
               style={{
                 textDecoration: 'none',
