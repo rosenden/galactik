@@ -19,9 +19,7 @@
       "react-ui": ["packages/react-ui/src"],
       "react-ui/*": ["packages/react-ui/src/*"],
       "vue-ui": ["packages/vue-ui/src"],
-      "vue-ui/*": ["packages/vue-ui/src/*"],
-      "wc-ui": ["packages/wc-ui/src"],
-      "wc-ui/*": ["packages/wc-ui/src/*"]
+      "vue-ui/*": ["packages/vue-ui/src/*"]
     }
   }
 }

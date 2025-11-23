@@ -10,8 +10,7 @@ const routes = [
   { path: '/portal', dir: 'portal' },
   { path: '/react-ui', dir: 'react' },
   { path: '/vue-ui', dir: 'vue' },
-  { path: '/angular-ui', dir: 'angular' },
-  { path: '/wc-ui', dir: 'web-component' }
+  { path: '/angular-ui', dir: 'angular' }
 ];
 
 const MIME = {

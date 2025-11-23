@@ -7,7 +7,7 @@ const setFavicon = () => {
   const link = document.createElement('link');
   link.rel = 'icon';
   link.type = 'image/svg+xml';
-  link.href = 'assets/favicon.svg';
+  link.href = './favicon.svg';
   document.head.appendChild(link);
 };
 

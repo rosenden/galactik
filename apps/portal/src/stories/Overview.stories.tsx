@@ -3,7 +3,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 import logoReact from '../../.storybook/assets/logo-react.svg';
 import logoVue from '../../.storybook/assets/logo-vue.svg';
 import logoAngular from '../../.storybook/assets/logo-angular.svg';
-import logoWc from '../../.storybook/assets/logo-wc.svg';
 import logoChaps from '../../.storybook/assets/logo-chapsvision.svg';
 import { STORYBOOK_REFS } from '../../storybook-refs';
 
@@ -33,7 +32,7 @@ const quickSteps: QuickStep[] = [
   {
     title: '2. Launch a targeted Storybook',
     description: 'pnpm storybook:<framework>',
-    hint: 'angular · react · vue · wc · portal'
+    hint: 'angular · react · vue · portal'
   },
   {
     title: '3. Build every Storybook',
@@ -46,7 +45,6 @@ const commands: Command[] = [
   { label: 'pnpm storybook:react', description: 'React UI (port 6006) – Vite builder.' },
   { label: 'pnpm storybook:angular', description: 'Angular UI (port 6008) via @storybook/angular.' },
   { label: 'pnpm storybook:vue', description: 'Vue 3 UI (port 6007) using the Vite plugin.' },
-  { label: 'pnpm storybook:wc', description: 'Web Components (port 6009) after Stencil build.' },
   { label: 'pnpm --filter portal storybook', description: 'Aggregator portal (port 6010).' },
   { label: 'pnpm preview:storybooks', description: 'Build + static server (port 5000).' }
 ];
@@ -72,8 +70,7 @@ const resources: Resource[] = [
 const frameworkVersions: Record<string, string> = {
   react: 'React 18.2 + Storybook 8.2.7',
   vue: 'Vue 3.4 + Storybook 8.2.7',
-  angular: 'Angular 17.3 + Storybook 8.2.7',
-  wc: 'Stencil 3.4 + Storybook 8.2.7'
+  angular: 'Angular 17.3 + Storybook 8.2.7'
 };
 
 const techMatrix = [
@@ -81,7 +78,6 @@ const techMatrix = [
   { tech: 'React', version: '18.2.0' },
   { tech: 'Vue', version: '3.4.x' },
   { tech: 'Angular', version: '17.3.x' },
-  { tech: 'Web Components', version: 'Stencil 3.4.x' },
   { tech: 'TypeScript', version: '5.2.x' },
   { tech: 'Chromatic', version: 'pnpm chromatic' }
 ];
@@ -140,9 +136,6 @@ const Card: React.FC<{ title: string; description: string; children?: React.Reac
       )}
       {title === 'Angular UI' && (
         <img src={logoAngular} alt="Angular Logo" style={{ height: 24 }} />
-      )}
-      {title === 'Web Components UI' && (
-        <img src={logoWc} alt="Web Components Logo" style={{ height: 24 }} />
       )}
       {title}
     </h4>
@@ -261,7 +254,6 @@ export const GettingStarted: Story = {
                   {app.id === 'react' && <img src={logoReact} alt="React" style={{ height: 20 }} />}
                   {app.id === 'vue' && <img src={logoVue} alt="Vue" style={{ height: 20 }} />}
                   {app.id === 'angular' && <img src={logoAngular} alt="Angular" style={{ height: 20 }} />}
-                  {app.id === 'wc' && <img src={logoWc} alt="Web Components" style={{ height: 20 }} />}
                   {app.id === 'portal' && <img src={logoChaps} alt="Portal" style={{ height: 20 }} />}
                   <span>Base path: {app.path}</span>
                 </div>

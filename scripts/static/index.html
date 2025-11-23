@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galactik Design System</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="../styles/tokens.css">
   <link rel="stylesheet" href="../styles/tokens-generated.css">
   <style>
@@ -42,16 +43,18 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: color-mix(in srgb, var(--accent) 20%, transparent);
-      border-radius: var(--radius-button, 12px);
-      padding: 6px 10px;
-      color: var(--accent-foreground, #0f172a);
-      font-size: 13px;
-      font-weight: 600;
+      background: var(--color-bg-primary-lightest, #f3f4fa);
+      border-radius: var(--radius-md, 16px);
+      padding: 7px 18px;
+      color: var(--color-font-primary-base, #111827);
+      font-size: 15px;
+      font-weight: 700;
       letter-spacing: 0.01em;
-      transform: scale(0.8);
-      opacity: 0;
-      animation: badgeIn 0.5s var(--easing) 0.2s forwards;
+      box-shadow: 0 2px 8px 0 rgba(120, 80, 255, 0.04);
+      transform: scale(1);
+      opacity: 1;
+      animation: none;
+      margin-bottom: 12px;
     }
     .badge-icon {
       width: 18px;
@@ -59,16 +62,18 @@
     }
     .title {
       margin: 0;
-      font-size: 32px;
+      font-size: 2.2rem;
       font-weight: 800;
       letter-spacing: -0.02em;
       font-family: var(--font-hanken, var(--font-nunito), system-ui, -apple-system, sans-serif);
+      text-align: center;
     }
     .subtitle {
-      margin: 0;
-      color: var(--muted-foreground, #6b7280);
-      font-size: 16px;
+      margin: 0 0 32px 0;
+      color: var(--color-font-neutral-muted, #7b7e8b);
+      font-size: 1.15rem;
       line-height: 1.6;
+      text-align: center;
     }
     .grid {
       display: grid;
@@ -78,17 +83,17 @@
     .card {
       position: relative;
       display: flex;
-      gap: 16px;
-      align-items: flex-start;
-      padding: 24px;
-      background: var(--card, #ffffff);
-      border: 1px solid var(--border, #e5e7eb);
+      gap: 20px;
+      align-items: center;
+      padding: 32px 36px;
+      background: var(--color-bg-neutral-white, #fff);
+      border: 1.5px solid var(--color-border-base, #e5e7eb);
       border-radius: var(--radius-card, 18px);
-      box-shadow: var(--elevation-sm, 0 10px 30px rgba(0,0,0,0.08));
+      box-shadow: 0 4px 24px 0 rgba(120, 80, 255, 0.06);
       overflow: hidden;
-      transform: translateY(20px);
-      opacity: 0;
-      transition: transform 0.25s var(--easing), box-shadow 0.25s var(--easing), border-color 0.25s var(--easing);
+      opacity: 1;
+      transform: none;
+      transition: box-shadow 0.25s var(--easing), border-color 0.25s var(--easing);
     }
     .card:hover {
       transform: translateY(-2px);
@@ -107,14 +112,16 @@
     .card:hover::after { opacity: 0.03; }
     .card-body { position: relative; display: flex; gap: 16px; width: 100%; z-index: 1; }
     .icon {
-      width: 48px;
-      height: 48px;
-      border-radius: var(--radius, 12px);
-      background: color-mix(in srgb, var(--muted, #f5f5f5) 50%, transparent);
-      border: 1px solid var(--border, #e5e7eb);
-      display: grid;
-      place-items: center;
-      font-size: 24px;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: #fff;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 2px 8px 0 rgba(120, 80, 255, 0.08);
       transition: transform 0.2s var(--easing);
     }
     .card:hover .icon { transform: scale(1.05) rotate(5deg); }
@@ -130,13 +137,14 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 4px 10px;
-      border-radius: var(--radius-sm, 10px);
-      background: var(--accent, #7c3aed);
-      color: var(--accent-foreground, #0f172a);
-      font-size: 12px;
+      padding: 2px 14px;
+      border-radius: 8px;
+      background: var(--color-bg-primary-lightest, #f3f4fa);
+      color: var(--color-font-primary-base, #7c3aed);
+      font-size: 14px;
       font-weight: 700;
-      opacity: 0.9;
+      opacity: 1;
+      border: none;
       transform: scale(0);
       animation: badgeIn 0.6s var(--easing) 0.3s forwards;
     }
@@ -149,35 +157,38 @@
     .tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 10px;
+      margin-top: 8px;
     }
     .tag {
-      padding: 8px 12px;
-      border-radius: var(--radius-button, 12px);
-      background: color-mix(in srgb, var(--muted, #f8fafc) 50%, transparent);
-      border: 1px solid var(--border, #e5e7eb);
-      color: var(--muted-foreground, #6b7280);
-      font-size: 12px;
+      padding: 7px 18px;
+      border-radius: 16px;
+      background: var(--color-bg-primary-lightest, #f3f4fa);
+      color: var(--color-font-primary-base, #111827);
+      font-size: 15px;
       font-weight: 600;
-      transition: transform 0.18s var(--easing), background 0.18s var(--easing), color 0.18s var(--easing), border-color 0.18s var(--easing);
-      opacity: 0;
-      transform: scale(0.8);
+      border: none;
+      opacity: 1;
+      transform: none;
+      transition: background 0.18s var(--easing), color 0.18s var(--easing);
     }
     .tag:hover {
-      transform: scale(1.05);
-      background: var(--accent, #7c3aed);
-      color: var(--accent-foreground, #0f172a);
-      border-color: color-mix(in srgb, var(--accent) 60%, var(--border));
+      background: var(--color-bg-primary-base, #e9e3ff);
+      color: var(--color-font-primary-base, #7c3aed);
     }
     .action {
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius, 12px);
-      border: 1px solid var(--border, #e5e7eb);
-      display: grid;
-      place-items: center;
-      background: var(--card, #fff);
-      transition: transform 0.2s var(--easing), background 0.2s var(--easing), border-color 0.2s var(--easing), color 0.2s var(--easing);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1.5px solid var(--color-border-base, #e5e7eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-bg-neutral-white, #fff);
+      color: var(--color-font-neutral-muted, #7b7e8b);
+      font-size: 22px;
+      margin-left: auto;
+      transition: border-color 0.2s var(--easing), color 0.2s var(--easing), background 0.2s var(--easing);
       flex-shrink: 0;
     }
     .card:hover .action { transform: translateX(4px); }
@@ -198,7 +209,7 @@
       transition: transform 0.3s var(--easing);
     }
     .card:hover .line { transform: scaleX(1); }
-    .cards { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+    .cards { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 32px; }
     .generator { margin-top: 18px; }
     .generator .header {
       flex-direction: row;
@@ -307,56 +318,11 @@
 <body>
   <main class="page">
     <header class="header">
-      <span class="badge">
-        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4m0 10v4m-7-7h4m6 0h4M5 5l3 3m8 8 3 3m0-11-3 3m-8 2L5 19"/></svg>
-        <span class="text-tag">Design System</span>
-      </span>
+      <span class="badge">Design System</span>
       <h1 class="title">Galactik Design System</h1>
-      <p class="subtitle">Storybooks, composants et tokens unifiés. Choisissez votre environnement et explorez.</p>
+      <p class="subtitle">Toutes vos applications et Storybooks, unifiés par vos tokens et styles sémantiques.</p>
     </header>
-
     <ul class="cards" id="cards"></ul>
-
-    <section class="generator">
-      <div class="card">
-        <div class="card-body">
-          <div class="wand">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 3-3"/><path d="m9 18-1 1"/><path d="m14 5-2 2"/><path d="m18 9-3 3"/><path d="m3 21 3-3"/><path d="M12 3v1"/><path d="M12 12v1"/><path d="M12 21v1"/><path d="M3 12h1"/><path d="M21 12h1"/><path d="M6 6h.01"/><path d="M18 6h.01"/><path d="M6 18h.01"/><path d="M18 18h.01"/></svg>
-          </div>
-          <div class="content">
-            <div class="title-row">
-              <h3 class="card-title">Générateur de prompt</h3>
-              <span class="pill">Copiez, testez, itérez</span>
-            </div>
-            <p class="card-desc">Préparez vos prompts pour générer des composants, des tokens ou de la doc. Coller ci-dessous, copiez et partagez.</p>
-            <div class="textarea">
-              <textarea id="prompt" placeholder="Décrivez le composant ou le flux à générer..."></textarea>
-              <button class="copy-btn" id="copyBtn" aria-label="Copier">
-                <span class="copy-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                </span>
-                <span class="check-icon">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
-              </button>
-            </div>
-            <div class="footer">
-              <span class="text-tag">Tokens & variables système</span>
-              <span id="counter">0 caractères</span>
-            </div>
-          </div>
-        </div>
-        <span class="line"></span>
-      </div>
-    </section>
-
-    <div class="logos">
-      <img src="./assets/logo-chapsvision.svg" alt="Portal">
-      <img src="./assets/logo-react.svg" alt="React">
-      <img src="./assets/logo-vue.svg" alt="Vue">
-      <img src="./assets/logo-angular.svg" alt="Angular">
-      <img src="./assets/logo-wc.svg" alt="Web Components">
-    </div>
   </main>
 
   <script>
@@ -365,8 +331,7 @@
       { title: 'Portal', emoji: '🔮', badge: 'Docs', href: './portal/', desc: 'Hub React : navigation, docs et accès à tous les composants.', tags: ['Hub','React','Accès à tous les composants'], logo: './assets/logo-chapsvision.svg' },
       { title: 'React Storybook', emoji: '⚛️', badge: 'React', href: './react/', desc: 'Storybook React avec Vitest, TypeScript et scénarios visuels.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-react.svg' },
       { title: 'Vue Storybook', emoji: '💚', badge: 'Vue 3', href: './vue/', desc: 'Storybook Vue 3, typé et prêt pour vos intégrations.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-vue.svg' },
-      { title: 'Angular Storybook', emoji: '🅰️', badge: 'Angular', href: './angular/', desc: 'Storybook Angular 17, guide d’intégration et tokens synchronisés.', tags: ['Angular 17','Storybook','TypeScript'], logo: './assets/logo-angular.svg' },
-      { title: 'Web Components', emoji: '🧩', badge: 'WC', href: './web-component/', desc: 'Composants Stencil prêts pour tous les frameworks.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-wc.svg' }
+      { title: 'Angular Storybook', emoji: '🅰️', badge: 'Angular', href: './angular/', desc: 'Storybook Angular 17, guide d’intégration et tokens synchronisés.', tags: ['Angular 17','Storybook','TypeScript'], logo: './assets/logo-angular.svg' }
     ];
 
     const list = document.getElementById('cards');

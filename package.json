@@ -15,11 +15,9 @@
     "storybook:angular": "pnpm --filter storybook-angular storybook",
     "storybook:react": "pnpm --filter storybook-react storybook",
     "storybook:vue": "pnpm --filter storybook-vue storybook",
-    "storybook:wc": "pnpm --filter storybook-wc storybook",
     "build:storybook:angular": "pnpm --filter storybook-angular build-storybook",
     "build:storybook:react": "pnpm --filter storybook-react build-storybook",
     "build:storybook:vue": "pnpm --filter storybook-vue build-storybook",
-    "build:storybook:wc": "pnpm --filter storybook-wc build-storybook",
     "build:storybooks": "node scripts/build-storybooks.mjs",
     "serve:storybooks": "node scripts/serve-storybooks.mjs",
     "preview:storybooks": "pnpm run build:storybooks && pnpm run serve:storybooks",
@@ -44,7 +42,6 @@
     "@storybook/builder-vite": "8.2.7",
     "@storybook/react-vite": "8.2.7",
     "@storybook/vue3": "8.2.7",
-    "@storybook/web-components-vite": "8.2.7",
     "chromatic": "^11.6.4",
     "storybook": "8.2.7",
     "typescript": "5.2.2",
@@ -72,9 +69,7 @@
     },
     "neverBuiltDependencies": [
       "@storybook/react-vite",
-      "@storybook/vue3",
-      "@storybook/web-components",
-      "@storybook/web-components-vite"
+      "@storybook/vue3"
     ]
   },
   "packageManager": "pnpm@10.20.0",

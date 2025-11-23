@@ -5,6 +5,7 @@ import { Bullet } from '../../../../packages/react-ui/src/components/Bullet/Bull
 import Button from '../../../../packages/react-ui/src/components/Button/Button';
 import { Checkbox } from '../../../../packages/react-ui/src/components/Checkbox/Checkbox';
 import Label from '../../../../packages/react-ui/src/components/Label/Label';
+import { Radio } from '../../../../packages/react-ui/src/components/Radio/Radio';
 import type { Meta, StoryObj } from '@storybook/react';
 
 type ComponentRecord = {
@@ -56,18 +57,6 @@ const inventory: PackageInventory[] = [
         source: 'packages/vue-ui/src/components/Avatar/Avatar.vue'
       }
     ]
-  },
-  {
-    id: 'wc',
-    label: 'Web Components UI',
-    workspace: 'wc-ui',
-    components: [
-      {
-        name: '<gal-avatar>',
-        description: 'Stencil-generated web component.',
-        source: 'packages/wc-ui/src/components/gal-avatar/gal-avatar.tsx'
-      }
-    ]
   }
 ];
 
@@ -84,7 +73,7 @@ type Story = StoryObj;
 
 export const Catalogue: Story = {
   render: () => {
-    const frameworks = ["React", "Vue", "Angular", "Web Components"] as const;
+    const frameworks = ["React", "Vue", "Angular"] as const;
     const components = ["Avatar", "Badge", "Bullet", "Button", "Checkbox", "Label", "Radio"] as const;
 
     type Framework = typeof frameworks[number];
@@ -93,8 +82,7 @@ export const Catalogue: Story = {
     const baseUrls: Record<Framework, string> = {
       React: "https://rosenden.github.io/galactik/react",
       Vue: "https://rosenden.github.io/galactik/vue",
-      Angular: "https://rosenden.github.io/galactik/angular",
-      "Web Components": "https://rosenden.github.io/galactik/web-component"
+      Angular: "https://rosenden.github.io/galactik/angular"
     };
 
     const docIds: Record<Component, string> = {
@@ -136,7 +124,7 @@ export const Catalogue: Story = {
       Button: <Button variant="filled" colorVariant="primary" size="medium">Button</Button>,
       Checkbox: <Checkbox label="Preview" checked={true} />,
       Label: <Label text="Preview" color="sage" size="medium" />,
-      Radio: <span className="text-tag" style={{ color: 'var(--color-font-neutral-muted)' }}>React only</span>
+      Radio: <Radio label="Preview" checked />
     };
 
     return (

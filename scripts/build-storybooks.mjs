@@ -15,7 +15,6 @@ const targets = [
     filter: 'storybook-angular',
     copyFrom: resolve(rootDir, 'apps/storybook-angular/storybook-static')
   },
-  { slug: 'web-component', filter: 'storybook-wc' },
   { slug: 'portal', filter: 'portal', env: { STORYBOOK_BASE_URL: 'self' } }
 ];
 
@@ -59,7 +58,7 @@ try {
   const logoDest = resolve(outputRoot, 'assets');
   if (existsSync(logoSrc)) {
     mkdirSync(logoDest, { recursive: true });
-    for (const file of ['logo-chapsvision.svg','logo-react.svg','logo-vue.svg','logo-angular.svg','logo-wc.svg']) {
+    for (const file of ['logo-chapsvision.svg','logo-react.svg','logo-vue.svg','logo-angular.svg']) {
       copyFileSync(resolve(logoSrc, file), resolve(logoDest, file));
     }
   }

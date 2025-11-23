@@ -27,15 +27,6 @@
     "workspace": "storybook-angular"
   },
   {
-    "id": "wc",
-    "label": "Web Components UI",
-    "port": 6009,
-    "path": "/web-component",
-    "envVar": "WC_STORYBOOK_URL",
-    "packageDir": "../../packages/wc-ui",
-    "workspace": "storybook-wc"
-  },
-  {
     "id": "portal",
     "label": "Portal",
     "port": 6010,
