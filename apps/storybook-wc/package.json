@@ -6,7 +6,7 @@
     "prestorybook": "pnpm --filter wc-ui run build:stencil",
     "storybook": "storybook dev -p 6009",
     "prebuild-storybook": "pnpm --filter wc-ui run build:stencil",
-    "build-storybook": "storybook build -o ../../dist/storybooks/web-component"
+    "build-storybook": "storybook build -o ../../dist/storybooks/web-component && node ../../scripts/copy-wc-ui-assets.mjs"
   },
   "dependencies": {
     "@galactik/storybook-config": "workspace:*",

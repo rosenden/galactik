@@ -1,7 +1,9 @@
 node_modules/
 /dist/
-packages/*/node_modules/
+**/node_modules/
 packages/*/storybook-static/
+apps/*/storybook-static/
+apps/*/.angular/
 .DS_Store
 
 # Logs
