@@ -4,190 +4,445 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galactik Design System · Apps</title>
+  <title>Galactik Design System</title>
   <link rel="stylesheet" href="../styles/tokens.css">
   <link rel="stylesheet" href="../styles/tokens-generated.css">
   <style>
+    :root {
+      --easing: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: var(--font-family-base, 'Hanken Grotesk', Arial, Helvetica, sans-serif);
-      background: var(--light-color-background-surface, #fff);
       margin: 0;
-      padding: 0;
-      color: var(--light-color-font-neutral-base, #36383e);
       min-height: 100vh;
-    }
-    .container {
-      max-width: 700px;
-      margin: 48px auto 0 auto;
-      background: var(--light-color-background-alt, #f8fafb);
-      border-radius: var(--radius-2xl, 24px);
-      box-shadow: 0 4px 32px #0002;
-      padding: 48px 32px 32px 32px;
-      border: 1px solid var(--light-color-border-base, #b9c4d5);
-    }
-    h1 {
-      text-align: center;
-      color: var(--light-color-font-primary-base, #374648);
-      font-size: var(--font-size-2xl, 24px);
-      font-weight: var(--font-weight-bold, 700);
-      margin-bottom: var(--space-xl, 16px);
-      letter-spacing: 0.5px;
-    }
-    .desc {
-      text-align: center;
-      color: var(--light-color-font-neutral-muted, #626c84);
-      font-size: var(--font-size-lg, 16px);
-      margin-bottom: var(--space-3xl, 24px);
-    }
-    ul.apps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2xl, 20px);
-    }
-    .app-card {
-      display: flex;
-      align-items: center;
-      gap: var(--space-xl, 16px);
-      background: var(--light-color-background-surface, #fff);
-      border-radius: var(--radius-xl, 20px);
-      box-shadow: 0 2px 12px #0001;
-      padding: 20px 28px;
-      border: 1px solid var(--light-color-border-base, #b9c4d5);
-      transition: box-shadow 0.2s, border 0.2s;
-      text-decoration: none;
-      color: inherit;
-      position: relative;
-    }
-    .app-card:hover {
-      box-shadow: 0 6px 32px #0002;
-      border: 1.5px solid var(--light-color-font-accent-base, #a582ab);
-      background: var(--light-color-bg-accent-light, #efc9f3);
-    }
-    .app-logo {
-      width: 48px;
-      height: 48px;
-      border-radius: var(--radius-lg, 16px);
-      background: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 1px 6px #0001;
-      flex-shrink: 0;
-      border: 1px solid var(--light-color-border-base, #b9c4d5);
+      background: var(--color-bg-neutral-soft, #f4f6fb);
+      color: var(--color-font-primary-base, #111827);
+      font-family: var(--font-nunito, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
+      padding: 32px 16px;
     }
-    .app-info {
-      flex: 1;
-      min-width: 0;
+    .page {
+      width: 100%;
+      max-width: 64rem;
+      padding: 24px;
+      position: relative;
     }
-    .app-title {
-      font-size: var(--font-size-xl, 20px);
-      font-weight: var(--font-weight-semibold, 600);
-      margin: 0 0 2px 0;
-      color: var(--light-color-font-primary-base, #374648);
+    .header {
       display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: headIn 0.6s var(--easing) 0.05s forwards;
+    }
+    .badge {
+      display: inline-flex;
       align-items: center;
       gap: 8px;
+      background: color-mix(in srgb, var(--accent) 20%, transparent);
+      border-radius: var(--radius-button, 12px);
+      padding: 6px 10px;
+      color: var(--accent-foreground, #0f172a);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transform: scale(0.8);
+      opacity: 0;
+      animation: badgeIn 0.5s var(--easing) 0.2s forwards;
     }
-    .app-desc {
-      color: var(--light-color-font-neutral-muted, #626c84);
-      font-size: var(--font-size-base, 14px);
-      margin-bottom: 2px;
-      margin-top: 0;
-      line-height: 1.5;
+    .badge-icon {
+      width: 18px;
+      height: 18px;
     }
-    .app-meta {
-      font-size: var(--font-size-xs, 11px);
-      color: var(--light-color-font-neutral-light, #b9c4d5);
-      margin-top: 2px;
+    .title {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      font-family: var(--font-hanken, var(--font-nunito), system-ui, -apple-system, sans-serif);
     }
-    .app-link {
-      margin-left: auto;
-      color: var(--light-color-font-accent-base, #a582ab);
-      font-size: var(--font-size-lg, 16px);
-      text-decoration: underline;
-      font-weight: var(--font-weight-semibold, 600);
-      transition: color 0.2s;
+    .subtitle {
+      margin: 0;
+      color: var(--muted-foreground, #6b7280);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    .card {
+      position: relative;
       display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 24px;
+      background: var(--card, #ffffff);
+      border: 1px solid var(--border, #e5e7eb);
+      border-radius: var(--radius-card, 18px);
+      box-shadow: var(--elevation-sm, 0 10px 30px rgba(0,0,0,0.08));
+      overflow: hidden;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: transform 0.25s var(--easing), box-shadow 0.25s var(--easing), border-color 0.25s var(--easing);
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 50px rgba(0,0,0,0.12);
+      border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+    }
+    .card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--accent, #7c3aed) 0%, transparent 100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s var(--easing);
+    }
+    .card:hover::after { opacity: 0.03; }
+    .card-body { position: relative; display: flex; gap: 16px; width: 100%; z-index: 1; }
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius, 12px);
+      background: color-mix(in srgb, var(--muted, #f5f5f5) 50%, transparent);
+      border: 1px solid var(--border, #e5e7eb);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      transition: transform 0.2s var(--easing);
+    }
+    .card:hover .icon { transform: scale(1.05) rotate(5deg); }
+    .content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+    .title-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .card-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .pill {
+      display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm, 10px);
+      background: var(--accent, #7c3aed);
+      color: var(--accent-foreground, #0f172a);
+      font-size: 12px;
+      font-weight: 700;
+      opacity: 0.9;
+      transform: scale(0);
+      animation: badgeIn 0.6s var(--easing) 0.3s forwards;
     }
-    .app-link svg {
-      width: 1.1em;
-      height: 1.1em;
-      vertical-align: middle;
-      margin-left: 2px;
+    .card-desc {
+      margin: 0;
+      color: var(--muted-foreground, #6b7280);
+      font-size: 14px;
+      line-height: 1.6;
     }
-    @media (max-width: 700px) {
-      .container { padding: 24px 4vw; }
-      .app-card { flex-direction: column; align-items: flex-start; padding: 18px 12px; }
-      .app-logo { margin-bottom: 8px; }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      padding: 8px 12px;
+      border-radius: var(--radius-button, 12px);
+      background: color-mix(in srgb, var(--muted, #f8fafc) 50%, transparent);
+      border: 1px solid var(--border, #e5e7eb);
+      color: var(--muted-foreground, #6b7280);
+      font-size: 12px;
+      font-weight: 600;
+      transition: transform 0.18s var(--easing), background 0.18s var(--easing), color 0.18s var(--easing), border-color 0.18s var(--easing);
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    .tag:hover {
+      transform: scale(1.05);
+      background: var(--accent, #7c3aed);
+      color: var(--accent-foreground, #0f172a);
+      border-color: color-mix(in srgb, var(--accent) 60%, var(--border));
+    }
+    .action {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius, 12px);
+      border: 1px solid var(--border, #e5e7eb);
+      display: grid;
+      place-items: center;
+      background: var(--card, #fff);
+      transition: transform 0.2s var(--easing), background 0.2s var(--easing), border-color 0.2s var(--easing), color 0.2s var(--easing);
+      flex-shrink: 0;
+    }
+    .card:hover .action { transform: translateX(4px); }
+    .action:hover {
+      transform: translateX(4px) scale(1.1);
+      background: var(--accent, #7c3aed);
+      border-color: color-mix(in srgb, var(--accent) 70%, var(--border));
+      color: var(--accent-foreground, #0f172a);
+    }
+    .action:active { transform: translateX(4px) scale(0.95); }
+    .line {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent, #7c3aed), var(--chart-3, #0ea5e9), var(--chart-4, #22c55e));
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.3s var(--easing);
+    }
+    .card:hover .line { transform: scaleX(1); }
+    .cards { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+    .generator { margin-top: 18px; }
+    .generator .header {
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 12px 0;
+      animation-delay: 0s;
+      transform: none;
+      opacity: 1;
+    }
+    .wand {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius, 12px);
+      background: color-mix(in srgb, var(--accent) 20%, transparent);
+      display: grid;
+      place-items: center;
+      color: var(--accent-foreground, #0f172a);
+      border: 1px solid color-mix(in srgb, var(--accent) 50%, var(--border));
+    }
+    .textarea {
+      position: relative;
+      margin-top: 8px;
+    }
+    textarea {
+      width: 100%;
+      min-height: 180px;
+      padding: 12px 14px;
+      border-radius: var(--radius, 12px);
+      border: 1px solid var(--border, #e5e7eb);
+      background: var(--input-background, #fff);
+      color: var(--color-font-primary-base, #111827);
+      font-family: var(--font-nunito, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
+      font-size: 16px;
+      line-height: 1.5;
+      resize: vertical;
+      transition: box-shadow 0.18s var(--easing), border-color 0.18s var(--easing);
+    }
+    textarea:focus {
+      outline: none;
+      border-color: var(--ring, var(--accent, #7c3aed));
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent);
+    }
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius, 12px);
+      border: 1px solid var(--border, #e5e7eb);
+      background: var(--card, #fff);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: transform 0.2s var(--easing), background 0.2s var(--easing), border-color 0.2s var(--easing);
+    }
+    .copy-btn:hover {
+      transform: scale(1.05);
+      background: var(--accent, #7c3aed);
+      border-color: color-mix(in srgb, var(--accent) 70%, var(--border));
+      color: var(--accent-foreground, #0f172a);
+    }
+    .copy-btn:active { transform: scale(0.95); }
+    .copy-icon, .check-icon { position: absolute; transition: opacity 0.18s var(--easing), transform 0.18s var(--easing); }
+    .check-icon { color: var(--chart-3, #0ea5e9); opacity: 0; transform: scale(0.8); }
+    .copy-btn.copied .copy-icon { opacity: 0; transform: scale(0.8); }
+    .copy-btn.copied .check-icon { opacity: 1; transform: scale(1); }
+    .footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border, #e5e7eb);
+      color: var(--muted-foreground, #6b7280);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+      opacity: 0.85;
+    }
+    .logos img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0.15);
+    }
+    @keyframes headIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes badgeIn {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @media (max-width: 800px) {
+      .card { flex-direction: column; }
+      .card-body { flex-direction: row; }
+      .action { align-self: flex-start; }
+      .page { padding: 8px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Galactik Design System</h1>
-    <div class="desc">Toutes vos applications et Storybooks, unifiés par vos tokens et styles sémantiques.</div>
-    <ul class="apps">
-      <li>
-        <a class="app-card" href="./portal/" target="_blank" rel="noopener">
-          <span class="app-logo"><img src="/galactik/assets/logo-chapsvision.svg" alt="Portal" style="width:36px;height:36px;object-fit:contain;"></span>
-          <span class="app-info">
-            <span class="app-title">Portal <img src="/galactik/assets/logo-chapsvision.svg" alt="Portal" style="height:18px;vertical-align:middle;"></span>
-            <span class="app-desc">Vue d’ensemble, navigation et documentation centralisée de Galactik.</span>
-            <span class="app-meta">Type : Hub / React · Accès à tous les composants</span>
-          </span>
-          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </li>
-      <li>
-        <a class="app-card" href="./react/" target="_blank" rel="noopener">
-          <span class="app-logo"><img src="/galactik/assets/logo-react.svg" alt="React" style="width:36px;height:36px;"></span>
-          <span class="app-info">
-            <span class="app-title">React Storybook <img src="/galactik/assets/logo-react.svg" alt="React" style="height:18px;vertical-align:middle;"></span>
-            <span class="app-desc">Composants React, documentation, tests visuels et guides d’intégration.</span>
-            <span class="app-meta">React 18 · Storybook 8 · TypeScript</span>
-          </span>
-          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </li>
-      <li>
-        <a class="app-card" href="./vue/" target="_blank" rel="noopener">
-          <span class="app-logo"><img src="/galactik/assets/logo-vue.svg" alt="Vue" style="width:36px;height:36px;"></span>
-          <span class="app-info">
-            <span class="app-title">Vue Storybook <img src="/galactik/assets/logo-vue.svg" alt="Vue" style="height:18px;vertical-align:middle;"></span>
-            <span class="app-desc">Composants Vue 3, documentation, tests visuels et intégration rapide.</span>
-            <span class="app-meta">Vue 3 · Storybook 8 · TypeScript</span>
-          </span>
-          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </li>
-      <li>
-        <a class="app-card" href="./angular/" target="_blank" rel="noopener">
-          <span class="app-logo"><img src="/galactik/assets/logo-angular.svg" alt="Angular" style="width:36px;height:36px;"></span>
-          <span class="app-info">
-            <span class="app-title">Angular Storybook <img src="/galactik/assets/logo-angular.svg" alt="Angular" style="height:18px;vertical-align:middle;"></span>
-            <span class="app-desc">Composants Angular, documentation, tests visuels et intégration rapide.</span>
-            <span class="app-meta">Angular 17 · Storybook 8 · TypeScript</span>
-          </span>
-          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </li>
-      <li>
-        <a class="app-card" href="./web-component/" target="_blank" rel="noopener">
-          <span class="app-logo"><img src="/galactik/assets/logo-wc.svg" alt="Web Components" style="width:36px;height:36px;"></span>
-          <span class="app-info">
-            <span class="app-title">Web Components Storybook <img src="/galactik/assets/logo-wc.svg" alt="Web Components" style="height:18px;vertical-align:middle;"></span>
-            <span class="app-desc">Composants Stencil/Web Components, documentation, intégration multi-framework.</span>
-            <span class="app-meta">Stencil 3 · Storybook 8 · TypeScript</span>
-          </span>
-          <span class="app-link">Ouvrir <svg viewBox="0 0 20 20" fill="none"><path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </a>
-      </li>
-    </ul>
-  </div>
+  <main class="page">
+    <header class="header">
+      <span class="badge">
+        <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4m0 10v4m-7-7h4m6 0h4M5 5l3 3m8 8 3 3m0-11-3 3m-8 2L5 19"/></svg>
+        <span class="text-tag">Design System</span>
+      </span>
+      <h1 class="title">Galactik Design System</h1>
+      <p class="subtitle">Storybooks, composants et tokens unifiés. Choisissez votre environnement et explorez.</p>
+    </header>
+
+    <ul class="cards" id="cards"></ul>
+
+    <section class="generator">
+      <div class="card">
+        <div class="card-body">
+          <div class="wand">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 3-3"/><path d="m9 18-1 1"/><path d="m14 5-2 2"/><path d="m18 9-3 3"/><path d="m3 21 3-3"/><path d="M12 3v1"/><path d="M12 12v1"/><path d="M12 21v1"/><path d="M3 12h1"/><path d="M21 12h1"/><path d="M6 6h.01"/><path d="M18 6h.01"/><path d="M6 18h.01"/><path d="M18 18h.01"/></svg>
+          </div>
+          <div class="content">
+            <div class="title-row">
+              <h3 class="card-title">Générateur de prompt</h3>
+              <span class="pill">Copiez, testez, itérez</span>
+            </div>
+            <p class="card-desc">Préparez vos prompts pour générer des composants, des tokens ou de la doc. Coller ci-dessous, copiez et partagez.</p>
+            <div class="textarea">
+              <textarea id="prompt" placeholder="Décrivez le composant ou le flux à générer..."></textarea>
+              <button class="copy-btn" id="copyBtn" aria-label="Copier">
+                <span class="copy-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </span>
+                <span class="check-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+              </button>
+            </div>
+            <div class="footer">
+              <span class="text-tag">Tokens & variables système</span>
+              <span id="counter">0 caractères</span>
+            </div>
+          </div>
+        </div>
+        <span class="line"></span>
+      </div>
+    </section>
+
+    <div class="logos">
+      <img src="./assets/logo-chapsvision.svg" alt="Portal">
+      <img src="./assets/logo-react.svg" alt="React">
+      <img src="./assets/logo-vue.svg" alt="Vue">
+      <img src="./assets/logo-angular.svg" alt="Angular">
+      <img src="./assets/logo-wc.svg" alt="Web Components">
+    </div>
+  </main>
+
+  <script>
+    const easing = 'cubic-bezier(0.22, 1, 0.36, 1)';
+    const cards = [
+      { title: 'Portal', emoji: '🔮', badge: 'Docs', href: './portal/', desc: 'Hub React : navigation, docs et accès à tous les composants.', tags: ['Hub','React','Accès à tous les composants'], logo: './assets/logo-chapsvision.svg' },
+      { title: 'React Storybook', emoji: '⚛️', badge: 'React', href: './react/', desc: 'Storybook React avec Vitest, TypeScript et scénarios visuels.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-react.svg' },
+      { title: 'Vue Storybook', emoji: '💚', badge: 'Vue 3', href: './vue/', desc: 'Storybook Vue 3, typé et prêt pour vos intégrations.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-vue.svg' },
+      { title: 'Angular Storybook', emoji: '🅰️', badge: 'Angular', href: './angular/', desc: 'Storybook Angular 17, guide d’intégration et tokens synchronisés.', tags: ['Angular 17','Storybook','TypeScript'], logo: './assets/logo-angular.svg' },
+      { title: 'Web Components', emoji: '🧩', badge: 'WC', href: './web-component/', desc: 'Composants Stencil prêts pour tous les frameworks.', tags: ['Storybook','Vitest','TypeScript'], logo: './assets/logo-wc.svg' }
+    ];
+
+    const list = document.getElementById('cards');
+
+    cards.forEach((card, index) => {
+      const li = document.createElement('li');
+      const anchor = document.createElement('a');
+      anchor.className = 'card';
+      anchor.href = card.href;
+      anchor.target = '_blank';
+      anchor.rel = 'noreferrer';
+      anchor.style.animation = `headIn 0.6s ${easing} ${0.4 + index * 0.1}s forwards`;
+
+      const body = document.createElement('div');
+      body.className = 'card-body';
+
+      const icon = document.createElement('div');
+      icon.className = 'icon';
+      icon.textContent = card.emoji;
+
+      const content = document.createElement('div');
+      content.className = 'content';
+
+      const titleRow = document.createElement('div');
+      titleRow.className = 'title-row';
+      const h3 = document.createElement('h3');
+      h3.className = 'card-title';
+      h3.textContent = card.title;
+      const pill = document.createElement('span');
+      pill.className = 'pill';
+      pill.textContent = card.badge;
+      titleRow.append(h3, pill);
+
+      const desc = document.createElement('p');
+      desc.className = 'card-desc';
+      desc.textContent = card.desc;
+
+      const tags = document.createElement('div');
+      tags.className = 'tags';
+      card.tags.forEach((tagLabel, tagIndex) => {
+        const tag = document.createElement('span');
+        tag.className = 'tag text-tag';
+        tag.textContent = tagLabel;
+        tag.style.animation = `badgeIn 0.45s ${easing} ${0.3 + tagIndex * 0.05}s forwards`;
+        tags.appendChild(tag);
+      });
+
+      content.append(titleRow, desc, tags);
+
+      const action = document.createElement('div');
+      action.className = 'action';
+      action.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>';
+
+      body.append(icon, content, action);
+      const line = document.createElement('span');
+      line.className = 'line';
+
+      anchor.append(body, line);
+      li.appendChild(anchor);
+      list.appendChild(li);
+    });
+
+    const prompt = document.getElementById('prompt');
+    const counter = document.getElementById('counter');
+    const copyBtn = document.getElementById('copyBtn');
+
+    const updateCount = () => { counter.textContent = `${prompt.value.length} caractères`; };
+    updateCount();
+    prompt.addEventListener('input', updateCount);
+
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(prompt.value || '').then(() => {
+        copyBtn.classList.add('copied');
+        setTimeout(() => copyBtn.classList.remove('copied'), 1200);
+      });
+    });
+  </script>
 </body>
 </html>

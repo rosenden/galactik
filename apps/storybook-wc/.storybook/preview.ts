@@ -5,13 +5,19 @@ import '../../../styles/tokens-generated.css';
 import '../../../styles/tokens.css';
 import '../../../styles/tokens-dark.css';
 
-// Ensure WC elements are registered once before stories render
-if (!customElements.get('gal-avatar')) {
-  defineCustomElements();
-}
+// Ensure WC elements are registered once before stories render; wait for registration in loaders
+const wcReady = customElements.get('gal-avatar')
+  ? Promise.resolve()
+  : defineCustomElements();
 
 const preview: Preview = {
-  ...previewBase
+  ...previewBase,
+  loaders: [
+    ...(previewBase.loaders ?? []),
+    async () => {
+      await wcReady;
+    }
+  ]
 };
 
 export default preview;

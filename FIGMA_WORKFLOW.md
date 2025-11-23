@@ -21,9 +21,9 @@ Le serveur MCP proxy est configuré dans `.env` et gère automatiquement le rout
 # Port du serveur MCP
 MCP_PORT=3845
 
-# Figma tokens
-FIGMA_ACCESS_TOKEN=figd_6CvVFDsvE5Q_EXOsgaila-WNIaEJ4qr7f1Y92Kr_
-FIGMA_ACCESS_TOKEN_2=figd_7OgXkgB5STkwkBWDNS22TgaBhbC0oug7JujvgJp_
+# Figma tokens (à définir uniquement dans .env, jamais dans git)
+FIGMA_ACCESS_TOKEN=figd_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+FIGMA_ACCESS_TOKEN_2=figd_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Figma file IDs
 FIGMA_FILE_KEY=BWXtUSWTjvxk7gBRHKTN4Z

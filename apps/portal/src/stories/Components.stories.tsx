@@ -85,7 +85,7 @@ type Story = StoryObj;
 export const Catalogue: Story = {
   render: () => {
     const frameworks = ["React", "Vue", "Angular", "Web Components"] as const;
-    const components = ["Avatar", "Badge", "Bullet", "Button", "Checkbox", "Label"] as const;
+    const components = ["Avatar", "Badge", "Bullet", "Button", "Checkbox", "Label", "Radio"] as const;
 
     type Framework = typeof frameworks[number];
     type Component = typeof components[number];
@@ -103,7 +103,8 @@ export const Catalogue: Story = {
       Bullet: "electrons-bullet--docs",
       Button: "electrons-button--docs",
       Checkbox: "electrons-checkbox--docs",
-      Label: "electrons-label--docs"
+      Label: "electrons-label--docs",
+      Radio: "electrons-radio--docs"
     };
 
     const links: Record<Framework, Record<Component, string>> = frameworks.reduce(
@@ -112,7 +113,10 @@ export const Catalogue: Story = {
         [framework]: components.reduce(
           (componentLinks, component) => ({
             ...componentLinks,
-            [component]: `${baseUrls[framework]}/?path=/docs/${docIds[component]}`
+            [component]:
+              component === "Radio" && framework !== "React"
+                ? "" // Radio seulement disponible en React pour l'instant
+                : `${baseUrls[framework]}/?path=/docs/${docIds[component]}`
           }),
           {} as Record<Component, string>
         )
@@ -131,7 +135,8 @@ export const Catalogue: Story = {
       Bullet: <Bullet color="sage" size="medium" />,
       Button: <Button variant="filled" colorVariant="primary" size="medium">Button</Button>,
       Checkbox: <Checkbox label="Preview" checked={true} />,
-      Label: <Label text="Preview" color="sage" size="medium" />
+      Label: <Label text="Preview" color="sage" size="medium" />,
+      Radio: <span className="text-tag" style={{ color: 'var(--color-font-neutral-muted)' }}>React only</span>
     };
 
     return (

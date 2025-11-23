@@ -6,22 +6,20 @@
  */
 
 const FILE_KEY = 'zB9JxH85SZ9yDCUYw8CUwU';
-const TOKEN = process.env.FIGMA_ACCESS_TOKEN || 'figd_ZRKps0N4EYFS_Kqoo-_ONACm9epY0DiJU40lNr0w';
+const TOKEN = process.env.FIGMA_ACCESS_TOKEN;
 
 async function testFigmaAPI() {
   console.log('🔍 Testing Figma REST API...\n');
   console.log(`File Key: ${FILE_KEY}`);
-  console.log(`Token: ${TOKEN.substring(0, 15)}...`);
+  console.log(`Token: ${TOKEN ? TOKEN.substring(0, 8) + '…' : '(non défini)'}`);
   
   try {
     const url = `https://api.figma.com/v1/files/${FILE_KEY}`;
     console.log(`\n📡 Fetching: ${url}\n`);
     
-    const response = await fetch(url, {
-      headers: {
-        'X-Figma-Token': TOKEN
-      }
-    });
+    const response = await fetch(url, TOKEN ? {
+        headers: { 'X-Figma-Token': TOKEN }
+    } : {});
     
     console.log(`Status: ${response.status} ${response.statusText}`);
     

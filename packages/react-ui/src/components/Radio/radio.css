@@ -1,0 +1,94 @@
+/* Radio Component Styles - Synchronized with Figma Design System */
+
+.oc-radio-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  height: 24px;
+}
+
+.oc-radio-wrapper--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Hide native radio */
+.oc-radio__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* Radio outer circle */
+.oc-radio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: var(--stroke-xs) solid var(--color-font-primary-base);
+  background-color: transparent;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.oc-radio--checked {
+  border-color: var(--color-stroke-primary-base);
+}
+
+.oc-radio--disabled {
+  border-color: var(--color-font-neutral-disabled, #d1d1d1);
+  background: var(--color-bg-neutral-disabled, #f5f5f5);
+}
+
+.oc-radio--focused {
+  box-shadow: 0 0 0 2px var(--color-accent-primary-light, #e6f0ff);
+}
+
+/* Radio dot (inner circle) */
+.oc-radio__dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-stroke-primary-base);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+
+.oc-radio--checked .oc-radio__dot {
+  opacity: 1;
+}
+
+.oc-radio--disabled .oc-radio__dot {
+  background: var(--color-font-neutral-disabled, #d1d1d1);
+}
+
+/* Outer circle for visual structure */
+.oc-radio__outer {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.oc-radio__label {
+  margin-left: var(--space-xs);
+  color: var(--color-font-primary-base);
+  font-size: var(--font-size-body);
+  user-select: none;
+}
+
+.oc-radio__label--disabled {
+  color: var(--color-font-neutral-disabled, #d1d1d1);
+}

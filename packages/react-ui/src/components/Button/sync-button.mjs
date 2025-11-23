@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import fs from 'fs';
 
 const FILE_KEY = 'zB9JxH85SZ9yDCUYw8CUwU';
-const TOKEN = process.env.FIGMA_ACCESS_TOKEN || 'figd_ZRKps0N4EYFS_Kqoo-_ONACm9epY0DiJU40lNr0w';
+const TOKEN = process.env.FIGMA_ACCESS_TOKEN;
 
 async function extractButtonSpecs() {
   console.log('🔍 Extracting Button component from Figma...\n');
@@ -16,16 +16,16 @@ async function extractButtonSpecs() {
     const url = `https://api.figma.com/v1/files/${FILE_KEY}`;
     console.log(`📡 Fetching: ${url}\n`);
     
-    const response = await fetch(url, {
-      headers: {
-        'X-Figma-Token': TOKEN
-      }
-    });
+    const response = await fetch(url, TOKEN ? { headers: { 'X-Figma-Token': TOKEN } } : {});
     
     if (!response.ok) {
       const errorBody = await response.text();
       console.error('❌ Error response:', errorBody);
       return;
+    }
+
+    if (!TOKEN) {
+      console.warn('⚠️  FIGMA_ACCESS_TOKEN non défini. Ajoute-le dans ton .env avant d’extraire en production.');
     }
     
     const data = await response.json();

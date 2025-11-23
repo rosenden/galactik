@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
+
 import { Avatar } from 'react-ui/components/Avatar/Avatar';
 import Badge from 'react-ui/components/Badge/Badge';
 import Bullet from 'react-ui/components/Bullet/Bullet';
@@ -9,6 +10,8 @@ import Label from 'react-ui/components/Label';
 import { SuccessIcon } from 'react-ui/components/Label/LabelIcons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/pro-regular-svg-icons';
+import { Radio } from 'react-ui/components/Radio';
+import { RadioHomePreview } from './RadioHomePreview';
 
 const meta: Meta = {
   title: 'Home',
@@ -30,6 +33,14 @@ interface Component {
 }
 
 const components: Component[] = [
+    {
+      name: 'Radio',
+      category: 'Electrons',
+      description: 'Radio button with Figma spec sync',
+      path: '?path=/docs/electrons-radio--docs',
+      icon: <RadioHomePreview />,
+      previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+    },
   {
     name: 'Avatar',
     category: 'Electrons',
