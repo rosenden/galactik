@@ -47,14 +47,24 @@ for (const target of targets) {
   }
 }
 
+
 // Copy static index.html and 404.html to outputRoot for GitHub Pages root listing
 try {
   if (existsSync(staticRoot)) {
     copyFileSync(resolve(staticRoot, 'index.html'), resolve(outputRoot, 'index.html'));
     copyFileSync(resolve(staticRoot, '404.html'), resolve(outputRoot, '404.html'));
   }
-} catch {
-  // If not present, ignore
+  // Copy all logo assets for root index page
+  const logoSrc = resolve(rootDir, 'apps/portal/.storybook/assets');
+  const logoDest = resolve(outputRoot, 'assets');
+  if (existsSync(logoSrc)) {
+    mkdirSync(logoDest, { recursive: true });
+    for (const file of ['logo-chapsvision.svg','logo-react.svg','logo-vue.svg','logo-angular.svg','logo-wc.svg']) {
+      copyFileSync(resolve(logoSrc, file), resolve(logoDest, file));
+    }
+  }
+} catch (e) {
+  console.error('Error copying static files or assets:', e);
 }
 
 console.log(`\n✅ Storybooks available in ${outputRoot}`);
