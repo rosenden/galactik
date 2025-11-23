@@ -1,0 +1,42 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 48px 32px;
+  background: var(--color-bg-neutral-soft, #f8f8fb);
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--color-font-primary-base, #1a1d29);
+}
+
+.app-shell__content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.app-shell__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-shell__title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.app-shell__subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-font-neutral-muted, #4c5566);
+}
+
+.app-shell__card {
+  background: #fff;
+  border: 1px solid var(--color-border-neutral-soft, #e5e8f0);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(26, 29, 41, 0.06);
+}

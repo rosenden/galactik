@@ -25,6 +25,7 @@
     "preview:storybooks": "pnpm run build:storybooks && pnpm run serve:storybooks",
     "mcp:run": "node scripts/run-mcp.mjs",
     "mcp:fallback": "node scripts/mcp-fallback/server.mjs"
+    ,"build": "pnpm -r run build"
   },
   "devDependencies": {
     "@angular/animations": "17.3.12",
