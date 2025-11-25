@@ -8,7 +8,7 @@ export const withDesignTokens: DecoratorFunction<Renderer> = (
   if (doc) {
     doc.documentElement.setAttribute('data-theme', context.globals.theme ?? 'light');
   }
-  return StoryFn(context.args, context);
+  return StoryFn(context);
 };
 
 export default withDesignTokens;
