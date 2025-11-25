@@ -34,8 +34,29 @@ const colorOptions: AvatarColor[] = [
 const meta: Meta<typeof Avatar> = {
   title: 'Electrons/Avatar',
   component: Avatar,
-  parameters: { 
-    layout: 'padded'
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        component: `@example
+\`\`\`vue
+<script setup lang="ts">
+import Avatar from 'vue-ui/components/Avatar/Avatar.vue';
+</script>
+
+<template>
+  <!-- Avatar with initials (default palette) -->
+  <Avatar name="Alice Smith" size="medium" />
+
+  <!-- Avatar with image -->
+  <Avatar name="Clara White" src="https://example.com/photo.jpg" size="large" />
+
+  <!-- Avatar with semantic token color -->
+  <Avatar name="David Miller" avatar-color="sage" variant="secondary" />
+</template>
+\`\`\``
+      }
+    }
   },
   tags: ['autodocs'],
   argTypes: {
@@ -77,42 +98,6 @@ const meta: Meta<typeof Avatar> = {
 
 export default meta;
 type Story = StoryObj<typeof Avatar>;
-
-/**
- * @example
- * ```vue
- * <script setup>
- * import { Avatar } from '@/components/Avatar';
- * </script>
- * 
- * <template>
- *   <!-- Avatar with initials (default Figma colors) -->
- *   <Avatar name="Alice Smith" size="medium" />
- * 
- *   <!-- Avatar with custom colors -->
- *   <Avatar 
- *     name="Bob Jones" 
- *     size="large"
- *     background="#445556"
- *     color="#ffffff"
- *   />
- * 
- *   <!-- Avatar with image -->
- *   <Avatar 
- *     name="Clara White"
- *     src="https://example.com/photo.jpg"
- *     size="large"
- *   />
- * 
- *   <!-- Use avatarColor for design tokens -->
- *   <Avatar 
- *     name="David Miller"
- *     avatar-color="sage"
- *     variant="secondary"
- *   />
- * </template>
- * ```
- */
 
 // Playground (first story with controls)
 export const Playground: Story = {};

@@ -34,7 +34,33 @@ const meta: Meta<typeof Badge> = {
   title: 'Electrons/Badge',
   component: Badge,
   parameters: {
-    layout: 'padded'
+    layout: 'padded',
+    docs: {
+      description: {
+        component: `@example
+\`\`\`vue
+<script setup lang="ts">
+import Badge from 'vue-ui/components/Badge/Badge.vue';
+</script>
+
+<template>
+  <!-- Badge with plain text -->
+  <Badge variant="primary" color="sage">Active</Badge>
+
+  <!-- Badge with Font Awesome icon -->
+  <Badge variant="secondary" color="error">
+    <template #icon>
+      <i class="fa-solid fa-circle-exclamation"></i>
+    </template>
+    Alert
+  </Badge>
+
+  <!-- Badge outline -->
+  <Badge variant="secondary" color="success">Completed</Badge>
+</template>
+\`\`\``
+      }
+    }
   },
   tags: ['autodocs'],
   argTypes: {
@@ -79,38 +105,6 @@ const meta: Meta<typeof Badge> = {
 
 export default meta;
 type Story = StoryObj<typeof Badge>;
-
-/**
- * @example
- * ```vue
- * <script setup>
- * import { Badge } from '@/components/Badge';
- * </script>
- * 
- * <template>
- *   <!-- Badge with plain text -->
- *   <Badge variant="filled" color="sage">Active</Badge>
- * 
- *   <!-- Badge with Font Awesome icon -->
- *   <Badge variant="outlined" color="error">
- *     <template #icon>
- *       <i class="fa-solid fa-circle-exclamation"></i>
- *     </template>
- *     Alert
- *   </Badge>
- * 
- *   <!-- Badge secondary variant -->
- *   <Badge variant="filled" color="indigo" palette="secondary">
- *     Beta
- *   </Badge>
- * 
- *   <!-- Badge outline -->
- *   <Badge variant="outlined" color="success">
- *     Completed
- *   </Badge>
- * </template>
- * ```
- */
 
 // Playground (first story with controls)
 export const Playground: Story = {};

@@ -13,17 +13,21 @@
       --easing: cubic-bezier(0.22, 1, 0.36, 1);
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-bg-neutral-soft, #f4f6fb);
-      color: var(--color-font-primary-base, #111827);
-      font-family: var(--font-nunito, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
-      padding: 32px 16px;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-neutral-soft, #f4f6fb);
+  color: var(--color-font-primary-base, #111827);
+  font-family: var(--font-hanken, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
+  padding: 32px 16px;
+}
+a, button {
+  text-decoration: none;
+  color: inherit;
+}
     .page {
       width: 100%;
       max-width: 64rem;
@@ -65,7 +69,7 @@
       font-size: 2.2rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      font-family: var(--font-hanken, var(--font-nunito), system-ui, -apple-system, sans-serif);
+      font-family: var(--font-hanken, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
       text-align: center;
     }
     .subtitle {
@@ -123,6 +127,12 @@
       font-size: 32px;
       box-shadow: 0 2px 8px 0 rgba(120, 80, 255, 0.08);
       transition: transform 0.2s var(--easing);
+      overflow: hidden;
+    }
+    .icon img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
     }
     .card:hover .icon { transform: scale(1.05) rotate(5deg); }
     .content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
@@ -242,7 +252,7 @@
       border: 1px solid var(--border, #e5e7eb);
       background: var(--input-background, #fff);
       color: var(--color-font-primary-base, #111827);
-      font-family: var(--font-nunito, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
+  font-family: var(--font-hanken, 'Hanken Grotesk', system-ui, -apple-system, sans-serif);
       font-size: 16px;
       line-height: 1.5;
       resize: vertical;
@@ -350,7 +360,10 @@
 
       const icon = document.createElement('div');
       icon.className = 'icon';
-      icon.textContent = card.emoji;
+      const img = document.createElement('img');
+      img.src = card.logo;
+      img.alt = `${card.title} logo`;
+      icon.appendChild(img);
 
       const content = document.createElement('div');
       content.className = 'content';

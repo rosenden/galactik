@@ -42,41 +42,6 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 /**
- * @example
- * ```vue
- * <script setup>
- * import { Bullet } from '@/components/Bullet';
- * </script>
- * 
- * <template>
- *   <!-- Simple bullet -->
- *   <Bullet color="sage" size="small" />
- * 
- *   <!-- Bullet inside a list -->
- *   <ul style="list-style: none; padding: 0;">
- *     <li style="display: flex; align-items: center; gap: 8px;">
- *       <Bullet color="success" size="small" />
- *       <span>Task completed</span>
- *     </li>
- *     <li style="display: flex; align-items: center; gap: 8px;">
- *       <Bullet color="warning" size="small" />
- *       <span>In progress</span>
- *     </li>
- *     <li style="display: flex; align-items: center; gap: 8px;">
- *       <Bullet color="error" size="small" />
- *       <span>Blocked</span>
- *     </li>
- *   </ul>
- * 
- *   <!-- Different sizes -->
- *   <Bullet color="indigo" size="xsmall" />
- *   <Bullet color="indigo" size="small" />
- *   <Bullet color="indigo" size="medium" />
- * </template>
- * ```
- */
-
-/**
  * Interactive playground for the component
  */
 export const Playground: Story = {};

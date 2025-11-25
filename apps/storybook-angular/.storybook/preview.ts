@@ -1,9 +1,12 @@
 import 'zone.js';
 import type { Preview } from '@storybook/angular';
-import type { DecoratorFunction } from '@storybook/types';
+import type { DecoratorFunction, Renderer, StoryContext, StoryFn } from '@storybook/types';
 import previewBase from '@galactik/storybook-config/preview-base';
 
-const withAngularBackground: DecoratorFunction = (StoryFn, context) => {
+const withAngularBackground: DecoratorFunction<Renderer> = (
+  StoryFn: StoryFn<Renderer>,
+  context: StoryContext<Renderer>
+) => {
   const doc = (globalThis as { document?: Document }).document;
   if (doc?.body) {
     doc.body.style.backgroundColor =
@@ -11,7 +14,7 @@ const withAngularBackground: DecoratorFunction = (StoryFn, context) => {
         ? 'var(--abs-black)'
         : 'var(--color-background-surface)';
   }
-  return StoryFn(context);
+  return StoryFn(context.args, context);
 };
 
 const baseDecorators = Array.isArray(previewBase.decorators) 

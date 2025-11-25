@@ -5,6 +5,7 @@ import Bullet from '../../../../packages/vue-ui/src/components/Bullet/Bullet.vue
 import Button from '../../../../packages/vue-ui/src/components/Button/Button.vue';
 import Checkbox from '../../../../packages/vue-ui/src/components/Checkbox/Checkbox.vue';
 import Label from '../../../../packages/vue-ui/src/components/Label/Label.vue';
+import Radio from '../../../../packages/vue-ui/src/components/Radio/Radio.vue';
 import { SuccessIcon } from '../../../../packages/vue-ui/src/components/Label/LabelIcons';
 
 const meta: Meta = {
@@ -68,11 +69,18 @@ const components: Component[] = [
     path: '?path=/docs/electrons-checkbox--docs',
     previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
   },
+  {
+    name: 'Radio',
+    category: 'Electrons',
+    description: 'Radio button synchronisé avec React',
+    path: '?path=/docs/electrons-radio--docs',
+    previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+  },
 ];
 
 export const Default: Story = {
   render: () => ({
-    components: { Avatar, Badge, Bullet, Button, Checkbox, Label },
+    components: { Avatar, Badge, Bullet, Button, Checkbox, Label, Radio },
     setup() {
       const buildUrl = (path: string) =>
         typeof window === 'undefined' ? path : new URL(path, window.location.href).toString();
@@ -131,6 +139,7 @@ export const Default: Story = {
                 <Button v-else-if="component.name === 'Button'" variant="filled" color-variant="primary" size="small" icon-left="fa-solid fa-plus">Button</Button>
                 <Label v-else-if="component.name === 'Label'" text="Label" color="success" size="medium" :icon="SuccessIcon" />
                 <Checkbox v-else-if="component.name === 'Checkbox'" :checked="true" label="Checkbox" />
+                <Radio v-else-if="component.name === 'Radio'" :checked="true" label="Radio" />
               </div>
 
               <div style="padding: var(--space-3xl);">

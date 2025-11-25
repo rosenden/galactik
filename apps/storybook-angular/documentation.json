@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "Component",
-            "id": "interface-Component-31a2b915a0cf2aece5df9230d3dc9b5826c2e09635f5e6b283e158abfaaa74e83949369e905439eee5f703dc4660d08d5dcf027a00572de587cbc5bbfddbc31a",
+            "id": "interface-Component-2b0cceda1e64ebc1a9b36cb7e10dc8e30e7cc9c26b53922a60a7cf522ec36e251f143ca286b0c26510abb05e6d190399e59d834b98ff26a463be79f886c5fb3f",
             "file": "src/stories/home.stories.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';\nimport { AvatarComponent } from 'angular-ui/components/avatar/avatar.component';\nimport { BadgeComponent } from 'angular-ui/components/badge/badge.component';\nimport { BulletComponent } from 'angular-ui/components/bullet/bullet.component';\nimport { ButtonComponent } from 'angular-ui/components/button/button.component';\nimport { LabelComponent } from 'angular-ui/components/label/label.component';\nimport { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';\n\ninterface Component {\n  name: string;\n  category: string;\n  description: string;\n  path: string;\n  template: string;\n}\n\nconst components: Component[] = [\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n];\n\nconst generateCardTemplate = (component: Component): string => {\n  return `\n    <a \n      href=\"${component.path}\"\n      onclick=\"event.preventDefault(); var url = new URL('${component.path}', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }\"\n      style=\"\n        text-decoration: none;\n        background-color: var(--color-background-alt);\n        border-radius: var(--radius-lg);\n        box-shadow: 0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08);\n        transition: all 0.2s ease;\n        cursor: pointer;\n        border: var(--stroke-xs) solid var(--color-border-base);\n        overflow: hidden;\n        display: flex;\n        flex-direction: column;\n      \"\n      onmouseenter=\"this.style.boxShadow='0 var(--space-xs) var(--space-2xl) rgba(0, 0, 0, 0.12)'; this.style.transform='translateY(calc(-1 * var(--space-3xs)))';\"\n      onmouseleave=\"this.style.boxShadow='0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08)'; this.style.transform='translateY(0)';\"\n    >\n      <div style=\"\n        padding: var(--space-4xl);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        min-height: 120px;\n        border-bottom: var(--stroke-xs) solid var(--color-border-base);\n        background: linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%);\n      \">\n        ${component.template}\n      </div>\n\n      <div style=\"padding: var(--space-3xl);\">\n        <h3 style=\"\n          font-size: var(--font-size-lg);\n          font-weight: var(--font-weight-semibold);\n          color: var(--color-font-primary-base);\n          margin-bottom: var(--space-sm);\n          line-height: var(--line-height-4);\n        \">\n          ${component.name}\n        </h3>\n        <p style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-neutral-muted);\n          line-height: var(--line-height-3);\n          margin-bottom: var(--space-lg);\n        \">\n          ${component.description}\n        </p>\n        <div style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-secondary-base);\n          font-weight: var(--font-weight-semibold);\n        \">\n          Voir la documentation →\n        </div>\n      </div>\n    </a>\n  `;\n};\n\nconst meta: Meta = {\n  title: 'Home',\n  parameters: {\n    layout: 'fullscreen',\n  },\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n};\n",
+            "sourceCode": "import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';\nimport { AvatarComponent } from 'angular-ui/components/avatar/avatar.component';\nimport { BadgeComponent } from 'angular-ui/components/badge/badge.component';\nimport { BulletComponent } from 'angular-ui/components/bullet/bullet.component';\nimport { ButtonComponent } from 'angular-ui/components/button/button.component';\nimport { LabelComponent } from 'angular-ui/components/label/label.component';\nimport { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';\nimport { RadioComponent } from 'angular-ui/components/radio/radio.component';\n\ninterface Component {\n  name: string;\n  category: string;\n  description: string;\n  path: string;\n  template: string;\n}\n\nconst components: Component[] = [\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n];\n\nconst generateCardTemplate = (component: Component): string => {\n  return `\n    <a \n      href=\"${component.path}\"\n      onclick=\"event.preventDefault(); var url = new URL('${component.path}', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }\"\n      style=\"\n        text-decoration: none;\n        background-color: var(--color-background-alt);\n        border-radius: var(--radius-lg);\n        box-shadow: 0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08);\n        transition: all 0.2s ease;\n        cursor: pointer;\n        border: var(--stroke-xs) solid var(--color-border-base);\n        overflow: hidden;\n        display: flex;\n        flex-direction: column;\n      \"\n      onmouseenter=\"this.style.boxShadow='0 var(--space-xs) var(--space-2xl) rgba(0, 0, 0, 0.12)'; this.style.transform='translateY(calc(-1 * var(--space-3xs)))';\"\n      onmouseleave=\"this.style.boxShadow='0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08)'; this.style.transform='translateY(0)';\"\n    >\n      <div style=\"\n        padding: var(--space-4xl);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        min-height: 120px;\n        border-bottom: var(--stroke-xs) solid var(--color-border-base);\n        background: linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%);\n      \">\n        ${component.template}\n      </div>\n\n      <div style=\"padding: var(--space-3xl);\">\n        <h3 style=\"\n          font-size: var(--font-size-lg);\n          font-weight: var(--font-weight-semibold);\n          color: var(--color-font-primary-base);\n          margin-bottom: var(--space-sm);\n          line-height: var(--line-height-4);\n        \">\n          ${component.name}\n        </h3>\n        <p style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-neutral-muted);\n          line-height: var(--line-height-3);\n          margin-bottom: var(--space-lg);\n        \">\n          ${component.description}\n        </p>\n        <div style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-secondary-base);\n          font-weight: var(--font-weight-semibold);\n        \">\n          Voir la documentation →\n        </div>\n      </div>\n    </a>\n  `;\n};\n\nconst meta: Meta = {\n  title: 'Home',\n  parameters: {\n    layout: 'fullscreen',\n  },\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n};\n",
             "properties": [
                 {
                     "name": "category",
@@ -18,7 +18,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 12
                 },
                 {
                     "name": "description",
@@ -28,7 +28,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 12
+                    "line": 13
                 },
                 {
                     "name": "name",
@@ -38,7 +38,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 10
+                    "line": 11
                 },
                 {
                     "name": "path",
@@ -48,7 +48,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 13
+                    "line": 14
                 },
                 {
                     "name": "template",
@@ -58,7 +58,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 15
                 }
             ],
             "indexSignatures": [],
@@ -147,6 +147,16 @@
                 "defaultValue": "{\n  brandTitle: 'Galactik ANGULAR UI',\n  brandUrl: '/?path=/story/home--default',\n  brandTarget: '_self'\n}"
             },
             {
+                "name": "CardChoices",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 12px;\">\n        <label\n          *ngFor=\"let card of cards\"\n          [style.display]=\"'flex'\"\n          [style.alignItems]=\"'center'\"\n          [style.gap.px]=\"12\"\n          [style.padding]=\"'14px 16px'\"\n          [style.borderRadius]=\"'var(--radius-card)'\"\n          [style.border]=\"card.id === selected ? '1px solid var(--color-stroke-primary-base)' : '1px solid var(--color-border-base)'\"\n          [style.background]=\"card.id === selected ? 'color-mix(in srgb, var(--accent) 8%, var(--card))' : 'var(--card)'\"\n          style=\"box-shadow: var(--elevation-xs, 0 6px 18px rgba(0,0,0,0.06)); cursor: pointer; transition: transform 0.18s var(--ease-out-expo, cubic-bezier(0.22,1,0.36,1)), border-color 0.2s;\"\n        >\n          <oc-radio\n            name=\"radio-card\"\n            [value]=\"card.id\"\n            [checked]=\"selected === card.id\"\n            (change)=\"selected = card.id\"\n          ></oc-radio>\n          <div style=\"display: flex; flex-direction: column; gap: 4px;\">\n            <div style=\"display: flex; align-items: center; gap: 8px;\">\n              <span class=\"text-label-medium\" style=\"color: var(--color-font-primary-base); font-weight: 700;\">\n                {{ card.title }}\n              </span>\n              <span class=\"text-tag\" style=\"padding: 4px 8px; border-radius: var(--radius-sm); background: var(--accent); color: var(--accent-foreground);\">\n                {{ card.badge }}\n              </span>\n            </div>\n            <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">\n              {{ card.desc }}\n            </span>\n          </div>\n        </label>\n      </div>\n    `,\n    props: {\n      selected: 'portal',\n      cards: [\n        { id: 'portal', title: 'Portal', desc: 'Hub + docs', badge: 'Docs' },\n        { id: 'vue', title: 'Vue Storybook', desc: 'Storybook + Vitest', badge: 'Vue' },\n        { id: 'react', title: 'React Storybook', desc: 'Storybook + Vitest', badge: 'React' }\n      ]\n    }\n  })\n}"
+            },
+            {
                 "name": "CheckboxGroup",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -216,7 +226,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Component[]",
-                "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n]"
+                "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n]"
             },
             {
                 "name": "Default",
@@ -226,7 +236,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
+                "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -237,6 +247,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 16px;\">\n        <oc-checkbox [checked]=\"false\" disabled label=\"Disabled unchecked\"></oc-checkbox>\n        <oc-checkbox [checked]=\"true\" disabled label=\"Disabled checked\"></oc-checkbox>\n        <oc-checkbox [checked]=\"false\" indeterminate disabled label=\"Disabled indeterminate\"></oc-checkbox>\n      </div>\n    `\n  })\n}"
+            },
+            {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px;\">\n        <oc-radio [checked]=\"false\" [disabled]=\"true\" label=\"Disabled\"></oc-radio>\n        <oc-radio [checked]=\"true\" [disabled]=\"true\" label=\"Disabled (checked)\"></oc-radio>\n      </div>\n    `\n  })\n}"
             },
             {
                 "name": "DisabledState",
@@ -411,6 +431,16 @@
                 "defaultValue": "{\n  title: 'Electrons/Label',\n  component: LabelComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [LabelComponent]\n    })\n  ],\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'centered',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-label text=\"New Feature\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-image\"></oc-label>\n<oc-label text=\"Warning\" color=\"warning\" size=\"small\" icon=\"fa-regular fa-triangle-exclamation\"></oc-label>\n<oc-label text=\"Info\" color=\"info\" size=\"medium\"></oc-label>\n\\`\\`\\`\n`\n      }\n    }\n  },\n  argTypes: {\n    text: {\n      control: 'text',\n      description: 'Text displayed inside the label'\n    },\n    size: {\n      options: sizeOptions,\n      control: { type: 'inline-radio' },\n      description: 'Label size'\n    },\n    color: {\n      options: colorOptions,\n      control: { type: 'select' },\n      description: 'Color synced with Figma tokens'\n    },\n    icon: {\n      control: 'text',\n      description: 'Optional icon class (e.g. Font Awesome)'\n    }\n  },\n  args: {\n    text: 'Label',\n    size: 'medium',\n    color: 'sage',\n    icon: 'fa-regular fa-image'\n  }\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<RadioComponent>",
+                "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: var(--color-stroke-primary-base), var(--color-font-neutral-disabled).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
+            },
+            {
                 "name": "palette",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -513,6 +543,16 @@
                 "defaultValue": "{}"
             },
             {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  }\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -551,6 +591,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `<oc-button \n      [variant]=\"variant\" \n      [colorVariant]=\"colorVariant\" \n      [size]=\"size\">\n      Primary Text\n    </oc-button>`\n  }),\n  args: {\n    variant: 'text',\n    colorVariant: 'primary',\n    size: 'medium',\n  },\n}"
+            },
+            {
+                "name": "RadioGroup",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 10px; padding: 16px; border: 1px solid var(--color-border-base); border-radius: var(--radius-md); background: var(--color-background-alt);\">\n        <h4 style=\"margin:0; font-size:14px; font-weight:700; color:var(--color-font-neutral-base);\">Pick your Storybook environment</h4>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"react\" [checked]=\"true\" label=\"React\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Storybook + Vitest</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"vue\" [checked]=\"false\" label=\"Vue\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Vue 3 + TS</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"angular\" [checked]=\"false\" label=\"Angular\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Angular 17 + TS</span>\n        </div>\n      </div>\n    `\n  })\n}"
             },
             {
                 "name": "SecondaryFilled",
@@ -601,6 +651,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 16px;\">\n        <oc-checkbox [checked]=\"false\" label=\"Unselected\"></oc-checkbox>\n        <oc-checkbox [checked]=\"true\" label=\"Selected\"></oc-checkbox>\n        <oc-checkbox [checked]=\"false\" indeterminate label=\"Indeterminate (minus)\"></oc-checkbox>\n      </div>\n    `\n  })\n}"
+            },
+            {
+                "name": "SelectionStates",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px;\">\n        <oc-radio [checked]=\"false\" label=\"Unchecked\"></oc-radio>\n        <oc-radio [checked]=\"true\" label=\"Checked\"></oc-radio>\n      </div>\n    `\n  })\n}"
             },
             {
                 "name": "sizeOptions",
@@ -671,8 +731,8 @@
                 "file": ".storybook/preview.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "DecoratorFunction",
-                "defaultValue": "(StoryFn, context) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
+                "type": "DecoratorFunction<Renderer>",
+                "defaultValue": "(StoryFn: StoryFn<Renderer>, context: StoryContext<Renderer>) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
             },
             {
                 "name": "WithIcon",
@@ -820,6 +880,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<LabelComponent>",
                 "file": "src/stories/label.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<RadioComponent>",
+                "file": "src/stories/radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1080,8 +1151,8 @@
                     "file": ".storybook/preview.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "DecoratorFunction",
-                    "defaultValue": "(StoryFn, context) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
+                    "type": "DecoratorFunction<Renderer>",
+                    "defaultValue": "(StoryFn: StoryFn<Renderer>, context: StoryContext<Renderer>) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
                 }
             ],
             ".storybook/theme.ts": [
@@ -1124,6 +1195,68 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  sage50: '#f5f8f7',\n  sage100: '#e8f0ee',\n  sage200: '#d1e1dd',\n  sage300: '#a9c1b8',\n  sage400: '#7a9b95',\n  sage500: '#607c7f',\n  sage600: '#5d7374',\n  sage700: '#4f6162',\n  sage800: '#445556',\n  sage900: '#374648',\n  sage950: '#2d393a',\n  sage975: '#222d30',\n  almond50: '#f1f8f4',\n  almond400: '#5fa884',\n  almond500: '#3d8c69',\n  grey100: '#f9fafb',\n  grey200: '#eff2f6',\n  grey400: '#97a6be',\n  grey700: '#4d5260',\n  grey900: '#272b30',\n  white: '#ffffff',\n  black: '#182021'\n}"
+                }
+            ],
+            "src/stories/radio.stories.ts": [
+                {
+                    "name": "CardChoices",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; gap: 12px;\">\n        <label\n          *ngFor=\"let card of cards\"\n          [style.display]=\"'flex'\"\n          [style.alignItems]=\"'center'\"\n          [style.gap.px]=\"12\"\n          [style.padding]=\"'14px 16px'\"\n          [style.borderRadius]=\"'var(--radius-card)'\"\n          [style.border]=\"card.id === selected ? '1px solid var(--color-stroke-primary-base)' : '1px solid var(--color-border-base)'\"\n          [style.background]=\"card.id === selected ? 'color-mix(in srgb, var(--accent) 8%, var(--card))' : 'var(--card)'\"\n          style=\"box-shadow: var(--elevation-xs, 0 6px 18px rgba(0,0,0,0.06)); cursor: pointer; transition: transform 0.18s var(--ease-out-expo, cubic-bezier(0.22,1,0.36,1)), border-color 0.2s;\"\n        >\n          <oc-radio\n            name=\"radio-card\"\n            [value]=\"card.id\"\n            [checked]=\"selected === card.id\"\n            (change)=\"selected = card.id\"\n          ></oc-radio>\n          <div style=\"display: flex; flex-direction: column; gap: 4px;\">\n            <div style=\"display: flex; align-items: center; gap: 8px;\">\n              <span class=\"text-label-medium\" style=\"color: var(--color-font-primary-base); font-weight: 700;\">\n                {{ card.title }}\n              </span>\n              <span class=\"text-tag\" style=\"padding: 4px 8px; border-radius: var(--radius-sm); background: var(--accent); color: var(--accent-foreground);\">\n                {{ card.badge }}\n              </span>\n            </div>\n            <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">\n              {{ card.desc }}\n            </span>\n          </div>\n        </label>\n      </div>\n    `,\n    props: {\n      selected: 'portal',\n      cards: [\n        { id: 'portal', title: 'Portal', desc: 'Hub + docs', badge: 'Docs' },\n        { id: 'vue', title: 'Vue Storybook', desc: 'Storybook + Vitest', badge: 'Vue' },\n        { id: 'react', title: 'React Storybook', desc: 'Storybook + Vitest', badge: 'React' }\n      ]\n    }\n  })\n}"
+                },
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px;\">\n        <oc-radio [checked]=\"false\" [disabled]=\"true\" label=\"Disabled\"></oc-radio>\n        <oc-radio [checked]=\"true\" [disabled]=\"true\" label=\"Disabled (checked)\"></oc-radio>\n      </div>\n    `\n  })\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<RadioComponent>",
+                    "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: var(--color-stroke-primary-base), var(--color-font-neutral-disabled).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  }\n}"
+                },
+                {
+                    "name": "RadioGroup",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 10px; padding: 16px; border: 1px solid var(--color-border-base); border-radius: var(--radius-md); background: var(--color-background-alt);\">\n        <h4 style=\"margin:0; font-size:14px; font-weight:700; color:var(--color-font-neutral-base);\">Pick your Storybook environment</h4>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"react\" [checked]=\"true\" label=\"React\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Storybook + Vitest</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"vue\" [checked]=\"false\" label=\"Vue\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Vue 3 + TS</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"angular\" [checked]=\"false\" label=\"Angular\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Angular 17 + TS</span>\n        </div>\n      </div>\n    `\n  })\n}"
+                },
+                {
+                    "name": "SelectionStates",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 12px;\">\n        <oc-radio [checked]=\"false\" label=\"Unchecked\"></oc-radio>\n        <oc-radio [checked]=\"true\" label=\"Checked\"></oc-radio>\n      </div>\n    `\n  })\n}"
                 }
             ],
             "src/stories/checkbox.stories.ts": [
@@ -1473,7 +1606,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Component[]",
-                    "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n]"
+                    "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n]"
                 },
                 {
                     "name": "Default",
@@ -1483,7 +1616,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
+                    "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
                 },
                 {
                     "name": "generateCardTemplate",
@@ -1611,6 +1744,19 @@
                     "description": "",
                     "kind": 184
                 }
+            ],
+            "src/stories/radio.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<RadioComponent>",
+                    "file": "src/stories/radio.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
             ]
         }
     },
@@ -1620,7 +1766,7 @@
         "children": []
     },
     "coverage": {
-        "count": 5,
+        "count": 4,
         "status": "low",
         "files": [
             {
@@ -2354,6 +2500,76 @@
             },
             {
                 "filePath": "src/stories/label.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "CardChoices",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RadioGroup",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "SelectionStates",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/radio.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

@@ -5,3 +5,4 @@ export { BulletComponent } from './components/bullet/bullet.component';
 export { ButtonComponent } from './components/button/button.component';
 export { LabelComponent } from './components/label/label.component';
 export { CheckboxComponent } from './components/checkbox/checkbox.component';
+export { RadioComponent } from './components/radio/radio.component';

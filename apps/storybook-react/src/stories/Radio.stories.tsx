@@ -11,7 +11,7 @@ const meta: Meta<typeof Radio> = {
       description: {
         component: `@example
 \`\`\`tsx
-// Radio contrôlé
+// Controlled radio
 const [value, setValue] = useState('a');
 
 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -20,7 +20,7 @@ const [value, setValue] = useState('a');
 </div>
 \`\`\`
 
-Sémantique : couleurs et rayons issus des tokens (ex. var(--color-bg-primary-base), var(--radius-md)).`
+Semantic tokens: colors/radii from design tokens (e.g. var(--color-bg-primary-base), var(--radius-md)).`
       }
     }
   },
@@ -28,21 +28,21 @@ Sémantique : couleurs et rayons issus des tokens (ex. var(--color-bg-primary-ba
   argTypes: {
     checked: {
       control: 'boolean',
-      description: 'État sélectionné'
+      description: 'Checked state'
     },
     disabled: {
       control: 'boolean',
-      description: 'Désactive le radio'
+      description: 'Disables the radio'
     },
     label: {
       control: 'text',
-      description: 'Libellé adjacent'
+      description: 'Label next to the control'
     },
-    name: { control: 'text', description: 'Attribut name du groupe' },
-    value: { control: 'text', description: 'Valeur associée' },
+    name: { control: 'text', description: 'HTML name for grouping' },
+    value: { control: 'text', description: 'Associated value' },
     onChange: {
       action: 'changed',
-      description: 'Callback lors du changement'
+      description: 'Fired when the radio changes'
     }
   }
 };
@@ -50,9 +50,7 @@ Sémantique : couleurs et rayons issus des tokens (ex. var(--color-bg-primary-ba
 export default meta;
 type Story = StoryObj<typeof Radio>;
 
-/**
- * Interactive playground (contrôlé)
- */
+/** Interactive playground (controlled) */
 export const Playground: Story = {
   render: (args) => {
     const [checked, setChecked] = React.useState(args.checked ?? false);
@@ -67,37 +65,31 @@ export const Playground: Story = {
   args: {
     checked: false,
     disabled: false,
-    label: 'Choisir cette option'
+    label: 'Choose this option'
   }
 };
 
-/**
- * États principaux : non sélectionné vs sélectionné
- */
+/** Main states: unchecked vs checked */
 export const SelectionStates: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-      <Radio checked={false} label="Non sélectionné" />
-      <Radio checked={true} label="Sélectionné" />
+      <Radio checked={false} label="Unchecked" />
+      <Radio checked={true} label="Checked" />
     </div>
   )
 };
 
-/**
- * États désactivés
- */
+/** Disabled states */
 export const Disabled: Story = {
   render: () => (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-      <Radio checked={false} disabled label="Désactivé" />
-      <Radio checked={true} disabled label="Désactivé (sélectionné)" />
+      <Radio checked={false} disabled label="Disabled" />
+      <Radio checked={true} disabled label="Disabled (checked)" />
     </div>
   )
 };
 
-/**
- * Groupe exclusif avec tokens sémantiques
- */
+/** Exclusive group with semantic tokens */
 export const RadioGroup: Story = {
   render: () => {
     const [value, setValue] = React.useState('a');
@@ -118,7 +110,7 @@ export const RadioGroup: Story = {
         background: 'var(--color-background-alt)'
       }}>
         <h4 style={{ margin: 0, fontSize: '14px', fontWeight: 700, color: 'var(--color-font-neutral-base)' }}>
-          Sélectionne ton environnement Storybook
+          Pick your Storybook environment
         </h4>
         {options.map((opt) => (
           <div key={opt.value} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -137,15 +129,13 @@ export const RadioGroup: Story = {
   }
 };
 
-/**
- * Carte de choix avec survol
- */
+/** Choice cards with hover */
 export const CardChoices: Story = {
   render: () => {
     const [value, setValue] = React.useState('portal');
     const cards = [
       { id: 'portal', title: 'Portal', desc: 'Hub + docs', badge: 'Docs' },
-      { id: 'wc', title: 'Web Components', desc: 'Stencil + multi-framework', badge: 'WC' },
+      { id: 'vue', title: 'Vue Storybook', desc: 'Storybook + Vitest', badge: 'Vue' },
       { id: 'react', title: 'React Storybook', desc: 'Storybook + Vitest', badge: 'React' }
     ];
 

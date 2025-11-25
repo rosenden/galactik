@@ -3,7 +3,7 @@
 .oc-radio-wrapper {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
+  gap: 6px;
   cursor: pointer;
   user-select: none;
   position: relative;
@@ -83,7 +83,7 @@
 }
 
 .oc-radio__label {
-  margin-left: var(--space-xs);
+  margin-left: 4px;
   color: var(--color-font-primary-base);
   font-size: var(--font-size-body);
   user-select: none;

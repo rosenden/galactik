@@ -5,7 +5,25 @@ const meta: Meta<typeof Button> = {
   title: 'Electrons/Button',
   component: Button,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
+    docs: {
+      description: {
+        component: `@example
+\`\`\`vue
+<script setup>
+import Button from 'vue-ui/components/Button/Button.vue';
+
+const handleClick = () => console.log('Button clicked');
+</script>
+
+<template>
+  <Button variant="filled" color-variant="primary" @click="handleClick">
+    Click me
+  </Button>
+</template>
+\`\`\``
+      }
+    }
   },
   tags: ['autodocs'],
   argTypes: {
@@ -53,85 +71,6 @@ type ButtonArgs = {
   iconLeft?: string;
   iconRight?: string;
 };
-
-/**
- * @example
- * ```vue
- * <script setup>
- * import { Button } from '@/components/Button';
- * 
- * const handleClick = () => {
- *   console.log('Button clicked!');
- * };
- * </script>
- * 
- * <template>
- *   <!-- Button simple -->
- *   <Button 
- *     variant="filled" 
- *     color-variant="primary"
- *     @click="handleClick"
- *   >
- *     Click me
- *   </Button>
- * 
- *   <!-- Button with left icon -->
- *   <Button 
- *     variant="filled" 
- *     color-variant="primary"
- *     icon-left="fa-solid fa-plus"
- *   >
- *     Ajouter
- *   </Button>
- * 
- *   <!-- Button with right icon -->
- *   <Button 
- *     variant="outlined" 
- *     color-variant="secondary"
- *     icon-right="fa-solid fa-arrow-right"
- *   >
- *     Suivant
- *   </Button>
- * 
- *   <!-- Button icon-only -->
- *   <Button 
- *     variant="filled" 
- *     color-variant="accent"
- *     icon-only
- *     aria-label="Like"
- *   >
- *     <i class="fa-solid fa-heart"></i>
- *   </Button>
- * 
- *   <!-- Button with loading state -->
- *   <Button 
- *     variant="filled" 
- *     color-variant="primary"
- *     :loading="true"
- *   >
- *     Chargement...
- *   </Button>
- * 
- *   <!-- Disabled button -->
- *   <Button 
- *     variant="outlined" 
- *     color-variant="primary"
- *     :disabled="true"
- *   >
- *     Disabled
- *   </Button>
- * 
- *   <!-- Button pleine largeur -->
- *   <Button 
- *     variant="filled" 
- *     color-variant="accent"
- *     :full-width="true"
- *   >
- *     Pleine largeur
- *   </Button>
- * </template>
- * ```
- */
 
 // ============================================
 // PRIMARY COLOR VARIANT

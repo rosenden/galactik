@@ -5,6 +5,7 @@ import { BulletComponent } from 'angular-ui/components/bullet/bullet.component';
 import { ButtonComponent } from 'angular-ui/components/button/button.component';
 import { LabelComponent } from 'angular-ui/components/label/label.component';
 import { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';
+import { RadioComponent } from 'angular-ui/components/radio/radio.component';
 
 interface Component {
   name: string;
@@ -56,6 +57,13 @@ const components: Component[] = [
     description: 'Checkbox with selected and indeterminate states',
     path: '?path=/docs/electrons-checkbox--docs',
     template: '<oc-checkbox [checked]="true" label="Checkbox"></oc-checkbox>'
+  },
+  {
+    name: 'Radio',
+    category: 'Electrons',
+    description: 'Radio button aligned with React/Vue tokens',
+    path: '?path=/docs/electrons-radio--docs',
+    template: '<oc-radio [checked]="true" label="Radio"></oc-radio>'
   },
 ];
 
@@ -134,7 +142,7 @@ type Story = StoryObj;
 export const Default: Story = {
   decorators: [
     moduleMetadata({
-      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent]
+      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]
     })
   ],
   render: () => ({
