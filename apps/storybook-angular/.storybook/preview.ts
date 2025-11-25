@@ -14,7 +14,7 @@ const withAngularBackground: DecoratorFunction<Renderer> = (
         ? 'var(--abs-black)'
         : 'var(--color-background-surface)';
   }
-  return StoryFn(context);
+  return StoryFn({ ...context, ...context.args }, context);
 };
 
 const baseDecorators = Array.isArray(previewBase.decorators) 

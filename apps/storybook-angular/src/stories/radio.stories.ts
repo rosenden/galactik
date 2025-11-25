@@ -9,6 +9,7 @@ const meta: Meta<RadioComponent> = {
       imports: [RadioComponent]
     })
   ],
+  tags: ['autodocs'],
   parameters: {
     layout: 'padded',
     docs: {
@@ -18,7 +19,7 @@ const meta: Meta<RadioComponent> = {
 <oc-radio name="group" value="a" [checked]="true" label="Option A"></oc-radio>
 <oc-radio name="group" value="b" [checked]="false" label="Option B"></oc-radio>
 \`\`\`
-Semantic tokens: var(--color-stroke-primary-base), var(--color-font-neutral-disabled).`
+Semantic tokens: colors/radii from design tokens (e.g. var(--color-stroke-primary-base), var(--radius-md)).`
       }
     }
   },
@@ -40,7 +41,26 @@ export const Playground: Story = {
     checked: false,
     disabled: false,
     label: 'Choose this option'
-  }
+  },
+  render: (args) => ({
+    props: {
+      ...args,
+      checkedState: args.checked,
+      handleChange: (value: boolean) => {
+        args.checked = value;
+      }
+    },
+    template: `
+      <oc-radio
+        [checked]="checkedState"
+        [disabled]="disabled"
+        [label]="label"
+        [name]="name"
+        [value]="value"
+        (change)="checkedState = $event; handleChange($event)"
+      ></oc-radio>
+    `
+  })
 };
 
 export const SelectionStates: Story = {

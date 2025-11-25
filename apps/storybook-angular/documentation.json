@@ -732,7 +732,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "DecoratorFunction<Renderer>",
-                "defaultValue": "(StoryFn: StoryFn<Renderer>, context: StoryContext<Renderer>) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
+                "defaultValue": "(\n  StoryFn: StoryFn<Renderer>,\n  context: StoryContext<Renderer>\n) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn({ ...context, ...context.args }, context);\n}"
             },
             {
                 "name": "WithIcon",
@@ -1152,7 +1152,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "DecoratorFunction<Renderer>",
-                    "defaultValue": "(StoryFn: StoryFn<Renderer>, context: StoryContext<Renderer>) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn(context);\n}"
+                    "defaultValue": "(\n  StoryFn: StoryFn<Renderer>,\n  context: StoryContext<Renderer>\n) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn({ ...context, ...context.args }, context);\n}"
                 }
             ],
             ".storybook/theme.ts": [
