@@ -34,7 +34,6 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
   showLevel,
 }) => {
   const [selectedBg, setSelectedBg] = useState<string | null>(null);
-  const [searchText, setSearchText] = useState('');
   const [sortBy, setSortBy] = useState<'ratio' | 'name'>('ratio');
   const [bgFamilyFilter, setBgFamilyFilter] = useState<string>('');
   const [textFamilyFilter, setTextFamilyFilter] = useState<string>('');
@@ -76,17 +75,6 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
       items = items.filter((c: ContrastData) => c.text.family === textFamilyFilter);
     }
 
-    // Filter by search text
-    if (searchText) {
-      items = items.filter(
-        (c: ContrastData) =>
-          c.background.family.includes(searchText.toLowerCase()) ||
-          c.background.shade.includes(searchText.toLowerCase()) ||
-          c.text.family.includes(searchText.toLowerCase()) ||
-          c.text.shade.includes(searchText.toLowerCase())
-      );
-    }
-
     if (sortBy === 'ratio') {
       items.sort((a: ContrastData, b: ContrastData) => b.ratio - a.ratio);
     } else {
@@ -98,7 +86,7 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
     }
 
     return items;
-  }, [data, searchText, sortBy, showLevel, bgFamilyFilter, textFamilyFilter]);
+  }, [data, sortBy, showLevel, bgFamilyFilter, textFamilyFilter]);
 
   const stats = useMemo(() => {
     const AAA = filteredData.filter((c: ContrastData) => c.level === 'AAA').length;
@@ -154,20 +142,6 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
           ))}
         </select>
 
-        <input
-          type="text"
-          placeholder="Search shade..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-          style={{
-            padding: '0.5rem',
-            border: '1px solid #ddd',
-            borderRadius: '4px',
-            fontSize: '0.9rem',
-            flex: 1,
-            minWidth: '200px',
-          }}
-        />
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as 'ratio' | 'name')}
