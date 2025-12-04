@@ -138,77 +138,66 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
               key={idx}
               onClick={() => setSelectedBg(isSelected ? null : bgKey)}
               style={{
-                padding: '0',
-                border: isSelected ? '2px solid #0066cc' : '1px solid #ddd',
+                padding: '1rem',
+                border: isSelected ? '3px solid #0066cc' : '1px solid #ddd',
                 borderRadius: '8px',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
-                overflow: 'hidden',
+                backgroundColor: bgColor,
+                color: textColor,
               }}
             >
               <div
                 style={{
-                  backgroundColor: bgColor,
-                  padding: '1.5rem 1rem',
-                  minHeight: '80px',
+                  marginBottom: '1rem',
+                  minHeight: '60px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  fontSize: '1.2rem',
+                  fontWeight: 'bold',
+                  textAlign: 'center',
+                  borderBottom: `2px solid ${textColor}`,
+                  paddingBottom: '0.75rem',
                 }}
               >
-                <div
-                  style={{
-                    color: textColor,
-                    fontSize: '1.2rem',
-                    fontWeight: 'bold',
-                    textAlign: 'center',
-                  }}
-                >
-                  Sample Text
-                </div>
+                Sample Text
               </div>
 
-              <div style={{ 
-                padding: '0.75rem 1rem',
-                backgroundColor: 'white',
-                borderTop: '1px solid #e0e0e0'
-              }}>
-                <div style={{ fontSize: '0.75rem', color: '#666', marginBottom: '0.5rem' }}>
-                  <div><strong>BG:</strong> {bgKey}</div>
-                  <div><strong>Text:</strong> {textKey}</div>
-                </div>
+              <div style={{ fontSize: '0.75rem', marginBottom: '0.5rem', opacity: 0.9 }}>
+                <div><strong>Background:</strong> {bgKey}</div>
+                <div><strong>Text:</strong> {textKey}</div>
+              </div>
 
-                <div
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  paddingTop: '0.5rem',
+                  borderTop: `1px solid ${textColor}`,
+                }}
+              >
+                <span
                   style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
+                    fontSize: '1rem',
+                    fontWeight: 'bold',
                   }}
                 >
-                  <span
-                    style={{
-                      fontSize: '0.95rem',
-                      fontWeight: 'bold',
-                      color: combo.level === 'AAA' ? '#0d8f40' : combo.level === 'AA' ? '#2f5c0f' : '#cc0000',
-                    }}
-                  >
-                    {combo.ratio}:1
-                  </span>
-                  <span
-                    style={{
-                      padding: '0.25rem 0.5rem',
-                      borderRadius: '4px',
-                      fontSize: '0.75rem',
-                      fontWeight: 'bold',
-                      backgroundColor:
-                        combo.level === 'AAA' ? '#d4edda' : combo.level === 'AA' ? '#d1ecf1' : '#f8d7da',
-                      color:
-                        combo.level === 'AAA' ? '#155724' : combo.level === 'AA' ? '#0c5460' : '#721c24',
-                    }}
-                  >
-                    {combo.level}
-                  </span>
-                </div>
+                  {combo.ratio}:1
+                </span>
+                <span
+                  style={{
+                    padding: '0.25rem 0.5rem',
+                    borderRadius: '4px',
+                    fontSize: '0.75rem',
+                    fontWeight: 'bold',
+                    border: `2px solid ${textColor}`,
+                    backgroundColor: bgColor,
+                  }}
+                >
+                  {combo.level}
+                </span>
               </div>
             </div>
           );
