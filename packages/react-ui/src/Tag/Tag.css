@@ -1,0 +1,168 @@
+/**
+ * Tag Component Styles
+ * Extracted from Figma "one chaps ui kit" - oc-tag-primary & oc-tag-secondary
+ * 
+ * Specs from Figma:
+ * - Border radius: 9999px (fully rounded pills)
+ * - Heights: 18px (tooltip), 24px (small), 36px (medium)
+ * - Padding: Varies by size
+ * - Colors: sage (primary), almond (secondary), grey (disabled)
+ */
+
+.oc-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  
+  /* Figma spec: fully rounded */
+  border-radius: 9999px;
+  
+  /* Typography */
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  
+  /* Transitions */
+  transition: all 0.2s ease;
+  
+  /* Remove button styling */
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+/* --- Variants --- */
+
+/* Primary: Sage colors (from Figma #d1e1dd ≈ sage-200) */
+.oc-tag--primary {
+  background-color: var(--sage-200);
+  color: var(--sage-800);
+}
+
+.oc-tag--primary:hover:not(.oc-tag--disabled) {
+  background-color: var(--sage-300);
+}
+
+/* Secondary: Almond colors */
+.oc-tag--secondary {
+  background-color: var(--almond-200);
+  color: var(--almond-800);
+}
+
+.oc-tag--secondary:hover:not(.oc-tag--disabled) {
+  background-color: var(--almond-300);
+}
+
+/* --- Sizes (from Figma specs) --- */
+
+/* Small: 18-24px height (tooltips, compact views) */
+.oc-tag--small {
+  height: 24px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+/* Medium: 36px height (default, from Figma) */
+.oc-tag--medium {
+  height: 36px;
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+/* --- States --- */
+
+/* Clickable */
+.oc-tag--clickable {
+  cursor: pointer;
+}
+
+.oc-tag--clickable:hover:not(.oc-tag--disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.oc-tag--clickable:active:not(.oc-tag--disabled) {
+  transform: translateY(0);
+}
+
+/* Disabled (from Figma #eff2f6 ≈ grey-200) */
+.oc-tag--disabled {
+  background-color: var(--grey-200);
+  color: var(--grey-500);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* --- Icon --- */
+
+.oc-tag__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.oc-tag--small .oc-tag__icon {
+  font-size: 14px;
+}
+
+/* --- Label --- */
+
+.oc-tag__label {
+  display: inline-block;
+  line-height: 1;
+}
+
+/* --- Close Button --- */
+
+.oc-tag__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin-left: 2px;
+  
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  
+  color: inherit;
+  opacity: 0.6;
+  
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.oc-tag__close:hover:not(:disabled) {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.oc-tag__close:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.oc-tag--small .oc-tag__close {
+  width: 14px;
+  height: 14px;
+  font-size: 16px;
+}
+
+/* --- Focus States (Accessibility) --- */
+
+.oc-tag:focus-visible,
+.oc-tag__close:focus-visible {
+  outline: 2px solid var(--color-stroke-focus);
+  outline-offset: 2px;
+}

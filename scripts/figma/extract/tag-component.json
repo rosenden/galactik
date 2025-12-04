@@ -1,0 +1,2004 @@
+{
+  "extracted": "2025-12-04T21:57:12.596Z",
+  "fileKey": "zB9JxH85SZ9yDCUYw8CUwU",
+  "components": [
+    {
+      "id": "2556:2332",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 1 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 93,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2347",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 1 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 120,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2448",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 85 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 93,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2449",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 85 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 126,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2484",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 86 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 128,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2485",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 86 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 126,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2510",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 87 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 117,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2556:2511",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > Frame 87 > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 151,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2556:2016;2084:13641",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > style-ghost-sage-default > Frame 1 > sv2-menu-items/tag/default > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2556:2195;2084:13653",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > 📒 Stylebook > stylebook light mode > style-ghost-sage-hovered > Frame 1 > sv2-menu-items/tag/hovered > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2396:2047",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ avatar > avatar > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2405:3072",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ badge > badge > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "3484:731",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ bullet > bullet > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2179:6856",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ buttons > button-light-mode > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2327:4422",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ checkbox > checkbox > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2348:4805",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ input > input > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2396:5051",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ label > label > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2345:4510",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ link > link > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2345:2449",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ radio button > radio-button > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2392:3741",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ select > select > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2439:8396",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈 switch > switch > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2396:1764",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈  tab > tab-primary > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2487:3574",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈  tab > tab-secondary > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "4233:1767",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈  tab > tab-secondary > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2417:4632",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tag > tag > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "49:4185",
+      "name": "oc-tag-primary",
+      "type": "COMPONENT_SET",
+      "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "COMPONENT_SET",
+        "width": 2090,
+        "height": 150,
+        "borderRadius": 5
+      }
+    },
+    {
+      "id": "58:5504",
+      "name": "oc-tag-secondary",
+      "type": "COMPONENT_SET",
+      "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary",
+      "properties": {
+        "type": "COMPONENT_SET",
+        "width": 2090,
+        "height": 150,
+        "borderRadius": 5
+      }
+    },
+    {
+      "id": "2430:1767",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tag > tag > Container > Frame 88 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2430:1777",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tag > tag > Container > Frame 88 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#fbe5b9",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2430:1787",
+      "name": "oc-tag-secondary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tag > tag > Container > Frame 88 > oc-tag-secondary",
+      "properties": {
+        "type": "INSTANCE",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2430:1797",
+      "name": "oc-tag-secondary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tag > tag > Container > Frame 88 > oc-tag-secondary",
+      "properties": {
+        "type": "INSTANCE",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2443:9376",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈 toggle > toggle > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2392:5260",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ✅ tooltip > tooltip > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "4254:211",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈 quantity-counter > input > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "4259:764",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > ▶️ 🌈 quantity-counter > input > Frame header > inline > stack > Frame 1 > Frame 1 > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#efc9f3",
+        "width": 129,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Frame 17 > sv2-menu-items > class=tag, kinds=default > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2031:4602",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Frame 17 > sv2-menu-items > class=tag, kinds=hovered > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2031:4612",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Frame 17 > sv2-menu-items > class=tag, kinds=pressed > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2031:4622",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Frame 17 > sv2-menu-items > class=tag, kinds=active > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2031:4630",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Frame 17 > sv2-menu-items > class=tag, kinds=disabled > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4638;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4639;2031:4622",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4640;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4641;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4642;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4643;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4644;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4645;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4646;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2031:4698;2031:4647;2031:4592",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 dropdown menu > dropdown menu > Container > sv2-menu > sv2-menu-items > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3708",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default, kinds=Default > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3713",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default2, kinds=Default > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3718",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default, kinds=disabled > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3723",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default2, kinds=disabled > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#eff2f6",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3728",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default, kinds=focus > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2033:3733",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Frame 11 > sv2-cell-tag > style=default2, kinds=focus > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2033:3871;2033:3708",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Container > Frame 2 > Frame 1 > sv2-cell-tag > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2033:3879;2033:3713",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Container > Frame 2 > Frame 5 > sv2-cell-tag > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2033:3887;2033:3708",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 table-cell > table-cell > Container > Frame 2 > Frame 6 > sv2-cell-tag > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 115,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "2084:8310",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8311",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8312",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8313",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8314",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8315",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8316",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8317",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8318",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=top > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8323",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8324",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8325",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8326",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8327",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8328",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8329",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8330",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8331",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=bottom > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8334",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8335",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8336",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8337",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8338",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8339",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8340",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8341",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8342",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=left > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8347",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8348",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8349",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8350",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8351",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8352",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8353",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8354",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "2084:8355",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Frame 3 > sv2-tooltip-tag > direction=right > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8310",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8311",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8312",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8313",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8314",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8315",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8316",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8317",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2084:8359;2084:8318",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > _🚧 tooltip > tooltip-tag > Container > sv2-tooltip-tag > Tags > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 73,
+        "height": 18,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    {
+      "id": "I2118:4169;2084:13641",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > archives > style-ghost-sage-default > Frame 1 > sv2-menu-items/tag/default > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    },
+    {
+      "id": "I2118:4305;2084:13653",
+      "name": "oc-tag-primary",
+      "type": "INSTANCE",
+      "path": "Document > archives > style-ghost-sage-hovered > Frame 1 > sv2-menu-items/tag/hovered > oc-tag-primary",
+      "properties": {
+        "type": "INSTANCE",
+        "backgroundColor": "#d1e1dd",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      }
+    }
+  ]
+}
