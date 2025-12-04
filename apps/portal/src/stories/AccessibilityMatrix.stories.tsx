@@ -36,6 +36,21 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
   const [selectedBg, setSelectedBg] = useState<string | null>(null);
   const [searchText, setSearchText] = useState('');
   const [sortBy, setSortBy] = useState<'ratio' | 'name'>('ratio');
+  const [bgFamilyFilter, setBgFamilyFilter] = useState<string>('');
+  const [textFamilyFilter, setTextFamilyFilter] = useState<string>('');
+
+  // Extract unique color families
+  const colorFamilies = useMemo(() => {
+    const allItems = data.validCombinations
+      ? [...(data.validCombinations.AAA || []), ...(data.validCombinations.AA || [])]
+      : data.forbiddenCombinations || [];
+    const families = new Set<string>();
+    allItems.forEach((item: ContrastData) => {
+      families.add(item.background.family);
+      families.add(item.text.family);
+    });
+    return Array.from(families).sort();
+  }, [data]);
 
   const filteredData = useMemo(() => {
     let items = data.validCombinations
@@ -51,6 +66,17 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
       items = items.filter((c: ContrastData) => c.level === 'AA');
     }
 
+    // Filter by background family
+    if (bgFamilyFilter) {
+      items = items.filter((c: ContrastData) => c.background.family === bgFamilyFilter);
+    }
+
+    // Filter by text family
+    if (textFamilyFilter) {
+      items = items.filter((c: ContrastData) => c.text.family === textFamilyFilter);
+    }
+
+    // Filter by search text
     if (searchText) {
       items = items.filter(
         (c: ContrastData) =>
@@ -72,7 +98,7 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
     }
 
     return items;
-  }, [data, searchText, sortBy, showLevel]);
+  }, [data, searchText, sortBy, showLevel, bgFamilyFilter, textFamilyFilter]);
 
   const stats = useMemo(() => {
     const AAA = filteredData.filter((c: ContrastData) => c.level === 'AAA').length;
@@ -90,9 +116,47 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
       </div>
 
       <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
+        <select
+          value={bgFamilyFilter}
+          onChange={(e) => setBgFamilyFilter(e.target.value)}
+          style={{
+            padding: '0.5rem',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            fontSize: '0.9rem',
+            minWidth: '150px',
+          }}
+        >
+          <option value="">All Backgrounds</option>
+          {colorFamilies.map((family) => (
+            <option key={family} value={family}>
+              {family.charAt(0).toUpperCase() + family.slice(1)}
+            </option>
+          ))}
+        </select>
+
+        <select
+          value={textFamilyFilter}
+          onChange={(e) => setTextFamilyFilter(e.target.value)}
+          style={{
+            padding: '0.5rem',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            fontSize: '0.9rem',
+            minWidth: '150px',
+          }}
+        >
+          <option value="">All Text Colors</option>
+          {colorFamilies.map((family) => (
+            <option key={family} value={family}>
+              {family.charAt(0).toUpperCase() + family.slice(1)}
+            </option>
+          ))}
+        </select>
+
         <input
           type="text"
-          placeholder="Search color family or shade..."
+          placeholder="Search shade..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
           style={{
@@ -101,7 +165,7 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
             borderRadius: '4px',
             fontSize: '0.9rem',
             flex: 1,
-            minWidth: '250px',
+            minWidth: '200px',
           }}
         />
         <select
