@@ -4,98 +4,98 @@
   "styles": {
     "91:792": {
       "key": "bb8efee15c9797949e92d505dd427e97416fd82c",
-      "name": "h.3xl",
+      "name": "h1",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "93:4": {
       "key": "4d89a6290a80f940bd7b4a3738d558b55cabcd31",
-      "name": "h.2xl",
+      "name": "h2",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "93:5": {
       "key": "66772e81e1b1d7941a3f5b04e631c55ade45ded2",
-      "name": "h.lg.bold",
+      "name": "h3-bold",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "93:6": {
       "key": "7fdfac4d58faa2e7395ac93f00551bed8df57321",
-      "name": "h.lg.medium",
+      "name": "h3-medium",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "93:7": {
       "key": "ae919af7d22395325801e1a08802697ade995322",
-      "name": "h.lg.regular",
+      "name": "h3-regular",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "95:4": {
       "key": "fa2d8efe0e5752daf77c96ae3faae58f38fcc26d",
-      "name": "p.base.bold",
+      "name": "p-base-bold",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "95:6": {
       "key": "cefb0292bbefa13e492419abe2596d987d1c4ddf",
-      "name": "p.base.medium",
+      "name": "p-base-medium",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "95:10": {
       "key": "2187d1825ddc83480224118d633390af8eb46117",
-      "name": "p.base.regular",
+      "name": "p-base-regular",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:4": {
       "key": "791f3734d91972482c87c16f2e9b2376df0011fd",
-      "name": "p.sm.bold",
+      "name": "p-sm-bold",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:5": {
       "key": "5165b4f05a30d836492e6a1e217ca256dd708609",
-      "name": "p.sm.medium",
+      "name": "p-sm-medium",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:6": {
       "key": "edb5bf50287a5d3d2ce8728636221eaaf823e233",
-      "name": "p.sm.regular",
+      "name": "p-sm-regular",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:7": {
       "key": "ea3984b01d6c2d7d6b5c32fc4a23df3c2c5b23af",
-      "name": "p.xs.regular",
+      "name": "p-xs-regular",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:8": {
       "key": "499ce0b5f3356256a753e1c2a8978687b761b889",
-      "name": "p.xs.medium",
+      "name": "p-xs-medium",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
     },
     "96:9": {
       "key": "ff75cbc23bae0bd6ef67b4cab92bd82a0c1f616a",
-      "name": "p.xs.bold",
+      "name": "p-xs-bold",
       "styleType": "TEXT",
       "remote": false,
       "description": ""
@@ -170,6 +170,20 @@
       "remote": false,
       "description": ""
     },
+    "2700:294": {
+      "key": "a8a5a7c1bd13fba6c3ac433bd0f41565102c9c27",
+      "name": "gradient-brand",
+      "styleType": "FILL",
+      "remote": false,
+      "description": ""
+    },
+    "2700:296": {
+      "key": "edd9328d78c6b620d82ce055073f9c27093bb085",
+      "name": "gradient-ai",
+      "styleType": "FILL",
+      "remote": false,
+      "description": ""
+    },
     "2022:2": {
       "key": "d699c3cc784380baa8d4ff9bb7a22f4565b498db",
       "name": "Body 3",
@@ -192,6 +206,6 @@
       "description": ""
     }
   },
-  "lastModified": "2025-11-20T08:25:38Z",
+  "lastModified": "2025-12-03T10:46:25Z",
   "name": "🚧 Solary Version Onechaps"
 }
