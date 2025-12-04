@@ -145,63 +145,77 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
               key={idx}
               onClick={() => setSelectedBg(isSelected ? null : bgKey)}
               style={{
-                padding: '1rem',
+                padding: '0',
                 border: isSelected ? '2px solid #0066cc' : '1px solid #ddd',
                 borderRadius: '8px',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
-                backgroundColor: bgColor,
+                overflow: 'hidden',
               }}
             >
               <div
                 style={{
-                  color: textColor,
-                  marginBottom: '0.5rem',
-                  minHeight: '60px',
+                  backgroundColor: bgColor,
+                  padding: '1.5rem 1rem',
+                  minHeight: '80px',
                   display: 'flex',
                   alignItems: 'center',
-                  fontSize: '1.1rem',
-                  fontWeight: 'bold',
+                  justifyContent: 'center',
                 }}
               >
-                Sample Text
-              </div>
-
-              <div style={{ fontSize: '0.8rem', color: '#666', marginBottom: '0.5rem' }}>
-                <div>BG: {bgKey}</div>
-                <div>Text: {textKey}</div>
-              </div>
-
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                }}
-              >
-                <span
+                <div
                   style={{
-                    fontSize: '0.9rem',
+                    color: textColor,
+                    fontSize: '1.2rem',
                     fontWeight: 'bold',
-                    color: combo.level === 'AAA' ? '#0d8f40' : combo.level === 'AA' ? '#2f5c0f' : '#cc0000',
+                    textAlign: 'center',
                   }}
                 >
-                  {combo.ratio}:1
-                </span>
-                <span
+                  Sample Text
+                </div>
+              </div>
+
+              <div style={{ 
+                padding: '0.75rem 1rem',
+                backgroundColor: 'white',
+                borderTop: '1px solid #e0e0e0'
+              }}>
+                <div style={{ fontSize: '0.75rem', color: '#666', marginBottom: '0.5rem' }}>
+                  <div><strong>BG:</strong> {bgKey}</div>
+                  <div><strong>Text:</strong> {textKey}</div>
+                </div>
+
+                <div
                   style={{
-                    padding: '0.25rem 0.5rem',
-                    borderRadius: '4px',
-                    fontSize: '0.75rem',
-                    fontWeight: 'bold',
-                    backgroundColor:
-                      combo.level === 'AAA' ? '#d4edda' : combo.level === 'AA' ? '#d1ecf1' : '#f8d7da',
-                    color:
-                      combo.level === 'AAA' ? '#155724' : combo.level === 'AA' ? '#0c5460' : '#721c24',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
                   }}
                 >
-                  {combo.level}
-                </span>
+                  <span
+                    style={{
+                      fontSize: '0.95rem',
+                      fontWeight: 'bold',
+                      color: combo.level === 'AAA' ? '#0d8f40' : combo.level === 'AA' ? '#2f5c0f' : '#cc0000',
+                    }}
+                  >
+                    {combo.ratio}:1
+                  </span>
+                  <span
+                    style={{
+                      padding: '0.25rem 0.5rem',
+                      borderRadius: '4px',
+                      fontSize: '0.75rem',
+                      fontWeight: 'bold',
+                      backgroundColor:
+                        combo.level === 'AAA' ? '#d4edda' : combo.level === 'AA' ? '#d1ecf1' : '#f8d7da',
+                      color:
+                        combo.level === 'AAA' ? '#155724' : combo.level === 'AA' ? '#0c5460' : '#721c24',
+                    }}
+                  >
+                    {combo.level}
+                  </span>
+                </div>
               </div>
             </div>
           );
