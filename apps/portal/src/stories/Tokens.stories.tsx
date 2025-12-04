@@ -135,6 +135,33 @@ const TypeRow: React.FC<{ name: string; sizeVar: string; lhVar: string; weightVa
   </div>
 );
 
+const FigmaStylePreview: React.FC<{ styleName: string }> = ({ styleName }) => (
+  <div
+    style={{
+      padding: 'var(--space-2xl)',
+      background: 'var(--color-background-surface)',
+      borderRadius: 'var(--radius-md)',
+      border: `1px solid var(--color-border-base)`,
+      marginBottom: 'var(--space-lg)'
+    }}
+  >
+    <div style={{ fontSize: '16px', marginBottom: 'var(--space-md)', fontFamily: 'var(--font-family-base)' }}>
+      The quick brown fox jumps over the lazy dog
+    </div>
+    <code
+      style={{
+        fontSize: '11px',
+        color: 'var(--color-font-neutral-muted)',
+        padding: 'var(--space-xs)',
+        background: 'var(--color-background-alt)',
+        borderRadius: 'var(--radius-xs)'
+      }}
+    >
+      {styleName}
+    </code>
+  </div>
+);
+
 const SpacingBar: React.FC<{ token: string }> = ({ token }) => {
   const px = cssVar(token);
   return (
@@ -281,6 +308,36 @@ export const AllTokens: Story = {
         <TypeRow name="Large" sizeVar="--font-size-lg" lhVar="--line-height-4" weightVar="--font-weight-semibold" />
         <TypeRow name="XL" sizeVar="--font-size-xl" lhVar="--line-height-6" weightVar="--font-weight-bold" />
         <TypeRow name="2XL" sizeVar="--font-size-2xl" lhVar="--line-height-6" weightVar="--font-weight-bold" />
+
+        <h3 style={{ margin: '24px 0 16px', fontSize: 16, color: 'var(--color-font-primary-base)' }}>
+          Figma Solary Styles
+        </h3>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 'var(--space-3xl)', marginTop: 'var(--space-2xl)' }}>
+          <div>
+            <h4 style={{ margin: '0 0 var(--space-2xl)', fontSize: 14, color: 'var(--color-font-primary-base)' }}>
+              Headings
+            </h4>
+            <FigmaStylePreview styleName="h1" />
+            <FigmaStylePreview styleName="h2" />
+            <FigmaStylePreview styleName="h3-bold" />
+            <FigmaStylePreview styleName="h3-medium" />
+            <FigmaStylePreview styleName="h3-regular" />
+          </div>
+          <div>
+            <h4 style={{ margin: '0 0 var(--space-2xl)', fontSize: 14, color: 'var(--color-font-primary-base)' }}>
+              Paragraphs
+            </h4>
+            <FigmaStylePreview styleName="p-base-bold" />
+            <FigmaStylePreview styleName="p-base-medium" />
+            <FigmaStylePreview styleName="p-base-regular" />
+            <FigmaStylePreview styleName="p-sm-bold" />
+            <FigmaStylePreview styleName="p-sm-medium" />
+            <FigmaStylePreview styleName="p-sm-regular" />
+            <FigmaStylePreview styleName="p-xs-bold" />
+            <FigmaStylePreview styleName="p-xs-medium" />
+            <FigmaStylePreview styleName="p-xs-regular" />
+          </div>
+        </div>
       </Section>
 
       <Section title="Spacing">
