@@ -5,7 +5,7 @@ import fs from 'fs';
 const MCP_PORT = process.env.MCP_PORT || 3845;
 const FILE_KEY = 'BWXtUSWTjvxk7gBRHKTN4Z'; // Solary
 
-const OUTPUT = 'tokens-solary.json';
+const OUTPUT = 'scripts/figma/extract/tokens-solary.json';
 
 async function extractTokens() {
   const url = `http://localhost:${MCP_PORT}/v1/files/${FILE_KEY}`;

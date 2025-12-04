@@ -9,7 +9,7 @@ dotenv.config();
 
 const FILE_KEY = process.env.FIGMA_FILE_KEY;
 const TOKEN = process.env.FIGMA_ACCESS_TOKEN;
-const OUTPUT = 'tokens-solary.json';
+const OUTPUT = 'scripts/figma/extract/tokens-solary.json';
 
 if (!FILE_KEY || !TOKEN) {
   throw new Error('FIGMA_FILE_KEY et FIGMA_ACCESS_TOKEN doivent être définis dans .env');

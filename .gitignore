@@ -22,3 +22,5 @@ wc-build.log
 .env.local
 .env.*.local
 .nvm/
+.DS_Store
+**/.DS_Store

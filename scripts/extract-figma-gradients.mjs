@@ -98,7 +98,7 @@ async function extractGradients() {
   const fileData = await fileRes.json();
   
   // Read styles from tokens-solary.json
-  const tokensSolary = JSON.parse(fs.readFileSync('tokens-solary.json', 'utf-8'));
+  const tokensSolary = JSON.parse(fs.readFileSync('scripts/figma/extract/tokens-solary.json', 'utf-8'));
   const gradientStyles = Object.entries(tokensSolary.styles)
     .filter(([_, style]) => style.styleType === 'FILL' && ['gradient-brand', 'gradient-ai'].includes(style.name))
     .map(([nodeId, style]) => ({ nodeId, ...style }));
@@ -133,8 +133,8 @@ async function extractGradients() {
     gradients
   };
   
-  fs.writeFileSync('gradients-figma.json', JSON.stringify(output, null, 2));
-  console.log(`\n✅ Gradients extracted to gradients-figma.json`);
+  fs.writeFileSync('scripts/figma/gradients-figma.json', JSON.stringify(output, null, 2));
+  console.log(`\n✅ Gradients extracted to scripts/figma/gradients-figma.json`);
   
   return gradients;
 }

@@ -1,7 +1,7 @@
 // scripts/figma-merge-tokens-solary.mjs
 import fs from 'fs';
 
-const EXTRACTED = 'tokens-solary.json';
+const EXTRACTED = 'scripts/figma/extract/tokens-solary.json';
 const MAIN = 'tokens.json';
 
 function mergeTokens() {
