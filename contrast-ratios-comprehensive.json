@@ -1,0 +1,7018 @@
+{
+  "generated": "2025-12-04T21:13:02.518Z",
+  "statistics": {
+    "total": 17689,
+    "valid": 5770,
+    "validAAA": 3564,
+    "validAA": 2206,
+    "forbidden": 11919,
+    "validPercentage": "32.62%"
+  },
+  "wcagStandards": {
+    "AAA": "7.0:1 or higher (enhanced contrast)",
+    "AA": "4.5:1 or higher (standard)",
+    "Fail": "Less than 4.5:1 (insufficient contrast)"
+  },
+  "allCombinations": [
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 19.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 19.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 19.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 19.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.74,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 18.74,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 18.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 18.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 18.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.52,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.52,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 18.52,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 18.52,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 18.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 18.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.37,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 18.37,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 18.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 18.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 18.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 18.16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18.16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 18.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 18.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 17.97,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.97,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 17.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 17.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 17.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 17.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 17.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 17.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 17.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 17.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 17.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 17.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 17.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 17.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 17.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 17.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 17.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 17.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.43,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 17.43,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 17.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 17.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 17.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 17.21,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 17.21,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 17.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 17.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 17.09,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 17.09,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 16.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 16.91,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.91,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 16.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 16.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 16.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 16.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 16.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 16.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 16.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 16.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.76,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 16.76,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.75,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 16.75,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 16.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 16.67,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.66,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 16.66,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 16.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 16.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 16.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 16.56,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.56,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 16.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 16.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 16.5,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.5,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 16.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 16.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 16.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 16.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 16.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 16.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 16.43,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.43,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 16.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 16.35,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.35,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 16.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 16.33,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 16.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 16.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 16.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 16.26,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.26,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.25,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 16.25,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 16.25,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.25,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 16.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 16.19,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.19,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 16.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 16.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 16.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 16.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 16.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 16.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 16.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 16.05,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 16.05,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 16.04,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 16.04,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 16.02,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 16.02,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.94,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 15.94,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 15.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 15.93,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 15.92,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.92,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 15.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 15.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 15.89,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 15.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 15.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 15.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 15.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.84,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 15.84,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 15.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 15.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 15.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 15.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 15.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 15.8,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 15.79,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.79,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.77,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 15.77,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.73,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 15.73,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 15.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 15.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 15.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 15.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 15.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 15.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 15.64,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.64,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 15.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 15.63,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.61,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 15.61,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 15.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 15.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 15.6,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.59,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 15.59,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 15.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 15.55,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.55,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 15.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 15.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 15.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 15.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 15.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 15.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 15.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 15.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 15.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 15.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 15.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 15.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 15.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 15.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 15.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "ratio": 15.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 15.22,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.22,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 15.22,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.22,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 15.21,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.21,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 15.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 15.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 15.2,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 15.18,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 15.17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.17,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 15.16,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 15.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 15.15,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 15.14,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 15.14,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.13,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 15.13,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 15.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 15.12,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 15.1,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 15.1,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 15.08,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 15.03,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 15.03,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 15.03,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 15.03,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.02,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 15.02,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 15.01,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 15.01,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 14.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 14.99,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 14.98,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.98,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.97,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 14.97,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 14.95,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 14.95,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 14.94,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 14.94,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 14.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 14.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 14.9,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 14.88,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 14.88,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 14.87,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 14.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 14.86,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 14.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 14.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.85,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 14.83,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 14.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 14.82,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 14.81,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.77,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 14.77,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 14.76,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 14.76,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.74,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 14.74,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 14.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.72,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 14.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 14.71,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 14.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 14.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 14.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.7,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 14.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 14.69,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 14.68,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 14.68,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 14.68,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 14.68,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.66,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 14.66,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.64,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 14.64,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 14.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 14.58,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 14.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 14.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 14.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.57,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 14.56,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 14.56,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.55,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 14.55,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 14.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 14.54,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 14.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.53,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.51,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 14.51,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.51,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 14.51,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.5,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 14.5,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 14.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 14.49,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "ratio": 14.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 14.48,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 14.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 14.47,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 14.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 14.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 14.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 14.46,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "ratio": 14.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 14.45,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 14.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 14.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 14.44,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 14.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 14.42,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 14.41,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 14.4,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 14.4,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 14.39,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 14.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 14.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 14.38,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.37,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 14.37,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.36,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 14.36,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 14.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 14.34,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 14.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 14.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 14.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 14.32,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 14.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 14.3,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 14.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 14.29,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 14.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 14.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 14.28,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 14.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 14.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 14.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 14.27,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 14.26,
+      "level": "AAA"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 14.26,
+      "level": "AAA"
+    }
+  ]
+}

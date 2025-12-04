@@ -1,0 +1,7018 @@
+{
+  "generated": "2025-12-04T21:13:02.518Z",
+  "statistics": {
+    "total": 17689,
+    "valid": 5770,
+    "validAAA": 3564,
+    "validAA": 2206,
+    "forbidden": 11919,
+    "validPercentage": "32.62%"
+  },
+  "wcagStandards": {
+    "AAA": "7.0:1 or higher (enhanced contrast)",
+    "AA": "4.5:1 or higher (standard)",
+    "Fail": "Less than 4.5:1 (insufficient contrast)"
+  },
+  "forbiddenCombinations": [
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "400",
+        "hex": "#c9aacb"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "400",
+        "hex": "#c9aacb"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "500",
+        "hex": "#b896bb"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "500",
+        "hex": "#b896bb"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "600",
+        "hex": "#a582ab"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "600",
+        "hex": "#a582ab"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "text": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "800",
+        "hex": "#7f5a8b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "800",
+        "hex": "#7f5a8b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "900",
+        "hex": "#6c467b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "900",
+        "hex": "#6c467b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "400",
+        "hex": "#97a6be"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "400",
+        "hex": "#97a6be"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "400",
+        "hex": "#97a6be"
+      },
+      "text": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "500",
+        "hex": "#7685a2"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "500",
+        "hex": "#7685a2"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "600",
+        "hex": "#626c84"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "600",
+        "hex": "#626c84"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "700",
+        "hex": "#4d5260"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "700",
+        "hex": "#4d5260"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "700",
+        "hex": "#4d5260"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "800",
+        "hex": "#445556"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "900",
+        "hex": "#272b30"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "900",
+        "hex": "#272b30"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "300",
+        "hex": "#f8d795"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "300",
+        "hex": "#f8d795"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "700",
+        "hex": "#715621"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "700",
+        "hex": "#715621"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "500",
+        "hex": "#df884f"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "500",
+        "hex": "#df884f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "600",
+        "hex": "#be703c"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "600",
+        "hex": "#be703c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "700",
+        "hex": "#98552a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "700",
+        "hex": "#98552a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "800",
+        "hex": "#85461e"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "800",
+        "hex": "#85461e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "text": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "300",
+        "hex": "#91b38b"
+      },
+      "text": {
+        "family": "green",
+        "shade": "300",
+        "hex": "#91b38b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "400",
+        "hex": "#709b67"
+      },
+      "text": {
+        "family": "green",
+        "shade": "400",
+        "hex": "#709b67"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "500",
+        "hex": "#4e8344"
+      },
+      "text": {
+        "family": "green",
+        "shade": "500",
+        "hex": "#4e8344"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "text": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "text": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "text": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "text": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "300",
+        "hex": "#ff9d9f"
+      },
+      "text": {
+        "family": "red",
+        "shade": "300",
+        "hex": "#ff9d9f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "400",
+        "hex": "#97a6be"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "text": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "text": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "text": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "text": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "text": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "300",
+        "hex": "#d4a3ad"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "300",
+        "hex": "#d4a3ad"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "600",
+        "hex": "#6e3d47"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "600",
+        "hex": "#6e3d47"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "700",
+        "hex": "#49282f"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "700",
+        "hex": "#49282f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "300",
+        "hex": "#b2beec"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "300",
+        "hex": "#b2beec"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "text": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "text": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "400",
+        "hex": "#8cb8d5"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "400",
+        "hex": "#8cb8d5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "500",
+        "hex": "#5a87a4"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "500",
+        "hex": "#5a87a4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "700",
+        "hex": "#2f4859"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "700",
+        "hex": "#2f4859"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "text": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "700",
+        "hex": "#1c3536"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "700",
+        "hex": "#1c3536"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "950",
+        "hex": "#120a0c"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "950",
+        "hex": "#070d0d"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "300",
+        "hex": "#a9c1b8"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "300",
+        "hex": "#a9c1b8"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "500",
+        "hex": "#607c7f"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "500",
+        "hex": "#607c7f"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "600",
+        "hex": "#5d7374"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "600",
+        "hex": "#5d7374"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "700",
+        "hex": "#4f6162"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "700",
+        "hex": "#4f6162"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "800",
+        "hex": "#445556"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "700",
+        "hex": "#4d5260"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "800",
+        "hex": "#445556"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "800",
+        "hex": "#445556"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "900",
+        "hex": "#374648"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "900",
+        "hex": "#374648"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "975",
+        "hex": "#222d30"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "975",
+        "hex": "#222d30"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "300",
+        "hex": "#8ec7a9"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "300",
+        "hex": "#8ec7a9"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "400",
+        "hex": "#5fa884"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "400",
+        "hex": "#5fa884"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "700",
+        "hex": "#235944"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "700",
+        "hex": "#235944"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "800",
+        "hex": "#1e4737"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "800",
+        "hex": "#1e4737"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 1,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "500",
+        "hex": "#b896bb"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "text": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "500",
+        "hex": "#7685a2"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "600",
+        "hex": "#be703c"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "900",
+        "hex": "#272b30"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "975",
+        "hex": "#222d30"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "text": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "500",
+        "hex": "#b896bb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "600",
+        "hex": "#be703c"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "500",
+        "hex": "#7685a2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "300",
+        "hex": "#91b38b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "500",
+        "hex": "#4e8344"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "500",
+        "hex": "#607c7f"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "text": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "text": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "800",
+        "hex": "#701c1d"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "text": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "700",
+        "hex": "#49282f"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "700",
+        "hex": "#1c3536"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "text": {
+        "family": "green",
+        "shade": "300",
+        "hex": "#91b38b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "text": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "text": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "800",
+        "hex": "#2e3961"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "950",
+        "hex": "#4a325b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "text": {
+        "family": "red",
+        "shade": "900",
+        "hex": "#5c1214"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "500",
+        "hex": "#468586"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "700",
+        "hex": "#1c3536"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "700",
+        "hex": "#49282f"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "green",
+        "shade": "950",
+        "hex": "#101a0e"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "300",
+        "hex": "#a9c1b8"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "300",
+        "hex": "#8ec7a9"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "500",
+        "hex": "#607c7f"
+      },
+      "text": {
+        "family": "green",
+        "shade": "500",
+        "hex": "#4e8344"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "975",
+        "hex": "#222d30"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "900",
+        "hex": "#272b30"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "300",
+        "hex": "#8ec7a9"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "300",
+        "hex": "#a9c1b8"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "ratio": 1.01,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "400",
+        "hex": "#c9aacb"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "400",
+        "hex": "#8cb8d5"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "800",
+        "hex": "#7f5a8b"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "700",
+        "hex": "#98552a"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "text": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "700",
+        "hex": "#98552a"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "800",
+        "hex": "#7f5a8b"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "600",
+        "hex": "#6e3d47"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "700",
+        "hex": "#4f6162"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "700",
+        "hex": "#2f4f29"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "100",
+        "hex": "#ffdedf"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "400",
+        "hex": "#f6ca72"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "950",
+        "hex": "#47090a"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "600",
+        "hex": "#9d7930"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "500",
+        "hex": "#5a87a4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "600",
+        "hex": "#6e3d47"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "700",
+        "hex": "#926e9b"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "text": {
+        "family": "red",
+        "shade": "500",
+        "hex": "#d64a4c"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "indigo",
+        "shade": "900",
+        "hex": "#222c4f"
+      },
+      "text": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "100",
+        "hex": "#e5e9f9"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "300",
+        "hex": "#ffcba9"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "300",
+        "hex": "#b9c4d5"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "400",
+        "hex": "#8cb8d5"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "400",
+        "hex": "#c9aacb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "500",
+        "hex": "#5a87a4"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "100",
+        "hex": "#e2edf4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "300",
+        "hex": "#dbbade"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "400",
+        "hex": "#ffba8d"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "200",
+        "hex": "#e2c1c8"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "200",
+        "hex": "#b1cccd"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "300",
+        "hex": "#a9cadf"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "400",
+        "hex": "#98a9e5"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "400",
+        "hex": "#6a9d9e"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cyan",
+        "shade": "800",
+        "hex": "#152828"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "900",
+        "hex": "#1a2833"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "50",
+        "hex": "#f5f8f7"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "400",
+        "hex": "#7a9b95"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "400",
+        "hex": "#c58491"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "700",
+        "hex": "#4f6162"
+      },
+      "text": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "sage",
+        "shade": "950",
+        "hex": "#2d393a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "200",
+        "hex": "#bbdfca"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "200",
+        "hex": "#cbd4f2"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "500",
+        "hex": "#6779bb"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "600",
+        "hex": "#2c6f52"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "600",
+        "hex": "#505f97"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "almond",
+        "shade": "950",
+        "hex": "#0d211a"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 1.02,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "50",
+        "hex": "#fcf7fd"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "100",
+        "hex": "#faecfb"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "200",
+        "hex": "#efc9f3"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "600",
+        "hex": "#a582ab"
+      },
+      "text": {
+        "family": "green",
+        "shade": "400",
+        "hex": "#709b67"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "pink",
+        "shade": "900",
+        "hex": "#6c467b"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "800",
+        "hex": "#85461e"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "50",
+        "hex": "#fdfefe"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "100",
+        "hex": "#f9fafb"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "200",
+        "hex": "#eff2f6"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "800",
+        "hex": "#36383e"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "800",
+        "hex": "#253846"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "950",
+        "hex": "#101920"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "900",
+        "hex": "#0e1b1b"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "50",
+        "hex": "#fef8ed"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "100",
+        "hex": "#fdf2dc"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "100",
+        "hex": "#dcefe3"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "300",
+        "hex": "#f8d795"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "200",
+        "hex": "#c5dbea"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "300",
+        "hex": "#f8d795"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "200",
+        "hex": "#d1e1dd"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "text": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "900",
+        "hex": "#463411"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "50",
+        "hex": "#fff6f1"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "50",
+        "hex": "#f2f4fc"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "100",
+        "hex": "#ffeee2"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "50",
+        "hex": "#e6eff0"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "200",
+        "hex": "#ffddc6"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "100",
+        "hex": "#d4e3e4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "600",
+        "hex": "#be703c"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "500",
+        "hex": "#5a87a4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "800",
+        "hex": "#85461e"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "900",
+        "hex": "#6c467b"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "800",
+        "hex": "#5b4519"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "700",
+        "hex": "#394673"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "orange",
+        "shade": "950",
+        "hex": "#592a0b"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "900",
+        "hex": "#193b2e"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "50",
+        "hex": "#f6faf5"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "100",
+        "hex": "#e5eee3"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "text": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "300",
+        "hex": "#91b38b"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "400",
+        "hex": "#709b67"
+      },
+      "text": {
+        "family": "pink",
+        "shade": "600",
+        "hex": "#a582ab"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "text": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "800",
+        "hex": "#1f341b"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "700",
+        "hex": "#1c3536"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "950",
+        "hex": "#30230a"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "text": {
+        "family": "indigo",
+        "shade": "950",
+        "hex": "#171f3d"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "50",
+        "hex": "#ffefef"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "50",
+        "hex": "#f1f8f4"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "200",
+        "hex": "#ffbebf"
+      },
+      "text": {
+        "family": "green",
+        "shade": "200",
+        "hex": "#c4d6c0"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "300",
+        "hex": "#ff9d9f"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "300",
+        "hex": "#8ec7a9"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "400",
+        "hex": "#ff7d7f"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "500",
+        "hex": "#c89b40"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "text": {
+        "family": "green",
+        "shade": "600",
+        "hex": "#3e6936"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "600",
+        "hex": "#ad3739"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "600",
+        "hex": "#45677e"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "orange",
+        "shade": "900",
+        "hex": "#753a13"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "red",
+        "shade": "700",
+        "hex": "#852527"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "50",
+        "hex": "#f1f6fa"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "50",
+        "hex": "#f8f0f1"
+      },
+      "text": {
+        "family": "sage",
+        "shade": "100",
+        "hex": "#e8f0ee"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "100",
+        "hex": "#f1e0e4"
+      },
+      "text": {
+        "family": "yellow",
+        "shade": "200",
+        "hex": "#fbe5b9"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "300",
+        "hex": "#d4a3ad"
+      },
+      "text": {
+        "family": "blue",
+        "shade": "400",
+        "hex": "#8cb8d5"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "300",
+        "hex": "#d4a3ad"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "300",
+        "hex": "#8db4b5"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "500",
+        "hex": "#bb6779"
+      },
+      "text": {
+        "family": "almond",
+        "shade": "500",
+        "hex": "#3d8c69"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "600",
+        "hex": "#6e3d47"
+      },
+      "text": {
+        "family": "cyan",
+        "shade": "600",
+        "hex": "#2a5050"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "800",
+        "hex": "#371e23"
+      },
+      "text": {
+        "family": "green",
+        "shade": "900",
+        "hex": "#172714"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    },
+    {
+      "background": {
+        "family": "cherry",
+        "shade": "900",
+        "hex": "#251418"
+      },
+      "text": {
+        "family": "grey",
+        "shade": "950",
+        "hex": "#171c1f"
+      },
+      "ratio": 1.03,
+      "level": "Fail"
+    }
+  ]
+}
