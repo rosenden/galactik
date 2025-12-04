@@ -137,6 +137,8 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
           const bgKey = `${combo.background.family}-${combo.background.shade}`;
           const textKey = `${combo.text.family}-${combo.text.shade}`;
           const isSelected = selectedBg === bgKey;
+          const bgColor = combo.background.hex?.startsWith('#') ? combo.background.hex : `#${combo.background.hex}`;
+          const textColor = combo.text.hex?.startsWith('#') ? combo.text.hex : `#${combo.text.hex}`;
 
           return (
             <div
@@ -148,12 +150,12 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
                 borderRadius: '8px',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
-                backgroundColor: combo.background.hex,
+                backgroundColor: bgColor,
               }}
             >
               <div
                 style={{
-                  color: combo.text.hex,
+                  color: textColor,
                   marginBottom: '0.5rem',
                   minHeight: '60px',
                   display: 'flex',
