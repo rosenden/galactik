@@ -270,6 +270,7 @@ body,
   --color-bg-cyan-base-alt: var(--cyan-200);
 
   /* Gradients (from Figma Solary) */
+  /* TODO: Verify exact gradient values in Figma file and update below */
   --gradient-brand: linear-gradient(135deg, var(--pink-500) 0%, var(--almond-500) 100%);
   --gradient-ai: linear-gradient(135deg, var(--indigo-500) 0%, var(--cyan-500) 100%);
 
