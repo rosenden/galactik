@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap');
 
 /* --- STYLES FIGMA EXTRAS (Solary) ---
-  h.3xl, h.2xl, h.lg.bold, h.lg.medium, h.lg.regular
-  p.base.bold, p.base.medium, p.base.regular
-  p.sm.bold, p.sm.medium, p.sm.regular
-  p.xs.regular, p.xs.medium, p.xs.bold
+  h1, h2, h3-bold, h3-medium, h3-regular
+  p-base-bold, p-base-medium, p-base-regular
+  p-sm-bold, p-sm-medium, p-sm-regular
+  p-xs-regular, p-xs-medium, p-xs-bold
+  gradient-brand, gradient-ai
   shadow-1, shadow-2, shadow-3, shadow-4, shadow-inner
   grid-xs, grid-sm, grid-md, grid-lg, grid-xl
   Body 3, Body/Body small medium, text/text-base/regular
-  (voir tokens-solary.json pour détails)
+  (see tokens-solary.json for details)
 */
 
 /* 2) Reset léger & base typographique commune */
@@ -267,6 +268,10 @@ body,
 
   --color-bg-cyan-base: var(--cyan-600);
   --color-bg-cyan-base-alt: var(--cyan-200);
+
+  /* Gradients (from Figma Solary) */
+  --gradient-brand: linear-gradient(135deg, var(--pink-500) 0%, var(--almond-500) 100%);
+  --gradient-ai: linear-gradient(135deg, var(--indigo-500) 0%, var(--cyan-500) 100%);
 
   /* Stroke / Focus */
   --color-stroke-focus: var(--pink-700);
