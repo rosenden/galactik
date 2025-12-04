@@ -261,10 +261,6 @@ const ContrastMatrixViewer: React.FC<{ data: any; title: string; showLevel?: str
   );
 };
 
-export const AllValidCombinations: Story = {
-  render: () => <ContrastMatrixViewer data={validRatios} title="All Valid Combinations (WCAG AA+)" />,
-};
-
 export const AAACombinations: Story = {
   render: () => (
     <ContrastMatrixViewer data={validRatios} title="AAA Combinations (7.0:1+)" showLevel="AAA" />
