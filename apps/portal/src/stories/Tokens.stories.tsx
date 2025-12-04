@@ -214,6 +214,22 @@ const BlurBox: React.FC<{ token: string }> = ({ token }) => (
   </div>
 );
 
+const GradientSwatch: React.FC<{ token: string }> = ({ token }) => (
+  <div style={{ width: 160 }}>
+    <div
+      style={{
+        height: 120,
+        background: `var(${token})`,
+        borderRadius: 'var(--radius-md)',
+        border: `1px solid var(--color-border-base)`
+      }}
+    />
+    <div style={{ marginTop: 8 }}>
+      <code style={{ fontSize: 12, color: 'var(--color-font-neutral-muted)' }}>{token}</code>
+    </div>
+  </div>
+);
+
 export const AllTokens: Story = {
   name: 'Overview',
   render: () => (
@@ -331,6 +347,14 @@ export const AllTokens: Story = {
             <BlurBox key={t} token={t} />
           ))}
         </div>
+      </Section>
+
+      <Section title="Gradients (Figma Solary)">
+        <Grid cols={3}>
+          {['--gradient-brand', '--gradient-ai'].map((t) => (
+            <GradientSwatch key={t} token={t} />
+          ))}
+        </Grid>
       </Section>
     </div>
   )
