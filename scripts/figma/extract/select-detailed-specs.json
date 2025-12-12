@@ -1,0 +1,1598 @@
+{
+  "size=large, state=empty": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#5D7374",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=empty": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#5D7374",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=empty": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#5D7374",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=active": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-up-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-up-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=active": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-up-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-up-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=active": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-up-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-up-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=filled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=filled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=filled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=hovered": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#374648",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=hovered": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#374648",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=hovered": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#374648",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=readonly": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#182021",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=readonly": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#182021",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=readonly": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#182021",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=disabled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#626C84",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "cancel-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "icon",
+        "type": "INSTANCE",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "cancel-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=disabled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#626C84",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "cancel-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "icon",
+        "type": "INSTANCE",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "cancel-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=disabled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#626C84",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "cancel-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": [],
+    "typography": [],
+    "layers": [
+      {
+        "name": "content",
+        "type": "FRAME",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "icon",
+        "type": "INSTANCE",
+        "fills": 0,
+        "strokes": 0
+      },
+      {
+        "name": "cancel-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=large, state=focus": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#445556",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "base",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [
+      {
+        "layer": "base",
+        "color": "#A9C1B8",
+        "width": 1,
+        "opacity": 1
+      }
+    ],
+    "borders": [
+      {
+        "layer": "base",
+        "radius": 8
+      }
+    ],
+    "typography": [],
+    "layers": [
+      {
+        "name": "base",
+        "type": "FRAME",
+        "fills": 1,
+        "strokes": 1
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=medium, state=focus": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#445556",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "base",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [
+      {
+        "layer": "base",
+        "color": "#A9C1B8",
+        "width": 1,
+        "opacity": 1
+      }
+    ],
+    "borders": [
+      {
+        "layer": "base",
+        "radius": 8
+      }
+    ],
+    "typography": [],
+    "layers": [
+      {
+        "name": "base",
+        "type": "FRAME",
+        "fills": 1,
+        "strokes": 1
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  },
+  "size=small, state=focus": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#445556",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "base",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [
+      {
+        "layer": "base",
+        "color": "#A9C1B8",
+        "width": 1,
+        "opacity": 1
+      }
+    ],
+    "borders": [
+      {
+        "layer": "base",
+        "radius": 8
+      }
+    ],
+    "typography": [],
+    "layers": [
+      {
+        "name": "base",
+        "type": "FRAME",
+        "fills": 1,
+        "strokes": 1
+      },
+      {
+        "name": "message-edit-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Lorem ipsum dolor",
+        "type": "TEXT",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "chevron-down-reg",
+        "type": "INSTANCE",
+        "fills": 1,
+        "strokes": 0
+      },
+      {
+        "name": "Vector",
+        "type": "VECTOR",
+        "fills": 1,
+        "strokes": 0
+      }
+    ]
+  }
+}

@@ -1,121 +1,184 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Start Storybook React (6006)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["--filter", "storybook-react", "storybook"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^.*$",
-          "line": 0
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*storybook dev.*",
-          "endsPattern": "^.*Local:.*http://localhost:6006.*"
-        }
-      }
-    },
-    {
-      "label": "Start Storybook Vue (6007)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["--filter", "storybook-vue", "storybook"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^.*$",
-          "line": 0
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*storybook dev.*",
-          "endsPattern": "^.*Local:.*http://localhost:6007.*"
-        }
-      }
-    },
-    {
-      "label": "Start Storybook Angular (6008)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["--filter", "storybook-angular", "storybook"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^.*$",
-          "line": 0
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*storybook dev.*",
-          "endsPattern": "^.*Local:.*http://localhost:6008.*"
-        }
-      }
-    },
-    {
-      "label": "Start Storybook Web Components (6009)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["--filter", "storybook-wc", "storybook"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^.*$",
-          "line": 0
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*storybook dev.*",
-          "endsPattern": "^.*Local:.*http://localhost:6009.*"
-        }
-      }
-    },
-    {
-      "label": "Start Portal (6010)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["--filter", "portal", "storybook"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^.*$",
-          "line": 0
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^.*storybook dev.*",
-          "endsPattern": "^.*Local:.*http://localhost:6010.*"
-        }
-      }
-    },
-    {
-      "label": "Start MCP Fallback",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["run", "mcp:fallback"],
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": { "regexp": "^.*$", "line": 0 },
-        "background": { "activeOnStart": true, "beginsPattern": "", "endsPattern": "MCP fallback server listening" }
-      }
-    },
-    {
-      "label": "Run configured MCP (run-mcp)",
-      "type": "shell",
-      "command": "pnpm",
-      "args": ["run", "mcp:run", "--", "${input:serverName}"],
-      "isBackground": false
-    }
-  ],
-  "inputs": [
-    {
-      "id": "serverName",
-      "type": "promptString",
-      "description": "Enter the MCP server name from ~/.config/mcp/config.json",
-      "default": "Figma API – OneChaps"
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Storybook React (6006)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"storybook-react",
+				"storybook"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "^.*storybook dev.*",
+					"endsPattern": "^.*Local:.*http://localhost:6006.*"
+				}
+			}
+		},
+		{
+			"label": "Start Storybook Vue (6007)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"storybook-vue",
+				"storybook"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "^.*storybook dev.*",
+					"endsPattern": "^.*Local:.*http://localhost:6007.*"
+				}
+			}
+		},
+		{
+			"label": "Start Storybook Angular (6008)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"storybook-angular",
+				"storybook"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "^.*storybook dev.*",
+					"endsPattern": "^.*Local:.*http://localhost:6008.*"
+				}
+			}
+		},
+		{
+			"label": "Start Storybook Web Components (6009)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"storybook-wc",
+				"storybook"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "^.*storybook dev.*",
+					"endsPattern": "^.*Local:.*http://localhost:6009.*"
+				}
+			}
+		},
+		{
+			"label": "Start Portal (6010)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--filter",
+				"portal",
+				"storybook"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "^.*storybook dev.*",
+					"endsPattern": "^.*Local:.*http://localhost:6010.*"
+				}
+			}
+		},
+		{
+			"label": "Start MCP Fallback",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"run",
+				"mcp:fallback"
+			],
+			"isBackground": true,
+			"problemMatcher": {
+				"pattern": {
+					"regexp": "^.*$",
+					"line": 0
+				},
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": "",
+					"endsPattern": "MCP fallback server listening"
+				}
+			}
+		},
+		{
+			"label": "Run configured MCP (run-mcp)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"run",
+				"mcp:run",
+				"--",
+				"${input:serverName}"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Run MCP fallback (temp)",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"run",
+				"mcp:fallback"
+			],
+			"isBackground": true
+		},
+		{
+			"label": "Run extract tag via MCP",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/extract-tag-via-mcp.mjs"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "Extract detailed tag specs",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"scripts/extract-tag-detailed.mjs"
+			],
+			"isBackground": false
+		}
+	],
+	"inputs": [
+		{
+			"id": "serverName",
+			"type": "promptString",
+			"description": "Enter the MCP server name from ~/.config/mcp/config.json",
+			"default": "Figma API – OneChaps"
+		}
+	]
 }

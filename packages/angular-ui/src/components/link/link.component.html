@@ -1,0 +1,16 @@
+<a
+  [class]="classes"
+  [href]="hrefValue"
+  [target]="target"
+  [rel]="relValue"
+  [attr.aria-disabled]="disabled"
+  (click)="handleClick($event)"
+>
+  <span class="oc-link__label">
+    <ng-content></ng-content>
+  </span>
+  <i 
+    *ngIf="shouldShowIcon" 
+    [ngClass]="displayIcon.split(' ').concat(['oc-link__icon'])"
+  ></i>
+</a>

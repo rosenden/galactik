@@ -1,0 +1,56 @@
+/**
+ * Link Component Styles (copied from React implementation)
+ * Extracted from Figma "OneChaps UI kit" - oc-link
+ */
+
+.oc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family-base, 'Hanken Grotesk');
+  font-weight: var(--font-weight-regular, 400);
+  text-decoration: underline;
+  line-height: 1;
+  white-space: nowrap;
+  color: #2C6F52;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Sizes */
+.oc-link--sm { font-size: 12px; }
+.oc-link--md { font-size: 14px; }
+.oc-link--lg { font-size: 16px; }
+
+/* Internal elements */
+.oc-link__label { display: inline; }
+.oc-link__icon { display: inline-flex; align-items: center; justify-content: center; font-size: 0.85em; transition: transform 0.2s ease; }
+
+/* States */
+.oc-link:link { color: #2C6F52; text-decoration: underline; }
+
+.oc-link:hover:not([aria-disabled="true"]) { color: #193B2E; text-decoration: underline; }
+.oc-link:hover:not([aria-disabled="true"]) .oc-link__icon { transform: translateX(2px); }
+
+.oc-link:active:not([aria-disabled="true"]) { color: #0D211A; text-decoration: underline; }
+.oc-link:active:not([aria-disabled="true"]) .oc-link__icon { transform: translateX(4px); }
+
+.oc-link--active { color: #182021; text-decoration: underline; }
+
+.oc-link--visited,
+.oc-link:visited { color: #2C6F52; text-decoration: underline; }
+.oc-link--visited:hover,
+.oc-link:visited:hover:not([aria-disabled="true"]) { color: #193B2E; }
+
+.oc-link:focus-visible { outline: 2px solid #2C6F52; outline-offset: 2px; border-radius: 2px; }
+
+.oc-link--disabled,
+.oc-link[aria-disabled="true"] { color: #626C84; cursor: not-allowed; text-decoration: line-through; opacity: 0.6; }
+.oc-link--disabled:hover,
+.oc-link[aria-disabled="true"]:hover { color: #626C84; text-decoration: line-through; }
+.oc-link--disabled .oc-link__icon,
+.oc-link[aria-disabled="true"] .oc-link__icon { opacity: 0.5; }

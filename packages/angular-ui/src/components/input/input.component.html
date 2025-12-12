@@ -1,0 +1,60 @@
+<div 
+  class="oc-input-container"
+  (mouseenter)="handleMouseEnter()"
+  (mouseleave)="handleMouseLeave()">
+  <div [class]="classes">
+    <span *ngIf="iconLeft" class="oc-input__icon-left">
+      <i [ngClass]="iconLeft.split(' ')"></i>
+    </span>
+    
+    <input
+      [type]="type"
+      [value]="value"
+      (input)="handleInput($event)"
+      (focus)="handleFocus($event)"
+      (blur)="handleBlur($event)"
+      (mousedown)="handleMouseDown()"
+      (keydown)="handleKeyDown($event)"
+      [placeholder]="placeholder"
+      [disabled]="disabled"
+      [readonly]="readonly"
+      [maxlength]="maxLength"
+      [name]="name"
+      [id]="id"
+      [required]="required"
+      [attr.aria-label]="ariaLabel"
+      class="oc-input__field"
+    />
+    
+    <span *ngIf="showCounterDisplay" class="oc-input__counter">
+      {{ counterText }}
+    </span>
+    
+    <span 
+      *ngFor="let icon of rightIconsArray" 
+      class="oc-input__icon-right">
+      <i [ngClass]="icon.split(' ')"></i>
+    </span>
+    
+    <div 
+      *ngIf="shouldShowNumberControls && !readonly" 
+      [ngClass]="['oc-input__number-controls', 'oc-input__number-controls--' + size]">
+      <button
+        type="button"
+        (click)="handleIncrement()"
+        [disabled]="disabled"
+        class="oc-input__number-button"
+        aria-label="Increment">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+      <button
+        type="button"
+        (click)="handleDecrement()"
+        [disabled]="disabled"
+        class="oc-input__number-button"
+        aria-label="Decrement">
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+    </div>
+  </div>
+</div>

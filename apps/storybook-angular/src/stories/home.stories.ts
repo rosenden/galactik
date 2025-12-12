@@ -6,6 +6,10 @@ import { ButtonComponent } from 'angular-ui/components/button/button.component';
 import { LabelComponent } from 'angular-ui/components/label/label.component';
 import { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';
 import { RadioComponent } from 'angular-ui/components/radio/radio.component';
+import { TagComponent } from 'angular-ui/components/tag/tag.component';
+import { LinkComponent } from 'angular-ui/components/link/link.component';
+import { SelectComponent } from 'angular-ui/components/select/select.component';
+import { InputComponent } from 'angular-ui/components/input/input.component';
 
 interface Component {
   name: string;
@@ -56,14 +60,42 @@ const components: Component[] = [
     category: 'Electrons',
     description: 'Checkbox with selected and indeterminate states',
     path: '?path=/docs/electrons-checkbox--docs',
-    template: '<oc-checkbox [checked]="true" label="Checkbox"></oc-checkbox>'
+    template: '<oc-checkbox checked="true" label="Checkbox"></oc-checkbox>'
   },
   {
     name: 'Radio',
     category: 'Electrons',
     description: 'Radio button aligned with React/Vue tokens',
     path: '?path=/docs/electrons-radio--docs',
-    template: '<oc-radio [checked]="true" label="Radio"></oc-radio>'
+    template: '<oc-radio checked="true" label="Radio"></oc-radio>'
+  },
+  {
+    name: 'Tag',
+    category: 'Electrons',
+    description: 'Tag component with sizes, variants and icons',
+    path: '?path=/docs/electrons-tag--docs',
+    template: '<oc-tag label="Tag" size="small" variant="fill" paletteColor="sage" iconLeft="fa-solid fa-star"></oc-tag>'
+  },
+  {
+    name: 'Link',
+    category: 'Electrons',
+    description: 'Link component with icon support',
+    path: '?path=/docs/electrons-link--docs',
+    template: '<oc-link text="Link" size="medium" icon="fa-solid fa-arrow-right"></oc-link>'
+  },
+  {
+    name: 'Select',
+    category: 'Electrons',
+    description: 'Select dropdown with sizes and states',
+    path: '?path=/docs/electrons-select--docs',
+    template: '<oc-select [options]="selectOptions" placeholder="Select option" size="medium" icon="fa-solid fa-pen-to-square"></oc-select>'
+  },
+  {
+    name: 'Input',
+    category: 'Electrons',
+    description: 'Text and number input with states and icons',
+    path: '?path=/docs/electrons-input--docs',
+    template: '<div style="display: flex; gap: 8px; flex-direction: column;"><oc-input placeholder="Enter text..." size="small"></oc-input><oc-input placeholder="With icon" size="small" iconLeft="fa-solid fa-search"></oc-input></div>'
   },
 ];
 
@@ -142,10 +174,16 @@ type Story = StoryObj;
 export const Default: Story = {
   decorators: [
     moduleMetadata({
-      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]
+      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent, TagComponent, LinkComponent, SelectComponent, InputComponent]
     })
   ],
   render: () => ({
+    props: {
+      selectOptions: [
+        { value: '1', label: 'Option 1' },
+        { value: '2', label: 'Option 2' }
+      ]
+    },
     template: `
       <div style="
         padding: var(--space-4xl);

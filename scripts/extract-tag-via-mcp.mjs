@@ -6,20 +6,22 @@
 
 import fs from 'fs';
 
-const MCP_URL = 'http://localhost:3845';
-const FIGMA_FILE_KEY = 'zB9JxH85SZ9yDCUYw8CUwU'; // one chaps ui kit
+const DEFAULT_MCP_PORT = 3845;
+const MCP_PORT = process.env.MCP_PORT ? Number(process.env.MCP_PORT) : DEFAULT_MCP_PORT;
+const MCP_HOST = process.env.MCP_URL || `http://localhost:${MCP_PORT}`;
+const MCP_PATH = process.env.MCP_PATH ?? '/mcp';
+const MCP_ENDPOINT = new URL(MCP_PATH, MCP_HOST).toString();
+const FIGMA_FILE_KEY = process.env.FIGMA_FILE_KEY_2 || 'zB9JxH85SZ9yDCUYw8CUwU'; // one chaps ui kit
 
-async function callMCP(method, params) {
-  const response = await fetch(MCP_URL, {
+async function fetchFileFromMCP(fileKey) {
+  const response = await fetch(MCP_ENDPOINT, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      jsonrpc: '2.0',
-      id: Date.now(),
-      method,
-      params,
+      type: 'figma.fetchFile',
+      fileKey,
     }),
   });
 
@@ -27,31 +29,21 @@ async function callMCP(method, params) {
     throw new Error(`MCP request failed: ${response.status}`);
   }
 
-  const result = await response.json();
-  if (result.error) {
-    throw new Error(`MCP error: ${result.error.message}`);
+  const data = await response.json();
+  if (!data.ok) {
+    throw new Error(`MCP error: ${data.error || 'unknown'}`);
   }
 
-  return result.result;
+  return data.result?.body || data.result;
 }
 
 async function extractTagFromFigma() {
   console.log('🔍 Extracting Tag component from Figma via MCP...\n');
 
   try {
-    // Get file structure
     console.log('📡 Fetching Figma file structure...');
-    const fileData = await callMCP('tools/call', {
-      name: 'figma_get_file',
-      arguments: {
-        file_key: FIGMA_FILE_KEY,
-      },
-    });
-
-    console.log('✅ File loaded:', fileData.content[0]?.text ? 'Success' : 'No data');
-    
-    // Parse the file data
-    const fileContent = JSON.parse(fileData.content[0].text);
+    const fileContent = await fetchFileFromMCP(FIGMA_FILE_KEY);
+    console.log('✅ File loaded:', fileContent.name ?? 'Unnamed Figma file');
     const tags = [];
 
     // Search for tag components recursively
@@ -111,30 +103,19 @@ async function extractTagFromFigma() {
     console.log(`\n✅ Found ${tags.length} tag component(s)\n`);
 
     // Get detailed information for each tag
-    const detailedTags = [];
-    for (const tag of tags) {
+    const detailedTags = tags.map((tag) => {
       console.log(`📋 Analyzing: ${tag.name}...`);
-      
-      const nodeDetails = await callMCP('tools/call', {
-        name: 'figma_get_node',
-        arguments: {
-          file_key: FIGMA_FILE_KEY,
-          node_id: tag.id,
-        },
-      });
-
-      const nodeData = JSON.parse(nodeDetails.content[0].text);
-      const analysis = analyzeNode(nodeData.nodes[tag.id]);
-      
-      detailedTags.push({
-        ...tag,
-        analysis,
-      });
+      const analysis = analyzeNode(tag.node);
 
       console.log(`   ✓ Width: ${analysis.width}px, Height: ${analysis.height}px`);
       console.log(`   ✓ Background: ${analysis.backgroundColor}`);
       console.log(`   ✓ Border radius: ${analysis.borderRadius}px`);
-    }
+
+      return {
+        ...tag,
+        analysis,
+      };
+    });
 
     // Save results
     const output = {

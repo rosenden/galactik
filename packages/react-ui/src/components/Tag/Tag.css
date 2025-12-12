@@ -1,0 +1,364 @@
+/**
+ * Tag Component Styles
+ * Extracted from Figma "OneChaps UI kit" - oc-tag-primary & oc-tag-secondary
+ * 
+ * Specs from Figma MCP (2025-12-08):
+ * - Fill variant (oc-tag-primary): 37 color+size combinations with solid backgrounds
+ * - Outline variant (oc-tag-secondary): 37 color+size combinations with borders
+ * - Border radius: 9999px (fully rounded pills)
+ * - Sizes: xsmall 18px, small 24px, medium 36px
+ * - Colors: sage, pink, almond, grey, yellow, warning, cherry, success, indigo, info, cyan, error
+ * - Uses CSS tokens from tokens.css for color consistency
+ */
+
+.oc-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs, 6px);
+  
+  /* Figma spec: fully rounded */
+  border-radius: var(--radius-rounded, 9999px);
+  
+  /* Typography */
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular, 500);
+  line-height: 1;
+  white-space: nowrap;
+  
+  /* Transitions */
+  transition: all 0.2s ease;
+  
+  /* Remove button styling */
+  border: none;
+  outline: none;
+  user-select: none;
+}
+
+/* ============================================================================
+   FILL VARIANT (oc-tag-primary) - Solid background colors with specific text colors
+   ============================================================================ */
+
+/* Sage fill */
+.oc-tag--fill.oc-tag--sage {
+  background-color: var(--sage-200);
+  color: var(--sage-800);
+}
+
+/* Pink fill */
+.oc-tag--fill.oc-tag--pink {
+  background-color: var(--pink-200);
+  color: var(--pink-950);
+}
+
+/* Almond fill */
+.oc-tag--fill.oc-tag--almond {
+  background-color: var(--almond-100);
+  color: var(--almond-800);
+}
+
+/* Grey fill */
+.oc-tag--fill.oc-tag--grey {
+  background-color: var(--grey-200);
+  color: var(--grey-800);
+}
+
+/* Yellow fill */
+.oc-tag--fill.oc-tag--yellow {
+  background-color: var(--yellow-200);
+  color: var(--yellow-800);
+}
+
+/* Warning fill (orange) */
+.oc-tag--fill.oc-tag--warning {
+  background-color: var(--orange-200);
+  color: var(--orange-800);
+}
+
+/* Cherry fill */
+.oc-tag--fill.oc-tag--cherry {
+  background-color: var(--cherry-200);
+  color: var(--cherry-800);
+}
+
+/* Success fill (green) */
+.oc-tag--fill.oc-tag--success {
+  background-color: var(--green-200);
+  color: var(--green-800);
+}
+
+/* Indigo fill */
+.oc-tag--fill.oc-tag--indigo {
+  background-color: var(--indigo-200);
+  color: var(--indigo-800);
+}
+
+/* Info fill (blue) */
+.oc-tag--fill.oc-tag--info {
+  background-color: var(--blue-200);
+  color: var(--blue-800);
+}
+
+/* Cyan fill */
+.oc-tag--fill.oc-tag--cyan {
+  background-color: var(--cyan-200);
+  color: var(--cyan-800);
+}
+
+/* Error fill (red) */
+.oc-tag--fill.oc-tag--error {
+  background-color: var(--red-200);
+  color: var(--red-800);
+}
+
+/* ============================================================================
+   OUTLINE VARIANT (oc-tag-secondary) - Border with colored text
+   ============================================================================ */
+
+.oc-tag--outline {
+  background-color: transparent;
+  border: var(--stroke-xs, 1px) solid;
+}
+
+/* Sage outline */
+.oc-tag--outline.oc-tag--sage {
+  border-color: var(--sage-700);
+  color: var(--sage-700);
+}
+
+/* Pink outline */
+.oc-tag--outline.oc-tag--pink {
+  border-color: var(--pink-800);
+  color: var(--pink-800);
+}
+
+/* Almond outline */
+.oc-tag--outline.oc-tag--almond {
+  border-color: var(--almond-600);
+  color: var(--almond-600);
+}
+
+/* Grey outline */
+.oc-tag--outline.oc-tag--grey {
+  border-color: var(--grey-800);
+  color: var(--grey-800);
+}
+
+/* Yellow outline */
+.oc-tag--outline.oc-tag--yellow {
+  border-color: var(--yellow-700);
+  color: var(--yellow-700);
+}
+
+/* Warning outline (orange) */
+.oc-tag--outline.oc-tag--warning {
+  border-color: var(--orange-600);
+  color: var(--orange-600);
+}
+
+/* Cherry outline */
+.oc-tag--outline.oc-tag--cherry {
+  border-color: var(--cherry-600);
+  color: var(--cherry-600);
+}
+
+/* Success outline (green) */
+.oc-tag--outline.oc-tag--success {
+  border-color: var(--green-600);
+  color: var(--green-600);
+}
+
+/* Indigo outline */
+.oc-tag--outline.oc-tag--indigo {
+  border-color: var(--indigo-600);
+  color: var(--indigo-600);
+}
+
+/* Info outline (blue) */
+.oc-tag--outline.oc-tag--info {
+  border-color: var(--blue-600);
+  color: var(--blue-600);
+}
+
+/* Cyan outline */
+.oc-tag--outline.oc-tag--cyan {
+  border-color: var(--cyan-600);
+  color: var(--cyan-600);
+}
+
+/* Error outline (red) */
+.oc-tag--outline.oc-tag--error {
+  border-color: var(--red-600);
+  color: var(--red-600);
+}
+
+/* ============================================================================
+   SIZES (from Figma oc-tag component specs)
+   ============================================================================ */
+
+/* xsmall: 18px height */
+.oc-tag--xsmall {
+  height: var(--row-h-xs, 18px);
+  padding: var(--space-4xs, 2px) var(--space-3xs, 4px);
+  font-size: var(--font-size-sm, 12px);
+  font-weight: var(--font-weight-regular, 400);
+}
+
+/* small: 24px height */
+.oc-tag--small {
+  height: var(--row-h-sm, 24px);
+  padding: var(--space-4xs, 2px) var(--space-xs, 8px);
+  font-size: var(--font-size-base, 14px);
+  font-weight: var(--font-weight-regular, 400);
+}
+
+/* medium: 36px height (default) */
+.oc-tag--medium {
+  height: var(--row-h-md, 36px);
+  padding: var(--space-3xs, 4px) var(--space-md, 12px);
+  font-size: var(--font-size-lg, 16px);
+  font-weight: var(--font-weight-regular, 400);
+}
+
+/* ============================================================================
+   INTERNAL ELEMENTS
+   ============================================================================ */
+
+/* Icon (FontAwesome) */
+.oc-tag__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* Icon sizes based on tag size */
+.oc-tag--xsmall .oc-tag__icon {
+  font-size: var(--icon-2xs, 12px);
+}
+
+.oc-tag--small .oc-tag__icon {
+  font-size: var(--icon-xs, 14px);
+}
+
+.oc-tag--medium .oc-tag__icon {
+  font-size: var(--icon-md, 16px);
+}
+
+/* Icon positioning */
+.oc-tag__icon--left {
+  margin-right: 4px;
+}
+
+.oc-tag__icon--right {
+  margin-left: 4px;
+}
+
+/* Flag (country flag using emoji or text) */
+.oc-tag__flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+/* Flag sizes based on tag size */
+.oc-tag--xsmall .oc-tag__flag {
+  width: 14px;
+  height: 10px;
+  font-size: 0.8em;
+}
+
+.oc-tag--small .oc-tag__flag {
+  width: 16px;
+  height: 12px;
+  font-size: 1em;
+}
+
+.oc-tag--medium .oc-tag__flag {
+  width: 20px;
+  height: 15px;
+  font-size: 1.2em;
+}
+
+/* Flag styles - using emoji flags or simple country indicators */
+.flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Country flag emojis - can be customized with actual flag SVGs */
+.flag-fr::before { content: '🇫🇷'; }
+.flag-us::before { content: '🇺🇸'; }
+.flag-gb::before { content: '🇬🇧'; }
+.flag-de::before { content: '🇩🇪'; }
+.flag-es::before { content: '🇪🇸'; }
+.flag-it::before { content: '🇮🇹'; }
+.flag-jp::before { content: '🇯🇵'; }
+.flag-cn::before { content: '🇨🇳'; }
+.flag-ca::before { content: '🇨🇦'; }
+.flag-au::before { content: '🇦🇺'; }
+.flag-br::before { content: '🇧🇷'; }
+.flag-in::before { content: '🇮🇳'; }
+.flag-ru::before { content: '🇷🇺'; }
+.flag-mx::before { content: '🇲🇽'; }
+.flag-kr::before { content: '🇰🇷'; }
+.flag-nl::before { content: '🇳🇱'; }
+.flag-se::before { content: '🇸🇪'; }
+.flag-ch::before { content: '🇨🇭'; }
+.flag-be::before { content: '🇧🇪'; }
+.flag-at::before { content: '🇦🇹'; }
+.flag-pl::before { content: '🇵🇱'; }
+.flag-no::before { content: '🇳🇴'; }
+.flag-dk::before { content: '🇩🇰'; }
+.flag-fi::before { content: '🇫🇮'; }
+.flag-ie::before { content: '🇮🇪'; }
+.flag-pt::before { content: '🇵🇹'; }
+.flag-gr::before { content: '🇬🇷'; }
+.flag-cz::before { content: '🇨🇿'; }
+.flag-hu::before { content: '🇭🇺'; }
+.flag-ro::before { content: '🇷🇴'; }
+.flag-bg::before { content: '🇧🇬'; }
+.flag-hr::before { content: '🇭🇷'; }
+.flag-sk::before { content: '🇸🇰'; }
+.flag-si::before { content: '🇸🇮'; }
+.flag-lt::before { content: '🇱🇹'; }
+.flag-lv::before { content: '🇱🇻'; }
+.flag-ee::before { content: '🇪🇪'; }
+.flag-lu::before { content: '🇱🇺'; }
+.flag-mt::before { content: '🇲🇹'; }
+.flag-cy::before { content: '🇨🇾'; }
+
+/* Label */
+.oc-tag__label {
+  display: inline-block;
+  line-height: 1;
+}
+
+.oc-tag__close:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.oc-tag--small .oc-tag__close {
+  width: 14px;
+  height: 14px;
+  font-size: 16px;
+}
+
+/* --- Focus States (Accessibility) --- */
+
+.oc-tag:focus-visible,
+.oc-tag__close:focus-visible {
+  outline: 2px solid var(--color-stroke-focus);
+  outline-offset: 2px;
+}

@@ -1,0 +1,2544 @@
+[
+  {
+    "name": "size=medium, state=active, variant=default, filled=true",
+    "structure": {
+      "name": "size=medium, state=active, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 36,
+        "x": -585,
+        "y": 478,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 8,
+        "paddingRight": 12,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#2D393A",
+            "opacity": 1,
+            "weight": 2
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -573,
+            "y": 488
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -570.5999755859375,
+                "y": 490.3999938964844
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Frame 1",
+          "type": "FRAME",
+          "layout": {
+            "width": 118,
+            "height": 20,
+            "x": -549,
+            "y": 486,
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 2,
+            "counterAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Line 1",
+              "type": "VECTOR",
+              "layout": {
+                "width": 6.993823262746446e-7,
+                "height": 16,
+                "x": -549,
+                "y": 488
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1,
+                    "weight": 1
+                  }
+                ],
+                "effects": []
+              },
+              "text": null
+            },
+            {
+              "name": "Lorem Ipsum",
+              "type": "TEXT",
+              "layout": {
+                "width": 116,
+                "height": 20,
+                "x": -547,
+                "y": 486
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": {
+                "content": "Lorem Ipsum",
+                "fontFamily": "Hanken Grotesk",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "letterSpacing": 0,
+                "textAlign": "LEFT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -423,
+            "y": 488
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -383,
+            "y": 488
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -380.6000061035156,
+                "y": 490.3999938964844
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -359,
+            "y": 488
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -356.6000061035156,
+                "y": 490.3999938964844
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 14,
+            "height": 28,
+            "x": -335,
+            "y": 482,
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 14,
+                "height": 14,
+                "x": -335,
+                "y": 482
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 9.79699420928955,
+                    "height": 5.425000190734863,
+                    "x": -332.88714599609375,
+                    "y": 485.4989013671875
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 14,
+                "height": 14,
+                "x": -335,
+                "y": 496
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 9.79699420928955,
+                    "height": 5.425000190734863,
+                    "x": -332.88714599609375,
+                    "y": 501.0760803222656
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=small, state=active, variant=default, filled=true",
+    "structure": {
+      "name": "size=small, state=active, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 24,
+        "x": -265,
+        "y": 484,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 4,
+        "paddingRight": 8,
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#2D393A",
+            "opacity": 1,
+            "weight": 2
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -257,
+            "y": 489
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -254.60000610351562,
+                "y": 491.3999938964844
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Frame 1",
+          "type": "FRAME",
+          "layout": {
+            "width": 118,
+            "height": 20,
+            "x": -235,
+            "y": 486,
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 2,
+            "counterAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Line 1",
+              "type": "VECTOR",
+              "layout": {
+                "width": 6.993822694312257e-7,
+                "height": 16,
+                "x": -235,
+                "y": 488
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1,
+                    "weight": 1
+                  }
+                ],
+                "effects": []
+              },
+              "text": null
+            },
+            {
+              "name": "Lorem Ipsum",
+              "type": "TEXT",
+              "layout": {
+                "width": 116,
+                "height": 20,
+                "x": -233,
+                "y": 486
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": {
+                "content": "Lorem Ipsum",
+                "fontFamily": "Hanken Grotesk",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": 20,
+                "letterSpacing": 0,
+                "textAlign": "LEFT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -109,
+            "y": 488
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -69,
+            "y": 489
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -67.19999694824219,
+                "y": 490.79998779296875
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -47,
+            "y": 489
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -45.20000076293945,
+                "y": 490.79998779296875
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 28,
+            "height": 12,
+            "x": -25,
+            "y": 490,
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 4,
+            "counterAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 12,
+                "height": 12,
+                "x": -25,
+                "y": 490
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 8.397424697875977,
+                    "height": 4.650000095367432,
+                    "x": -23.18898582458496,
+                    "y": 492.9990539550781
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 12,
+                "height": 12,
+                "x": -9,
+                "y": 490
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 8.397424697875977,
+                    "height": 4.650000095367432,
+                    "x": -7.188985347747803,
+                    "y": 494.3509521484375
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=large, state=active, variant=default, filled=true",
+    "structure": {
+      "name": "size=large, state=active, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 44,
+        "x": -901,
+        "y": 474,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 8,
+        "paddingRight": 16,
+        "paddingBottom": 8,
+        "paddingLeft": 16,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#2D393A",
+            "opacity": 1,
+            "weight": 2
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -885,
+            "y": 486
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -882,
+                "y": 489
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Frame 1",
+          "type": "FRAME",
+          "layout": {
+            "width": 96,
+            "height": 22,
+            "x": -857,
+            "y": 485,
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 2,
+            "counterAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Line 1",
+              "type": "VECTOR",
+              "layout": {
+                "width": 6.993823262746446e-7,
+                "height": 16,
+                "x": -857,
+                "y": 488
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1,
+                    "weight": 1
+                  }
+                ],
+                "effects": []
+              },
+              "text": null
+            },
+            {
+              "name": "Lorem Ipsum",
+              "type": "TEXT",
+              "layout": {
+                "width": 94,
+                "height": 22,
+                "x": -855,
+                "y": 485
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": {
+                "content": "Lorem Ipsum",
+                "fontFamily": "Hanken Grotesk",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": 22,
+                "letterSpacing": 0,
+                "textAlign": "LEFT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -753,
+            "y": 488
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -713,
+            "y": 486
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -710,
+                "y": 489
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -685,
+            "y": 486
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -682,
+                "y": 489
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#2D393A",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 16,
+            "height": 32,
+            "x": -657,
+            "y": 480,
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 16,
+                "height": 16,
+                "x": -657,
+                "y": 480
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 11.196564674377441,
+                    "height": 6.200000286102295,
+                    "x": -654.5853271484375,
+                    "y": 483.9987487792969
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 16,
+                "height": 16,
+                "x": -657,
+                "y": 496
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 11.196564674377441,
+                    "height": 6.200000286102295,
+                    "x": -654.5853271484375,
+                    "y": 501.8012390136719
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#2D393A",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=medium, state=filled, variant=default, filled=true",
+    "structure": {
+      "name": "size=medium, state=filled, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 36,
+        "x": -585,
+        "y": 538,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 8,
+        "paddingRight": 12,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#445556",
+            "opacity": 1,
+            "weight": 1
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -573,
+            "y": 548
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -570.5999755859375,
+                "y": 550.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Lorem Ipsum",
+          "type": "TEXT",
+          "layout": {
+            "width": 118,
+            "height": 20,
+            "x": -549,
+            "y": 546
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "Lorem Ipsum",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "textAlign": "LEFT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -423,
+            "y": 548
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -383,
+            "y": 548
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -380.6000061035156,
+                "y": 550.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -359,
+            "y": 548
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -356.6000061035156,
+                "y": 550.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 14,
+            "height": 28,
+            "x": -335,
+            "y": 542,
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 14,
+                "height": 14,
+                "x": -335,
+                "y": 542
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 9.79699420928955,
+                    "height": 5.425000190734863,
+                    "x": -332.88714599609375,
+                    "y": 545.4989013671875
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 14,
+                "height": 14,
+                "x": -335,
+                "y": 556
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 9.79699420928955,
+                    "height": 5.425000190734863,
+                    "x": -332.88714599609375,
+                    "y": 561.0761108398438
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=small, state=filled, variant=default, filled=true",
+    "structure": {
+      "name": "size=small, state=filled, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 24,
+        "x": -265,
+        "y": 544,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 4,
+        "paddingRight": 8,
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#445556",
+            "opacity": 1,
+            "weight": 1
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -257,
+            "y": 549
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -254.60000610351562,
+                "y": 551.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Lorem Ipsum",
+          "type": "TEXT",
+          "layout": {
+            "width": 118,
+            "height": 20,
+            "x": -235,
+            "y": 546
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "Lorem Ipsum",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "textAlign": "LEFT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -109,
+            "y": 548
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -69,
+            "y": 549
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -67.19999694824219,
+                "y": 550.7999877929688
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -47,
+            "y": 549
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -45.20000076293945,
+                "y": 550.7999877929688
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 28,
+            "height": 12,
+            "x": -25,
+            "y": 550,
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 4,
+            "counterAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 12,
+                "height": 12,
+                "x": -25,
+                "y": 550
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 8.397424697875977,
+                    "height": 4.650000095367432,
+                    "x": -23.18898582458496,
+                    "y": 552.9990844726562
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 12,
+                "height": 12,
+                "x": -9,
+                "y": 550
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 8.397424697875977,
+                    "height": 4.650000095367432,
+                    "x": -7.188985347747803,
+                    "y": 554.3509521484375
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=large, state=filled, variant=default, filled=true",
+    "structure": {
+      "name": "size=large, state=filled, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 44,
+        "x": -901,
+        "y": 534,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 8,
+        "paddingRight": 16,
+        "paddingBottom": 8,
+        "paddingLeft": 16,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#FFFFFF",
+            "opacity": 1
+          }
+        ],
+        "strokes": [
+          {
+            "type": "SOLID",
+            "color": "#445556",
+            "opacity": 1,
+            "weight": 1
+          }
+        ],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -885,
+            "y": 546
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -882,
+                "y": 549
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Lorem Ipsum",
+          "type": "TEXT",
+          "layout": {
+            "width": 96,
+            "height": 22,
+            "x": -857,
+            "y": 545
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "Lorem Ipsum",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "lineHeight": 22,
+            "letterSpacing": 0,
+            "textAlign": "LEFT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "0/320",
+          "type": "TEXT",
+          "layout": {
+            "width": 32,
+            "height": 16,
+            "x": -753,
+            "y": 548
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "0/320",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "lineHeight": 16,
+            "letterSpacing": 0,
+            "textAlign": "RIGHT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#445556",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -713,
+            "y": 546
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -710,
+                "y": 549
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 20,
+            "height": 20,
+            "x": -685,
+            "y": 546
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 13.999999046325684,
+                "height": 13.999999046325684,
+                "x": -682,
+                "y": 549
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#445556",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "numbers",
+          "type": "FRAME",
+          "layout": {
+            "width": 16,
+            "height": 32,
+            "x": -657,
+            "y": 540,
+            "layoutMode": "VERTICAL",
+            "primaryAxisAlignItems": "CENTER"
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "chevron-up-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 16,
+                "height": 16,
+                "x": -657,
+                "y": 540
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 11.196564674377441,
+                    "height": 6.200000762939453,
+                    "x": -654.5853271484375,
+                    "y": 543.998779296875
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            },
+            {
+              "name": "chevron-down-reg",
+              "type": "INSTANCE",
+              "layout": {
+                "width": 16,
+                "height": 16,
+                "x": -657,
+                "y": 556
+              },
+              "styles": {
+                "fills": [],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null,
+              "children": [
+                {
+                  "name": "Vector",
+                  "type": "VECTOR",
+                  "layout": {
+                    "width": 11.196564674377441,
+                    "height": 6.200000286102295,
+                    "x": -654.5853271484375,
+                    "y": 561.80126953125
+                  },
+                  "styles": {
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": "#445556",
+                        "opacity": 1
+                      }
+                    ],
+                    "strokes": [],
+                    "effects": []
+                  },
+                  "text": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=medium, state=readonly, variant=default, filled=true",
+    "structure": {
+      "name": "size=medium, state=readonly, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 36,
+        "x": -585,
+        "y": 718,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 8,
+        "paddingRight": 12,
+        "paddingBottom": 8,
+        "paddingLeft": 12,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#F1F8F4",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -573,
+            "y": 728
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -570.5999755859375,
+                "y": 730.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Lorem Ipsum",
+          "type": "TEXT",
+          "layout": {
+            "width": 180,
+            "height": 20,
+            "x": -549,
+            "y": 726
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "Lorem Ipsum",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "textAlign": "LEFT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -361,
+            "y": 728
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -358.6000061035156,
+                "y": 730.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 16,
+            "height": 16,
+            "x": -337,
+            "y": 728
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -334.6000061035156,
+                "y": 730.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "size=small, state=readonly, variant=default, filled=true",
+    "structure": {
+      "name": "size=small, state=readonly, variant=default, filled=true",
+      "type": "COMPONENT",
+      "layout": {
+        "width": 276,
+        "height": 24,
+        "x": -265,
+        "y": 724,
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 8,
+        "paddingTop": 4,
+        "paddingRight": 8,
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "primaryAxisAlignItems": "CENTER",
+        "counterAxisAlignItems": "CENTER"
+      },
+      "styles": {
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": "#F1F8F4",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "cornerRadius": 8,
+        "effects": []
+      },
+      "text": null,
+      "children": [
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -257,
+            "y": 729
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 11.199999809265137,
+                "height": 11.199999809265137,
+                "x": -254.60000610351562,
+                "y": 731.4000244140625
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "Lorem Ipsum",
+          "type": "TEXT",
+          "layout": {
+            "width": 194,
+            "height": 20,
+            "x": -235,
+            "y": 726
+          },
+          "styles": {
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ],
+            "strokes": [],
+            "effects": []
+          },
+          "text": {
+            "content": "Lorem Ipsum",
+            "fontFamily": "Hanken Grotesk",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "lineHeight": 20,
+            "letterSpacing": 0,
+            "textAlign": "LEFT",
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": "#182021",
+                "opacity": 1
+              }
+            ]
+          }
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -33,
+            "y": 729
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -31.200000762939453,
+                "y": 730.7999877929688
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        },
+        {
+          "name": "sticky-note-reg",
+          "type": "INSTANCE",
+          "layout": {
+            "width": 14,
+            "height": 14,
+            "x": -11,
+            "y": 729
+          },
+          "styles": {
+            "fills": [],
+            "strokes": [],
+            "effects": []
+          },
+          "text": null,
+          "children": [
+            {
+              "name": "Vector",
+              "type": "VECTOR",
+              "layout": {
+                "width": 8.399999618530273,
+                "height": 8.399999618530273,
+                "x": -9.199999809265137,
+                "y": 730.7999877929688
+              },
+              "styles": {
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": "#182021",
+                    "opacity": 1
+                  }
+                ],
+                "strokes": [],
+                "effects": []
+              },
+              "text": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

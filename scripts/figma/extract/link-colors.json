@@ -1,0 +1,106 @@
+{
+  "size=medium, visited=false, state=default": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=default": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=default": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=default": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=hovered": {
+    "text": "#193B2E",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=hovered": {
+    "text": "#193B2E",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=hovered": {
+    "text": "#193B2E",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=hovered": {
+    "text": "#193B2E",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=pressed": {
+    "text": "#0D211A",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=pressed": {
+    "text": "#0D211A",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=pressed": {
+    "text": "#0D211A",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=pressed": {
+    "text": "#0D211A",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=visited": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=visited": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=visited": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=visited": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=active": {
+    "text": "#182021",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=active": {
+    "text": "#182021",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=active": {
+    "text": "#182021",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=active": {
+    "text": "#182021",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=focus": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=true, state=focus": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=false, state=focus": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=small, visited=true, state=focus": {
+    "text": "#2C6F52",
+    "icon": "#FFFFFF"
+  },
+  "size=medium, visited=false, state=disabled": {
+    "text": "#626C84",
+    "icon": null
+  },
+  "size=small, visited=false, state=disabled": {
+    "text": "#626C84",
+    "icon": null
+  }
+}

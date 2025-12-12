@@ -6,6 +6,10 @@ import Button from '../../../../packages/react-ui/src/components/Button/Button';
 import { Checkbox } from '../../../../packages/react-ui/src/components/Checkbox/Checkbox';
 import Label from '../../../../packages/react-ui/src/components/Label/Label';
 import { Radio } from '../../../../packages/react-ui/src/components/Radio/Radio';
+import { Tag } from '../../../../packages/react-ui/src/components/Tag/Tag';
+import { Link } from '../../../../packages/react-ui/src/components/Link/Link';
+import { Select } from '../../../../packages/react-ui/src/components/Select/Select';
+import { Input } from '../../../../packages/react-ui/src/components/Input/Input';
 import type { Meta, StoryObj } from '@storybook/react';
 
 type ComponentRecord = {
@@ -43,6 +47,11 @@ const inventory: PackageInventory[] = [
         name: 'Avatar',
         description: 'React component to show initials/photo and status.',
         source: 'packages/react-ui/src/components/Avatar/Avatar.tsx'
+      },
+      {
+        name: 'Tag',
+        description: 'React component for labeling and categorization.',
+        source: 'packages/react-ui/src/components/Tag/Tag.tsx'
       }
     ]
   },
@@ -74,7 +83,7 @@ type Story = StoryObj;
 export const Catalogue: Story = {
   render: () => {
     const frameworks = ["React", "Vue", "Angular"] as const;
-    const components = ["Avatar", "Badge", "Bullet", "Button", "Checkbox", "Label", "Radio"] as const;
+    const components = ["Avatar", "Badge", "Bullet", "Button", "Checkbox", "Input", "Label", "Link", "Radio", "Select", "Tag"] as const;
 
     type Framework = typeof frameworks[number];
     type Component = typeof components[number];
@@ -91,8 +100,12 @@ export const Catalogue: Story = {
       Bullet: "electrons-bullet--docs",
       Button: "electrons-button--docs",
       Checkbox: "electrons-checkbox--docs",
+      Input: "electrons-input--docs",
       Label: "electrons-label--docs",
-      Radio: "electrons-radio--docs"
+      Link: "electrons-link--docs",
+      Radio: "electrons-radio--docs",
+      Select: "electrons-select--docs",
+      Tag: "electrons-tag--docs"
     };
 
     const links: Record<Framework, Record<Component, string>> = frameworks.reduce(
@@ -101,10 +114,7 @@ export const Catalogue: Story = {
         [framework]: components.reduce(
           (componentLinks, component) => ({
             ...componentLinks,
-            [component]:
-              component === "Radio" && framework !== "React"
-                ? "" // Radio seulement disponible en React pour l'instant
-                : `${baseUrls[framework]}/?path=/docs/${docIds[component]}`
+            [component]: `${baseUrls[framework]}/?path=/docs/${docIds[component]}`
           }),
           {} as Record<Component, string>
         )
@@ -121,10 +131,14 @@ export const Catalogue: Story = {
       Avatar: <Avatar name="Preview" size="medium" />,
       Badge: <Badge label={5} color="sage" style="primary" size="sm" />,
       Bullet: <Bullet color="sage" size="medium" />,
-      Button: <Button variant="filled" colorVariant="primary" size="medium">Button</Button>,
+      Button: <Button variant="filled" colorVariant="primary" size="small">Button</Button>,
       Checkbox: <Checkbox label="Preview" checked={true} />,
+      Input: <Input placeholder="Input" size="small" />,
       Label: <Label text="Preview" color="sage" size="medium" />,
-      Radio: <Radio label="Preview" checked />
+      Link: <Link href="#" size="md">Link</Link>,
+      Radio: <Radio label="Preview" checked />,
+      Select: <Select options={[{value: '1', label: 'Preview'}]} placeholder="Select" size="medium" />,
+      Tag: <Tag color="sage" variant="fill" size="small">Tag</Tag>
     };
 
     return (

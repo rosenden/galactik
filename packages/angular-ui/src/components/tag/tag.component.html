@@ -1,0 +1,22 @@
+<span [class]="classes">
+  <i 
+    *ngIf="iconLeft" 
+    [ngClass]="[iconLeft, 'oc-tag__icon', 'oc-tag__icon--left']"
+  ></i>
+  
+  <span 
+    *ngIf="flag" 
+    [class]="flagClass"
+    class="oc-tag__flag"
+    [title]="flag"
+  ></span>
+  
+  <span class="oc-tag__label">
+    <ng-content></ng-content>
+  </span>
+  
+  <i 
+    *ngIf="iconRight" 
+    [ngClass]="[iconRight, 'oc-tag__icon', 'oc-tag__icon--right']"
+  ></i>
+</span>

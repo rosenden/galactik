@@ -3,12 +3,12 @@
     "interfaces": [
         {
             "name": "Component",
-            "id": "interface-Component-2b0cceda1e64ebc1a9b36cb7e10dc8e30e7cc9c26b53922a60a7cf522ec36e251f143ca286b0c26510abb05e6d190399e59d834b98ff26a463be79f886c5fb3f",
+            "id": "interface-Component-52a9c47ede247ebbf580ed3d2b36346ecb0c024a40fc868b76f174dddf43127668ddde7ec99b5f436d10706676d28895c05ffe56643997c4b9310ee7cbcf8f92",
             "file": "src/stories/home.stories.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';\nimport { AvatarComponent } from 'angular-ui/components/avatar/avatar.component';\nimport { BadgeComponent } from 'angular-ui/components/badge/badge.component';\nimport { BulletComponent } from 'angular-ui/components/bullet/bullet.component';\nimport { ButtonComponent } from 'angular-ui/components/button/button.component';\nimport { LabelComponent } from 'angular-ui/components/label/label.component';\nimport { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';\nimport { RadioComponent } from 'angular-ui/components/radio/radio.component';\n\ninterface Component {\n  name: string;\n  category: string;\n  description: string;\n  path: string;\n  template: string;\n}\n\nconst components: Component[] = [\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n];\n\nconst generateCardTemplate = (component: Component): string => {\n  return `\n    <a \n      href=\"${component.path}\"\n      onclick=\"event.preventDefault(); var url = new URL('${component.path}', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }\"\n      style=\"\n        text-decoration: none;\n        background-color: var(--color-background-alt);\n        border-radius: var(--radius-lg);\n        box-shadow: 0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08);\n        transition: all 0.2s ease;\n        cursor: pointer;\n        border: var(--stroke-xs) solid var(--color-border-base);\n        overflow: hidden;\n        display: flex;\n        flex-direction: column;\n      \"\n      onmouseenter=\"this.style.boxShadow='0 var(--space-xs) var(--space-2xl) rgba(0, 0, 0, 0.12)'; this.style.transform='translateY(calc(-1 * var(--space-3xs)))';\"\n      onmouseleave=\"this.style.boxShadow='0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08)'; this.style.transform='translateY(0)';\"\n    >\n      <div style=\"\n        padding: var(--space-4xl);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        min-height: 120px;\n        border-bottom: var(--stroke-xs) solid var(--color-border-base);\n        background: linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%);\n      \">\n        ${component.template}\n      </div>\n\n      <div style=\"padding: var(--space-3xl);\">\n        <h3 style=\"\n          font-size: var(--font-size-lg);\n          font-weight: var(--font-weight-semibold);\n          color: var(--color-font-primary-base);\n          margin-bottom: var(--space-sm);\n          line-height: var(--line-height-4);\n        \">\n          ${component.name}\n        </h3>\n        <p style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-neutral-muted);\n          line-height: var(--line-height-3);\n          margin-bottom: var(--space-lg);\n        \">\n          ${component.description}\n        </p>\n        <div style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-secondary-base);\n          font-weight: var(--font-weight-semibold);\n        \">\n          Voir la documentation →\n        </div>\n      </div>\n    </a>\n  `;\n};\n\nconst meta: Meta = {\n  title: 'Home',\n  parameters: {\n    layout: 'fullscreen',\n  },\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n};\n",
+            "sourceCode": "import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';\nimport { AvatarComponent } from 'angular-ui/components/avatar/avatar.component';\nimport { BadgeComponent } from 'angular-ui/components/badge/badge.component';\nimport { BulletComponent } from 'angular-ui/components/bullet/bullet.component';\nimport { ButtonComponent } from 'angular-ui/components/button/button.component';\nimport { LabelComponent } from 'angular-ui/components/label/label.component';\nimport { CheckboxComponent } from 'angular-ui/components/checkbox/checkbox.component';\nimport { RadioComponent } from 'angular-ui/components/radio/radio.component';\nimport { TagComponent } from 'angular-ui/components/tag/tag.component';\nimport { LinkComponent } from 'angular-ui/components/link/link.component';\nimport { SelectComponent } from 'angular-ui/components/select/select.component';\nimport { InputComponent } from 'angular-ui/components/input/input.component';\n\ninterface Component {\n  name: string;\n  category: string;\n  description: string;\n  path: string;\n  template: string;\n}\n\nconst components: Component[] = [\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox checked=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio checked=\"true\" label=\"Radio\"></oc-radio>'\n  },\n  {\n    name: 'Tag',\n    category: 'Electrons',\n    description: 'Tag component with sizes, variants and icons',\n    path: '?path=/docs/electrons-tag--docs',\n    template: '<oc-tag label=\"Tag\" size=\"small\" variant=\"fill\" paletteColor=\"sage\" iconLeft=\"fa-solid fa-star\"></oc-tag>'\n  },\n  {\n    name: 'Link',\n    category: 'Electrons',\n    description: 'Link component with icon support',\n    path: '?path=/docs/electrons-link--docs',\n    template: '<oc-link text=\"Link\" size=\"medium\" icon=\"fa-solid fa-arrow-right\"></oc-link>'\n  },\n  {\n    name: 'Select',\n    category: 'Electrons',\n    description: 'Select dropdown with sizes and states',\n    path: '?path=/docs/electrons-select--docs',\n    template: '<oc-select [options]=\"selectOptions\" placeholder=\"Select option\" size=\"medium\" icon=\"fa-solid fa-pen-to-square\"></oc-select>'\n  },\n  {\n    name: 'Input',\n    category: 'Electrons',\n    description: 'Text and number input with states and icons',\n    path: '?path=/docs/electrons-input--docs',\n    template: '<div style=\"display: flex; gap: 8px; flex-direction: column;\"><oc-input placeholder=\"Enter text...\" size=\"small\"></oc-input><oc-input placeholder=\"With icon\" size=\"small\" iconLeft=\"fa-solid fa-search\"></oc-input></div>'\n  },\n];\n\nconst generateCardTemplate = (component: Component): string => {\n  return `\n    <a \n      href=\"${component.path}\"\n      onclick=\"event.preventDefault(); var url = new URL('${component.path}', window.location.href).toString(); if (window.top) { window.top.location.href = url; } else { window.location.href = url; }\"\n      style=\"\n        text-decoration: none;\n        background-color: var(--color-background-alt);\n        border-radius: var(--radius-lg);\n        box-shadow: 0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08);\n        transition: all 0.2s ease;\n        cursor: pointer;\n        border: var(--stroke-xs) solid var(--color-border-base);\n        overflow: hidden;\n        display: flex;\n        flex-direction: column;\n      \"\n      onmouseenter=\"this.style.boxShadow='0 var(--space-xs) var(--space-2xl) rgba(0, 0, 0, 0.12)'; this.style.transform='translateY(calc(-1 * var(--space-3xs)))';\"\n      onmouseleave=\"this.style.boxShadow='0 var(--space-3xs) var(--space-xs) rgba(0, 0, 0, 0.08)'; this.style.transform='translateY(0)';\"\n    >\n      <div style=\"\n        padding: var(--space-4xl);\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        min-height: 120px;\n        border-bottom: var(--stroke-xs) solid var(--color-border-base);\n        background: linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%);\n      \">\n        ${component.template}\n      </div>\n\n      <div style=\"padding: var(--space-3xl);\">\n        <h3 style=\"\n          font-size: var(--font-size-lg);\n          font-weight: var(--font-weight-semibold);\n          color: var(--color-font-primary-base);\n          margin-bottom: var(--space-sm);\n          line-height: var(--line-height-4);\n        \">\n          ${component.name}\n        </h3>\n        <p style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-neutral-muted);\n          line-height: var(--line-height-3);\n          margin-bottom: var(--space-lg);\n        \">\n          ${component.description}\n        </p>\n        <div style=\"\n          font-size: var(--font-size-sm);\n          color: var(--color-font-secondary-base);\n          font-weight: var(--font-weight-semibold);\n        \">\n          Voir la documentation →\n        </div>\n      </div>\n    </a>\n  `;\n};\n\nconst meta: Meta = {\n  title: 'Home',\n  parameters: {\n    layout: 'fullscreen',\n  },\n};\n\nexport default meta;\ntype Story = StoryObj;\n\nexport const Default: Story = {\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent, TagComponent, LinkComponent, SelectComponent, InputComponent]\n    })\n  ],\n  render: () => ({\n    props: {\n      selectOptions: [\n        { value: '1', label: 'Option 1' },\n        { value: '2', label: 'Option 2' }\n      ]\n    },\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n};\n",
             "properties": [
                 {
                     "name": "category",
@@ -18,7 +18,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 12
+                    "line": 16
                 },
                 {
                     "name": "description",
@@ -28,7 +28,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 13
+                    "line": 17
                 },
                 {
                     "name": "name",
@@ -38,7 +38,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 11
+                    "line": 15
                 },
                 {
                     "name": "path",
@@ -48,7 +48,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 14
+                    "line": 18
                 },
                 {
                     "name": "template",
@@ -58,7 +58,7 @@
                     "indexKey": "",
                     "optional": false,
                     "description": "",
-                    "line": 15
+                    "line": 19
                 }
             ],
             "indexSignatures": [],
@@ -105,6 +105,70 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: (args) => ({\n    props: args,\n    template: `<oc-button \n      [variant]=\"variant\" \n      [colorVariant]=\"colorVariant\" \n      [size]=\"size\">\n      Accent Text\n    </oc-button>`\n  }),\n  args: {\n    variant: 'text',\n    colorVariant: 'accent',\n    size: 'medium',\n  },\n}"
+            },
+            {
+                "name": "AllSizes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small (24px)</h3>\n          <oc-input \n            size=\"small\" \n            placeholder=\"Small input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (36px) - default</h3>\n          <oc-input \n            size=\"medium\" \n            placeholder=\"Medium input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large (44px)</h3>\n          <oc-input \n            size=\"large\" \n            placeholder=\"Large input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "AllSizes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column;\">\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Small</span>\n          <oc-link href=\"https://example.com\" size=\"sm\">\n            Small link\n          </oc-link>\n        </div>\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Medium (default)</span>\n          <oc-link href=\"https://example.com\" size=\"md\">\n            Medium link\n          </oc-link>\n        </div>\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Large</span>\n          <oc-link href=\"https://example.com\" size=\"lg\">\n            Large link\n          </oc-link>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "All sizes from Figma",
+                "description": "<p>All sizes from Figma</p>\n"
+            },
+            {
+                "name": "AllSizes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"small\" \n            placeholder=\"Small select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (default)</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"medium\" \n            placeholder=\"Medium select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"large\" \n            placeholder=\"Large select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "AllSizes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center; flex-wrap: wrap;\">\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">xSmall (18px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"xsmall\">Tag label</oc-tag>\n        </div>\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">Small (24px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"small\">Tag label</oc-tag>\n        </div>\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">Medium (36px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"medium\">Tag label</oc-tag>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "All sizes from Figma",
+                "description": "<p>All sizes from Figma</p>\n"
+            },
+            {
+                "name": "AllStates",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Empty (placeholder)</h3>\n          <oc-input \n            placeholder=\"Lorem ipsum\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Filled (with value)</h3>\n          <oc-input \n            value=\"Some text here\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hover (hover over the input below)</h3>\n          <oc-input \n            placeholder=\"Hover me\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focus / Active (click or tab to the input)</h3>\n          <oc-input \n            placeholder=\"Click or Tab here\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n          <p style=\"margin-top: 8px; font-size: 12px; color: #666;\">Focus (Tab) shows violet outline, Active (click) shows primary border</p>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-input \n            [disabled]=\"true\" \n            placeholder=\"Disabled input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Readonly</h3>\n          <oc-input \n            [readonly]=\"true\" \n            value=\"Readonly text\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "AllStates",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Empty (placeholder)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Lorem ipsum dolor\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Filled (with value)</h3>\n          <oc-select \n            [options]=\"options\" \n            value=\"2\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hovered (hover to see)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Hover me\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focus (click to see)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Focus me\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Readonly</h3>\n          <oc-select \n            [options]=\"options\" \n            value=\"3\" \n            [readonly]=\"true\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Disabled select\" \n            [disabled]=\"true\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "AllVariants",
@@ -226,7 +290,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Component[]",
-                "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n]"
+                "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox checked=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio checked=\"true\" label=\"Radio\"></oc-radio>'\n  },\n  {\n    name: 'Tag',\n    category: 'Electrons',\n    description: 'Tag component with sizes, variants and icons',\n    path: '?path=/docs/electrons-tag--docs',\n    template: '<oc-tag label=\"Tag\" size=\"small\" variant=\"fill\" paletteColor=\"sage\" iconLeft=\"fa-solid fa-star\"></oc-tag>'\n  },\n  {\n    name: 'Link',\n    category: 'Electrons',\n    description: 'Link component with icon support',\n    path: '?path=/docs/electrons-link--docs',\n    template: '<oc-link text=\"Link\" size=\"medium\" icon=\"fa-solid fa-arrow-right\"></oc-link>'\n  },\n  {\n    name: 'Select',\n    category: 'Electrons',\n    description: 'Select dropdown with sizes and states',\n    path: '?path=/docs/electrons-select--docs',\n    template: '<oc-select [options]=\"selectOptions\" placeholder=\"Select option\" size=\"medium\" icon=\"fa-solid fa-pen-to-square\"></oc-select>'\n  },\n  {\n    name: 'Input',\n    category: 'Electrons',\n    description: 'Text and number input with states and icons',\n    path: '?path=/docs/electrons-input--docs',\n    template: '<div style=\"display: flex; gap: 8px; flex-direction: column;\"><oc-input placeholder=\"Enter text...\" size=\"small\"></oc-input><oc-input placeholder=\"With icon\" size=\"small\" iconLeft=\"fa-solid fa-search\"></oc-input></div>'\n  },\n]"
             },
             {
                 "name": "Default",
@@ -236,7 +300,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
+                "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent, TagComponent, LinkComponent, SelectComponent, InputComponent]\n    })\n  ],\n  render: () => ({\n    props: {\n      selectOptions: [\n        { value: '1', label: 'Option 1' },\n        { value: '2', label: 'Option 2' }\n      ]\n    },\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
             },
             {
                 "name": "Disabled",
@@ -267,6 +331,18 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: var(--space-lg); align-items: center;\">\n        <oc-button variant=\"filled\" colorVariant=\"primary\" size=\"medium\" [disabled]=\"true\">Filled Disabled</oc-button>\n        <oc-button variant=\"outlined\" colorVariant=\"primary\" size=\"medium\" [disabled]=\"true\">Outlined Disabled</oc-button>\n        <oc-button variant=\"text\" colorVariant=\"primary\" size=\"medium\" [disabled]=\"true\">Text Disabled</oc-button>\n      </div>\n    `\n  }),\n}"
+            },
+            {
+                "name": "ExternalLinks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column;\">\n        <oc-link href=\"https://example.com\" target=\"_blank\" icon=\"fa-solid fa-external-link\">\n          External link (new tab)\n        </oc-link>\n        <oc-link href=\"https://example.com\" target=\"_blank\" size=\"sm\" icon=\"fa-solid fa-external-link\">\n          Small external\n        </oc-link>\n        <oc-link href=\"https://example.com\" target=\"_blank\" size=\"lg\" icon=\"fa-solid fa-external-link\">\n          Large external\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "External links (open in new tab)",
+                "description": "<p>External links (open in new tab)</p>\n"
             },
             {
                 "name": "FullWidth",
@@ -319,6 +395,26 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: var(--space-lg); align-items: center;\">\n        <oc-button \n          size=\"small\" \n          variant=\"filled\" \n          colorVariant=\"primary\"\n          aria-label=\"Small icon button\"\n        >\n          <i class=\"fa-solid fa-heart\"></i>\n        </oc-button>\n        <oc-button \n          size=\"medium\" \n          variant=\"filled\" \n          colorVariant=\"primary\"\n          aria-label=\"Medium icon button\"\n        >\n          <i class=\"fa-solid fa-plus\"></i>\n        </oc-button>\n        <oc-button \n          size=\"large\" \n          variant=\"filled\" \n          colorVariant=\"primary\"\n          aria-label=\"Large icon button\"\n        >\n          <i class=\"fa-solid fa-check\"></i>\n        </oc-button>\n      </div>\n    `\n  })\n}"
             },
             {
+                "name": "Interactive",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    props: {\n      username: '',\n      email: '',\n      password: '',\n      message: '',\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 400px; padding: 32px; background: #F8F9FA; border-radius: 12px;\">\n        <h2 style=\"margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #333;\">Sign Up Form</h2>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Username</label>\n          <oc-input \n            [(value)]=\"username\"\n            iconLeft=\"fa-solid fa-user\" \n            placeholder=\"Choose a username\"\n            size=\"large\">\n          </oc-input>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Email</label>\n          <oc-input \n            [(value)]=\"email\"\n            iconLeft=\"fa-solid fa-envelope\" \n            placeholder=\"your@email.com\"\n            type=\"email\"\n            size=\"large\"\n            [variant]=\"email && email.includes('@') ? 'success' : 'default'\">\n          </oc-input>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Password</label>\n          <oc-input \n            [(value)]=\"password\"\n            iconLeft=\"fa-solid fa-lock\" \n            placeholder=\"Choose a strong password\"\n            type=\"password\"\n            size=\"large\"\n            [variant]=\"password.length >= 8 ? 'success' : password.length > 0 ? 'error' : 'default'\">\n          </oc-input>\n          <p style=\"margin-top: 4px; font-size: 12px; color: #666;\">Minimum 8 characters</p>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Bio</label>\n          <oc-input \n            [(value)]=\"message\"\n            placeholder=\"Tell us about yourself...\"\n            [maxLength]=\"280\"\n            size=\"large\">\n          </oc-input>\n        </div>\n        \n        <div style=\"margin-top: 16px; padding: 16px; background: white; border-radius: 8px; font-size: 14px;\">\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Values:</h3>\n          <p style=\"margin: 4px 0;\"><strong>Username:</strong> {{ username || '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Email:</strong> {{ email || '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Password:</strong> {{ password ? '•'.repeat(password.length) : '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Bio:</strong> {{ message || '(empty)' }} ({{ message.length }}/280)</p>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "Interactive",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      options: args.options,\n      value1: '',\n      value2: '2',\n      value3: '',\n      onValueChange1(value: string) {\n        this.value1 = value;\n        console.log('Select 1 changed:', value);\n      },\n      onValueChange2(value: string) {\n        this.value2 = value;\n        console.log('Select 2 changed:', value);\n      },\n      onValueChange3(value: string) {\n        this.value3 = value;\n        console.log('Select 3 changed:', value);\n      },\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            Empty state: {{ value1 || 'No selection' }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value1\"\n            (valueChange)=\"onValueChange1($event)\"\n            placeholder=\"Select an option\"\n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        \n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            Pre-filled: {{ value2 }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value2\"\n            (valueChange)=\"onValueChange2($event)\"\n            icon=\"fa-solid fa-user\">\n          </oc-select>\n        </div>\n        \n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            No icon: {{ value3 || 'No selection' }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value3\"\n            (valueChange)=\"onValueChange3($event)\"\n            placeholder=\"Pick one\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "LightAccentFilled",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -357,6 +453,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: var(--space-lg); align-items: center;\">\n        <oc-button variant=\"filled\" colorVariant=\"primary\" size=\"medium\" [loading]=\"true\">Loading</oc-button>\n        <oc-button variant=\"outlined\" colorVariant=\"primary\" size=\"medium\" [loading]=\"true\">Loading</oc-button>\n        <oc-button variant=\"text\" colorVariant=\"primary\" size=\"medium\" [loading]=\"true\">Loading</oc-button>\n      </div>\n    `\n  }),\n}"
+            },
+            {
+                "name": "LongOptions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      longOptions: [\n        { value: '1', label: 'Short' },\n        { value: '2', label: 'This is a very long option that will be truncated' },\n        { value: '3', label: 'Another extremely long option text that exceeds the width' },\n        { value: '4', label: 'Medium length option' },\n        { value: '5', label: 'Lorem ipsum dolor sit amet consectetur adipiscing elit' },\n      ],\n    },\n    template: `\n      <div style=\"width: 320px;\">\n        <oc-select \n          [options]=\"longOptions\"\n          placeholder=\"Select option\"\n          icon=\"fa-solid fa-pen-to-square\">\n        </oc-select>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "meta",
@@ -424,6 +530,16 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<InputComponent>",
+                "defaultValue": "{\n  title: 'Electrons/Input',\n  component: InputComponent,\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\n// Basic input\nimport { InputComponent } from '@galactik/angular-ui';\n\n<oc-input \n  [(value)]=\"textValue\"\n  placeholder=\"Enter text...\"\n></oc-input>\n\n// Different sizes\n<oc-input [(value)]=\"value\" size=\"small\"></oc-input>\n<oc-input [(value)]=\"value\" size=\"medium\"></oc-input>\n<oc-input [(value)]=\"value\" size=\"large\"></oc-input>\n\n// With icons (using Font Awesome class names)\n<oc-input \n  [(value)]=\"value\"\n  iconLeft=\"fa-solid fa-search\"\n  placeholder=\"Search...\"\n></oc-input>\n\n// Number input with controls\n<oc-input \n  [(value)]=\"value\"\n  type=\"number\"\n  [showNumberControls]=\"true\"\n></oc-input>\n\n// With character counter\n<oc-input \n  [(value)]=\"value\"\n  [maxLength]=\"320\"\n  placeholder=\"Enter message\"\n></oc-input>\n\n// Variants\n<oc-input [(value)]=\"value\" variant=\"success\"></oc-input>\n<oc-input [(value)]=\"value\" variant=\"error\"></oc-input>\n\n// States\n<oc-input [(value)]=\"value\" [disabled]=\"true\"></oc-input>\n<oc-input [(value)]=\"value\" [readonly]=\"true\"></oc-input>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n      description: 'Size from Figma oc-input variants (small: 24px, medium: 36px, large: 44px)',\n      table: {\n        defaultValue: { summary: 'medium' },\n      },\n    },\n    variant: {\n      control: 'select',\n      options: ['default', 'success', 'error'],\n      description: 'Visual variant',\n      table: {\n        defaultValue: { summary: 'default' },\n      },\n    },\n    type: {\n      control: 'select',\n      options: ['text', 'number', 'email', 'password', 'tel', 'url'],\n      description: 'HTML input type',\n      table: {\n        defaultValue: { summary: 'text' },\n      },\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Whether the input is disabled',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    readonly: {\n      control: 'boolean',\n      description: 'Whether the input is readonly',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    placeholder: {\n      control: 'text',\n      description: 'Placeholder text',\n      table: {\n        defaultValue: { summary: 'Lorem ipsum' },\n      },\n    },\n    maxLength: {\n      control: 'number',\n      description: 'Maximum character length (shows counter)',\n    },\n    showCounter: {\n      control: 'boolean',\n      description: 'Show character counter even without maxLength',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    showNumberControls: {\n      control: 'boolean',\n      description: 'Show number increment/decrement controls (default true for type=\"number\")',\n    },\n    iconLeft: {\n      control: 'text',\n      description: 'Font Awesome icon classes for left icon (e.g. \"fa-solid fa-search\")',\n    },\n    iconRight: {\n      control: 'text',\n      description: 'Font Awesome icon classes for right icon(s)',\n    },\n    value: {\n      control: 'text',\n      description: 'Current input value',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -434,11 +550,51 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<LinkComponent>",
+                "defaultValue": "{\n  title: 'Electrons/Link',\n  component: LinkComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [LinkComponent],\n    }),\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<!-- Basic link (default with arrow icon) -->\n<oc-link href=\"https://example.com\">\n  Link label\n</oc-link>\n\n<!-- Different sizes -->\n<oc-link size=\"sm\" href=\"https://example.com\">Small link</oc-link>\n<oc-link size=\"md\" href=\"https://example.com\">Medium link</oc-link>\n<oc-link size=\"lg\" href=\"https://example.com\">Large link</oc-link>\n\n<!-- With custom icons -->\n<oc-link href=\"https://example.com\" icon=\"fa-solid fa-external-link\" target=\"_blank\">\n  External link\n</oc-link>\n<oc-link href=\"/download\" icon=\"fa-solid fa-download\">\n  Download file\n</oc-link>\n\n<!-- Without icon -->\n<oc-link href=\"https://example.com\" [icon]=\"null\">\n  No icon\n</oc-link>\n\n<!-- Visited state -->\n<oc-link href=\"https://visited.com\" [visited]=\"true\">\n  Visited link\n</oc-link>\n\n<!-- Disabled -->\n<oc-link href=\"https://example.com\" [disabled]=\"true\">\n  Disabled link\n</oc-link>\n\n<!-- With new tab -->\n<oc-link href=\"https://example.com\" target=\"_blank\">\n  Open in new tab\n</oc-link>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    href: {\n      control: 'text',\n      description: 'Target URL',\n    },\n    size: {\n      control: 'select',\n      options: ['sm', 'md', 'lg'],\n      description: 'Link size (sm: 12px, md: 14px, lg: 16px)',\n    },\n    icon: {\n      control: false,\n      description: 'FontAwesome icon (defaults to faArrowUpRight)',\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Disable the link',\n    },\n    visited: {\n      control: 'boolean',\n      description: 'Show as visited state (purple color)',\n    },\n    active: {\n      control: 'boolean',\n      description: 'Show as active state (current page)',\n    },\n    target: {\n      control: 'select',\n      options: [undefined, '_blank', '_self', '_parent', '_top'],\n      description: 'Target attribute for link',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<RadioComponent>",
-                "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: var(--color-stroke-primary-base), var(--color-font-neutral-disabled).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
+                "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: colors/radii from design tokens (e.g. var(--color-stroke-primary-base), var(--radius-md)).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<SelectComponent>",
+                "defaultValue": "{\n  title: 'Electrons/Select',\n  component: SelectComponent,\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\n// Basic select\nimport { SelectComponent } from '@galactik/angular-ui';\n\nconst options = [\n  { value: '1', label: 'Option 1' },\n  { value: '2', label: 'Option 2' },\n  { value: '3', label: 'Option 3' },\n];\n\n<oc-select \n  [options]=\"options\"\n  [value]=\"selectedValue\"\n  (valueChange)=\"onValueChange($event)\"\n  placeholder=\"Select an option\"\n></oc-select>\n\n// Different sizes\n<oc-select [options]=\"options\" size=\"small\"></oc-select>\n<oc-select [options]=\"options\" size=\"medium\"></oc-select>\n<oc-select [options]=\"options\" size=\"large\"></oc-select>\n\n// With icon (using Font Awesome class names)\n<oc-select \n  [options]=\"options\"\n  icon=\"fa-solid fa-user\"\n  placeholder=\"Select user\"\n></oc-select>\n\n// Disabled\n<oc-select [options]=\"options\" [disabled]=\"true\"></oc-select>\n\n// Readonly\n<oc-select [options]=\"options\" [readonly]=\"true\" value=\"1\"></oc-select>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n      description: 'Size from Figma oc-select variants',\n      table: {\n        defaultValue: { summary: 'medium' },\n      },\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Whether the select is disabled',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    readonly: {\n      control: 'boolean',\n      description: 'Whether the select is readonly (no chevron, not clickable)',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    placeholder: {\n      control: 'text',\n      description: 'Placeholder text shown in empty state',\n      table: {\n        defaultValue: { summary: 'Lorem ipsum dolor' },\n      },\n    },\n    icon: {\n      control: 'text',\n      description: 'Font Awesome icon classes (e.g. \"fa-solid fa-user\")',\n    },\n    options: {\n      control: 'object',\n      description: 'Array of SelectOption objects with value and label',\n    },\n    value: {\n      control: 'text',\n      description: 'Current selected value',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TagComponent>",
+                "defaultValue": "{\n  title: 'Electrons/Tag',\n  component: TagComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [TagComponent],\n    }),\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\nimport { faTag, faChevronDown, faTriangleExclamation } from '@fortawesome/pro-regular-svg-icons';\n\n// Medium tag with fill variant (default)\n<oc-tag color=\"sage\" variant=\"fill\" size=\"medium\">\n  Sage Tag\n</oc-tag>\n\n// Small outline tag\n<oc-tag color=\"pink\" variant=\"outline\" size=\"small\">\n  Pink Outline\n</oc-tag>\n\n// Different colors and variants\n<oc-tag color=\"success\" size=\"xsmall\">Success</oc-tag>\n<oc-tag color=\"error\" variant=\"outline\">Error</oc-tag>\n<oc-tag color=\"info\" size=\"small\">Info</oc-tag>\n\n// With icons\n<oc-tag color=\"sage\" [iconLeft]=\"faTag\">\n  Tagged\n</oc-tag>\n<oc-tag color=\"indigo\" variant=\"outline\" [iconRight]=\"faChevronDown\">\n  Dropdown\n</oc-tag>\n\n// With country flag\n<oc-tag color=\"info\" flag=\"FR\">\n  France\n</oc-tag>\n\n// Icons + Flag\n<oc-tag color=\"warning\" [iconLeft]=\"faTriangleExclamation\" flag=\"US\">\n  US Alert\n</oc-tag>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    color: {\n      control: 'select',\n      options: ['sage', 'pink', 'almond', 'grey', 'yellow', 'warning', 'cherry', 'success', 'indigo', 'info', 'cyan', 'error'],\n      description: 'Color from Figma oc-tag variants',\n    },\n    variant: {\n      control: 'select',\n      options: ['fill', 'outline'],\n      description: 'Style variant: fill (solid) or outline (border only)',\n    },\n    size: {\n      control: 'select',\n      options: ['xsmall', 'small', 'medium'],\n      description: 'Size from Figma specs (xsmall=18px, small=24px, medium=36px)',\n    },\n    iconLeft: {\n      control: false,\n      description: 'FontAwesome icon on the left side',\n    },\n    iconRight: {\n      control: false,\n      description: 'FontAwesome icon on the right side',\n    },\n    flag: {\n      control: 'text',\n      description: 'Country flag (ISO 3166-1 alpha-2 code, e.g. FR, US, GB)',\n    },\n  },\n}"
+            },
+            {
+                "name": "NumberInput",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small (horizontal controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"small\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (vertical controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"medium\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large (vertical controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"large\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "palette",
@@ -449,6 +605,28 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  sage50: '#f5f8f7',\n  sage100: '#e8f0ee',\n  sage200: '#d1e1dd',\n  sage300: '#a9c1b8',\n  sage400: '#7a9b95',\n  sage500: '#607c7f',\n  sage600: '#5d7374',\n  sage700: '#4f6162',\n  sage800: '#445556',\n  sage900: '#374648',\n  sage950: '#2d393a',\n  sage975: '#222d30',\n  almond50: '#f1f8f4',\n  almond400: '#5fa884',\n  almond500: '#3d8c69',\n  grey100: '#f9fafb',\n  grey200: '#eff2f6',\n  grey400: '#97a6be',\n  grey700: '#4d5260',\n  grey900: '#272b30',\n  white: '#ffffff',\n  black: '#182021'\n}"
+            },
+            {
+                "name": "PaletteFill",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 800px;\">\n        <oc-tag color=\"sage\" variant=\"fill\">Sage</oc-tag>\n        <oc-tag color=\"pink\" variant=\"fill\">Pink</oc-tag>\n        <oc-tag color=\"almond\" variant=\"fill\">Almond</oc-tag>\n        <oc-tag color=\"grey\" variant=\"fill\">Grey</oc-tag>\n        <oc-tag color=\"yellow\" variant=\"fill\">Yellow</oc-tag>\n        <oc-tag color=\"warning\" variant=\"fill\">Warning</oc-tag>\n        <oc-tag color=\"cherry\" variant=\"fill\">Cherry</oc-tag>\n        <oc-tag color=\"success\" variant=\"fill\">Success</oc-tag>\n        <oc-tag color=\"indigo\" variant=\"fill\">Indigo</oc-tag>\n        <oc-tag color=\"info\" variant=\"fill\">Info</oc-tag>\n        <oc-tag color=\"cyan\" variant=\"fill\">Cyan</oc-tag>\n        <oc-tag color=\"error\" variant=\"fill\">Error</oc-tag>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "All 12 colors in fill and outline variants",
+                "description": "<p>All 12 colors in fill and outline variants</p>\n"
+            },
+            {
+                "name": "PaletteOutline",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 800px;\">\n        <oc-tag color=\"sage\" variant=\"outline\">Sage</oc-tag>\n        <oc-tag color=\"pink\" variant=\"outline\">Pink</oc-tag>\n        <oc-tag color=\"almond\" variant=\"outline\">Almond</oc-tag>\n        <oc-tag color=\"grey\" variant=\"outline\">Grey</oc-tag>\n        <oc-tag color=\"yellow\" variant=\"outline\">Yellow</oc-tag>\n        <oc-tag color=\"warning\" variant=\"outline\">Warning</oc-tag>\n        <oc-tag color=\"cherry\" variant=\"outline\">Cherry</oc-tag>\n        <oc-tag color=\"success\" variant=\"outline\">Success</oc-tag>\n        <oc-tag color=\"indigo\" variant=\"outline\">Indigo</oc-tag>\n        <oc-tag color=\"info\" variant=\"outline\">Info</oc-tag>\n        <oc-tag color=\"cyan\" variant=\"outline\">Cyan</oc-tag>\n        <oc-tag color=\"error\" variant=\"outline\">Error</oc-tag>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "PalettePrimary",
@@ -536,6 +714,16 @@
                 "name": "Playground",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    placeholder: 'Lorem ipsum',\n    size: 'medium',\n    variant: 'default',\n    type: 'text',\n  },\n}"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/label.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -546,11 +734,45 @@
                 "name": "Playground",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    href: 'https://example.com',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-link [href]=\"href\" [size]=\"size\">\n        Link label\n      </oc-link>\n    `,\n  }),\n}",
+                "rawdescription": "Interactive playground",
+                "description": "<p>Interactive playground</p>\n"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/radio.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  }\n}"
+                "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  },\n  render: (args) => ({\n    props: {\n      ...args,\n      checkedState: args.checked,\n      handleChange: (value: boolean) => {\n        args.checked = value;\n      }\n    },\n    template: `\n      <oc-radio\n        [checked]=\"checkedState\"\n        [disabled]=\"disabled\"\n        [label]=\"label\"\n        [name]=\"name\"\n        [value]=\"value\"\n        (change)=\"checkedState = $event; handleChange($event)\"\n      ></oc-radio>\n    `\n  })\n}"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n    placeholder: 'Lorem ipsum dolor',\n    size: 'medium',\n  },\n}"
+            },
+            {
+                "name": "Playground",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    color: 'sage',\n    variant: 'fill',\n    size: 'small',\n    iconLeft: 'fa-solid fa-tag',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-tag [color]=\"color\" [variant]=\"variant\" [size]=\"size\" [iconLeft]=\"iconLeft\">\n        Tag label\n      </oc-tag>\n    `,\n  }),\n}",
+                "rawdescription": "Interactive playground",
+                "description": "<p>Interactive playground</p>\n"
             },
             {
                 "name": "preview",
@@ -601,6 +823,16 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 10px; padding: 16px; border: 1px solid var(--color-border-base); border-radius: var(--radius-md); background: var(--color-background-alt);\">\n        <h4 style=\"margin:0; font-size:14px; font-weight:700; color:var(--color-font-neutral-base);\">Pick your Storybook environment</h4>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"react\" [checked]=\"true\" label=\"React\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Storybook + Vitest</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"vue\" [checked]=\"false\" label=\"Vue\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Vue 3 + TS</span>\n        </div>\n        <div style=\"display:flex; align-items:center; gap:10px;\">\n          <oc-radio name=\"storybook-env\" value=\"angular\" [checked]=\"false\" label=\"Angular\"></oc-radio>\n          <span class=\"text-tag\" style=\"color: var(--color-font-neutral-muted);\">Angular 17 + TS</span>\n        </div>\n      </div>\n    `\n  })\n}"
+            },
+            {
+                "name": "sampleOptions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "SelectOption[]",
+                "defaultValue": "[\n  { value: '1', label: 'Option 1' },\n  { value: '2', label: 'Option 2' },\n  { value: '3', label: 'Option 3' },\n  { value: '4', label: 'Option 4' },\n  { value: '5', label: 'Option 5' },\n]"
             },
             {
                 "name": "SecondaryFilled",
@@ -725,6 +957,40 @@
                 "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; align-items: center;\">\n        <oc-label text=\"Medium\" size=\"medium\" color=\"sage\" icon=\"fa-regular fa-image\"></oc-label>\n        <oc-label text=\"Small\" size=\"small\" color=\"sage\" icon=\"fa-regular fa-image\"></oc-label>\n      </div>\n    `\n  })\n}"
             },
             {
+                "name": "Sizes",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 40px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">XSmall (18px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"xsmall\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"xsmall\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"xsmall\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"xsmall\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"xsmall\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"xsmall\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"xsmall\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"xsmall\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"xsmall\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"xsmall\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"xsmall\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"xsmall\">Error</oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Small (24px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"small\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"small\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"small\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"small\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"small\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"small\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"small\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"small\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"small\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"small\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"small\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"small\">Error</oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Medium (36px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"medium\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"medium\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"medium\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"medium\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"medium\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"medium\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"medium\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"medium\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"medium\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"medium\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"medium\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"medium\">Error</oc-tag>\n          </div>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "Complete size matrix for all colors",
+                "description": "<p>Complete size matrix for all colors</p>\n"
+            },
+            {
+                "name": "States",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Default</h3>\n          <oc-link href=\"https://example.com\">\n            Default link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hovered (hover to see)</h3>\n          <oc-link href=\"https://example.com\">\n            Hover link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Visited</h3>\n          <oc-link href=\"https://example.com\" [visited]=\"true\">\n            Visited link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Active (current page)</h3>\n          <oc-link href=\"https://example.com\" [active]=\"true\">\n            Active link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focused (Tab key)</h3>\n          <oc-link href=\"https://example.com\">\n            Focused link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-link href=\"https://example.com\" [disabled]=\"true\">\n            Disabled link\n          </oc-link>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "All interactive states",
+                "description": "<p>All interactive states</p>\n"
+            },
+            {
+                "name": "Variants",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Default</h3>\n          <oc-input \n            variant=\"default\" \n            placeholder=\"Default input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Success</h3>\n          <oc-input \n            variant=\"success\" \n            value=\"Valid input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Error</h3>\n          <oc-input \n            variant=\"error\" \n            value=\"Invalid input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
                 "name": "withAngularBackground",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -733,6 +999,40 @@
                 "deprecationMessage": "",
                 "type": "DecoratorFunction<Renderer>",
                 "defaultValue": "(\n  StoryFn: StoryFn<Renderer>,\n  context: StoryContext<Renderer>\n) => {\n  const doc = (globalThis as { document?: Document }).document;\n  if (doc?.body) {\n    doc.body.style.backgroundColor =\n      context.globals.theme === 'dark'\n        ? 'var(--abs-black)'\n        : 'var(--color-background-surface)';\n  }\n  return StoryFn({ ...context, ...context.args }, context);\n}"
+            },
+            {
+                "name": "WithCounter",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">With maxLength counter</h3>\n          <oc-input \n            [maxLength]=\"320\" \n            placeholder=\"Enter your message...\">\n          </oc-input>\n          <p style=\"margin-top: 8px; font-size: 12px; color: #666;\">Shows \"0/320\" format</p>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Tweet (280 chars)</h3>\n          <oc-input \n            [maxLength]=\"280\" \n            placeholder=\"What's happening?\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "WithCustomIcons",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap;\">\n        <oc-link href=\"https://example.com\" icon=\"fa-solid fa-arrow-up-right\">\n          Default arrow\n        </oc-link>\n        <oc-link href=\"https://example.com\" icon=\"fa-solid fa-external-link\">\n          External link\n        </oc-link>\n        <oc-link href=\"/download\" icon=\"fa-solid fa-download\">\n          Download\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "Links with custom icons",
+                "description": "<p>Links with custom icons</p>\n"
+            },
+            {
+                "name": "WithFlags",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n        <oc-tag color=\"info\" flag=\"FR\">France</oc-tag>\n        <oc-tag color=\"info\" flag=\"US\">United States</oc-tag>\n        <oc-tag color=\"info\" flag=\"GB\">United Kingdom</oc-tag>\n        <oc-tag color=\"info\" flag=\"DE\">Germany</oc-tag>\n        <oc-tag color=\"info\" flag=\"ES\">Spain</oc-tag>\n        <oc-tag color=\"info\" flag=\"IT\">Italy</oc-tag>\n        <oc-tag color=\"info\" flag=\"JP\">Japan</oc-tag>\n        <oc-tag color=\"info\" flag=\"CA\">Canada</oc-tag>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "Tags with country flags",
+                "description": "<p>Tags with country flags</p>\n"
             },
             {
                 "name": "WithIcon",
@@ -753,6 +1053,38 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  name: 'With Icons',\n  render: () => {\n    const iconExamples = [\n      { icon: 'fa-solid fa-user', label: 'User', color: 'sage' },\n      { icon: 'fa-solid fa-building', label: 'Building', color: 'info' },\n      { icon: 'fa-solid fa-gear', label: 'Settings', color: 'grey' },\n      { icon: 'fa-solid fa-heart', label: 'Heart', color: 'error' },\n      { icon: 'fa-solid fa-star', label: 'Star', color: 'warning' },\n      { icon: 'fa-solid fa-bell', label: 'Bell', color: 'yellow' }\n    ];\n    \n    const primarySection = iconExamples.map((example) => {\n      return `<div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px\">\n        <oc-avatar \n          icon=\"${example.icon}\"\n          size=\"medium\"\n          avatarColor=\"${example.color}\"\n          variant=\"primary\"\n          alt=\"${example.label}\">\n        </oc-avatar>\n        <span style=\"font-size: 10px; color: var(--color-font-neutral-muted)\">${example.label}</span>\n      </div>`;\n    }).join('');\n    \n    const secondarySection = iconExamples.map((example) => {\n      return `<div style=\"display: flex; flex-direction: column; align-items: center; gap: 4px\">\n        <oc-avatar \n          icon=\"${example.icon}\"\n          size=\"medium\"\n          avatarColor=\"${example.color}\"\n          variant=\"secondary\"\n          alt=\"${example.label}\">\n        </oc-avatar>\n        <span style=\"font-size: 10px; color: var(--color-font-neutral-muted)\">${example.label}</span>\n      </div>`;\n    }).join('');\n    \n    return {\n      template: `<div style=\"display: flex; flex-direction: column; gap: 24px\">\n        <div>\n          <h3 style=\"margin-bottom: 12px; font-size: 14px; font-weight: 600; color: var(--color-font-primary-base)\">Primary Variant</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap\">${primarySection}</div>\n        </div>\n        <div>\n          <h3 style=\"margin-bottom: 12px; font-size: 14px; font-weight: 600; color: var(--color-font-primary-base)\">Secondary Variant</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap\">${secondarySection}</div>\n        </div>\n      </div>`\n    };\n  }\n}"
+            },
+            {
+                "name": "WithIcons",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Icon left</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-search\" \n            placeholder=\"Search...\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Email icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-envelope\" \n            placeholder=\"Email address\" \n            type=\"email\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">User icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-user\" \n            placeholder=\"Username\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Password with icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-lock\" \n            placeholder=\"Password\" \n            type=\"password\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "WithIcons",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      ...args,\n      userOptions: [\n        { value: 'john', label: 'John Doe' },\n        { value: 'jane', label: 'Jane Smith' },\n        { value: 'bob', label: 'Bob Johnson' },\n      ],\n      emailOptions: [\n        { value: 'work', label: 'work@company.com' },\n        { value: 'personal', label: 'personal@email.com' },\n      ],\n      companyOptions: [\n        { value: 'acme', label: 'Acme Corp' },\n        { value: 'globex', label: 'Globex Inc' },\n        { value: 'initech', label: 'Initech' },\n      ],\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap; width: 100%;\">\n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">User</h4>\n          <oc-select \n            [options]=\"userOptions\"\n            icon=\"fa-solid fa-user\"\n            placeholder=\"Select user\">\n          </oc-select>\n        </div>\n        \n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">Email</h4>\n          <oc-select \n            [options]=\"emailOptions\"\n            icon=\"fa-solid fa-envelope\"\n            placeholder=\"Select email\">\n          </oc-select>\n        </div>\n        \n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">Company</h4>\n          <oc-select \n            [options]=\"companyOptions\"\n            icon=\"fa-solid fa-building\"\n            placeholder=\"Select company\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+            },
+            {
+                "name": "WithIcons",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/tag.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 24px;\">\n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Left Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconLeft=\"fa-solid fa-tag\">\n              Tagged\n            </oc-tag>\n            <oc-tag color=\"success\" iconLeft=\"fa-solid fa-check\">\n              Verified\n            </oc-tag>\n            <oc-tag color=\"info\" iconLeft=\"fa-solid fa-user\">\n              User\n            </oc-tag>\n            <oc-tag color=\"warning\" iconLeft=\"fa-solid fa-triangle-exclamation\">\n              Alert\n            </oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Right Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconRight=\"fa-solid fa-tag\">\n              Tagged\n            </oc-tag>\n            <oc-tag color=\"success\" iconRight=\"fa-solid fa-check\">\n              Verified\n            </oc-tag>\n            <oc-tag color=\"info\" iconRight=\"fa-solid fa-user\">\n              User\n            </oc-tag>\n            <oc-tag color=\"warning\" iconRight=\"fa-solid fa-triangle-exclamation\">\n              Alert\n            </oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Both Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconLeft=\"fa-solid fa-tag\" iconRight=\"fa-solid fa-chevron-down\">\n              Tagged Item\n            </oc-tag>\n          </div>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "Tags with FontAwesome icons",
+                "description": "<p>Tags with FontAwesome icons</p>\n"
             },
             {
                 "name": "WithImage",
@@ -783,6 +1115,28 @@
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{\n  args: {\n    size: 'medium',\n    variant: 'filled',\n    colorVariant: 'primary'\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-button \n        [size]=\"size\" \n        [variant]=\"variant\" \n        [colorVariant]=\"colorVariant\"\n      >\n        <i class=\"fa-solid fa-play\"></i> With Icon\n      </oc-button>\n    `\n  })\n}"
+            },
+            {
+                "name": "WithoutIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap;\">\n        <oc-link href=\"https://example.com\" [icon]=\"null\">\n          No icon (small)\n        </oc-link>\n        <oc-link href=\"https://example.com\" size=\"md\" [icon]=\"null\">\n          No icon (medium)\n        </oc-link>\n        <oc-link href=\"https://example.com\" size=\"lg\" [icon]=\"null\">\n          No icon (large)\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                "rawdescription": "Links without icons",
+                "description": "<p>Links without icons</p>\n"
+            },
+            {
+                "name": "WithoutIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"small\"></oc-select>\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"medium\"></oc-select>\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"large\"></oc-select>\n      </div>\n    `,\n  }),\n}"
             },
             {
                 "name": "WithRightIcon",
@@ -878,6 +1232,17 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<InputComponent>",
+                "file": "src/stories/input.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<LabelComponent>",
                 "file": "src/stories/label.stories.ts",
                 "deprecated": false,
@@ -889,8 +1254,41 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
+                "rawtype": "StoryObj<LinkComponent>",
+                "file": "src/stories/link.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
                 "rawtype": "StoryObj<RadioComponent>",
                 "file": "src/stories/radio.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<SelectComponent>",
+                "file": "src/stories/select.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 184
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TagComponent>",
+                "file": "src/stories/tag.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1111,6 +1509,368 @@
                     "defaultValue": "{\n  args: {\n    size: 'medium',\n    variant: 'filled',\n    colorVariant: 'primary'\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-button \n        [size]=\"size\" \n        [variant]=\"variant\" \n        [colorVariant]=\"colorVariant\"\n      >\n        With Icon <i class=\"fa-solid fa-arrow-right\"></i>\n      </oc-button>\n    `\n  })\n}"
                 }
             ],
+            "src/stories/input.stories.ts": [
+                {
+                    "name": "AllSizes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small (24px)</h3>\n          <oc-input \n            size=\"small\" \n            placeholder=\"Small input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (36px) - default</h3>\n          <oc-input \n            size=\"medium\" \n            placeholder=\"Medium input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large (44px)</h3>\n          <oc-input \n            size=\"large\" \n            placeholder=\"Large input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "AllStates",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Empty (placeholder)</h3>\n          <oc-input \n            placeholder=\"Lorem ipsum\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Filled (with value)</h3>\n          <oc-input \n            value=\"Some text here\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hover (hover over the input below)</h3>\n          <oc-input \n            placeholder=\"Hover me\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focus / Active (click or tab to the input)</h3>\n          <oc-input \n            placeholder=\"Click or Tab here\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n          <p style=\"margin-top: 8px; font-size: 12px; color: #666;\">Focus (Tab) shows violet outline, Active (click) shows primary border</p>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-input \n            [disabled]=\"true\" \n            placeholder=\"Disabled input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Readonly</h3>\n          <oc-input \n            [readonly]=\"true\" \n            value=\"Readonly text\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Interactive",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    props: {\n      username: '',\n      email: '',\n      password: '',\n      message: '',\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 400px; padding: 32px; background: #F8F9FA; border-radius: 12px;\">\n        <h2 style=\"margin: 0 0 16px 0; font-size: 20px; font-weight: 600; color: #333;\">Sign Up Form</h2>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Username</label>\n          <oc-input \n            [(value)]=\"username\"\n            iconLeft=\"fa-solid fa-user\" \n            placeholder=\"Choose a username\"\n            size=\"large\">\n          </oc-input>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Email</label>\n          <oc-input \n            [(value)]=\"email\"\n            iconLeft=\"fa-solid fa-envelope\" \n            placeholder=\"your@email.com\"\n            type=\"email\"\n            size=\"large\"\n            [variant]=\"email && email.includes('@') ? 'success' : 'default'\">\n          </oc-input>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Password</label>\n          <oc-input \n            [(value)]=\"password\"\n            iconLeft=\"fa-solid fa-lock\" \n            placeholder=\"Choose a strong password\"\n            type=\"password\"\n            size=\"large\"\n            [variant]=\"password.length >= 8 ? 'success' : password.length > 0 ? 'error' : 'default'\">\n          </oc-input>\n          <p style=\"margin-top: 4px; font-size: 12px; color: #666;\">Minimum 8 characters</p>\n        </div>\n        \n        <div>\n          <label style=\"display: block; margin-bottom: 8px; font-size: 14px; font-weight: 500; color: #333;\">Bio</label>\n          <oc-input \n            [(value)]=\"message\"\n            placeholder=\"Tell us about yourself...\"\n            [maxLength]=\"280\"\n            size=\"large\">\n          </oc-input>\n        </div>\n        \n        <div style=\"margin-top: 16px; padding: 16px; background: white; border-radius: 8px; font-size: 14px;\">\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Values:</h3>\n          <p style=\"margin: 4px 0;\"><strong>Username:</strong> {{ username || '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Email:</strong> {{ email || '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Password:</strong> {{ password ? '•'.repeat(password.length) : '(empty)' }}</p>\n          <p style=\"margin: 4px 0;\"><strong>Bio:</strong> {{ message || '(empty)' }} ({{ message.length }}/280)</p>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<InputComponent>",
+                    "defaultValue": "{\n  title: 'Electrons/Input',\n  component: InputComponent,\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\n// Basic input\nimport { InputComponent } from '@galactik/angular-ui';\n\n<oc-input \n  [(value)]=\"textValue\"\n  placeholder=\"Enter text...\"\n></oc-input>\n\n// Different sizes\n<oc-input [(value)]=\"value\" size=\"small\"></oc-input>\n<oc-input [(value)]=\"value\" size=\"medium\"></oc-input>\n<oc-input [(value)]=\"value\" size=\"large\"></oc-input>\n\n// With icons (using Font Awesome class names)\n<oc-input \n  [(value)]=\"value\"\n  iconLeft=\"fa-solid fa-search\"\n  placeholder=\"Search...\"\n></oc-input>\n\n// Number input with controls\n<oc-input \n  [(value)]=\"value\"\n  type=\"number\"\n  [showNumberControls]=\"true\"\n></oc-input>\n\n// With character counter\n<oc-input \n  [(value)]=\"value\"\n  [maxLength]=\"320\"\n  placeholder=\"Enter message\"\n></oc-input>\n\n// Variants\n<oc-input [(value)]=\"value\" variant=\"success\"></oc-input>\n<oc-input [(value)]=\"value\" variant=\"error\"></oc-input>\n\n// States\n<oc-input [(value)]=\"value\" [disabled]=\"true\"></oc-input>\n<oc-input [(value)]=\"value\" [readonly]=\"true\"></oc-input>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n      description: 'Size from Figma oc-input variants (small: 24px, medium: 36px, large: 44px)',\n      table: {\n        defaultValue: { summary: 'medium' },\n      },\n    },\n    variant: {\n      control: 'select',\n      options: ['default', 'success', 'error'],\n      description: 'Visual variant',\n      table: {\n        defaultValue: { summary: 'default' },\n      },\n    },\n    type: {\n      control: 'select',\n      options: ['text', 'number', 'email', 'password', 'tel', 'url'],\n      description: 'HTML input type',\n      table: {\n        defaultValue: { summary: 'text' },\n      },\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Whether the input is disabled',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    readonly: {\n      control: 'boolean',\n      description: 'Whether the input is readonly',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    placeholder: {\n      control: 'text',\n      description: 'Placeholder text',\n      table: {\n        defaultValue: { summary: 'Lorem ipsum' },\n      },\n    },\n    maxLength: {\n      control: 'number',\n      description: 'Maximum character length (shows counter)',\n    },\n    showCounter: {\n      control: 'boolean',\n      description: 'Show character counter even without maxLength',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    showNumberControls: {\n      control: 'boolean',\n      description: 'Show number increment/decrement controls (default true for type=\"number\")',\n    },\n    iconLeft: {\n      control: 'text',\n      description: 'Font Awesome icon classes for left icon (e.g. \"fa-solid fa-search\")',\n    },\n    iconRight: {\n      control: 'text',\n      description: 'Font Awesome icon classes for right icon(s)',\n    },\n    value: {\n      control: 'text',\n      description: 'Current input value',\n    },\n  },\n}"
+                },
+                {
+                    "name": "NumberInput",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small (horizontal controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"small\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (vertical controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"medium\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large (vertical controls)</h3>\n          <oc-input \n            type=\"number\" \n            size=\"large\" \n            placeholder=\"0\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    placeholder: 'Lorem ipsum',\n    size: 'medium',\n    variant: 'default',\n    type: 'text',\n  },\n}"
+                },
+                {
+                    "name": "Variants",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Default</h3>\n          <oc-input \n            variant=\"default\" \n            placeholder=\"Default input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Success</h3>\n          <oc-input \n            variant=\"success\" \n            value=\"Valid input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Error</h3>\n          <oc-input \n            variant=\"error\" \n            value=\"Invalid input\" \n            iconLeft=\"fa-solid fa-search\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "WithCounter",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">With maxLength counter</h3>\n          <oc-input \n            [maxLength]=\"320\" \n            placeholder=\"Enter your message...\">\n          </oc-input>\n          <p style=\"margin-top: 8px; font-size: 12px; color: #666;\">Shows \"0/320\" format</p>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Tweet (280 chars)</h3>\n          <oc-input \n            [maxLength]=\"280\" \n            placeholder=\"What's happening?\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "WithIcons",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Icon left</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-search\" \n            placeholder=\"Search...\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Email icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-envelope\" \n            placeholder=\"Email address\" \n            type=\"email\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">User icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-user\" \n            placeholder=\"Username\">\n          </oc-input>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Password with icon</h3>\n          <oc-input \n            iconLeft=\"fa-solid fa-lock\" \n            placeholder=\"Password\" \n            type=\"password\">\n          </oc-input>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                }
+            ],
+            "src/stories/link.stories.ts": [
+                {
+                    "name": "AllSizes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column;\">\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Small</span>\n          <oc-link href=\"https://example.com\" size=\"sm\">\n            Small link\n          </oc-link>\n        </div>\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Medium (default)</span>\n          <oc-link href=\"https://example.com\" size=\"md\">\n            Medium link\n          </oc-link>\n        </div>\n        <div>\n          <span style=\"font-size: 12px; font-weight: 600; color: #666; margin-right: 12px;\">Large</span>\n          <oc-link href=\"https://example.com\" size=\"lg\">\n            Large link\n          </oc-link>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "All sizes from Figma",
+                    "description": "<p>All sizes from Figma</p>\n"
+                },
+                {
+                    "name": "ExternalLinks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column;\">\n        <oc-link href=\"https://example.com\" target=\"_blank\" icon=\"fa-solid fa-external-link\">\n          External link (new tab)\n        </oc-link>\n        <oc-link href=\"https://example.com\" target=\"_blank\" size=\"sm\" icon=\"fa-solid fa-external-link\">\n          Small external\n        </oc-link>\n        <oc-link href=\"https://example.com\" target=\"_blank\" size=\"lg\" icon=\"fa-solid fa-external-link\">\n          Large external\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "External links (open in new tab)",
+                    "description": "<p>External links (open in new tab)</p>\n"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<LinkComponent>",
+                    "defaultValue": "{\n  title: 'Electrons/Link',\n  component: LinkComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [LinkComponent],\n    }),\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<!-- Basic link (default with arrow icon) -->\n<oc-link href=\"https://example.com\">\n  Link label\n</oc-link>\n\n<!-- Different sizes -->\n<oc-link size=\"sm\" href=\"https://example.com\">Small link</oc-link>\n<oc-link size=\"md\" href=\"https://example.com\">Medium link</oc-link>\n<oc-link size=\"lg\" href=\"https://example.com\">Large link</oc-link>\n\n<!-- With custom icons -->\n<oc-link href=\"https://example.com\" icon=\"fa-solid fa-external-link\" target=\"_blank\">\n  External link\n</oc-link>\n<oc-link href=\"/download\" icon=\"fa-solid fa-download\">\n  Download file\n</oc-link>\n\n<!-- Without icon -->\n<oc-link href=\"https://example.com\" [icon]=\"null\">\n  No icon\n</oc-link>\n\n<!-- Visited state -->\n<oc-link href=\"https://visited.com\" [visited]=\"true\">\n  Visited link\n</oc-link>\n\n<!-- Disabled -->\n<oc-link href=\"https://example.com\" [disabled]=\"true\">\n  Disabled link\n</oc-link>\n\n<!-- With new tab -->\n<oc-link href=\"https://example.com\" target=\"_blank\">\n  Open in new tab\n</oc-link>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    href: {\n      control: 'text',\n      description: 'Target URL',\n    },\n    size: {\n      control: 'select',\n      options: ['sm', 'md', 'lg'],\n      description: 'Link size (sm: 12px, md: 14px, lg: 16px)',\n    },\n    icon: {\n      control: false,\n      description: 'FontAwesome icon (defaults to faArrowUpRight)',\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Disable the link',\n    },\n    visited: {\n      control: 'boolean',\n      description: 'Show as visited state (purple color)',\n    },\n    active: {\n      control: 'boolean',\n      description: 'Show as active state (current page)',\n    },\n    target: {\n      control: 'select',\n      options: [undefined, '_blank', '_self', '_parent', '_top'],\n      description: 'Target attribute for link',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    href: 'https://example.com',\n    size: 'md',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-link [href]=\"href\" [size]=\"size\">\n        Link label\n      </oc-link>\n    `,\n  }),\n}",
+                    "rawdescription": "Interactive playground",
+                    "description": "<p>Interactive playground</p>\n"
+                },
+                {
+                    "name": "States",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Default</h3>\n          <oc-link href=\"https://example.com\">\n            Default link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hovered (hover to see)</h3>\n          <oc-link href=\"https://example.com\">\n            Hover link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Visited</h3>\n          <oc-link href=\"https://example.com\" [visited]=\"true\">\n            Visited link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Active (current page)</h3>\n          <oc-link href=\"https://example.com\" [active]=\"true\">\n            Active link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focused (Tab key)</h3>\n          <oc-link href=\"https://example.com\">\n            Focused link\n          </oc-link>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-link href=\"https://example.com\" [disabled]=\"true\">\n            Disabled link\n          </oc-link>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "All interactive states",
+                    "description": "<p>All interactive states</p>\n"
+                },
+                {
+                    "name": "WithCustomIcons",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap;\">\n        <oc-link href=\"https://example.com\" icon=\"fa-solid fa-arrow-up-right\">\n          Default arrow\n        </oc-link>\n        <oc-link href=\"https://example.com\" icon=\"fa-solid fa-external-link\">\n          External link\n        </oc-link>\n        <oc-link href=\"/download\" icon=\"fa-solid fa-download\">\n          Download\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "Links with custom icons",
+                    "description": "<p>Links with custom icons</p>\n"
+                },
+                {
+                    "name": "WithoutIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/link.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap;\">\n        <oc-link href=\"https://example.com\" [icon]=\"null\">\n          No icon (small)\n        </oc-link>\n        <oc-link href=\"https://example.com\" size=\"md\" [icon]=\"null\">\n          No icon (medium)\n        </oc-link>\n        <oc-link href=\"https://example.com\" size=\"lg\" [icon]=\"null\">\n          No icon (large)\n        </oc-link>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "Links without icons",
+                    "description": "<p>Links without icons</p>\n"
+                }
+            ],
+            "src/stories/select.stories.ts": [
+                {
+                    "name": "AllSizes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Small</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"small\" \n            placeholder=\"Small select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Medium (default)</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"medium\" \n            placeholder=\"Medium select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        <div>\n          <h3 style=\"margin: 0 0 8px 0; font-size: 12px; font-weight: 600; color: #666;\">Large</h3>\n          <oc-select \n            [options]=\"options\" \n            size=\"large\" \n            placeholder=\"Large select\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "AllStates",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 32px; flex-direction: column; width: 320px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Empty (placeholder)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Lorem ipsum dolor\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Filled (with value)</h3>\n          <oc-select \n            [options]=\"options\" \n            value=\"2\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Hovered (hover to see)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Hover me\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Focus (click to see)</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Focus me\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Readonly</h3>\n          <oc-select \n            [options]=\"options\" \n            value=\"3\" \n            [readonly]=\"true\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Disabled</h3>\n          <oc-select \n            [options]=\"options\" \n            placeholder=\"Disabled select\" \n            [disabled]=\"true\" \n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Interactive",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      options: args.options,\n      value1: '',\n      value2: '2',\n      value3: '',\n      onValueChange1(value: string) {\n        this.value1 = value;\n        console.log('Select 1 changed:', value);\n      },\n      onValueChange2(value: string) {\n        this.value2 = value;\n        console.log('Select 2 changed:', value);\n      },\n      onValueChange3(value: string) {\n        this.value3 = value;\n        console.log('Select 3 changed:', value);\n      },\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            Empty state: {{ value1 || 'No selection' }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value1\"\n            (valueChange)=\"onValueChange1($event)\"\n            placeholder=\"Select an option\"\n            icon=\"fa-solid fa-pen-to-square\">\n          </oc-select>\n        </div>\n        \n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            Pre-filled: {{ value2 }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value2\"\n            (valueChange)=\"onValueChange2($event)\"\n            icon=\"fa-solid fa-user\">\n          </oc-select>\n        </div>\n        \n        <div>\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">\n            No icon: {{ value3 || 'No selection' }}\n          </h4>\n          <oc-select \n            [options]=\"options\"\n            [value]=\"value3\"\n            (valueChange)=\"onValueChange3($event)\"\n            placeholder=\"Pick one\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "LongOptions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      longOptions: [\n        { value: '1', label: 'Short' },\n        { value: '2', label: 'This is a very long option that will be truncated' },\n        { value: '3', label: 'Another extremely long option text that exceeds the width' },\n        { value: '4', label: 'Medium length option' },\n        { value: '5', label: 'Lorem ipsum dolor sit amet consectetur adipiscing elit' },\n      ],\n    },\n    template: `\n      <div style=\"width: 320px;\">\n        <oc-select \n          [options]=\"longOptions\"\n          placeholder=\"Select option\"\n          icon=\"fa-solid fa-pen-to-square\">\n        </oc-select>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<SelectComponent>",
+                    "defaultValue": "{\n  title: 'Electrons/Select',\n  component: SelectComponent,\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\n// Basic select\nimport { SelectComponent } from '@galactik/angular-ui';\n\nconst options = [\n  { value: '1', label: 'Option 1' },\n  { value: '2', label: 'Option 2' },\n  { value: '3', label: 'Option 3' },\n];\n\n<oc-select \n  [options]=\"options\"\n  [value]=\"selectedValue\"\n  (valueChange)=\"onValueChange($event)\"\n  placeholder=\"Select an option\"\n></oc-select>\n\n// Different sizes\n<oc-select [options]=\"options\" size=\"small\"></oc-select>\n<oc-select [options]=\"options\" size=\"medium\"></oc-select>\n<oc-select [options]=\"options\" size=\"large\"></oc-select>\n\n// With icon (using Font Awesome class names)\n<oc-select \n  [options]=\"options\"\n  icon=\"fa-solid fa-user\"\n  placeholder=\"Select user\"\n></oc-select>\n\n// Disabled\n<oc-select [options]=\"options\" [disabled]=\"true\"></oc-select>\n\n// Readonly\n<oc-select [options]=\"options\" [readonly]=\"true\" value=\"1\"></oc-select>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    size: {\n      control: 'select',\n      options: ['small', 'medium', 'large'],\n      description: 'Size from Figma oc-select variants',\n      table: {\n        defaultValue: { summary: 'medium' },\n      },\n    },\n    disabled: {\n      control: 'boolean',\n      description: 'Whether the select is disabled',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    readonly: {\n      control: 'boolean',\n      description: 'Whether the select is readonly (no chevron, not clickable)',\n      table: {\n        defaultValue: { summary: 'false' },\n      },\n    },\n    placeholder: {\n      control: 'text',\n      description: 'Placeholder text shown in empty state',\n      table: {\n        defaultValue: { summary: 'Lorem ipsum dolor' },\n      },\n    },\n    icon: {\n      control: 'text',\n      description: 'Font Awesome icon classes (e.g. \"fa-solid fa-user\")',\n    },\n    options: {\n      control: 'object',\n      description: 'Array of SelectOption objects with value and label',\n    },\n    value: {\n      control: 'text',\n      description: 'Current selected value',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n    placeholder: 'Lorem ipsum dolor',\n    size: 'medium',\n  },\n}"
+                },
+                {
+                    "name": "sampleOptions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SelectOption[]",
+                    "defaultValue": "[\n  { value: '1', label: 'Option 1' },\n  { value: '2', label: 'Option 2' },\n  { value: '3', label: 'Option 3' },\n  { value: '4', label: 'Option 4' },\n  { value: '5', label: 'Option 5' },\n]"
+                },
+                {
+                    "name": "WithIcons",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: {\n      ...args,\n      userOptions: [\n        { value: 'john', label: 'John Doe' },\n        { value: 'jane', label: 'Jane Smith' },\n        { value: 'bob', label: 'Bob Johnson' },\n      ],\n      emailOptions: [\n        { value: 'work', label: 'work@company.com' },\n        { value: 'personal', label: 'personal@email.com' },\n      ],\n      companyOptions: [\n        { value: 'acme', label: 'Acme Corp' },\n        { value: 'globex', label: 'Globex Inc' },\n        { value: 'initech', label: 'Initech' },\n      ],\n    },\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-wrap: wrap; width: 100%;\">\n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">User</h4>\n          <oc-select \n            [options]=\"userOptions\"\n            icon=\"fa-solid fa-user\"\n            placeholder=\"Select user\">\n          </oc-select>\n        </div>\n        \n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">Email</h4>\n          <oc-select \n            [options]=\"emailOptions\"\n            icon=\"fa-solid fa-envelope\"\n            placeholder=\"Select email\">\n          </oc-select>\n        </div>\n        \n        <div style=\"width: 280px;\">\n          <h4 style=\"margin: 0 0 8px 0; font-size: 12px; color: #666;\">Company</h4>\n          <oc-select \n            [options]=\"companyOptions\"\n            icon=\"fa-solid fa-building\"\n            placeholder=\"Select company\">\n          </oc-select>\n        </div>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "WithoutIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    options: sampleOptions,\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <div style=\"display: flex; gap: 24px; flex-direction: column; width: 320px;\">\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"small\"></oc-select>\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"medium\"></oc-select>\n        <oc-select [options]=\"options\" placeholder=\"No icon\" size=\"large\"></oc-select>\n      </div>\n    `,\n  }),\n}"
+                }
+            ],
+            "src/stories/tag.stories.ts": [
+                {
+                    "name": "AllSizes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 16px; align-items: center; flex-wrap: wrap;\">\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">xSmall (18px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"xsmall\">Tag label</oc-tag>\n        </div>\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">Small (24px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"small\">Tag label</oc-tag>\n        </div>\n        <div style=\"display: flex; flex-direction: column; gap: 8px;\">\n          <span style=\"font-size: 12px; font-weight: 600; color: #666;\">Medium (36px)</span>\n          <oc-tag color=\"sage\" variant=\"fill\" size=\"medium\">Tag label</oc-tag>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "All sizes from Figma",
+                    "description": "<p>All sizes from Figma</p>\n"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TagComponent>",
+                    "defaultValue": "{\n  title: 'Electrons/Tag',\n  component: TagComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [TagComponent],\n    }),\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`typescript\nimport { faTag, faChevronDown, faTriangleExclamation } from '@fortawesome/pro-regular-svg-icons';\n\n// Medium tag with fill variant (default)\n<oc-tag color=\"sage\" variant=\"fill\" size=\"medium\">\n  Sage Tag\n</oc-tag>\n\n// Small outline tag\n<oc-tag color=\"pink\" variant=\"outline\" size=\"small\">\n  Pink Outline\n</oc-tag>\n\n// Different colors and variants\n<oc-tag color=\"success\" size=\"xsmall\">Success</oc-tag>\n<oc-tag color=\"error\" variant=\"outline\">Error</oc-tag>\n<oc-tag color=\"info\" size=\"small\">Info</oc-tag>\n\n// With icons\n<oc-tag color=\"sage\" [iconLeft]=\"faTag\">\n  Tagged\n</oc-tag>\n<oc-tag color=\"indigo\" variant=\"outline\" [iconRight]=\"faChevronDown\">\n  Dropdown\n</oc-tag>\n\n// With country flag\n<oc-tag color=\"info\" flag=\"FR\">\n  France\n</oc-tag>\n\n// Icons + Flag\n<oc-tag color=\"warning\" [iconLeft]=\"faTriangleExclamation\" flag=\"US\">\n  US Alert\n</oc-tag>\n\\`\\`\\``,\n      },\n    },\n  },\n  tags: ['autodocs'],\n  argTypes: {\n    color: {\n      control: 'select',\n      options: ['sage', 'pink', 'almond', 'grey', 'yellow', 'warning', 'cherry', 'success', 'indigo', 'info', 'cyan', 'error'],\n      description: 'Color from Figma oc-tag variants',\n    },\n    variant: {\n      control: 'select',\n      options: ['fill', 'outline'],\n      description: 'Style variant: fill (solid) or outline (border only)',\n    },\n    size: {\n      control: 'select',\n      options: ['xsmall', 'small', 'medium'],\n      description: 'Size from Figma specs (xsmall=18px, small=24px, medium=36px)',\n    },\n    iconLeft: {\n      control: false,\n      description: 'FontAwesome icon on the left side',\n    },\n    iconRight: {\n      control: false,\n      description: 'FontAwesome icon on the right side',\n    },\n    flag: {\n      control: 'text',\n      description: 'Country flag (ISO 3166-1 alpha-2 code, e.g. FR, US, GB)',\n    },\n  },\n}"
+                },
+                {
+                    "name": "PaletteFill",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 800px;\">\n        <oc-tag color=\"sage\" variant=\"fill\">Sage</oc-tag>\n        <oc-tag color=\"pink\" variant=\"fill\">Pink</oc-tag>\n        <oc-tag color=\"almond\" variant=\"fill\">Almond</oc-tag>\n        <oc-tag color=\"grey\" variant=\"fill\">Grey</oc-tag>\n        <oc-tag color=\"yellow\" variant=\"fill\">Yellow</oc-tag>\n        <oc-tag color=\"warning\" variant=\"fill\">Warning</oc-tag>\n        <oc-tag color=\"cherry\" variant=\"fill\">Cherry</oc-tag>\n        <oc-tag color=\"success\" variant=\"fill\">Success</oc-tag>\n        <oc-tag color=\"indigo\" variant=\"fill\">Indigo</oc-tag>\n        <oc-tag color=\"info\" variant=\"fill\">Info</oc-tag>\n        <oc-tag color=\"cyan\" variant=\"fill\">Cyan</oc-tag>\n        <oc-tag color=\"error\" variant=\"fill\">Error</oc-tag>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "All 12 colors in fill and outline variants",
+                    "description": "<p>All 12 colors in fill and outline variants</p>\n"
+                },
+                {
+                    "name": "PaletteOutline",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; max-width: 800px;\">\n        <oc-tag color=\"sage\" variant=\"outline\">Sage</oc-tag>\n        <oc-tag color=\"pink\" variant=\"outline\">Pink</oc-tag>\n        <oc-tag color=\"almond\" variant=\"outline\">Almond</oc-tag>\n        <oc-tag color=\"grey\" variant=\"outline\">Grey</oc-tag>\n        <oc-tag color=\"yellow\" variant=\"outline\">Yellow</oc-tag>\n        <oc-tag color=\"warning\" variant=\"outline\">Warning</oc-tag>\n        <oc-tag color=\"cherry\" variant=\"outline\">Cherry</oc-tag>\n        <oc-tag color=\"success\" variant=\"outline\">Success</oc-tag>\n        <oc-tag color=\"indigo\" variant=\"outline\">Indigo</oc-tag>\n        <oc-tag color=\"info\" variant=\"outline\">Info</oc-tag>\n        <oc-tag color=\"cyan\" variant=\"outline\">Cyan</oc-tag>\n        <oc-tag color=\"error\" variant=\"outline\">Error</oc-tag>\n      </div>\n    `,\n  }),\n}"
+                },
+                {
+                    "name": "Playground",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    color: 'sage',\n    variant: 'fill',\n    size: 'small',\n    iconLeft: 'fa-solid fa-tag',\n  },\n  render: (args) => ({\n    props: args,\n    template: `\n      <oc-tag [color]=\"color\" [variant]=\"variant\" [size]=\"size\" [iconLeft]=\"iconLeft\">\n        Tag label\n      </oc-tag>\n    `,\n  }),\n}",
+                    "rawdescription": "Interactive playground",
+                    "description": "<p>Interactive playground</p>\n"
+                },
+                {
+                    "name": "Sizes",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 40px;\">\n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">XSmall (18px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"xsmall\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"xsmall\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"xsmall\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"xsmall\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"xsmall\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"xsmall\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"xsmall\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"xsmall\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"xsmall\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"xsmall\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"xsmall\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"xsmall\">Error</oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Small (24px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"small\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"small\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"small\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"small\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"small\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"small\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"small\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"small\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"small\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"small\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"small\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"small\">Error</oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #333;\">Medium (36px)</h3>\n          <div style=\"display: flex; gap: 8px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" size=\"medium\">Sage</oc-tag>\n            <oc-tag color=\"pink\" size=\"medium\">Pink</oc-tag>\n            <oc-tag color=\"almond\" size=\"medium\">Almond</oc-tag>\n            <oc-tag color=\"grey\" size=\"medium\">Grey</oc-tag>\n            <oc-tag color=\"yellow\" size=\"medium\">Yellow</oc-tag>\n            <oc-tag color=\"warning\" size=\"medium\">Warning</oc-tag>\n            <oc-tag color=\"cherry\" size=\"medium\">Cherry</oc-tag>\n            <oc-tag color=\"success\" size=\"medium\">Success</oc-tag>\n            <oc-tag color=\"indigo\" size=\"medium\">Indigo</oc-tag>\n            <oc-tag color=\"info\" size=\"medium\">Info</oc-tag>\n            <oc-tag color=\"cyan\" size=\"medium\">Cyan</oc-tag>\n            <oc-tag color=\"error\" size=\"medium\">Error</oc-tag>\n          </div>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "Complete size matrix for all colors",
+                    "description": "<p>Complete size matrix for all colors</p>\n"
+                },
+                {
+                    "name": "WithFlags",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n        <oc-tag color=\"info\" flag=\"FR\">France</oc-tag>\n        <oc-tag color=\"info\" flag=\"US\">United States</oc-tag>\n        <oc-tag color=\"info\" flag=\"GB\">United Kingdom</oc-tag>\n        <oc-tag color=\"info\" flag=\"DE\">Germany</oc-tag>\n        <oc-tag color=\"info\" flag=\"ES\">Spain</oc-tag>\n        <oc-tag color=\"info\" flag=\"IT\">Italy</oc-tag>\n        <oc-tag color=\"info\" flag=\"JP\">Japan</oc-tag>\n        <oc-tag color=\"info\" flag=\"CA\">Canada</oc-tag>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "Tags with country flags",
+                    "description": "<p>Tags with country flags</p>\n"
+                },
+                {
+                    "name": "WithIcons",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  render: () => ({\n    template: `\n      <div style=\"display: flex; flex-direction: column; gap: 24px;\">\n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Left Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconLeft=\"fa-solid fa-tag\">\n              Tagged\n            </oc-tag>\n            <oc-tag color=\"success\" iconLeft=\"fa-solid fa-check\">\n              Verified\n            </oc-tag>\n            <oc-tag color=\"info\" iconLeft=\"fa-solid fa-user\">\n              User\n            </oc-tag>\n            <oc-tag color=\"warning\" iconLeft=\"fa-solid fa-triangle-exclamation\">\n              Alert\n            </oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Right Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconRight=\"fa-solid fa-tag\">\n              Tagged\n            </oc-tag>\n            <oc-tag color=\"success\" iconRight=\"fa-solid fa-check\">\n              Verified\n            </oc-tag>\n            <oc-tag color=\"info\" iconRight=\"fa-solid fa-user\">\n              User\n            </oc-tag>\n            <oc-tag color=\"warning\" iconRight=\"fa-solid fa-triangle-exclamation\">\n              Alert\n            </oc-tag>\n          </div>\n        </div>\n        \n        <div>\n          <h3 style=\"margin: 0 0 12px 0; font-size: 14px; font-weight: 600; color: #333;\">Both Icons</h3>\n          <div style=\"display: flex; gap: 12px; flex-wrap: wrap;\">\n            <oc-tag color=\"sage\" iconLeft=\"fa-solid fa-tag\" iconRight=\"fa-solid fa-chevron-down\">\n              Tagged Item\n            </oc-tag>\n          </div>\n        </div>\n      </div>\n    `,\n  }),\n}",
+                    "rawdescription": "Tags with FontAwesome icons",
+                    "description": "<p>Tags with FontAwesome icons</p>\n"
+                }
+            ],
             ".storybook/manager.ts": [
                 {
                     "name": "applyTheme",
@@ -1226,7 +1986,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<RadioComponent>",
-                    "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: var(--color-stroke-primary-base), var(--color-font-neutral-disabled).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
+                    "defaultValue": "{\n  title: 'Electrons/Radio',\n  component: RadioComponent,\n  decorators: [\n    moduleMetadata({\n      imports: [RadioComponent]\n    })\n  ],\n  tags: ['autodocs'],\n  parameters: {\n    layout: 'padded',\n    docs: {\n      description: {\n        component: `@example\n\\`\\`\\`html\n<oc-radio name=\"group\" value=\"a\" [checked]=\"true\" label=\"Option A\"></oc-radio>\n<oc-radio name=\"group\" value=\"b\" [checked]=\"false\" label=\"Option B\"></oc-radio>\n\\`\\`\\`\nSemantic tokens: colors/radii from design tokens (e.g. var(--color-stroke-primary-base), var(--radius-md)).`\n      }\n    }\n  },\n  argTypes: {\n    checked: { control: 'boolean', description: 'Checked state' },\n    disabled: { control: 'boolean', description: 'Disables the radio' },\n    label: { control: 'text', description: 'Label next to the control' },\n    name: { control: 'text', description: 'HTML name for grouping' },\n    value: { control: 'text', description: 'Associated value' },\n    change: { action: 'changed' }\n  }\n}"
                 },
                 {
                     "name": "Playground",
@@ -1236,7 +1996,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  }\n}"
+                    "defaultValue": "{\n  args: {\n    checked: false,\n    disabled: false,\n    label: 'Choose this option'\n  },\n  render: (args) => ({\n    props: {\n      ...args,\n      checkedState: args.checked,\n      handleChange: (value: boolean) => {\n        args.checked = value;\n      }\n    },\n    template: `\n      <oc-radio\n        [checked]=\"checkedState\"\n        [disabled]=\"disabled\"\n        [label]=\"label\"\n        [name]=\"name\"\n        [value]=\"value\"\n        (change)=\"checkedState = $event; handleChange($event)\"\n      ></oc-radio>\n    `\n  })\n}"
                 },
                 {
                     "name": "RadioGroup",
@@ -1606,7 +2366,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Component[]",
-                    "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox [checked]=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio [checked]=\"true\" label=\"Radio\"></oc-radio>'\n  },\n]"
+                    "defaultValue": "[\n  {\n    name: 'Avatar',\n    category: 'Electrons',\n    description: 'Affiche un avatar avec initiales ou image',\n    path: '?path=/docs/electrons-avatar--docs',\n    template: '<oc-avatar name=\"Alice Smith\" size=\"medium\" avatarColor=\"sage\"></oc-avatar>'\n  },\n  {\n    name: 'Badge',\n    category: 'Electrons',\n    description: 'Color-coded badge for statuses or labels',\n    path: '?path=/docs/electrons-badge--docs',\n    template: '<oc-badge label=\"5\" color=\"success\" style=\"primary\" size=\"sm\"></oc-badge>'\n  },\n  {\n    name: 'Bullet',\n    category: 'Electrons',\n    description: 'Colored dot for state indicators',\n    path: '?path=/docs/electrons-bullet--docs',\n    template: '<oc-bullet color=\"info\" size=\"medium\"></oc-bullet>'\n  },\n  {\n    name: 'Button',\n    category: 'Electrons',\n    description: 'Button with multiple variants and states',\n    path: '?path=/docs/electrons-button--docs',\n    template: '<oc-button variant=\"filled\" colorVariant=\"primary\" size=\"small\"><i class=\"fa-regular fa-plus\"></i> Button</oc-button>'\n  },\n  {\n    name: 'Label',\n    category: 'Electrons',\n    description: 'Text/icon label aligned with the React version',\n    path: '?path=/docs/electrons-label--docs',\n    template: '<oc-label text=\"Label\" color=\"success\" size=\"medium\" icon=\"fa-regular fa-circle-check\"></oc-label>'\n  },\n  {\n    name: 'Checkbox',\n    category: 'Electrons',\n    description: 'Checkbox with selected and indeterminate states',\n    path: '?path=/docs/electrons-checkbox--docs',\n    template: '<oc-checkbox checked=\"true\" label=\"Checkbox\"></oc-checkbox>'\n  },\n  {\n    name: 'Radio',\n    category: 'Electrons',\n    description: 'Radio button aligned with React/Vue tokens',\n    path: '?path=/docs/electrons-radio--docs',\n    template: '<oc-radio checked=\"true\" label=\"Radio\"></oc-radio>'\n  },\n  {\n    name: 'Tag',\n    category: 'Electrons',\n    description: 'Tag component with sizes, variants and icons',\n    path: '?path=/docs/electrons-tag--docs',\n    template: '<oc-tag label=\"Tag\" size=\"small\" variant=\"fill\" paletteColor=\"sage\" iconLeft=\"fa-solid fa-star\"></oc-tag>'\n  },\n  {\n    name: 'Link',\n    category: 'Electrons',\n    description: 'Link component with icon support',\n    path: '?path=/docs/electrons-link--docs',\n    template: '<oc-link text=\"Link\" size=\"medium\" icon=\"fa-solid fa-arrow-right\"></oc-link>'\n  },\n  {\n    name: 'Select',\n    category: 'Electrons',\n    description: 'Select dropdown with sizes and states',\n    path: '?path=/docs/electrons-select--docs',\n    template: '<oc-select [options]=\"selectOptions\" placeholder=\"Select option\" size=\"medium\" icon=\"fa-solid fa-pen-to-square\"></oc-select>'\n  },\n  {\n    name: 'Input',\n    category: 'Electrons',\n    description: 'Text and number input with states and icons',\n    path: '?path=/docs/electrons-input--docs',\n    template: '<div style=\"display: flex; gap: 8px; flex-direction: column;\"><oc-input placeholder=\"Enter text...\" size=\"small\"></oc-input><oc-input placeholder=\"With icon\" size=\"small\" iconLeft=\"fa-solid fa-search\"></oc-input></div>'\n  },\n]"
                 },
                 {
                     "name": "Default",
@@ -1616,7 +2376,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent]\n    })\n  ],\n  render: () => ({\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
+                    "defaultValue": "{\n  decorators: [\n    moduleMetadata({\n      imports: [AvatarComponent, BadgeComponent, BulletComponent, ButtonComponent, LabelComponent, CheckboxComponent, RadioComponent, TagComponent, LinkComponent, SelectComponent, InputComponent]\n    })\n  ],\n  render: () => ({\n    props: {\n      selectOptions: [\n        { value: '1', label: 'Option 1' },\n        { value: '2', label: 'Option 2' }\n      ]\n    },\n    template: `\n      <div style=\"\n        padding: var(--space-4xl);\n        background-color: var(--color-background-surface);\n        min-height: 100vh;\n        font-family: var(--font-family-base);\n      \">\n        <header style=\"\n          margin-bottom: var(--space-6xl);\n          text-align: center;\n        \">\n          <img \n            src=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 250'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E40035'/%3E%3Cstop offset='100%25' stop-color='%23B4003A'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23FF2857'/%3E%3Cstop offset='100%25' stop-color='%23DC004E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='none'%3E%3Cpath fill='url(%23a)' d='M125 30L31.9 63.2l14.2 123.1L125 230l78.9-43.7 14.2-123.1z'/%3E%3Cpath fill='url(%23b)' d='M125 30v22.2-.1V230l78.9-43.7 14.2-123.1L125 30z'/%3E%3Cpath fill='%23FFF' d='M125 52.1L66.8 182.6h21.7l11.7-29.2h49.4l11.7 29.2h21.7L125 52.1zm17 83.3h-34l17-40.9 17 40.9z'/%3E%3C/g%3E%3C/svg%3E\" \n            alt=\"Angular Logo\" \n            style=\"\n              height: 50px;\n              margin-bottom: var(--space-lg);\n            \" \n          />\n          <h1 style=\"\n            font-size: var(--font-size-2xl);\n            font-weight: var(--font-weight-bold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-md);\n            line-height: var(--line-height-6);\n          \">\n            Galactik Design System\n          </h1>\n          <p style=\"\n            font-size: var(--font-size-lg);\n            color: var(--color-font-neutral-muted);\n            line-height: var(--line-height-4);\n          \">\n            Angular component library\n          </p>\n        </header>\n\n        <section style=\"margin-bottom: var(--space-5xl);\">\n          <h2 style=\"\n            font-size: var(--font-size-xl);\n            font-weight: var(--font-weight-semibold);\n            color: var(--color-font-primary-base);\n            margin-bottom: var(--space-3xl);\n            padding-bottom: var(--space-md);\n            border-bottom: var(--stroke-xs) solid var(--color-border-base);\n            line-height: var(--line-height-5);\n          \">\n            Electrons\n          </h2>\n          \n          <div style=\"\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n            gap: var(--space-3xl);\n          \">\n            ${components.map(generateCardTemplate).join('')}\n          </div>\n        </section>\n\n        <footer style=\"\n          margin-top: var(--space-6xl);\n          padding-top: var(--space-3xl);\n          text-align: center;\n          color: var(--color-font-neutral-muted);\n          font-size: var(--font-size-sm);\n          border-top: var(--stroke-xs) solid var(--color-border-base);\n        \">\n          <p>Total: ${components.length} components</p>\n        </footer>\n      </div>\n    `\n  }),\n}"
                 },
                 {
                     "name": "generateCardTemplate",
@@ -1732,6 +2492,19 @@
                     "kind": 184
                 }
             ],
+            "src/stories/input.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<InputComponent>",
+                    "file": "src/stories/input.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
             "src/stories/label.stories.ts": [
                 {
                     "name": "Story",
@@ -1739,6 +2512,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<LabelComponent>",
                     "file": "src/stories/label.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "src/stories/link.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<LinkComponent>",
+                    "file": "src/stories/link.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1757,6 +2543,32 @@
                     "description": "",
                     "kind": 184
                 }
+            ],
+            "src/stories/select.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<SelectComponent>",
+                    "file": "src/stories/select.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
+            ],
+            "src/stories/tag.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TagComponent>",
+                    "file": "src/stories/tag.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 184
+                }
             ]
         }
     },
@@ -1766,7 +2578,7 @@
         "children": []
     },
     "coverage": {
-        "count": 4,
+        "count": 13,
         "status": "low",
         "files": [
             {
@@ -2439,6 +3251,106 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllSizes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllStates",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Interactive",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NumberInput",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Variants",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithCounter",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIcons",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/input.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/label.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2509,6 +3421,86 @@
                 "status": "low"
             },
             {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllSizes",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ExternalLinks",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "States",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithCustomIcons",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithoutIcon",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/link.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/stories/radio.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
@@ -2570,6 +3562,196 @@
             },
             {
                 "filePath": "src/stories/radio.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllSizes",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllStates",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Interactive",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LongOptions",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "sampleOptions",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIcons",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithoutIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/select.stories.ts",
+                "type": "type alias",
+                "linktype": "miscellaneous",
+                "linksubtype": "typealias",
+                "name": "Story",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "AllSizes",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PaletteFill",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PaletteOutline",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Playground",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Sizes",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithFlags",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIcons",
+                "coveragePercent": 100,
+                "coverageCount": "1/1",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/tag.stories.ts",
                 "type": "type alias",
                 "linktype": "miscellaneous",
                 "linksubtype": "typealias",

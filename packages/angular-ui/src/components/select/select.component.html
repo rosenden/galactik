@@ -1,0 +1,51 @@
+<div class="oc-select-container">
+  <button
+    #triggerButton
+    type="button"
+    [class]="classes"
+    (click)="handleClick()"
+    (focus)="handleFocus()"
+    (blur)="handleBlur()"
+    (keydown)="handleKeyDown($event)"
+    [disabled]="disabled"
+    [attr.aria-disabled]="disabled"
+    [attr.aria-readonly]="readonly"
+    [attr.aria-expanded]="isOpen"
+    [attr.aria-haspopup]="'listbox'"
+    role="combobox"
+  >
+    <span *ngIf="icon" [ngClass]="iconClasses?.concat(['oc-select__icon-left'])" class="oc-select__icon-left">
+    </span>
+    
+    <span class="oc-select__text">
+      {{ displayText }}
+    </span>
+    
+    <span *ngIf="!readonly" class="oc-select__chevron">
+      <i [ngClass]="isOpen ? ['fa-solid', 'fa-chevron-up'] : ['fa-solid', 'fa-chevron-down']"></i>
+    </span>
+  </button>
+
+  <div
+    #dropdown
+    *ngIf="isOpen && !disabled && !readonly"
+    class="oc-select-dropdown"
+    role="listbox"
+    [attr.aria-label]="'Select options'"
+  >
+    <div
+      *ngFor="let option of options; let idx = index"
+      [attr.data-index]="idx"
+      role="option"
+      [attr.aria-selected]="isOptionSelected(option)"
+      [class]="baseClass + '-option ' + 
+               (isOptionHighlighted(idx) ? baseClass + '-option--highlighted ' : '') + 
+               (isOptionSelected(option) ? baseClass + '-option--selected' : '')"
+      (click)="handleOptionClick(option.value)"
+      (mousedown)="onOptionMouseDown($event)"
+      (mouseenter)="onOptionMouseEnter(idx)"
+    >
+      {{ option.label }}
+    </div>
+  </div>
+</div>

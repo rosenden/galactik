@@ -1,0 +1,289 @@
+/**
+ * Select Component Styles
+ * Extracted from Figma "OneChaps UI kit" - oc-select
+ * 
+ * Specifications from Figma (2025-12-10):
+ * - Font: Hanken Grotesk, weight 400, size 14px
+ * - States: empty, active, filled, hovered, readonly, disabled, focus
+ * - Border radius: 8px
+ * - Border: 1px solid #E5E7EB (default)
+ * - Focus border: #A9C1B8 (1px)
+ */
+
+.oc-select-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+.oc-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: 300px;
+  min-height: 36px;
+  
+  /* Typography */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  
+  /* Base styling */
+  background: #FFFFFF;
+  border: 1px solid #A9C1B8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  
+  /* Padding */
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* ============================================================================
+   SIZES
+   ============================================================================ */
+
+.oc-select--small {
+  width: 300px;
+  min-height: 24px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.oc-select--medium {
+  width: 300px;
+  min-height: 36px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.oc-select--large {
+  width: 300px;
+  min-height: 44px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* ============================================================================
+   INTERNAL ELEMENTS
+   ============================================================================ */
+
+.oc-select__icon-left {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 10px;
+  background: #FFFFFF;
+  color: #445556; /* default vector color */
+}
+
+.oc-select__text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.oc-select__chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 10px;
+  background: #FFFFFF;
+  color: #445556;
+}
+
+/* ============================================================================
+   STATES
+   ============================================================================ */
+
+/* Empty state (placeholder) */
+.oc-select--empty {
+  color: #5D7374;
+  gap: 6px;
+}
+
+.oc-select--empty .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+.oc-select--empty .oc-select__chevron {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+/* Active state (dropdown open) */
+.oc-select--active {
+  color: #182021;
+  gap: 8px;
+  border: 2px solid #2D393A;
+}
+
+.oc-select--active .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #2D393A;
+}
+
+.oc-select--active .oc-select__chevron {
+  background: #FFFFFF;
+  color: #2D393A;
+}
+
+/* Filled state (has value) */
+.oc-select--filled {
+  color: #182021;
+}
+
+.oc-select--filled .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+.oc-select--filled .oc-select__chevron {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+/* Hovered state */
+.oc-select:hover:not(.oc-select--disabled):not(.oc-select--readonly) {
+  color: #374648;
+}
+
+.oc-select:hover:not(.oc-select--disabled):not(.oc-select--readonly) .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #374648;
+}
+
+.oc-select:hover:not(.oc-select--disabled):not(.oc-select--readonly) .oc-select__chevron {
+  background: #FFFFFF;
+  color: #374648;
+}
+
+/* Readonly state */
+.oc-select--readonly {
+  color: #182021;
+  cursor: default;
+  background: #F1F8F4;
+  border: none;
+  gap: 8px;
+}
+
+.oc-select--readonly .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #182021;
+}
+
+/* Disabled state */
+.oc-select--disabled,
+.oc-select[aria-disabled="true"] {
+  color: #626C84;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.oc-select--disabled .oc-select__icon-left,
+.oc-select[aria-disabled="true"] .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #626C84;
+}
+
+.oc-select--disabled .oc-select__chevron,
+.oc-select[aria-disabled="true"] .oc-select__chevron {
+  background: #FFFFFF;
+  color: #626C84;
+}
+
+/* Focus state */
+.oc-select--focus,
+.oc-select:focus-visible {
+  outline: 2px solid #926E9B;
+  outline-offset: -1px;
+  border: 1px solid #A9C1B8;
+  min-height: 38px;
+  color: #445556;
+}
+
+.oc-select--focus .oc-select__icon-left,
+.oc-select:focus-visible .oc-select__icon-left {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+.oc-select--focus .oc-select__chevron,
+.oc-select:focus-visible .oc-select__chevron {
+  background: #FFFFFF;
+  color: #445556;
+}
+
+/* ============================================================================
+   DROPDOWN
+   ============================================================================ */
+
+.oc-select-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.oc-select-option {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #182021;
+  
+  background: #FFFFFF;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.oc-select-option:hover {
+  background: #F5F5F5;
+}
+
+.oc-select-option:active {
+  background: #E5E5E5;
+}
+
+/* Highlighted (keyboard) and selected styles */
+.oc-select-option--highlighted {
+  background: #F5F5F5;
+}
+
+.oc-select-option--selected {
+  background: #FFFFFF;
+  color: #182021;
+  font-weight: 500;
+}
+
+.oc-select-option--highlighted.oc-select-option--selected {
+  background: #EAEFF0;
+}

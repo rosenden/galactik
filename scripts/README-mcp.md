@@ -34,3 +34,12 @@ If you want, I can also:
 - Add a `pnpm` script or VS Code task that calls this helper.
 - Create a dev-only `.env.example` and example tasks that reference it.
 - Scaffold a minimal Figma plugin that connects to the MCP server.
+
+Canonical scripts (kept at `scripts/`):
+
+- `extract-link-complete.mjs` — canonical Link extractor
+- `extract-select-precise.mjs` — canonical Select extractor (precise)
+- `extract-tag-detailed.mjs` — canonical Tag extractor
+- `figma-mcp-extract.mjs` — generic Figma MCP extractor
+
+Older or intermediate extractors have been archived to `scripts/extracts/archived/` and replaced with stubs at the root pointing to the canonical scripts. Use the canonical scripts above when integrating with other repos.

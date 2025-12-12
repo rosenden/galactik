@@ -1,0 +1,2639 @@
+{
+  "extracted": "2025-12-08T21:37:00.868Z",
+  "fileKey": "zB9JxH85SZ9yDCUYw8CUwU",
+  "fileName": "OneChaps UI kit",
+  "variants": {
+    "fill": {
+      "oc-tag-primary": {
+        "path": "Document > 📒 Stylebook > stylebook light mode > Frame 1 > Frame 1 > Frame 1 > oc-tag-primary",
+        "id": "2556:2332",
+        "name": "oc-tag-primary",
+        "type": "INSTANCE",
+        "width": 93,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#eff2f6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Style FILL",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=sage": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=sage",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=sage",
+        "id": "49:4190",
+        "name": "size=medium, scheme=sage",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#d1e1dd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=sage": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=sage",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=sage",
+        "id": "49:4198",
+        "name": "size=small, scheme=sage",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#d1e1dd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=sage": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=sage",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=sage",
+        "id": "49:4206",
+        "name": "size=xsmall, scheme=sage",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#d1e1dd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=pink": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=pink",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=pink",
+        "id": "49:5129",
+        "name": "size=medium, scheme=pink",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#efc9f3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#4a325b"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=pink": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=pink",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=pink",
+        "id": "49:5133",
+        "name": "size=small, scheme=pink",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#efc9f3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#4a325b"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=pink": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=pink",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=pink",
+        "id": "49:5137",
+        "name": "size=xsmall, scheme=pink",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#efc9f3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#4a325b"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=almond": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=almond",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=almond",
+        "id": "49:5183",
+        "name": "size=medium, scheme=almond",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#dcefe3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1e4737"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=almond": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=almond",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=almond",
+        "id": "49:5187",
+        "name": "size=small, scheme=almond",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#dcefe3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1e4737"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=almond": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=almond",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=almond",
+        "id": "49:5191",
+        "name": "size=xsmall, scheme=almond",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#dcefe3",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1e4737"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=grey": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=grey",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=grey",
+        "id": "49:5239",
+        "name": "size=medium, scheme=grey",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#eff2f6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=grey": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=grey",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=grey",
+        "id": "49:5243",
+        "name": "size=small, scheme=grey",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#eff2f6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=grey": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=grey",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=grey",
+        "id": "49:5247",
+        "name": "size=xsmall, scheme=grey",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#eff2f6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=yellow": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=yellow",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=yellow",
+        "id": "49:5293",
+        "name": "size=medium, scheme=yellow",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#fbe5b9",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#5b4519"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=warning": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=warning",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=warning",
+        "id": "2423:1518",
+        "name": "size=medium, scheme=warning",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffddc6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#85461e"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=cherry": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=cherry",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=cherry",
+        "id": "49:5347",
+        "name": "size=medium, scheme=cherry",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#e2c1c8",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#371e23"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=success": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=success",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=success",
+        "id": "2423:1522",
+        "name": "size=medium, scheme=success",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c4d6c0",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1f341b"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=yellow": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=yellow",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=yellow",
+        "id": "49:5297",
+        "name": "size=small, scheme=yellow",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#fbe5b9",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#5b4519"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=warning": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=warning",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=warning",
+        "id": "2423:1526",
+        "name": "size=small, scheme=warning",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffddc6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#85461e"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=cherry": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=cherry",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=cherry",
+        "id": "49:5351",
+        "name": "size=small, scheme=cherry",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#e2c1c8",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#371e23"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=success": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=success",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=success",
+        "id": "2423:1530",
+        "name": "size=small, scheme=success",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c4d6c0",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1f341b"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=yellow": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=yellow",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=yellow",
+        "id": "49:5301",
+        "name": "size=xsmall, scheme=yellow",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#fbe5b9",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#5b4519"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=warning": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=warning",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=warning",
+        "id": "2423:1534",
+        "name": "size=xsmall, scheme=warning",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffddc6",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#85461e"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=cherry": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=cherry",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=cherry",
+        "id": "49:5355",
+        "name": "size=xsmall, scheme=cherry",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#e2c1c8",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#371e23"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=success": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=success",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=success",
+        "id": "2423:1538",
+        "name": "size=xsmall, scheme=success",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c4d6c0",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#1f341b"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=indigo": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=indigo",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=indigo",
+        "id": "49:5405",
+        "name": "size=medium, scheme=indigo",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#cbd4f2",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2e3961"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=info": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=info",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=info",
+        "id": "2423:1542",
+        "name": "size=medium, scheme=info",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c5dbea",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#253846"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=cyan": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=cyan",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=cyan",
+        "id": "49:5459",
+        "name": "size=medium, scheme=cyan",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#b1cccd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#152828"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=medium, scheme=error": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=medium, scheme=error",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=medium, scheme=error",
+        "id": "2423:1546",
+        "name": "size=medium, scheme=error",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffbebf",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#701c1d"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-primary/size=small, scheme=indigo": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=indigo",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=indigo",
+        "id": "49:5409",
+        "name": "size=small, scheme=indigo",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#cbd4f2",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2e3961"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=info": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=info",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=info",
+        "id": "2423:1550",
+        "name": "size=small, scheme=info",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c5dbea",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#253846"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=cyan": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=cyan",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=cyan",
+        "id": "49:5463",
+        "name": "size=small, scheme=cyan",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#b1cccd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#152828"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=small, scheme=error": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=small, scheme=error",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=small, scheme=error",
+        "id": "2423:1554",
+        "name": "size=small, scheme=error",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffbebf",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#701c1d"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=indigo": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=indigo",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=indigo",
+        "id": "49:5413",
+        "name": "size=xsmall, scheme=indigo",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#cbd4f2",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2e3961"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=info": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=info",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=info",
+        "id": "2423:1558",
+        "name": "size=xsmall, scheme=info",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#c5dbea",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#253846"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=cyan": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=cyan",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=cyan",
+        "id": "49:5467",
+        "name": "size=xsmall, scheme=cyan",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#b1cccd",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#152828"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-primary/size=xsmall, scheme=error": {
+        "path": "Document > ✅ tag > tag > Frame 1 > oc-tag-primary > size=xsmall, scheme=error",
+        "parentVariant": "oc-tag-primary",
+        "childVariant": "size=xsmall, scheme=error",
+        "id": "2423:1562",
+        "name": "size=xsmall, scheme=error",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [
+          {
+            "index": 0,
+            "color": "#ffbebf",
+            "opacity": 1
+          }
+        ],
+        "strokes": [],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#701c1d"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    },
+    "outline": {
+      "oc-tag-secondary/color=sage, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=sage, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=sage, size=medium",
+        "id": "58:5505",
+        "name": "color=sage, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#4f6162",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=sage, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=sage, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=sage, size=small",
+        "id": "58:5509",
+        "name": "color=sage, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#4f6162",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=sage, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=sage, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=sage, size=xsmall",
+        "id": "58:5513",
+        "name": "color=sage, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#4f6162",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#445556"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=pink, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=pink, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=pink, size=medium",
+        "id": "58:5517",
+        "name": "color=pink, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#7f5a8b",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#7f5a8b"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=pink, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=pink, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=pink, size=small",
+        "id": "58:5521",
+        "name": "color=pink, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#7f5a8b",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#7f5a8b"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=pink, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=pink, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=pink, size=xsmall",
+        "id": "58:5525",
+        "name": "color=pink, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#7f5a8b",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#7f5a8b"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=almond, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=almond, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=almond, size=medium",
+        "id": "58:5529",
+        "name": "color=almond, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2c6f52",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2c6f52"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=almond, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=almond, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=almond, size=small",
+        "id": "58:5533",
+        "name": "color=almond, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2c6f52",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2c6f52"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=almond, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=almond, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=almond, size=xsmall",
+        "id": "58:5537",
+        "name": "color=almond, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2c6f52",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2c6f52"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=grey, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=grey, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=grey, size=medium",
+        "id": "58:5541",
+        "name": "color=grey, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#36383e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=yellow, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=yellow, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=yellow, size=medium",
+        "id": "2430:1524",
+        "name": "color=yellow, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#715621",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#715621"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=cherry, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cherry, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cherry, size=medium",
+        "id": "2430:1578",
+        "name": "color=cherry, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#6e3d47",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#6e3d47"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=indigo, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=indigo, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=indigo, size=medium",
+        "id": "2430:1632",
+        "name": "color=indigo, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#505f97",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#505f97"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=cyan, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cyan, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cyan, size=medium",
+        "id": "2430:1740",
+        "name": "color=cyan, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2a5050",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2a5050"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=grey, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=grey, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=grey, size=small",
+        "id": "58:5545",
+        "name": "color=grey, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#36383e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=yellow, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=yellow, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=yellow, size=small",
+        "id": "2430:1528",
+        "name": "color=yellow, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#715621",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#715621"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=cherry, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cherry, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cherry, size=small",
+        "id": "2430:1582",
+        "name": "color=cherry, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#6e3d47",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#6e3d47"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=indigo, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=indigo, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=indigo, size=small",
+        "id": "2430:1636",
+        "name": "color=indigo, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#505f97",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#505f97"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=cyan, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cyan, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cyan, size=small",
+        "id": "2430:1744",
+        "name": "color=cyan, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2a5050",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2a5050"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=grey, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=grey, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=grey, size=xsmall",
+        "id": "58:5549",
+        "name": "color=grey, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#36383e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#36383e"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=yellow, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=yellow, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=yellow, size=xsmall",
+        "id": "2430:1532",
+        "name": "color=yellow, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#715621",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#715621"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=cherry, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cherry, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cherry, size=xsmall",
+        "id": "2430:1586",
+        "name": "color=cherry, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#6e3d47",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#6e3d47"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=indigo, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=indigo, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=indigo, size=xsmall",
+        "id": "2430:1640",
+        "name": "color=indigo, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#505f97",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#505f97"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=cyan, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=cyan, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=cyan, size=xsmall",
+        "id": "2430:1748",
+        "name": "color=cyan, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#2a5050",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#2a5050"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=success, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=success, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=success, size=medium",
+        "id": "58:5553",
+        "name": "color=success, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#3e6936",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#3e6936"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=warning, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=warning, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=warning, size=medium",
+        "id": "58:5557",
+        "name": "color=warning, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#be703c",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#be703c"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=success, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=success, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=success, size=small",
+        "id": "58:5561",
+        "name": "color=success, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#3e6936",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#3e6936"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=warning, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=warning, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=warning, size=small",
+        "id": "58:5565",
+        "name": "color=warning, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#be703c",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#be703c"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=success, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=success, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=success, size=xsmall",
+        "id": "58:5569",
+        "name": "color=success, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#3e6936",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#3e6936"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=warning, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=warning, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=warning, size=xsmall",
+        "id": "58:5573",
+        "name": "color=warning, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#be703c",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#be703c"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=info, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=info, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=info, size=medium",
+        "id": "58:5577",
+        "name": "color=info, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#45677e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#45677e"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=error, size=medium": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=error, size=medium",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=error, size=medium",
+        "id": "58:5581",
+        "name": "color=error, size=medium",
+        "type": "COMPONENT",
+        "width": 141,
+        "height": 36,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#ad3739",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 16,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#ad3739"
+          }
+        ],
+        "padding": {
+          "left": 12,
+          "right": 12,
+          "top": 4,
+          "bottom": 4
+        }
+      },
+      "oc-tag-secondary/color=info, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=info, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=info, size=small",
+        "id": "58:5585",
+        "name": "color=info, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#45677e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#45677e"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=error, size=small": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=error, size=small",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=error, size=small",
+        "id": "58:5589",
+        "name": "color=error, size=small",
+        "type": "COMPONENT",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#ad3739",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#ad3739"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=info, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=info, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=info, size=xsmall",
+        "id": "58:5593",
+        "name": "color=info, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#45677e",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#45677e"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary/color=error, size=xsmall": {
+        "path": "Document > ✅ tag > tag > Frame 4 > oc-tag-secondary > color=error, size=xsmall",
+        "parentVariant": "oc-tag-secondary",
+        "childVariant": "color=error, size=xsmall",
+        "id": "58:5597",
+        "name": "color=error, size=xsmall",
+        "type": "COMPONENT",
+        "width": 91,
+        "height": 18,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#ad3739",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 12,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#ad3739"
+          }
+        ],
+        "padding": {
+          "left": 4,
+          "right": 4,
+          "top": 2,
+          "bottom": 2
+        }
+      },
+      "oc-tag-secondary": {
+        "path": "Document > ✅ tag > tag > Container > Frame 88 > oc-tag-secondary",
+        "id": "2430:1787",
+        "name": "oc-tag-secondary",
+        "type": "INSTANCE",
+        "width": 113,
+        "height": 24,
+        "borderRadius": 9999,
+        "fills": [],
+        "strokes": [
+          {
+            "index": 0,
+            "color": "#7f5a8b",
+            "width": 0,
+            "opacity": 1
+          }
+        ],
+        "text": [
+          {
+            "name": "Tag label",
+            "content": "Tag label",
+            "fontSize": 14,
+            "fontWeight": 400,
+            "fontFamily": "Hanken Grotesk",
+            "color": "#7f5a8b"
+          }
+        ],
+        "padding": {
+          "left": 8,
+          "right": 8,
+          "top": 2,
+          "bottom": 2
+        }
+      }
+    }
+  },
+  "summary": {
+    "totalComponents": 74,
+    "fillVariants": 37,
+    "outlineVariants": 37
+  }
+}

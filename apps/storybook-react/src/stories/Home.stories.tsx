@@ -1,17 +1,21 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Avatar } from 'react-ui/components/Avatar/Avatar';
-import Badge from 'react-ui/components/Badge/Badge';
-import Bullet from 'react-ui/components/Bullet/Bullet';
-import Button from 'react-ui/components/Button/Button';
-import Checkbox from 'react-ui/components/Checkbox/Checkbox';
+import { Avatar } from 'react-ui/components/Avatar';
+import { Badge } from 'react-ui/components/Badge';
+import { Bullet } from 'react-ui/components/Bullet';
+import { Button } from 'react-ui/components/Button';
+import { Checkbox } from 'react-ui/components/Checkbox';
 import Label from 'react-ui/components/Label';
 import { SuccessIcon } from 'react-ui/components/Label/LabelIcons';
+import { Tag } from 'react-ui/components/Tag';
+import { Link } from 'react-ui/components/Link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/pro-regular-svg-icons';
 import { Radio } from 'react-ui/components/Radio';
 import { RadioHomePreview } from './RadioHomePreview';
+import { Select } from 'react-ui/components/Select';
+import { Input } from 'react-ui/components/Input';
 
 const meta: Meta = {
   title: 'Home',
@@ -89,11 +93,98 @@ const components: Component[] = [
     icon: <Checkbox checked={true} label="Option" />,
     previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
   },
+  {
+    name: 'Tag',
+    category: 'Electrons',
+    description: 'Tag with 12 colors, 2 variants and 3 sizes',
+    path: '?path=/docs/electrons-tag--docs',
+    icon: (
+      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+        <Tag variant="fill" color="sage" size="small">Sage</Tag>
+        <Tag variant="outline" color="info" size="small">Info</Tag>
+      </div>
+    ),
+    previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+  },
+  {
+    name: 'Select',
+    category: 'Electrons',
+    description: 'Accessible select with Figma-synced visuals',
+    path: '?path=/docs/electrons-select--docs',
+    icon: (
+      <div style={{ display: 'flex', gap: '8px' }}>
+        <Select
+          options={[
+            { value: 'one', label: 'Option One' },
+            { value: 'two', label: 'Option Two' },
+            { value: 'three', label: 'Option Three' },
+          ]}
+          placeholder="Choose..."
+          size="small"
+        />
+      </div>
+    ),
+    previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+  },
+  {
+    name: 'Link',
+    category: 'Electrons',
+    description: 'Link with states and custom icons',
+    path: '?path=/docs/electrons-link--docs',
+    icon: (
+      <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+        <Link href="#" size="sm">Small link</Link>
+        <Link href="#" size="md" icon={null}>Medium</Link>
+      </div>
+    ),
+    previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+  },
+  {
+    name: 'Input',
+    category: 'Electrons',
+    description: 'Text and number input with states and icons',
+    path: '?path=/docs/electrons-input--docs',
+    icon: (
+      <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
+        <Input placeholder="Enter text..." size="small" />
+        <Input placeholder="With icon" size="small" iconLeft="search" />
+      </div>
+    ),
+    previewBg: 'linear-gradient(135deg, var(--color-bg-primary-lightest) 0%, var(--color-background-alt) 100%)'
+  },
 ];
 
 const HomePage = () => {
-  const buildTargetUrl = (path: string) =>
-    typeof window === 'undefined' ? path : new URL(path, window.location.href).toString();
+  const buildTargetUrl = (path: string) => {
+    if (typeof window === 'undefined') return path;
+
+    // Prefer the top window location (avoid iframe.html being used as base)
+    const topLoc = (window.top && window.top.location) ? window.top.location : window.location;
+    const origin = topLoc.origin;
+    const repoBase = '/galactik/';
+
+    // Normalize base path by removing iframe.html if present
+    let basePath = topLoc.pathname || '/';
+    basePath = basePath.replace(/iframe\.html$/, '');
+    if (!basePath.endsWith('/')) basePath = basePath + '/';
+
+    if (path.startsWith('?')) {
+      // On GitHub Pages we want links like: https://{host}/galactik/?path=...
+      if (window.location.hostname.includes('github.io')) {
+        return `${origin}${repoBase}${path}`;
+      }
+      // Otherwise build against the top location with iframe removed so we get 
+      // "/?path=..." instead of "/iframe.html?path=..."
+      return `${origin}${basePath}${path}`;
+    }
+
+    // For non-query paths, produce an absolute URL relative to top location
+    try {
+      return new URL(path, `${origin}${basePath}`).toString();
+    } catch (err) {
+      return path;
+    }
+  };
 
   const handleNavigation = (path: string) => (e: React.MouseEvent) => {
     e.preventDefault();

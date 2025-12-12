@@ -1,277 +1,306 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Tag } from '@galactik/react-ui/Tag';
+import { Tag, type TagProps } from 'react-ui/components/Tag';
+import type { TagColor, TagVariant, TagSize } from 'react-ui/components/Tag/Tag';
+import { faTag, faChevronDown, faCheck, faUser, faCircleInfo, faTriangleExclamation } from '@fortawesome/pro-regular-svg-icons';
 
-/**
- * Tag component extracted from Figma "one chaps ui kit"
- * 
- * ## Design Specifications
- * - **Primary**: Uses sage color palette (sage-200 background)
- * - **Secondary**: Uses almond color palette (almond-200 background)
- * - **Border Radius**: 9999px (fully rounded pills)
- * - **Heights**: 24px (small), 36px (medium)
- * - **Padding**: 2px/8px (small), 4px/12px (medium)
- * 
- * ## Figma Components
- * - `oc-tag-primary`: Main variant with sage colors
- * - `oc-tag-secondary`: Alternative variant with almond colors
- * 
- * ## States
- * - Default, Hover, Focus, Disabled
- * - Closable with × button
- * - Clickable with onClick handler
- * - Icon support (prefix)
- */
-const meta: Meta<typeof Tag> = {
-  title: 'Components/Tag',
+const meta = {
+  title: 'Electrons/Tag',
   component: Tag,
   parameters: {
     layout: 'centered',
     docs: {
       description: {
-        component: 'Tag component for labeling and categorization, extracted from Figma with exact design tokens.',
+        component: `@example
+\`\`\`tsx
+// Medium tag with fill variant (default)
+import { faTag } from '@fortawesome/pro-regular-svg-icons';
+<Tag variant="fill" color="sage" size="medium">
+  Sage Tag
+</Tag>
+
+// Small outline tag
+<Tag variant="outline" color="pink" size="small">
+  Pink Outline
+</Tag>
+
+// Different colors and variants
+<Tag variant="fill" color="success" size="xsmall">Success</Tag>
+<Tag variant="outline" color="error" size="medium">Error</Tag>
+<Tag variant="fill" color="info" size="small">Info</Tag>
+
+// With icons
+<Tag variant="fill" color="sage" size="medium" iconLeft={faTag}>
+  Tagged
+</Tag>
+<Tag variant="outline" color="indigo" size="medium" iconRight={faChevronDown}>
+  Dropdown
+</Tag>
+
+// With country flag
+<Tag variant="fill" color="info" size="medium" flag="FR">
+  France
+</Tag>
+
+// Icons + Flag
+<Tag variant="fill" color="warning" size="medium" iconLeft={faTriangleExclamation} flag="US">
+  US Alert
+</Tag>
+\`\`\``,
       },
     },
   },
   tags: ['autodocs'],
   argTypes: {
+    color: {
+      control: 'select',
+      options: ['sage', 'pink', 'almond', 'grey', 'yellow', 'warning', 'cherry', 'success', 'indigo', 'info', 'cyan', 'error'],
+      description: 'Color from Figma oc-tag variants',
+      defaultValue: 'sage',
+    },
     variant: {
       control: 'select',
-      options: ['primary', 'secondary'],
-      description: 'Tag color variant',
+      options: ['fill', 'outline'],
+      description: 'Style variant: fill (solid) or outline (border only)',
+      defaultValue: 'fill',
     },
     size: {
       control: 'select',
-      options: ['small', 'medium'],
-      description: 'Tag size',
+      options: ['xsmall', 'small', 'medium'],
+      description: 'Size from Figma specs (xsmall=18px, small=24px, medium=36px)',
+      defaultValue: 'medium',
     },
-    disabled: {
-      control: 'boolean',
-      description: 'Disabled state',
+    iconLeft: {
+      control: false,
+      description: 'FontAwesome icon on the left side',
     },
-    closable: {
-      control: 'boolean',
-      description: 'Show close button',
+    iconRight: {
+      control: false,
+      description: 'FontAwesome icon on the right side',
     },
-    onClick: {
-      action: 'clicked',
-      description: 'Click handler',
-    },
-    onClose: {
-      action: 'closed',
-      description: 'Close handler',
+    flag: {
+      control: 'text',
+      description: 'Country flag (ISO 3166-1 alpha-2 code, e.g. FR, US, GB)',
     },
   },
-};
+} satisfies Meta<typeof Tag>;
 
 export default meta;
-type Story = StoryObj<typeof Tag>;
 
-// Primary Variants (oc-tag-primary from Figma)
+type Story = StoryObj<typeof meta>;
 
-export const PrimaryMedium: Story = {
+export const Playground: Story = {
   args: {
-    variant: 'primary',
+    color: 'sage',
+    variant: 'fill',
     size: 'medium',
-    children: 'Primary Tag',
+    children: 'Tag label',
   },
 };
 
-export const PrimarySmall: Story = {
-  args: {
-    variant: 'primary',
-    size: 'small',
-    children: 'Small Tag',
-  },
-};
-
-export const PrimaryWithIcon: Story = {
-  args: {
-    variant: 'primary',
-    size: 'medium',
-    children: 'With Icon',
-    icon: '🏷️',
-  },
-};
-
-export const PrimaryClosable: Story = {
-  args: {
-    variant: 'primary',
-    size: 'medium',
-    children: 'Closable',
-    closable: true,
-    onClose: () => console.log('Tag closed'),
-  },
-};
-
-export const PrimaryClickable: Story = {
-  args: {
-    variant: 'primary',
-    size: 'medium',
-    children: 'Clickable',
-    onClick: () => console.log('Tag clicked'),
-  },
-};
-
-export const PrimaryDisabled: Story = {
-  args: {
-    variant: 'primary',
-    size: 'medium',
-    children: 'Disabled',
-    disabled: true,
-  },
-};
-
-// Secondary Variants (oc-tag-secondary from Figma)
-
-export const SecondaryMedium: Story = {
-  args: {
-    variant: 'secondary',
-    size: 'medium',
-    children: 'Secondary Tag',
-  },
-};
-
-export const SecondarySmall: Story = {
-  args: {
-    variant: 'secondary',
-    size: 'small',
-    children: 'Small Tag',
-  },
-};
-
-export const SecondaryWithIcon: Story = {
-  args: {
-    variant: 'secondary',
-    size: 'medium',
-    children: 'With Icon',
-    icon: '⭐',
-  },
-};
-
-export const SecondaryClosable: Story = {
-  args: {
-    variant: 'secondary',
-    size: 'medium',
-    children: 'Closable',
-    closable: true,
-    onClose: () => console.log('Tag closed'),
-  },
-};
-
-export const SecondaryDisabled: Story = {
-  args: {
-    variant: 'secondary',
-    size: 'medium',
-    children: 'Disabled',
-    disabled: true,
-  },
-};
-
-// Combinations & Examples
-
-export const AllVariants: Story = {
+export const AllSizes: Story = {
   render: () => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <Tag variant="primary" size="medium">
-          Primary Medium
-        </Tag>
-        <Tag variant="primary" size="small">
-          Primary Small
+    <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <span style={{ fontSize: '12px', fontWeight: '600', color: '#666' }}>xSmall (18px)</span>
+        <Tag color="sage" variant="fill" size="xsmall">
+          Tag label
         </Tag>
       </div>
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <Tag variant="secondary" size="medium">
-          Secondary Medium
-        </Tag>
-        <Tag variant="secondary" size="small">
-          Secondary Small
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <span style={{ fontSize: '12px', fontWeight: '600', color: '#666' }}>Small (24px)</span>
+        <Tag color="sage" variant="fill" size="small">
+          Tag label
         </Tag>
       </div>
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <Tag variant="primary" size="medium" icon="📌">
-          With Icon
-        </Tag>
-        <Tag variant="primary" size="medium" closable>
-          Closable
-        </Tag>
-      </div>
-      <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-        <Tag variant="primary" size="medium" disabled>
-          Disabled
-        </Tag>
-        <Tag variant="primary" size="medium" onClick={() => alert('Clicked!')}>
-          Clickable
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <span style={{ fontSize: '12px', fontWeight: '600', color: '#666' }}>Medium (36px)</span>
+        <Tag color="sage" variant="fill" size="medium">
+          Tag label
         </Tag>
       </div>
     </div>
   ),
 };
 
-export const TagList: Story = {
+export const AllColors: Story = {
+  render: () => {
+    const colors: TagColor[] = ['sage', 'pink', 'almond', 'grey', 'yellow', 'warning', 'cherry', 'success', 'indigo', 'info', 'cyan', 'error'];
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+        {/* Fill Variant */}
+        <div>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Fill Variant</h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {colors.map((color) => (
+              <Tag key={`fill-${color}`} color={color} variant="fill" size="medium">
+                {color}
+              </Tag>
+            ))}
+          </div>
+        </div>
+
+        {/* Outline Variant */}
+        <div>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Outline Variant</h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {colors.map((color) => (
+              <Tag key={`outline-${color}`} color={color} variant="outline" size="medium">
+                {color}
+              </Tag>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  },
+};
+
+export const Grid: Story = {
+  render: () => {
+    const colors: TagColor[] = ['sage', 'pink', 'almond', 'grey', 'yellow', 'warning', 'cherry', 'success', 'indigo', 'info', 'cyan', 'error'];
+    const sizes: TagSize[] = ['xsmall', 'small', 'medium'];
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+        {['fill', 'outline'].map((variantType) => (
+          <div key={variantType}>
+            <h3 style={{ margin: '0 0 24px 0', fontSize: '16px', fontWeight: '700', color: '#333', textTransform: 'capitalize' }}>
+              {variantType} Variant
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '32px' }}>
+              {sizes.map((size) => (
+                <div key={`${variantType}-${size}`}>
+                  <h4 style={{ margin: '0 0 16px 0', fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', color: '#999' }}>
+                    {size}
+                  </h4>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    {colors.map((color) => (
+                      <Tag key={`${variantType}-${color}-${size}`} color={color} variant={variantType as TagVariant} size={size}>
+                        {color}
+                      </Tag>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  },
+};
+
+export const WithIcons: Story = {
+  render: () => {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+        <div>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Left Icons</h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Tag color="sage" iconLeft={faTag}>
+              Tagged
+            </Tag>
+            <Tag color="success" iconLeft={faCheck}>
+              Verified
+            </Tag>
+            <Tag color="info" iconLeft={faUser}>
+              User
+            </Tag>
+            <Tag color="warning" iconLeft={faTriangleExclamation}>
+              Alert
+            </Tag>
+          </div>
+        </div>
+
+        <div>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Right Icons</h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Tag color="sage" iconRight={faTag}>
+              Tagged
+            </Tag>
+            <Tag color="success" iconRight={faCheck}>
+              Verified
+            </Tag>
+            <Tag color="info" iconRight={faUser}>
+              User
+            </Tag>
+            <Tag color="warning" iconRight={faTriangleExclamation}>
+              Alert
+            </Tag>
+          </div>
+        </div>
+
+        <div>
+          <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Both Icons</h3>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Tag color="sage" iconLeft={faTag} iconRight={faChevronDown}>
+              Tagged Item
+            </Tag>
+          </div>
+        </div>
+      </div>
+    );
+  },
+};
+
+export const WithFlags: Story = {
   render: () => (
-    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', maxWidth: '600px' }}>
-      <Tag variant="primary">Design</Tag>
-      <Tag variant="primary">Development</Tag>
-      <Tag variant="secondary">Frontend</Tag>
-      <Tag variant="secondary">Backend</Tag>
-      <Tag variant="primary">React</Tag>
-      <Tag variant="primary">TypeScript</Tag>
-      <Tag variant="secondary">Figma</Tag>
-      <Tag variant="secondary">Storybook</Tag>
-      <Tag variant="primary">Component</Tag>
-      <Tag variant="primary">Design System</Tag>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+      <div>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Country Flags</h3>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <Tag color="sage" variant="fill" size="medium" flag="FR">
+            France
+          </Tag>
+          <Tag color="info" variant="fill" size="medium" flag="US">
+            United States
+          </Tag>
+          <Tag color="warning" variant="outline" size="medium" flag="GB">
+            United Kingdom
+          </Tag>
+          <Tag color="error" variant="outline" size="medium" flag="DE">
+            Germany
+          </Tag>
+          <Tag color="success" variant="fill" size="small" flag="ES">
+            Spain
+          </Tag>
+          <Tag color="indigo" variant="fill" size="small" flag="IT">
+            Italy
+          </Tag>
+        </div>
+      </div>
+
+      <div>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Icons + Flags</h3>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+          <Tag color="info" variant="fill" size="medium" iconLeft={faCircleInfo} flag="FR">
+            Info France
+          </Tag>
+          <Tag color="warning" variant="fill" size="medium" iconLeft={faTriangleExclamation} flag="US">
+            US Alert
+          </Tag>
+          <Tag color="success" variant="outline" size="medium" iconLeft={faCheck} flag="GB">
+            UK Verified
+          </Tag>
+        </div>
+      </div>
+
+      <div>
+        <h3 style={{ margin: '0 0 16px 0', fontSize: '14px', fontWeight: '600', color: '#333' }}>Different Sizes</h3>
+        <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+          <Tag color="sage" variant="fill" size="xsmall" flag="JP">
+            Japan
+          </Tag>
+          <Tag color="info" variant="fill" size="small" flag="CA">
+            Canada
+          </Tag>
+          <Tag color="success" variant="fill" size="medium" flag="AU">
+            Australia
+          </Tag>
+        </div>
+      </div>
     </div>
   ),
 };
 
-export const ClosableTags: Story = {
-  render: () => (
-    <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-      <Tag variant="primary" closable onClose={() => console.log('React removed')}>
-        React
-      </Tag>
-      <Tag variant="primary" closable onClose={() => console.log('Vue removed')}>
-        Vue
-      </Tag>
-      <Tag variant="primary" closable onClose={() => console.log('Angular removed')}>
-        Angular
-      </Tag>
-      <Tag variant="secondary" closable onClose={() => console.log('Svelte removed')}>
-        Svelte
-      </Tag>
-      <Tag variant="secondary" closable onClose={() => console.log('Solid removed')}>
-        Solid
-      </Tag>
-    </div>
-  ),
-};
-
-export const TagsWithIcons: Story = {
-  render: () => (
-    <div style={{ display: 'flex', gap: '0.5rem', flexDirection: 'column' }}>
-      <div style={{ display: 'flex', gap: '0.5rem' }}>
-        <Tag variant="primary" icon="🚀">
-          Launch
-        </Tag>
-        <Tag variant="primary" icon="✅">
-          Complete
-        </Tag>
-        <Tag variant="primary" icon="⏳">
-          In Progress
-        </Tag>
-      </div>
-      <div style={{ display: 'flex', gap: '0.5rem' }}>
-        <Tag variant="secondary" icon="⭐">
-          Featured
-        </Tag>
-        <Tag variant="secondary" icon="🔥">
-          Trending
-        </Tag>
-        <Tag variant="secondary" icon="🆕">
-          New
-        </Tag>
-      </div>
-    </div>
-  ),
-};

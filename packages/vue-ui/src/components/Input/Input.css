@@ -1,0 +1,374 @@
+/**
+ * Input Component Styles
+ * Extracted from Figma "OneChaps UI kit" - oc-input
+ * 
+ * Specifications from Figma (2025-12-12):
+ * - Font: Hanken Grotesk, weight 400, size 14px
+ * - States: default/empty, active, filled, hovered, focus, readonly, disabled
+ * - Variants: default, success, error
+ * - Border radius: 8px
+ * - Gap: 8px between elements
+ */
+
+.oc-input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.oc-input {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  
+  /* Typography */
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  
+  /* Base styling */
+  background: #FFFFFF;
+  border: 1px solid #445556;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  box-sizing: border-box;
+}
+
+/* ============================================================================
+   SIZES
+   ============================================================================ */
+
+.oc-input--small {
+  min-height: 24px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.oc-input--small .oc-input__icon-left,
+.oc-input--small .oc-input__icon-right {
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+}
+
+.oc-input--medium {
+  min-height: 36px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.oc-input--medium .oc-input__icon-left,
+.oc-input--medium .oc-input__icon-right {
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+}
+
+.oc-input--large {
+  min-height: 44px;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.oc-input--large .oc-input__icon-left,
+.oc-input--large .oc-input__icon-right {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+}
+
+/* ============================================================================
+   INTERNAL ELEMENTS
+   ============================================================================ */
+
+.oc-input__field {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.oc-input__field::placeholder {
+  color: #5D7374;
+}
+
+.oc-input__icon-left,
+.oc-input__icon-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #445556;
+  transition: color 0.15s ease;
+}
+
+.oc-input__counter {
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #445556;
+  transition: color 0.15s ease;
+}
+
+.oc-input__number-controls {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0;
+}
+
+.oc-input__number-controls--small {
+  flex-direction: row;
+  gap: 4px;
+}
+
+.oc-input__number-controls--medium,
+.oc-input__number-controls--large {
+  flex-direction: column;
+  gap: 0;
+}
+
+.oc-input__number-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.15s ease;
+}
+
+.oc-input__number-button:hover:not(:disabled) {
+  opacity: 0.7;
+}
+
+.oc-input__number-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.oc-input--small .oc-input__number-button {
+  width: 12px;
+  height: 12px;
+  font-size: 8px;
+}
+
+.oc-input--medium .oc-input__number-button {
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+}
+
+.oc-input--large .oc-input__number-button {
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+}
+
+/* ============================================================================
+   STATES
+   ============================================================================ */
+
+/* Empty state (placeholder) */
+.oc-input--empty {
+  color: #5D7374;
+  border: 1px solid #445556;
+}
+
+.oc-input--empty .oc-input__icon-left,
+.oc-input--empty .oc-input__icon-right {
+  color: #445556;
+}
+
+/* Active state (clicking and typing - primary pressed stroke) */
+.oc-input--active {
+  color: #182021;
+  border: 2px solid #2D393A;
+  padding: 7px 11px; /* Adjust padding to compensate for thicker border */
+}
+
+.oc-input--active.oc-input--small {
+  padding: 3px 7px;
+}
+
+.oc-input--active.oc-input--large {
+  padding: 7px 15px;
+}
+
+.oc-input--active .oc-input__icon-left,
+.oc-input--active .oc-input__icon-right,
+.oc-input--active .oc-input__number-button {
+  color: #2D393A;
+}
+
+/* Filled state (has value, not focused) */
+.oc-input--filled {
+  color: #182021;
+  border: 1px solid #445556;
+}
+
+.oc-input--filled .oc-input__icon-left,
+.oc-input--filled .oc-input__icon-right,
+.oc-input--filled .oc-input__number-button {
+  color: #445556;
+}
+
+/* Hovered state */
+.oc-input--hovered {
+  color: #374648;
+}
+
+.oc-input--hovered .oc-input__icon-left,
+.oc-input--hovered .oc-input__icon-right,
+.oc-input--hovered .oc-input__number-button {
+  color: #374648;
+}
+
+/* Focus state (keyboard navigation with Tab - double stroke) */
+/* Only apply when using keyboard navigation, not on click */
+.oc-input:has(.oc-input__field:focus-visible) {
+  outline: 2px solid #926E9B !important;
+  outline-offset: 0px;
+  border: 1px solid #A9C1B8 !important;
+  padding: 8px 12px !important;
+  color: #182021;
+}
+
+.oc-input--small:has(.oc-input__field:focus-visible) {
+  padding: 4px 8px !important;
+}
+
+.oc-input--large:has(.oc-input__field:focus-visible) {
+  padding: 8px 16px !important;
+}
+
+.oc-input:has(.oc-input__field:focus-visible) .oc-input__icon-left,
+.oc-input:has(.oc-input__field:focus-visible) .oc-input__icon-right,
+.oc-input:has(.oc-input__field:focus-visible) .oc-input__number-button {
+  color: #445556;
+}
+
+/* Remove default focus outline */
+.oc-input__field:focus {
+  outline: none;
+}
+
+/* Readonly state */
+.oc-input--readonly {
+  background: #F1F8F4;
+  border: none;
+  color: #182021;
+  cursor: default;
+}
+
+.oc-input--readonly .oc-input__icon-left,
+.oc-input--readonly .oc-input__icon-right {
+  color: #182021;
+}
+
+.oc-input--readonly .oc-input__field {
+  cursor: default;
+}
+
+/* Disabled state */
+.oc-input--disabled {
+  color: #626C84;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.oc-input--disabled .oc-input__icon-left,
+.oc-input--disabled .oc-input__icon-right {
+  color: #626C84;
+}
+
+.oc-input--disabled .oc-input__field {
+  cursor: not-allowed;
+}
+
+/* ============================================================================
+   VARIANTS
+   ============================================================================ */
+
+/* Success variant */
+.oc-input--success {
+  border-color: #A9C1B8;
+}
+
+.oc-input--success.oc-input--hovered {
+  border-color: #A9C1B8;
+}
+
+.oc-input--success.oc-input--focus {
+  border-color: #A9C1B8;
+}
+
+/* Error variant */
+.oc-input--error {
+  border-color: #DC004E;
+}
+
+.oc-input--error .oc-input__field {
+  color: #DC004E;
+}
+
+.oc-input--error .oc-input__field::placeholder {
+  color: #DC004E;
+}
+
+.oc-input--error .oc-input__icon-left,
+.oc-input--error .oc-input__icon-right,
+.oc-input--error .oc-input__counter {
+  color: #DC004E;
+}
+
+.oc-input--error.oc-input--hovered {
+  border-color: #DC004E;
+  background: #FFF5F8;
+}
+
+.oc-input--error.oc-input--filled.oc-input--hovered {
+  background: #FFF5F8;
+}
+
+.oc-input--error.oc-input--focus {
+  border-color: #DC004E;
+}
+
+/* ============================================================================
+   BROWSER OVERRIDES
+   ============================================================================ */
+
+/* Remove number input arrows (we have custom controls) */
+.oc-input__field::-webkit-outer-spin-button,
+.oc-input__field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.oc-input__field[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Autofill styles */
+.oc-input__field:-webkit-autofill,
+.oc-input__field:-webkit-autofill:hover,
+.oc-input__field:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+  -webkit-text-fill-color: inherit;
+  transition: background-color 5000s ease-in-out 0s;
+}

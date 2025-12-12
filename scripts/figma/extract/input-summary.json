@@ -1,0 +1,14 @@
+{
+  "componentName": "oc-input",
+  "totalVariants": 45,
+  "states": {
+    "default": 9,
+    "active": 3,
+    "filled": 6,
+    "hovered": 15,
+    "readonly": 3,
+    "disabled": 3,
+    "focus": 6
+  },
+  "extractedAt": "2025-12-12T08:53:01.050Z"
+}

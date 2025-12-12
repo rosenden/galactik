@@ -1,0 +1,267 @@
+{
+  "empty": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#5D7374",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "active": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-up-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#2D393A",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "filled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "hovered": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#374648",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#374648",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "readonly": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#182021",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [],
+    "backgrounds": [
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#182021",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "disabled": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#626C84",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "cancel-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#626C84",
+        "opacity": 1
+      }
+    ],
+    "strokes": [],
+    "borders": []
+  },
+  "focus": {
+    "text": [
+      {
+        "layer": "Lorem ipsum dolor",
+        "color": "#445556",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "Hanken Grotesk"
+      }
+    ],
+    "icons": [
+      {
+        "layer": "chevron-down-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      }
+    ],
+    "backgrounds": [
+      {
+        "layer": "base",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "message-edit-reg",
+        "color": "#FFFFFF",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      },
+      {
+        "layer": "Vector",
+        "color": "#445556",
+        "opacity": 1
+      }
+    ],
+    "strokes": [
+      {
+        "layer": "base",
+        "color": "#A9C1B8",
+        "width": 1,
+        "opacity": 1
+      }
+    ],
+    "borders": [
+      {
+        "layer": "base",
+        "radius": 8
+      }
+    ]
+  }
+}
