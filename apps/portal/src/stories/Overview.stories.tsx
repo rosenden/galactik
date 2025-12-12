@@ -114,20 +114,12 @@ const Card: React.FC<{ title: string; description: string; children?: React.Reac
       border: `1px solid var(--color-border-base)`,
       borderRadius: 'var(--radius-xl)',
       padding: 'var(--space-4xl)',
-      boxShadow: '0 16px 40px rgba(15, 23, 42, 0.18)',
+      boxShadow: 'var(--shadow-md)',
       position: 'relative',
       overflow: 'hidden'
     }}
   >
-    <div
-      style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'radial-gradient(circle at 20% 20%, rgba(138,180,255,0.12), transparent 35%), radial-gradient(circle at 80% 0%, rgba(255,211,129,0.12), transparent 32%)',
-        pointerEvents: 'none'
-      }}
-    />
-    <h4 style={{ display: 'flex', alignItems: 'center', gap: 10, margin: '0 0 var(--space-sm)', fontSize: 'var(--font-size-lg)', color: 'var(--color-font-primary-base)' }}>
+    <h4 style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-md)', margin: `0 0 var(--space-sm)`, fontFamily: 'var(--font-family-base)', fontSize: 'var(--font-size-lg)', fontWeight: 600, color: 'var(--color-font-primary-base)' }}>
       {title === 'React UI' && (
         <img src={logoReact} alt="React Logo" style={{ height: 24 }} />
       )}
@@ -139,7 +131,7 @@ const Card: React.FC<{ title: string; description: string; children?: React.Reac
       )}
       {title}
     </h4>
-    <p style={{ margin: 0, color: 'var(--color-font-secondary-base)', fontSize: 'var(--font-size-base)', lineHeight: 1.5 }}>
+    <p style={{ margin: 0, color: 'var(--color-font-secondary-base)', fontSize: 'var(--font-size-base)', lineHeight: 'var(--line-height-relaxed)', fontFamily: 'var(--font-family-base)' }}>
       {description}
     </p>
     {children}
@@ -160,62 +152,65 @@ export const GettingStarted: Story = {
         style={{
           maxWidth: 1160,
           margin: '0 auto',
-          padding: 'var(--space-7xl) var(--space-5xl) var(--space-7xl)'
+          padding: `var(--space-7xl) var(--space-5xl)`
         }}
       >
         <section
           style={{
-            background: 'linear-gradient(135deg, var(--color-bg-primary-base), var(--color-bg-secondary-light))',
+            background: 'var(--color-bg-primary-base)',
             color: 'var(--color-font-neutral-white)',
             borderRadius: 'var(--radius-2xl)',
             padding: 'var(--space-5xl)',
             marginBottom: 'var(--space-5xl)',
-            boxShadow: '0 16px 48px rgba(15,23,42,0.25)'
+            boxShadow: 'var(--shadow-lg)',
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: 'var(--space-4xl)'
           }}
         >
-          <p style={{ margin: 0, textTransform: 'uppercase', letterSpacing: 1, fontSize: 12 }}>
-            Galactik Design System
-          </p>
-          <h1 style={{ margin: 'var(--space-md) 0 var(--space-sm)', fontSize: '32px', color: 'var(--color-font-neutral-white)' }}>
-            Welcome aboard 👋 — Getting started
-          </h1>
-          <p style={{ margin: 0, fontSize: 'var(--font-size-lg)', maxWidth: 720, lineHeight: 1.6 }}>
-            This hub consolidates every single-framework Storybook, the key PNPM commands, and
-            the internal links you need to accelerate product integrations.
-          </p>
+          <img src={logoChaps} alt="Chapsvision Logo" style={{ height: 60, flexShrink: 0, marginTop: 'var(--space-sm)' }} />
+          <div>
+            <h1 style={{ margin: `0 0 var(--space-sm)`, fontSize: 'var(--font-size-4xl)', fontWeight: 700, color: 'var(--color-font-neutral-white)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
+              Welcome aboard 👋 — Getting started
+            </h1>
+            <p style={{ margin: 0, fontSize: 'var(--font-size-lg)', maxWidth: 720, lineHeight: 'var(--line-height-relaxed)', fontFamily: 'var(--font-family-base)' }}>
+              This hub consolidates every single-framework Storybook, the key PNPM commands, and
+              the internal links you need to accelerate product integrations.
+            </p>
+          </div>
         </section>
 
         <section
           style={{
-            marginBottom: 48,
-            background: 'linear-gradient(120deg, var(--color-background-alt), var(--color-bg-primary-light))',
+            marginBottom: 'var(--space-5xl)',
+            background: 'var(--color-background-alt)',
             borderRadius: 'var(--radius-2xl)',
             padding: 'var(--space-5xl)',
-            boxShadow: '0 20px 50px rgba(34,45,48,0.15)',
+            boxShadow: 'var(--shadow-md)',
             color: 'var(--color-font-primary-base)'
           }}
         >
-            <h2 style={{ marginBottom: 'var(--space-2xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+          <h2 style={{ marginBottom: 'var(--space-2xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
             Storybook frameworks
           </h2>
           <div
             style={{
               display: 'grid',
-              gap: 20,
+              gap: 'var(--space-xl)',
               gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))'
             }}
           >
             {frameworkCards.map((fw) => (
               <Card key={fw.id} title={fw.label} description={fw.stack}>
-                <p style={{ margin: '8px 0 0', fontSize: 13, color: 'var(--color-font-secondary-base)' }}>
+                <p style={{ margin: `var(--space-md) 0 0`, fontSize: 'var(--font-size-sm)', color: 'var(--color-font-secondary-base)', fontFamily: 'var(--font-family-base)' }}>
                   Local Storybook:{' '}
-                  <a href={fw.url} target="_blank" rel="noreferrer" style={{ color: 'var(--color-font-info-base)' }}>
+                  <a href={fw.url} target="_blank" rel="noreferrer" style={{ color: 'var(--color-font-info-base)', textDecoration: 'underline' }}>
                     {fw.url}
                   </a>
                 </p>
-                <div style={{ marginTop: 12 }}>
-                  <small style={{ display: 'block', color: 'var(--color-font-secondary-base)' }}>Commande PNPM</small>
-                  <code style={{ fontSize: 13 }}>{fw.command}</code>
+                <div style={{ marginTop: 'var(--space-lg)' }}>
+                  <small style={{ display: 'block', color: 'var(--color-font-secondary-base)', fontSize: 'var(--font-size-xs)', fontFamily: 'var(--font-family-base)' }}>Commande PNPM</small>
+                  <code style={{ fontSize: 'var(--font-size-sm)', fontFamily: 'monospace', display: 'block', marginTop: 'var(--space-xs)' }}>{fw.command}</code>
                 </div>
                 <a
                   href={'https://rosenden.github.io/galactik' + fw.path + (fw.id === 'portal' ? '/?path=/story/introduction--getting-started' : '/?path=/story/home--default')}
@@ -223,13 +218,15 @@ export const GettingStarted: Story = {
                   rel="noopener noreferrer"
                   style={{
                     display: 'inline-flex',
-                    marginTop: 12,
-                    padding: '6px 14px',
-                    borderRadius: 2000,
+                    marginTop: 'var(--space-lg)',
+                    padding: `var(--space-xs) var(--space-lg)`,
+                    borderRadius: 'var(--radius-full)',
                     background: 'var(--color-bg-primary-base)',
                     color: 'var(--color-font-neutral-white)',
-                    fontSize: 13,
-                    textDecoration: 'none'
+                    fontSize: 'var(--font-size-sm)',
+                    textDecoration: 'none',
+                    fontFamily: 'var(--font-family-base)',
+                    fontWeight: 500
                   }}
                 >
                   Open {fw.label}
@@ -239,18 +236,18 @@ export const GettingStarted: Story = {
           </div>
         </section>
 
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+        <section style={{ marginBottom: 'var(--space-5xl)' }}>
+          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
             Applications & status
           </h2>
-          <div style={{ display: 'grid', gap: 18, gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))' }}>
+          <div style={{ display: 'grid', gap: 'var(--space-lg)', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))' }}>
             {STORYBOOK_REFS.map((app) => (
               <Card
                 key={app.id}
                 title={`${app.label}${app.id === 'portal' ? ' (Portal)' : ''}`}
                 description={`Workspace: ${app.workspace} • Port: ${app.port}`}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 8, color: 'var(--color-font-secondary-base)', fontSize: 13 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-md)', marginTop: 'var(--space-md)', color: 'var(--color-font-secondary-base)', fontSize: 'var(--font-size-sm)', fontFamily: 'var(--font-family-base)' }}>
                   {app.id === 'react' && <img src={logoReact} alt="React" style={{ height: 20 }} />}
                   {app.id === 'vue' && <img src={logoVue} alt="Vue" style={{ height: 20 }} />}
                   {app.id === 'angular' && <img src={logoAngular} alt="Angular" style={{ height: 20 }} />}
@@ -264,14 +261,16 @@ export const GettingStarted: Story = {
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: 6,
-                    marginTop: 12,
-                    padding: '8px 14px',
+                    gap: 'var(--space-sm)',
+                    marginTop: 'var(--space-lg)',
+                    padding: `var(--space-sm) var(--space-lg)`,
                     borderRadius: 'var(--radius-lg)',
                     background: 'var(--color-bg-secondary-base)',
                     color: 'var(--color-font-neutral-white)',
-                    fontSize: 13,
-                    textDecoration: 'none'
+                    fontSize: 'var(--font-size-sm)',
+                    textDecoration: 'none',
+                    fontFamily: 'var(--font-family-base)',
+                    fontWeight: 500
                   }}
                 >
                   Ouvrir dans un nouvel onglet ↗
@@ -281,8 +280,8 @@ export const GettingStarted: Story = {
           </div>
         </section>
 
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+        <section style={{ marginBottom: 'var(--space-5xl)' }}>
+          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
             Getting started checklist
           </h2>
           <div style={{ display: 'grid', gap: 'var(--space-3xl)', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))' }}>
@@ -293,15 +292,16 @@ export const GettingStarted: Story = {
                   padding: 'var(--space-4xl)',
                   borderRadius: 'var(--radius-lg)',
                   background: 'var(--color-background-alt)',
-                  border: `1px solid var(--color-border-base)`
+                  border: `1px solid var(--color-border-base)`,
+                  fontFamily: 'var(--font-family-base)'
                 }}
               >
-                <strong style={{ display: 'block', fontSize: 'var(--font-size-lg)' }}>{step.title}</strong>
-                <code style={{ display: 'block', marginTop: 'var(--space-sm)', fontSize: 'var(--font-size-base)' }}>
+                <strong style={{ display: 'block', fontSize: 'var(--font-size-lg)', fontWeight: 600, color: 'var(--color-font-primary-base)' }}>{step.title}</strong>
+                <code style={{ display: 'block', marginTop: 'var(--space-sm)', fontSize: 'var(--font-size-base)', fontFamily: 'monospace', color: 'var(--color-font-secondary-base)' }}>
                   {step.description}
                 </code>
                 {step.hint && (
-                  <p style={{ margin: 'var(--space-sm) 0 0', fontSize: 'var(--font-size-sm)', color: 'var(--color-font-secondary-base)' }}>
+                  <p style={{ margin: `var(--space-sm) 0 0`, fontSize: 'var(--font-size-sm)', color: 'var(--color-font-secondary-base)', fontFamily: 'var(--font-family-base)' }}>
                     {step.hint}
                   </p>
                 )}
@@ -310,11 +310,11 @@ export const GettingStarted: Story = {
           </div>
         </section>
 
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+        <section style={{ marginBottom: 'var(--space-5xl)' }}>
+          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
             Quick commands
           </h2>
-          <div style={{ display: 'grid', gap: 'var(--space-xl)' }}>
+          <div style={{ display: 'grid', gap: 'var(--space-2xl)' }}>
             {commands.map((cmd) => (
               <div
                 key={cmd.label}
@@ -322,13 +322,14 @@ export const GettingStarted: Story = {
                   background: 'var(--color-background-alt)',
                   border: `1px solid var(--color-border-base)`,
                   borderRadius: 'var(--radius-md)',
-                  padding: 'var(--space-3xl)'
+                  padding: 'var(--space-3xl)',
+                  fontFamily: 'var(--font-family-base)'
                 }}
               >
-                <code style={{ fontSize: 'var(--font-size-base)', color: 'var(--color-font-primary-base)' }}>
+                <code style={{ fontSize: 'var(--font-size-base)', color: 'var(--color-font-primary-base)', fontFamily: 'monospace' }}>
                   {cmd.label}
                 </code>
-                <p style={{ margin: 'var(--space-xs) 0 0', fontSize: 'var(--font-size-sm)', color: 'var(--color-font-secondary-base)' }}>
+                <p style={{ margin: `var(--space-xs) 0 0`, fontSize: 'var(--font-size-sm)', color: 'var(--color-font-secondary-base)', fontFamily: 'var(--font-family-base)' }}>
                   {cmd.description}
                 </p>
               </div>
@@ -336,8 +337,8 @@ export const GettingStarted: Story = {
           </div>
         </section>
 
-        <section style={{ marginBottom: 48 }}>
-          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', color: 'var(--color-font-primary-base)' }}>
+        <section style={{ marginBottom: 'var(--space-5xl)' }}>
+          <h2 style={{ marginBottom: 'var(--space-3xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>
             Tech parity
           </h2>
           <table
@@ -345,15 +346,16 @@ export const GettingStarted: Story = {
               width: '100%',
               borderCollapse: 'collapse',
               background: 'var(--color-background-alt)',
-              borderRadius: 16,
+              borderRadius: 'var(--radius-lg)',
               overflow: 'hidden',
-              border: `1px solid var(--color-border-base)`
+              border: `1px solid var(--color-border-base)`,
+              fontFamily: 'var(--font-family-base)'
             }}
           >
             <thead style={{ background: 'var(--color-background-surface)' }}>
               <tr style={{ textAlign: 'left' }}>
-                <th style={{ padding: '12px 16px', fontSize: 14, color: 'var(--color-font-secondary-base)' }}>Stack</th>
-                <th style={{ padding: '12px 16px', fontSize: 14, color: 'var(--color-font-secondary-base)' }}>Version/Notes</th>
+                <th style={{ padding: 'var(--space-lg) var(--space-2xl)', fontSize: 'var(--font-size-sm)', fontWeight: 600, color: 'var(--color-font-secondary-base)' }}>Stack</th>
+                <th style={{ padding: 'var(--space-lg) var(--space-2xl)', fontSize: 'var(--font-size-sm)', fontWeight: 600, color: 'var(--color-font-secondary-base)' }}>Version/Notes</th>
               </tr>
             </thead>
             <tbody>
@@ -365,9 +367,9 @@ export const GettingStarted: Story = {
                     background: index % 2 === 0 ? 'var(--color-background-alt)' : 'var(--color-background-surface)'
                   }}
                 >
-                  <td style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--color-font-primary-base)' }}>{row.tech}</td>
-                  <td style={{ padding: '12px 16px' }}>
-                    <code>{row.version}</code>
+                  <td style={{ padding: 'var(--space-lg) var(--space-2xl)', fontWeight: 600, color: 'var(--color-font-primary-base)', fontSize: 'var(--font-size-base)' }}>{row.tech}</td>
+                  <td style={{ padding: 'var(--space-lg) var(--space-2xl)', fontSize: 'var(--font-size-base)' }}>
+                    <code style={{ fontFamily: 'monospace', color: 'var(--color-font-secondary-base)' }}>{row.version}</code>
                   </td>
                 </tr>
               ))}
@@ -375,13 +377,12 @@ export const GettingStarted: Story = {
           </table>
         </section>
 
-
         <section>
-          <h2 style={{ marginBottom: 16, fontSize: 22, color: 'var(--color-font-primary-base)' }}>Galactik resources</h2>
+          <h2 style={{ marginBottom: 'var(--space-2xl)', fontSize: 'var(--font-size-2xl)', fontWeight: 700, color: 'var(--color-font-primary-base)', fontFamily: 'var(--font-family-base)', lineHeight: 'var(--line-height-tight)' }}>Galactik resources</h2>
           <div
             style={{
               display: 'grid',
-              gap: 16,
+              gap: 'var(--space-lg)',
               gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))'
             }}
           >
@@ -393,9 +394,11 @@ export const GettingStarted: Story = {
                   rel="noreferrer"
                   style={{
                     display: 'inline-flex',
-                    marginTop: 12,
+                    marginTop: 'var(--space-lg)',
                     color: 'var(--color-font-info-base)',
-                    fontSize: 13
+                    fontSize: 'var(--font-size-sm)',
+                    textDecoration: 'underline',
+                    fontFamily: 'var(--font-family-base)'
                   }}
                 >
                   Open ↗
